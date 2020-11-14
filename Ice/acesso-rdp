@@ -1,0 +1,45 @@
+Script started on 2020-11-14 12:49:12-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="168" LINES="36"]
+[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Ice[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Ice[00m# rdp [7m10.10.229.185[27m10.10.229.185
+[?2004lbash: rdp: comando não encontrado
+[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Ice[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Ice[00m# rdesktop [7m10.10.229.185[27m10.10.229.185
+[?2004lAutoselecting keyboard map 'pt-br' from locale
+
+ATTENTION! The server uses and invalid security certificate which can not be trusted for
+the following identified reasons(s);
+
+ 1. Certificate issuer is not trusted by this system.
+
+     Issuer: CN=Dark-PC
+
+
+Review the following certificate info before you trust it to be added as an exception.
+If you do not trust the certificate the connection atempt will be aborted:
+
+    Subject: CN=Dark-PC
+     Issuer: CN=Dark-PC
+ Valid From: Fri Nov 13 11:21:37 2020
+         To: Sat May 15 11:21:37 2021
+
+  Certificate fingerprints:
+
+       sha1: 7727815a03f7a8abd2a8c51c70c12cacf3b2640b
+     sha256: 085c01bb97c46a99ce756819e999d29516f683c3e26011d878f903d3f6aeb17f
+
+
+Do you trust this certificate (yes/no)? yes
+Failed to initialize NLA, do you have correct Kerberos TGT initialized ?
+Core(warning): Certificate received from server is NOT trusted by this system, an exception has been added by the user to trust this specific certificate.
+Connection established using SSL.
+Protocol(warning): process_pdu_logon(), Unhandled login infotype 1
+Clipboard(error): xclip_handle_SelectionNotify(), unable to find a textual target to satisfy RDP clipboard text request
+Core(warning): Certificate received from server is NOT trusted by this system, an exception has been added by the user to trust this specific certificate.
+Failed to initialize NLA, do you have correct Kerberos TGT initialized ?
+Core(warning): Certificate received from server is NOT trusted by this system, an exception has been added by the user to trust this specific certificate.
+Connection established using SSL.
+Protocol(warning): process_pdu_logon(), Unhandled login infotype 1
+Clipboard(error): xclip_handle_SelectionNotify(), unable to find a textual target to satisfy RDP clipboard text request
+[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Ice[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Ice[00m# 
+[?2004l[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Ice[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Ice[00m# exit
+[?2004lexit
+
+Script done on 2020-11-14 12:51:10-03:00 [COMMAND_EXIT_CODE="62"]

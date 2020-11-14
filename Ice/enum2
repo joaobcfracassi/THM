@@ -1,0 +1,100 @@
+Script started on 2020-11-14 11:29:38-03:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="168" LINES="17"]
+[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Ice[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Ice[00m# nmap -v -sS -Pn [7m10.10.229.185[27m10.10.229.185
+[?2004lHost discovery disabled (-Pn). All addresses will be marked 'up' and scan times will be slower.
+Starting Nmap 7.91 ( https://nmap.org ) at 2020-11-14 11:29 -03
+Initiating Parallel DNS resolution of 1 host. at 11:29
+Completed Parallel DNS resolution of 1 host. at 11:29, 0.01s elapsed
+Initiating SYN Stealth Scan at 11:29
+Scanning 10.10.229.185 [1000 ports]
+Discovered open port 135/tcp on 10.10.229.185
+Discovered open port 3389/tcp on 10.10.229.185
+Discovered open port 445/tcp on 10.10.229.185
+Discovered open port 139/tcp on 10.10.229.185
+Discovered open port 49160/tcp on 10.10.229.185
+Discovered open port 49153/tcp on 10.10.229.185
+Discovered open port 49152/tcp on 10.10.229.185
+Discovered open port 49158/tcp on 10.10.229.185
+Discovered open port 49154/tcp on 10.10.229.185
+Discovered open port 8000/tcp on 10.10.229.185
+Discovered open port 5357/tcp on 10.10.229.185
+Discovered open port 49159/tcp on 10.10.229.185
+Completed SYN Stealth Scan at 11:30, 6.13s elapsed (1000 total ports)
+Nmap scan report for 10.10.229.185
+Host is up (0.25s latency).
+Not shown: 988 closed ports
+PORT      STATE SERVICE
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+3389/tcp  open  ms-wbt-server
+5357/tcp  open  wsdapi
+8000/tcp  open  http-alt
+49152/tcp open  unknown
+49153/tcp open  unknown
+49154/tcp open  unknown
+49158/tcp open  unknown
+49159/tcp open  unknown
+49160/tcp open  unknown
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 6.25 seconds
+           Raw packets sent: 1295 (56.980KB) | Rcvd: 1098 (46.290KB)
+[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Ice[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Ice[00m# 
+[?2004l[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Ice[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Ice[00m# nmap -v -sS -Pn 10.10.229.185[1P[1@V
+[?2004lHost discovery disabled (-Pn). All addresses will be marked 'up' and scan times will be slower.
+Starting Nmap 7.91 ( https://nmap.org ) at 2020-11-14 11:30 -03
+NSE: Loaded 45 scripts for scanning.
+Initiating Parallel DNS resolution of 1 host. at 11:30
+Completed Parallel DNS resolution of 1 host. at 11:30, 0.01s elapsed
+Initiating SYN Stealth Scan at 11:30
+Scanning 10.10.229.185 [1000 ports]
+Discovered open port 445/tcp on 10.10.229.185
+Discovered open port 3389/tcp on 10.10.229.185
+Discovered open port 135/tcp on 10.10.229.185
+Discovered open port 139/tcp on 10.10.229.185
+Discovered open port 49160/tcp on 10.10.229.185
+Discovered open port 49154/tcp on 10.10.229.185
+Discovered open port 49152/tcp on 10.10.229.185
+Discovered open port 8000/tcp on 10.10.229.185
+Discovered open port 5357/tcp on 10.10.229.185
+Discovered open port 49159/tcp on 10.10.229.185
+Discovered open port 49158/tcp on 10.10.229.185
+Discovered open port 49153/tcp on 10.10.229.185
+Completed SYN Stealth Scan at 11:30, 8.20s elapsed (1000 total ports)
+Initiating Service scan at 11:30
+Scanning 12 services on 10.10.229.185
+Service scan Timing: About 50.00% done; ETC: 11:32 (0:00:58 remaining)
+Completed Service scan at 11:32, 92.26s elapsed (12 services on 1 host)
+NSE: Script scanning 10.10.229.185.
+Initiating NSE at 11:32
+Completed NSE at 11:32, 1.55s elapsed
+Initiating NSE at 11:32
+Completed NSE at 11:32, 1.06s elapsed
+Nmap scan report for 10.10.229.185
+Host is up (0.24s latency).
+Not shown: 988 closed ports
+PORT      STATE SERVICE        VERSION
+135/tcp   open  msrpc          Microsoft Windows RPC
+139/tcp   open  netbios-ssn    Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds   Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+3389/tcp  open  ms-wbt-server?
+5357/tcp  open  http           Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+8000/tcp  open  http           Icecast streaming media server
+49152/tcp open  msrpc          Microsoft Windows RPC
+49153/tcp open  msrpc          Microsoft Windows RPC
+49154/tcp open  msrpc          Microsoft Windows RPC
+49158/tcp open  msrpc          Microsoft Windows RPC
+49159/tcp open  msrpc          Microsoft Windows RPC
+49160/tcp open  msrpc          Microsoft Windows RPC
+Service Info: Host: DARK-PC; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 103.85 seconds
+           Raw packets sent: 1180 (51.920KB) | Rcvd: 1050 (45.943KB)
+[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Ice[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Ice[00m# 
+[?2004l[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Ice[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Ice[00m# 
+[?2004l[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Ice[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Ice[00m# exit
+[?2004lexit
+
+Script done on 2020-11-14 11:35:11-03:00 [COMMAND_EXIT_CODE="0"]

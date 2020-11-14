@@ -1,0 +1,20 @@
+Script started on 2020-11-14 11:42:52-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="168" LINES="36"]
+[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Ice[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Ice[00m# searchsploit ie[Kcecast
+[?2004l-------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
+ Exploit Title                                                                                                                        |  Path
+-------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
+[01;31m[KIcecast[m[K 1.1.x/1.3.x - Directory Traversal                                                                                             | multiple/remote/20972.txt
+[01;31m[KIcecast[m[K 1.1.x/1.3.x - Slash File Name Denial of Service                                                                               | multiple/dos/20973.txt
+[01;31m[KIcecast[m[K 1.3.7/1.3.8 - 'print_client()' Format String                                                                                  | windows/remote/20582.c
+[01;31m[KIcecast[m[K 1.x - AVLLib Buffer Overflow                                                                                                  | unix/remote/21363.c
+[01;31m[KIcecast[m[K 2.0.1 (Win32) - Remote Code Execution (1)                                                                                     | windows/remote/568.c
+[01;31m[KIcecast[m[K 2.0.1 (Win32) - Remote Code Execution (2)                                                                                     | windows/remote/573.c
+[01;31m[KIcecast[m[K 2.0.1 (Windows x86) - Header Overwrite (Metasploit)                                                                           | windows_x86/remote/16763.rb
+[01;31m[KIcecast[m[K 2.x - XSL Parser Multiple Vulnerabilities                                                                                     | multiple/remote/25238.txt
+[01;31m[Kicecast[m[K server 1.3.12 - Directory Traversal Information Disclosure                                                                    | linux/remote/21602.txt
+-------------------------------------------------------------------------------------------------------------------------------------- ---------------------------------
+Shellcodes: No Results
+[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Ice[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Ice[00m# exit
+[?2004lexit
+
+Script done on 2020-11-14 11:43:13-03:00 [COMMAND_EXIT_CODE="0"]
