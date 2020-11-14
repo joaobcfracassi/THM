@@ -15,6 +15,6 @@ As Rooms resolvidas até o momento são:
 7. Linux
 8. Metasploit Framework
 9. Basic Pentesting
-10. Mr Robot
+10. Mr. Robot
 11. Vulnversity
 12. Blue 
