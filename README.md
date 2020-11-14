@@ -7,7 +7,7 @@ Tem por interesse ser um canal de consulta para técnicas e procedimentos.
 As Rooms resolvidas até o momento são:
 
 1. Tutorial (não tem arquivos no momento)
-2. Intro To Research
+2. Introduction Research
 3. OpenVPN
 4. google Hacking (não tem arquivos no momento)
 5. Nmap
