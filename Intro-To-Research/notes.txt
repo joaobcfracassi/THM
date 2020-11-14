@@ -1,0 +1,57 @@
+https://tryhackme.com/room/introtoresearch
+
+
+Escondendo informacoes dentro de imagens:
+https://www.google.com/search?q=hiding+things+inside+images&rlz=1C1GCEA_enBR924BR924&oq=hiding+inside+image&aqs=chrome.2.69i57j0i22i30l4.7805j1j7&sourceid=chrome&ie=UTF-8
+
+
+Estenografia?
+https://null-byte.wonderhowto.com/how-to/steganography-hide-secret-data-inside-image-audio-file-seconds-0180936/
+
+
+Extraindo arquivos from jpeg stenography:
+https://www.google.com/search?rlz=1C1GCEA_enBR924BR924&sxsrf=ALeKk00sReW9Q1s3OKdt-neV3_GS09IJwA%3A1603546418831&ei=Mi2UX8GoMpHY5OUPzruuiAQ&q=extract+files+from+jpeg+steganography&oq=extract+files+jpeg+&gs_lcp=CgZwc3ktYWIQARgAMgYIABAWEB4yCAgAEBYQChAeMgYIABAWEB4yCAgAEAgQDRAeMggIABAIEA0QHjoECAAQQzoCCAA6BQgAELEDOgIILjoECCMQJzoICC4QsQMQgwE6BAguEEM6BggjECcQEzoICAAQsQMQgwE6BQguELEDOgQILhAKOgQIABAKOgcIABBGEP8BOgUIABDLAVDD2hpY4OIbYJn1G2gGcAB4AIABswGIAZcakgEEMC4yNZgBAKABAaoBB2d3cy13aXrAAQE&sclient=psy-ab
+
+
+Ferramentas para extracao de arquivos:
+https://0xrick.github.io/lists/stego/
+
+
+Automate tasks linux cron jobs:
+https://www.linuxtechi.com/schedule-automate-tasks-linux-cron-jobs/#:~:text=Such%20tasks%20in%20linux%20are,carried%20out%20at%20specified%20intervals.
+
+
+Base 16?
+https://www.google.com/search?rlz=1C1GCEA_enBR924BR924&sxsrf=ALeKk01_GomDxCexuXslJKgwGStcC9VSfg%3A1603559835707&ei=m2GUX7ijKrHY5OUP2bWkwA0&q=What+number+base+could+you+use+as+a+shorthand+for+base+2+%28binary%29&oq=What+number+base+could+you+use+as+a+shorthand+for+base+2+%28binary%29&gs_lcp=CgZwc3ktYWIQAzICCABQ8YUHWPGFB2DYkAdoAHAAeACAAakBiAGpAZIBAzAuMZgBAKABAqABAaoBB2d3cy13aXrAAQE&sclient=psy-ab&ved=0ahUKEwj43Ifz3c3sAhUxLLkGHdkaCdgQ4dUDCA0&uact=5
+
+
+Exploit FuelCMS 1.4.1:
+fuelCMS 1.4.1 - Remote Code Execution
+linux/webapps/47138.py
+
+
+Pesquisa de CVE e Exploits:
+https://www.exploit-db.com/
+https://nvd.nist.gov/vuln/search
+https://cve.mitre.org/
+
+
+CVE-2020-10385 - XXS - WPForm:
+https://nvd.nist.gov/vuln/detail/CVE-2020-10385
+
+
+CVE-2016-1240 - Apache Tomcat - Privilege Escalation
+https://www.exploit-db.com/exploits/40450
+https://www.securityfocus.com/bid/93263/references
+
+
+CVE-2007-0017 - Primeiro CVE para VLC Media Player:
+https://nvd.nist.gov/vuln/detail/CVE-2007-0017
+
+
+CVE-2019-18634 - Sudo 1.8.25p - 'pwfeedback' Buffer Overflow (PoC)
+https://www.exploit-db.com/exploits/47995
+
+
+
+

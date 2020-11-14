@@ -1,0 +1,48 @@
+Script started on 2020-11-14 00:29:52-03:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="168" LINES="36"]
+[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Blue[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Blue[00m# rdk[Kp[K[K[Krdesktop [7m10.10.41.170[27m10.10.41.170
+[?2004lAutoselecting keyboard map 'pt-br' from locale
+
+ATTENTION! The server uses and invalid security certificate which can not be trusted for
+the following identified reasons(s);
+
+ 1. Certificate issuer is not trusted by this system.
+
+     Issuer: CN=Jon-PC
+
+
+Review the following certificate info before you trust it to be added as an exception.
+If you do not trust the certificate the connection atempt will be aborted:
+
+    Subject: CN=Jon-PC
+     Issuer: CN=Jon-PC
+ Valid From: Fri Nov 13 00:27:14 2020
+         To: Sat May 15 00:27:14 2021
+
+  Certificate fingerprints:
+
+       sha1: 177c42ab91333cc05c29409740c15a2e764d5a4d
+     sha256: d1d19dd7a2346bac7a9956ca3dee8f9bb27ecccac7232ec643eec35a2addd524
+
+
+Do you trust this certificate (yes/no)? yes
+Failed to initialize NLA, do you have correct Kerberos TGT initialized ?
+Core(warning): Certificate received from server is NOT trusted by this system, an exception has been added by the user to trust this specific certificate.
+Connection established using SSL.
+Protocol(warning): process_pdu_logon(), Unhandled login infotype 1
+Clipboard(error): xclip_handle_SelectionNotify(), unable to find a textual target to satisfy RDP clipboard text request
+Core(warning): Certificate received from server is NOT trusted by this system, an exception has been added by the user to trust this specific certificate.
+Failed to initialize NLA, do you have correct Kerberos TGT initialized ?
+Core(warning): Certificate received from server is NOT trusted by this system, an exception has been added by the user to trust this specific certificate.
+Connection established using SSL.
+Protocol(warning): process_pdu_logon(), Unhandled login infotype 1
+Clipboard(error): xclip_handle_SelectionNotify(), unable to find a textual target to satisfy RDP clipboard text request
+Clipboard(warning): xclip_handle_SelectionRequest(), unsupported target format, target='image/png'
+Clipboard(warning): xclip_handle_SelectionRequest(), unsupported target format, target='image/jpeg'
+Clipboard(warning): xclip_handle_SelectionRequest(), unsupported target format, target='image/gif'
+Clipboard(warning): xclip_handle_SelectionRequest(), unsupported target format, target='image/bmp'
+Clipboard(warning): xclip_handle_SelectionRequest(), unsupported target format, target='text/plain;charset=utf-8'
+disconnect: Logout initiated by user.
+[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Blue[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Blue[00m# exit
+[?2004lexit
+
+Script done on 2020-11-14 00:44:13-03:00 [COMMAND_EXIT_CODE="12"]

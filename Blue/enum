@@ -1,0 +1,115 @@
+Script started on 2020-11-13 16:48:55-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="143" LINES="28"]
+[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Blue[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Blue[00m# nmap -vv -sV --script vuln -Pn [7m10.10.223.98[27m10.10.223.98
+[?2004lHost discovery disabled (-Pn). All addresses will be marked 'up' and scan times will be slower.
+Starting Nmap 7.91 ( https://nmap.org ) at 2020-11-13 16:49 -03
+NSE: Loaded 149 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 2) scan.
+Initiating NSE at 16:49
+Completed NSE at 16:49, 10.01s elapsed
+NSE: Starting runlevel 2 (of 2) scan.
+Initiating NSE at 16:49
+Completed NSE at 16:49, 0.00s elapsed
+Initiating Parallel DNS resolution of 1 host. at 16:49
+Completed Parallel DNS resolution of 1 host. at 16:49, 0.02s elapsed
+Initiating SYN Stealth Scan at 16:49
+Scanning 10.10.223.98 [1000 ports]
+Discovered open port 139/tcp on 10.10.223.98
+Discovered open port 445/tcp on 10.10.223.98
+Discovered open port 135/tcp on 10.10.223.98
+Discovered open port 3389/tcp on 10.10.223.98
+Discovered open port 49160/tcp on 10.10.223.98
+Discovered open port 49158/tcp on 10.10.223.98
+Discovered open port 49154/tcp on 10.10.223.98
+Discovered open port 49153/tcp on 10.10.223.98
+Discovered open port 49152/tcp on 10.10.223.98
+Completed SYN Stealth Scan at 16:49, 10.05s elapsed (1000 total ports)
+Initiating Service scan at 16:49
+Scanning 9 services on 10.10.223.98
+Service scan Timing: About 55.56% done; ETC: 16:51 (0:00:46 remaining)
+Completed Service scan at 16:50, 63.19s elapsed (9 services on 1 host)
+NSE: Script scanning 10.10.223.98.
+NSE: Starting runlevel 1 (of 2) scan.
+Initiating NSE at 16:50
+NSE Timing: About 99.91% done; ETC: 16:51 (0:00:00 remaining)
+Completed NSE at 16:51, 31.34s elapsed
+NSE: Starting runlevel 2 (of 2) scan.
+Initiating NSE at 16:51
+NSE: [ssl-ccs-injection 10.10.223.98:3389] No response from server: ERROR
+Completed NSE at 16:51, 8.32s elapsed
+Nmap scan report for 10.10.223.98
+Host is up, received user-set (0.25s latency).
+Scanned at 2020-11-13 16:49:28 -03 for 113s
+Not shown: 991 closed ports
+Reason: 991 resets
+PORT      STATE SERVICE      REASON          VERSION
+135/tcp   open  msrpc        syn-ack ttl 127 Microsoft Windows RPC
+139/tcp   open  netbios-ssn  syn-ack ttl 127 Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds syn-ack ttl 127 Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+3389/tcp  open  tcpwrapped   syn-ack ttl 127
+| rdp-vuln-ms12-020: 
+|   VULNERABLE:
+|   MS12-020 Remote Desktop Protocol Denial Of Service Vulnerability
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2012-0152
+|     Risk factor: Medium  CVSSv2: 4.3 (MEDIUM) (AV:N/AC:M/Au:N/C:N/I:N/A:P)
+|           Remote Desktop Protocol vulnerability that could allow remote attackers to cause a denial of service.
+|           
+|     Disclosure date: 2012-03-13
+|     References:
+|       http://technet.microsoft.com/en-us/security/bulletin/ms12-020
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0152
+|   
+|   MS12-020 Remote Desktop Protocol Remote Code Execution Vulnerability
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2012-0002
+|     Risk factor: High  CVSSv2: 9.3 (HIGH) (AV:N/AC:M/Au:N/C:C/I:C/A:C)
+|           Remote Desktop Protocol vulnerability that could allow remote attackers to execute arbitrary code on the targeted system.
+|           
+|     Disclosure date: 2012-03-13
+|     References:
+|       http://technet.microsoft.com/en-us/security/bulletin/ms12-020
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0002
+|_ssl-ccs-injection: No reply from server (TIMEOUT)
+|_sslv2-drown: 
+49152/tcp open  msrpc        syn-ack ttl 127 Microsoft Windows RPC
+49153/tcp open  msrpc        syn-ack ttl 127 Microsoft Windows RPC
+49154/tcp open  msrpc        syn-ack ttl 127 Microsoft Windows RPC
+49158/tcp open  msrpc        syn-ack ttl 127 Microsoft Windows RPC
+49160/tcp open  msrpc        syn-ack ttl 127 Microsoft Windows RPC
+Service Info: Host: JON-PC; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_samba-vuln-cve-2012-1182: NT_STATUS_ACCESS_DENIED
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: NT_STATUS_ACCESS_DENIED
+| smb-vuln-ms17-010: 
+|   VULNERABLE:
+|   Remote Code Execution vulnerability in Microsoft SMBv1 servers (ms17-010)
+|     State: VULNERABLE
+|     IDs:  CVE:CVE-2017-0143
+|     Risk factor: HIGH
+|       A critical remote code execution vulnerability exists in Microsoft SMBv1
+|        servers (ms17-010).
+|           
+|     Disclosure date: 2017-03-14
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0143
+|       https://blogs.technet.microsoft.com/msrc/2017/05/12/customer-guidance-for-wannacrypt-attacks/
+|_      https://technet.microsoft.com/en-us/library/security/ms17-010.aspx
+
+NSE: Script Post-scanning.
+NSE: Starting runlevel 1 (of 2) scan.
+Initiating NSE at 16:51
+Completed NSE at 16:51, 0.00s elapsed
+NSE: Starting runlevel 2 (of 2) scan.
+Initiating NSE at 16:51
+Completed NSE at 16:51, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 123.76 seconds
+           Raw packets sent: 1294 (56.936KB) | Rcvd: 1010 (40.436KB)
+[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Blue[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Blue[00m# exit
+[?2004lexit
+
+Script done on 2020-11-13 16:55:51-03:00 [COMMAND_EXIT_CODE="0"]

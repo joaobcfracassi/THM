@@ -1,0 +1,139 @@
+Script started on 2020-10-30 21:18:45-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="141" LINES="30"]
+]0;root@Pentest: /home/joaof/TryJao/TryHackMe/Fund-Web[1;31mroot@Pentest[00m:[1;34m/home/joaof/TryJao/TryHackMe/Fund-Web[00m# 
+]0;root@Pentest: /home/joaof/TryJao/TryHackMe/Fund-Web[1;31mroot@Pentest[00m:[1;34m/home/joaof/TryJao/TryHackMe/Fund-Web[00m# nc -v 10.10.229.204 8081
+Ncat: Version 7.91 ( https://nmap.org/ncat )
+Ncat: Connected to 10.10.229.204:8081.
+GET / HTTP/1.0
+
+HTTP/1.0 200 OK
+Accept-Ranges: bytes
+Content-Length: 571
+Content-Type: text/html; charset=utf-8
+Last-Modified: Thu, 27 Feb 2020 02:06:10 GMT
+Date: Sat, 31 Oct 2020 00:19:11 GMT
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Flags:</h1>
+    <ul>
+        <li>GET request. /ctf/get</li>
+        <li>POST request. /ctf/post</li>
+        <li>Get a cookie. /ctf/getcookie</li>
+        <li>Set a cookie. /ctf/sendcookie</li>
+    </ul>
+</body>
+</html>
+
+Ncat: Broken pipe.
+]0;root@Pentest: /home/joaof/TryJao/TryHackMe/Fund-Web[1;31mroot@Pentest[00m:[1;34m/home/joaof/TryJao/TryHackMe/Fund-Web[00m# 
+]0;root@Pentest: /home/joaof/TryJao/TryHackMe/Fund-Web[1;31mroot@Pentest[00m:[1;34m/home/joaof/TryJao/TryHackMe/Fund-Web[00m# nc -v 10.10.229.204 8081
+Ncat: Version 7.91 ( https://nmap.org/ncat )
+Ncat: Connected to 10.10.229.204:8081.
+POST /ctf/post/flag_please htt     HTP TP/1.o 0
+
+HTTP/1.0 404 Not Found
+Content-Type: text/plain; charset=utf-8
+X-Content-Type-Options: nosniff
+Date: Sat, 31 Oct 2020 00:20:19 GMT
+Content-Length: 19
+
+404 page not found
+^C
+]0;root@Pentest: /home/joaof/TryJao/TryHackMe/Fund-Web[1;31mroot@Pentest[00m:[1;34m/home/joaof/TryJao/TryHackMe/Fund-Web[00m# nc -v 10.10.229.204 8081[Kcurl -v [K[Ki flag-[K_plerase[K[K[K[Kase -v curl[K[K[K[K10.10.229.204:9[K8081/ctf/post
+* Could not resolve host: flag_please
+* Closing connection 0
+curl: (6) Could not resolve host: flag_please
+*   Trying 10.10.229.204:8081...
+* Connected to 10.10.229.204 (10.10.229.204) port 8081 (#1)
+> GET /ctf/post HTTP/1.1
+> Host: 10.10.229.204:8081
+> User-Agent: curl/7.72.0
+> Accept: */*
+> 
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 404 Not Found
+HTTP/1.1 404 Not Found
+< Content-Type: text/plain; charset=utf-8
+[1mContent-Type[0m: text/plain; charset=utf-8
+< X-Content-Type-Options: nosniff
+[1mX-Content-Type-Options[0m: nosniff
+< Date: Sat, 31 Oct 2020 00:23:52 GMT
+[1mDate[0m: Sat, 31 Oct 2020 00:23:52 GMT
+< Content-Length: 19
+[1mContent-Length[0m: 19
+
+< 
+404 page not found
+* Connection #1 to host 10.10.229.204 left intact
+]0;root@Pentest: /home/joaof/TryJao/TryHackMe/Fund-Web[1;31mroot@Pentest[00m:[1;34m/home/joaof/TryJao/TryHackMe/Fund-Web[00m# curl -i flag_please -v 10.10.229.204:8081/ctf/post[K[K[K[K[K[K[K[K[K
+* Could not resolve host: flag_please
+* Closing connection 0
+curl: (6) Could not resolve host: flag_please
+*   Trying 10.10.229.204:8081...
+* Connected to 10.10.229.204 (10.10.229.204) port 8081 (#1)
+> GET / HTTP/1.1
+> Host: 10.10.229.204:8081
+> User-Agent: curl/7.72.0
+> Accept: */*
+> 
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 OK
+HTTP/1.1 200 OK
+< Accept-Ranges: bytes
+[1mAccept-Ranges[0m: bytes
+< Content-Length: 571
+[1mContent-Length[0m: 571
+< Content-Type: text/html; charset=utf-8
+[1mContent-Type[0m: text/html; charset=utf-8
+< Last-Modified: Thu, 27 Feb 2020 02:06:10 GMT
+[1mLast-Modified[0m: Thu, 27 Feb 2020 02:06:10 GMT
+< Date: Sat, 31 Oct 2020 00:24:03 GMT
+[1mDate[0m: Sat, 31 Oct 2020 00:24:03 GMT
+
+< 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Flags:</h1>
+    <ul>
+        <li>GET request. /ctf/get</li>
+        <li>POST request. /ctf/post</li>
+        <li>Get a cookie. /ctf/getcookie</li>
+        <li>Set a cookie. /ctf/sendcookie</li>
+    </ul>
+</body>
+* Connection #1 to host 10.10.229.204 left intact
+</html>]0;root@Pentest: /home/joaof/TryJao/TryHackMe/Fund-Web[1;31mroot@Pentest[00m:[1;34m/home/joaof/TryJao/TryHackMe/Fund-Web[00m# 
+]0;root@Pentest: /home/joaof/TryJao/TryHackMe/Fund-Web[1;31mroot@Pentest[00m:[1;34m/home/joaof/TryJao/TryHackMe/Fund-Web[00m# curl --request p[KPOST flag_please 10.10.229.204:8081/ctf/post
+curl: (6) Could not resolve host: flag_please
+You need the right request body]0;root@Pentest: /home/joaof/TryJao/TryHackMe/Fund-Web[1;31mroot@Pentest[00m:[1;34m/home/joaof/TryJao/TryHackMe/Fund-Web[00m# curl --request POST flag_please 10.10.229.204:8081/ctf/post
+curl: (6) Could not resolve host: flag_please
+You need the right request body]0;root@Pentest: /home/joaof/TryJao/TryHackMe/Fund-Web[1;31mroot@Pentest[00m:[1;34m/home/joaof/TryJao/TryHackMe/Fund-Web[00m# curl --request POST flag_please 10.10.229.204:8081/ctf/post[18Pi flag_please -v 10.10.229.204:8081[C[C[1@/
+curl: option -/i: is unknown
+curl: try 'curl --help' or 'curl --manual' for more information
+]0;root@Pentest: /home/joaof/TryJao/TryHackMe/Fund-Web[1;31mroot@Pentest[00m:[1;34m/home/joaof/TryJao/TryHackMe/Fund-Web[00m# 
+]0;root@Pentest: /home/joaof/TryJao/TryHackMe/Fund-Web[1;31mroot@Pentest[00m:[1;34m/home/joaof/TryJao/TryHackMe/Fund-Web[00m# curl -/i flag_please -v 10.10.229.204:8081[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcurl -X POST -df[K "flag_pleS[Kase" http[K[Ktp://10.10.229.204:8081/ctf/post
+thm{3517c902e22def9c6e09b99a9040ba09}]0;root@Pentest: /home/joaof/TryJao/TryHackMe/Fund-Web[1;31mroot@Pentest[00m:[1;34m/home/joaof/TryJao/TryHackMe/Fund-Web[00m# 
+]0;root@Pentest: /home/joaof/TryJao/TryHackMe/Fund-Web[1;31mroot@Pentest[00m:[1;34m/home/joaof/TryJao/TryHackMe/Fund-Web[00m# 
+]0;root@Pentest: /home/joaof/TryJao/TryHackMe/Fund-Web[1;31mroot@Pentest[00m:[1;34m/home/joaof/TryJao/TryHackMe/Fund-Web[00m# 
+]0;root@Pentest: /home/joaof/TryJao/TryHackMe/Fund-Web[1;31mroot@Pentest[00m:[1;34m/home/joaof/TryJao/TryHackMe/Fund-Web[00m# e[K[K]0;root@Pentest: /home/joaof/TryJao/TryHackMe/Fund-Web[1;31mroot@Pentest[00m:[1;34m/home/joaof/TryJao/TryHackMe/Fund-Web[00m# exit
+exit
+
+Script done on 2020-10-30 22:28:27-03:00 [COMMAND_EXIT_CODE="0"]

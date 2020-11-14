@@ -1,0 +1,219 @@
+Script started on 2020-10-24 13:42:28-04:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="166" LINES="33"]
+]0;kali@kali: ~/TryJao/TryHackMe/IntroToReserach[1;34mkali@kali[00m:[1;32m~/TryJao/TryHackMe/IntroToReserach[00m$ ap[K[Ksud pa [K[K[Kapt install stegui[K[Khide
+bash: sud: command not found
+]0;kali@kali: ~/TryJao/TryHackMe/IntroToReserach[1;34mkali@kali[00m:[1;32m~/TryJao/TryHackMe/IntroToReserach[00m$ sud apt install steghide[1@o
+[sudo] password for kali: 
+Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
+Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
+Reading state information... 0%Reading state information... 0%Reading state information... Done
+steghide is already the newest version (0.5.1-15).
+0 upgraded, 0 newly installed, 0 to remove and 837 not upgraded.
+]0;kali@kali: ~/TryJao/TryHackMe/IntroToReserach[1;34mkali@kali[00m:[1;32m~/TryJao/TryHackMe/IntroToReserach[00m$ 
+]0;kali@kali: ~/TryJao/TryHackMe/IntroToReserach[1;34mkali@kali[00m:[1;32m~/TryJao/TryHackMe/IntroToReserach[00m$ searchsploit fuelcms
+------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------
+ Exploit Title                                                                                                                      |  Path
+------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------
+[01;31m[KfuelCMS[m[K 1.4.1 - Remote Code Execution                                                                                               | linux/webapps/47138.py
+------------------------------------------------------------------------------------------------------------------------------------ ---------------------------------
+Shellcodes: No Results
+]0;kali@kali: ~/TryJao/TryHackMe/IntroToReserach[1;34mkali@kali[00m:[1;32m~/TryJao/TryHackMe/IntroToReserach[00m$ localte[K[K[Kte linux/webapps/47138.py
+/usr/share/exploitdb/exploits/linux/webapps/47138.py
+]0;kali@kali: ~/TryJao/TryHackMe/IntroToReserach[1;34mkali@kali[00m:[1;32m~/TryJao/TryHackMe/IntroToReserach[00m$ cp /usr/share/exploitdb/exploits/linux/webapps/47138.py ./s[Kxpl-fuelcmd-1.4.1.py
+]0;kali@kali: ~/TryJao/TryHackMe/IntroToReserach[1;34mkali@kali[00m:[1;32m~/TryJao/TryHackMe/IntroToReserach[00m$ 
+]0;kali@kali: ~/TryJao/TryHackMe/IntroToReserach[1;34mkali@kali[00m:[1;32m~/TryJao/TryHackMe/IntroToReserach[00m$ ls
+notes.txt  reseach  [0m[01;32mxpl-fuelcmd-1.4.1.py[0m
+]0;kali@kali: ~/TryJao/TryHackMe/IntroToReserach[1;34mkali@kali[00m:[1;32m~/TryJao/TryHackMe/IntroToReserach[00m$ man nano
+[?1049h[22;0;0t[?1h=NANO(1)                                                              General Commands Manual                                                              NANO(1)[m
+[m
+[1;36mNAME[0m[m
+       nano - Nano's ANOther editor, inspired by Pico[m
+[m
+[1;36mSYNOPSIS[0m[m
+       [1;36mnano[0m [[1;32moptions[0m] [[[1;36m+[0m[1;32mline[0m[[1;36m,[0m[1;32mcolumn[0m]] [1;32mfile[0m]...[m
+[m
+       [1;36mnano[0m [[1;32moptions[0m] [[[1;36m+[0m[[1;36mcrCR[0m]([1;36m/[0m|[1;36m?[0m)[1;32mstring[0m] [1;32mfile[0m]...[m
+[m
+[1;36mNOTICE[0m[m
+       Since version 4.0, [1;36mnano[0m by default:[m
+[m
+           • does not automatically hard-wrap lines that become overlong,[m
+           • includes the line below the title bar in the editing area,[m
+           • does linewise (smooth) scrolling.[m
+[m
+       If you want the old, Pico behavior back, you can use [1;36m--breaklonglines[0m, [1;36m--emptyline[0m, and [1;36m--jumpyscrolling[0m (or [1;36m-bej[0m for short).[m
+[m
+[1;36mDESCRIPTION[0m[m
+       [1;36mnano[0m is a small and friendly editor.  It copies the look and feel of Pico, but is free software, and implements several features that Pico lacks, such as:[m
+       opening multiple files, scrolling per line, undo/redo, syntax coloring, line numbering, and soft-wrapping overlong lines.[m
+[m
+       When giving a filename on the command line, the cursor can be put on a specific line by adding the line number with a plus sign ([1;36m+[0m) before  the  filename,[m
+       and  even  in a specific column by adding it with a comma.  (Negative numbers count from the end of the file or line.)  The cursor can be put on the first[m
+       or last occurrence of a specific string by specifying that string after [1;36m+/[0m or [1;36m+?[0m before the filename.  The string can be made case sensitive and/or caused[m
+       to  be interpreted as a regular expression by inserting [1;36mc[0m and/or [1;36mr[0m after the [1;36m+[0m sign.  These search modes can be explicitly disabled by using the uppercase[m
+       variant of those letters: [1;36mC[0m and/or [1;36mR[0m.  When the string contains spaces, it needs to be enclosed in quotes.  To give an example: to  open  a  file  at  the[m
+       first occurrence of the word "Foo", one would do:[m
+[m
+           [1;36mnano[0m [1;36m+c/Foo[0m [1;32mfile[0m[m
+[m
+[01;33m Manual page nano(1) line 1 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       As a special case: if instead of a filename a dash ([1;36m-[0m) is given, [1;36mnano[0m will read data from standard input.[m
+[01;33m Manual page nano(1) line 2 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nano(1) line 3 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[1;36mEDITING[0m[m
+[01;33m Manual page nano(1) line 4 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       Entering text and moving around in a file is straightforward: typing the letters and using the normal cursor movement keys.  Commands are entered by using[m
+[01;33m Manual page nano(1) line 5 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       the Control (^) and the Alt or Meta (M-) keys.  Typing [1;36m^K[0m deletes the current line and puts it in the cutbuffer.  Consecutive [1;36m^K[0ms  will  put  all  deleted[m
+[01;33m Manual page nano(1) line 6 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       lines  together  in the cutbuffer.  Any cursor movement or executing any other command will cause the next [1;36m^K[0m to overwrite the cutbuffer.  A [1;36m^U[0m will paste[m
+[01;33m Manual page nano(1) line 7 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       the current contents of the cutbuffer at the current cursor position.[m
+[01;33m Manual page nano(1) line 8 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nano(1) line 9 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       When a more precise piece of text needs to be cut or copied, one can mark its start with [1;36m^6[0m, move the cursor to its end (the marked  text  will  be  high‐[m
+[01;33m Manual page nano(1) line 10 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       lighted), and then use [1;36m^K[0m to cut it, or [1;36mM-6[0m to copy it to the cutbuffer.  One can also save the marked text to a file with [1;36m^O[0m, or spell check it with [1;36m^T[0m.[m
+[01;33m Manual page nano(1) line 11 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nano(1) line 12 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       On  some  terminals,  text  can be selected also by holding down Shift while using the arrow keys.  Holding down the Ctrl or Alt key too will increase the[m
+[01;33m Manual page nano(1) line 13 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       stride.  Any cursor movement without Shift being held will cancel such a selection.[m
+[01;33m Manual page nano(1) line 14 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nano(1) line 15 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       The two lines at the bottom of the screen show some important commands; the built-in help ([1;36m^G[0m) lists all the available ones.  The default key bindings can[m
+[01;33m Manual page nano(1) line 16 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       be changed via a [1;32mnanorc[0m file -- see [1;36mnanorc[0m(5).[m
+[01;33m Manual page nano(1) line 17 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nano(1) line 18 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[1;36mOPTIONS[0m[m
+[01;33m Manual page nano(1) line 19 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       [1;36m-A[0m, [1;36m--smarthome[0m[m
+[01;33m Manual page nano(1) line 20 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K              Make the Home key smarter.  When Home is pressed anywhere but at the very beginning of non-whitespace characters on a line, the cursor will jump to[m
+[01;33m Manual page nano(1) line 21 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K              that beginning (either forwards or backwards).  If the cursor is already at that position, it will jump to the true beginning of the line.[m
+[01;33m Manual page nano(1) line 22 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nano(1) line 23 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       [1;36m-B[0m, [1;36m--backup[0m[m
+[01;33m Manual page nano(1) line 24 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K              When saving a file, back up the previous version of it, using the current filename suffixed with a tilde ([1;36m~[0m).[m
+[01;33m Manual page nano(1) line 25 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nano(1) line 26 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       [1;36m-C[0m [1;32mdirectory[0m, [1;36m--backupdir=[0m[1;32mdirectory[0m[m
+[01;33m Manual page nano(1) line 27 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K              Make and keep not just one backup file, but make and keep a uniquely numbered one every time a file is saved -- when backups are enabled ([1;36m-B[0m).  The[m
+[01;33m Manual page nano(1) line 28 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K              uniquely numbered files are stored in the specified [1;32mdirectory[0m.[m
+[01;33m Manual page nano(1) line 29 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nano(1) line 30 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       [1;36m-D[0m, [1;36m--boldtext[0m[m
+[01;33m Manual page nano(1) line 31 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K              For  the interface, use bold instead of reverse video.  This will be overridden by setting the options [1;36mtitlecolor[0m, [1;36mstatuscolor[0m, [1;36mkeycolor[0m, [1;36mfunction‐[0m[m
+[01;33m Manual page nano(1) line 32 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K              [1;36mcolor[0m, [1;36mnumbercolor[0m, and/or [1;36mselectedcolor[0m in your nanorc file.  See [1;36mnanorc[0m(5).[m
+[01;33m Manual page nano(1) line 33 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nano(1) line 34 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       [1;36m-E[0m, [1;36m--tabstospaces[0m[m
+[01;33m Manual page nano(1) line 35 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K              Convert typed tabs to spaces.[m
+[01;33m Manual page nano(1) line 36 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nano(1) line 37 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       [1;36m-F[0m, [1;36m--multibuffer[0m[m
+[01;33m Manual page nano(1) line 38 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K              Read a file into a new buffer by default.[m
+[01;33m Manual page nano(1) line 39 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nano(1) line 40 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       [1;36m-G[0m, [1;36m--locking[0m[m
+[01;33m Manual page nano(1) line 41 (press h for help or q to quit)[0m[K[K[?1l>[?1049l[23;0;0t]0;kali@kali: ~/TryJao/TryHackMe/IntroToReserach[1;34mkali@kali[00m:[1;32m~/TryJao/TryHackMe/IntroToReserach[00m$ man nc
+[?1049h[22;0;0t[?1h=NC(1)                                                                General Commands Manual                                                                NC(1)[m
+[m
+[1;36mNAME[0m[m
+       nc - TCP/IP swiss army knife[m
+[m
+[1;36mSYNOPSIS[0m[m
+       [1;36mnc[0m [1;32m[-options][0m [1;32mhostname[0m [1;32mport[s][0m [1;32m[ports][0m [1;32m...[0m[m
+       [1;36mnc[0m [1;32m-l[0m [1;32m-p[0m [1;32mport[0m [1;32m[-options][0m [1;32m[hostname][0m [1;32m[port][0m[m
+[m
+[1;36mDESCRIPTION[0m[m
+       [1;36mnetcat[0m  is a simple unix utility which reads and writes data across network connections, using TCP or UDP protocol. It is designed to be a reliable "back-[m
+       end" tool that can be used directly or easily driven by other programs and scripts.  At the same time, it is a feature-rich network debugging  and  explo‐[m
+       ration  tool,  since it can create almost any kind of connection you would need and has several interesting built-in capabilities.  Netcat, or "nc" as the[m
+       actual program is named, should have been supplied long ago as another one of those cryptic but standard Unix tools.[m
+[m
+       In the simplest usage, "nc host port" creates a TCP connection to the given port on the given target host.  Your standard input is then sent to the  host,[m
+       and anything that comes back across the connection is sent to your standard output.  This continues indefinitely, until the network side of the connection[m
+       shuts down.  Note that this behavior is different from most other applications which shut everything down and exit after an end-of-file  on  the  standard[m
+       input.[m
+[m
+       Netcat  can  also  function  as a server, by listening for inbound connections on arbitrary ports and then doing the same reading and writing.  With minor[m
+       limitations, netcat doesn't really care if it runs in "client" or "server" mode -- it still shovels data back and forth until there isn't any  more  left.[m
+       In either mode, shutdown can be forced after a configurable time of inactivity on the network side.[m
+[m
+       And  it can do this via UDP too, so netcat is possibly the "udp telnet-like" application you always wanted for testing your UDP-mode servers.  UDP, as the[m
+       "U" implies, gives less reliable data transmission than TCP connections and some systems may have trouble sending large amounts of data that way, but it's[m
+       still a useful capability to have.[m
+[m
+       You may be asking "why not just use telnet to connect to arbitrary ports?" Valid question, and here are some reasons.  Telnet has the "standard input EOF"[m
+       problem, so one must introduce calculated delays in driving scripts to allow network output to finish.  This is the main reason netcat stays running until[m
+       the *network* side closes.  Telnet also will not transfer arbitrary binary data, because certain characters are interpreted as telnet options and are thus[m
+       removed from the data stream.  Telnet also emits some of its diagnostic messages to standard output, where netcat keeps such things religiously  separated[m
+[01;33m Manual page nc(1) line 1 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       from  its  *output*  and will never modify any of the real data in transit unless you *really* want it to.  And of course telnet is incapable of listening[m
+[01;33m Manual page nc(1) line 2 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       for inbound connections, or using UDP instead.  Netcat doesn't have any of these limitations, is much smaller and faster than telnet, and has  many  other[m
+[01;33m Manual page nc(1) line 3 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       advantages.[m
+[01;33m Manual page nc(1) line 4 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nc(1) line 5 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[1;36mOPTIONS[0m[m
+[01;33m Manual page nc(1) line 6 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       [1;32m-c[0m [1;32mstring[0m    specify shell commands to exec after connect (use with caution).  The string is passed to /bin/sh -c for execution.  See the [1;32m-e[0m option if you[m
+[01;33m Manual page nc(1) line 7 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K                    don't have a working /bin/sh (Note that POSIX-conformant system must have one).[m
+[01;33m Manual page nc(1) line 8 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nc(1) line 9 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       [1;32m-e[0m [1;32mfilename[0m  specify filename to exec after connect (use with caution).  See the [1;32m-c[0m option for enhanced functionality.[m
+[01;33m Manual page nc(1) line 10 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nc(1) line 11 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       [1;32m-g[0m [1;32mgateway[0m   source-routing hop point[s], up to 8[m
+[01;33m Manual page nc(1) line 12 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nc(1) line 13 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       [1;32m-G[0m [1;32mnum[0m       source-routing pointer: 4, 8, 12, ...[m
+[01;33m Manual page nc(1) line 14 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nc(1) line 15 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       [1;32m-h[0m           display help[m
+[01;33m Manual page nc(1) line 16 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nc(1) line 17 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       [1;32m-i[0m [1;32msecs[0m      delay interval for lines sent, ports scanned[m
+[01;33m Manual page nc(1) line 18 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nc(1) line 19 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       [1;32m-l[0m           listen mode, for inbound connects[m
+[01;33m Manual page nc(1) line 20 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nc(1) line 21 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       [1;32m-n[0m           numeric-only IP addresses, no DNS[m
+[01;33m Manual page nc(1) line 22 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nc(1) line 23 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       [1;32m-o[0m [1;32mfile[0m      hex dump of traffic[m
+[01;33m Manual page nc(1) line 24 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nc(1) line 25 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       [1;32m-p[0m [1;32mport[0m      local port number (port numbers can be individual or ranges: lo-hi [inclusive])[m
+[01;33m Manual page nc(1) line 26 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nc(1) line 27 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       [1;32m-q[0m [1;32mseconds[0m   after EOF on stdin, wait the specified number of seconds and then quit. If [1;32mseconds[0m is negative, wait forever.[m
+[01;33m Manual page nc(1) line 28 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nc(1) line 29 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       [1;32m-b[0m           allow UDP broadcasts[m
+[01;33m Manual page nc(1) line 30 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nc(1) line 31 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       [1;32m-r[0m           randomize local and remote ports[m
+[01;33m Manual page nc(1) line 32 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nc(1) line 33 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       [1;32m-s[0m [1;32maddr[0m      local source address[m
+[01;33m Manual page nc(1) line 34 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nc(1) line 35 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       [1;32m-t[0m           enable telnet negotiation[m
+[01;33m Manual page nc(1) line 36 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nc(1) line 37 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       [1;32m-u[0m           UDP mode[m
+[01;33m Manual page nc(1) line 38 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nc(1) line 39 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       [1;32m-v[0m           verbose [use twice to be more verbose][m
+[01;33m Manual page nc(1) line 40 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nc(1) line 41 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       [1;32m-w[0m [1;32msecs[0m      timeout for connects and final net reads[m
+[01;33m Manual page nc(1) line 42 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nc(1) line 43 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       [1;32m-C[0m           Send CRLF as line-ending[m
+[01;33m Manual page nc(1) line 44 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nc(1) line 45 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KAA[K[HM[m
+[33;1H[K[01;33m Manual page nc(1) line 44 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KAA[K[HM       [1;32m-g[0m [1;32mgateway[0m   source-routing hop point[s], up to 8[m
+[33;1H[K[01;33m Manual page nc(1) line 43 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KAA[K[HM[m
+[33;1H[K[01;33m Manual page nc(1) line 42 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KAA[K[HM       [1;32m-e[0m [1;32mfilename[0m  specify filename to exec after connect (use with caution).  See the [1;32m-c[0m option for enhanced functionality.[m
+[33;1H[K[01;33m Manual page nc(1) line 41 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KAA[K[HM[m
+[33;1H[K[01;33m Manual page nc(1) line 40 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KAA[K[HM                    don't have a working /bin/sh (Note that POSIX-conformant system must have one).[m
+[33;1H[K[01;33m Manual page nc(1) line 39 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KAA[K[HM       [1;32m-c[0m [1;32mstring[0m    specify shell commands to exec after connect (use with caution).  The string is passed to /bin/sh -c for execution.  See the [1;32m-e[0m option if you[m
+[33;1H[K[01;33m Manual page nc(1) line 38 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KAA[K[HM[1;36mOPTIONS[0m[m
+[33;1H[K[01;33m Manual page nc(1) line 37 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KAA[K[HM[m
+[33;1H[K[01;33m Manual page nc(1) line 36 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KAA[K[HM       advantages.[m
+[33;1H[K[01;33m Manual page nc(1) line 35 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KAA[K[HM       for inbound connections, or using UDP instead.  Netcat doesn't have any of these limitations, is much smaller and faster than telnet, and has  many  other[m
+[33;1H[K[01;33m Manual page nc(1) line 34 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KAA[K[HM       from  its  *output*  and will never modify any of the real data in transit unless you *really* want it to.  And of course telnet is incapable of listening[m
+[33;1H[K[01;33m Manual page nc(1) line 33 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KAA[K[HM       removed from the data stream.  Telnet also emits some of its diagnostic messages to standard output, where netcat keeps such things religiously  separated[m
+[33;1H[K[01;33m Manual page nc(1) line 32 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KAA[K[HM       the *network* side closes.  Telnet also will not transfer arbitrary binary data, because certain characters are interpreted as telnet options and are thus[m
+[33;1H[K[01;33m Manual page nc(1) line 31 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KAA[K[HM       problem, so one must introduce calculated delays in driving scripts to allow network output to finish.  This is the main reason netcat stays running until[m
+[33;1H[K[01;33m Manual page nc(1) line 30 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KAA[K[HM       You may be asking "why not just use telnet to connect to arbitrary ports?" Valid question, and here are some reasons.  Telnet has the "standard input EOF"[m
+[33;1H[K[01;33m Manual page nc(1) line 29 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KAA[K[HM[m
+[33;1H[K[01;33m Manual page nc(1) line 28 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KAA[K[HM       still a useful capability to have.[m
+[33;1H[K[01;33m Manual page nc(1) line 27 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KAA[K[HM       "U" implies, gives less reliable data transmission than TCP connections and some systems may have trouble sending large amounts of data that way, but it's[m
+[33;1H[K[01;33m Manual page nc(1) line 26 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KAA[K[HM       And  it can do this via UDP too, so netcat is possibly the "udp telnet-like" application you always wanted for testing your UDP-mode servers.  UDP, as the[m
+[33;1H[K[01;33m Manual page nc(1) line 25 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KAA[K[HM[m
+[33;1H[K[01;33m Manual page nc(1) line 24 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KAA[K[HM       In either mode, shutdown can be forced after a configurable time of inactivity on the network side.[m
+[33;1H[K[01;33m Manual page nc(1) line 23 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KAA[K[HM       limitations, netcat doesn't really care if it runs in "client" or "server" mode -- it still shovels data back and forth until there isn't any  more  left.[m
+[33;1H[K[01;33m Manual page nc(1) line 22 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KAA[K[HM       Netcat  can  also  function  as a server, by listening for inbound connections on arbitrary ports and then doing the same reading and writing.  With minor[m
+[33;1H[K[01;33m Manual page nc(1) line 21 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       [1;32m-n[0m           numeric-only IP addresses, no DNS[m
+[01;33m Manual page nc(1) line 22 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nc(1) line 23 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       [1;32m-o[0m [1;32mfile[0m      hex dump of traffic[m
+[01;33m Manual page nc(1) line 24 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nc(1) line 25 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       [1;32m-p[0m [1;32mport[0m      local port number (port numbers can be individual or ranges: lo-hi [inclusive])[m
+[01;33m Manual page nc(1) line 26 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nc(1) line 27 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       [1;32m-q[0m [1;32mseconds[0m   after EOF on stdin, wait the specified number of seconds and then quit. If [1;32mseconds[0m is negative, wait forever.[m
+[01;33m Manual page nc(1) line 28 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nc(1) line 29 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       [1;32m-b[0m           allow UDP broadcasts[m
+[01;33m Manual page nc(1) line 30 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nc(1) line 31 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       [1;32m-r[0m           randomize local and remote ports[m
+[01;33m Manual page nc(1) line 32 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nc(1) line 33 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       [1;32m-s[0m [1;32maddr[0m      local source address[m
+[01;33m Manual page nc(1) line 34 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nc(1) line 35 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       [1;32m-t[0m           enable telnet negotiation[m
+[01;33m Manual page nc(1) line 36 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K[m
+[01;33m Manual page nc(1) line 37 (press h for help or q to quit)[0m[K[K [KESCESC[KOO[KBB[K       [1;32m-u[0m           UDP mode[m
+[01;33m Manual page nc(1) line 38 (press h for help or q to quit)[0m[K[K[?1l>[?1049l[23;0;0t]0;kali@kali: ~/TryJao/TryHackMe/IntroToReserach[1;34mkali@kali[00m:[1;32m~/TryJao/TryHackMe/IntroToReserach[00m$ exit
+exit
+
+Script done on 2020-10-24 14:13:00-04:00 [COMMAND_EXIT_CODE="0"]

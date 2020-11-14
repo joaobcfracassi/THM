@@ -1,0 +1,320 @@
+Script started on 2020-11-01 21:19:56-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="140" LINES="30"]
+]0;joaof@Pentest: ~/TryJao/TryHackMe/Vulnversity[1;34mjoaof@Pentest[00m:[1;32m~/TryJao/TryHackMe/Vulnversity[00m$ 
+]0;joaof@Pentest: ~/TryJao/TryHackMe/Vulnversity[1;34mjoaof@Pentest[00m:[1;32m~/TryJao/TryHackMe/Vulnversity[00m$ exitclearsudo nmap -v -sV -g53 -Pn 10.10.124.192[12PsV[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12@v -sV -g53 -Pn[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12PsV[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[12@sudo nmap -v -sV -Pn[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[sudo] senha para joaof: 
+Host discovery disabled (-Pn). All addresses will be marked 'up' and scan times will be slower.
+Starting Nmap 7.91 ( https://nmap.org ) at 2020-11-01 21:20 -03
+NSE: Loaded 45 scripts for scanning.
+Initiating Parallel DNS resolution of 1 host. at 21:20
+Completed Parallel DNS resolution of 1 host. at 21:20, 0.61s elapsed
+Initiating SYN Stealth Scan at 21:20
+Scanning 10.10.124.192 [1000 ports]
+Discovered open port 139/tcp on 10.10.124.192
+Discovered open port 21/tcp on 10.10.124.192
+Discovered open port 22/tcp on 10.10.124.192
+Discovered open port 445/tcp on 10.10.124.192
+Discovered open port 3333/tcp on 10.10.124.192
+Discovered open port 3128/tcp on 10.10.124.192
+Completed SYN Stealth Scan at 21:20, 4.33s elapsed (1000 total ports)
+Initiating Service scan at 21:20
+Scanning 6 services on 10.10.124.192
+Completed Service scan at 21:20, 24.14s elapsed (6 services on 1 host)
+NSE: Script scanning 10.10.124.192.
+Initiating NSE at 21:20
+Completed NSE at 21:20, 1.67s elapsed
+Initiating NSE at 21:20
+Completed NSE at 21:20, 1.34s elapsed
+Nmap scan report for 10.10.124.192
+Host is up (0.59s latency).
+Not shown: 994 closed ports
+PORT     STATE SERVICE     VERSION
+21/tcp   open  ftp         vsftpd 3.0.3
+22/tcp   open  ssh         OpenSSH 7.2p2 Ubuntu 4ubuntu2.7 (Ubuntu Linux; protocol 2.0)
+139/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+3128/tcp open  http-proxy  Squid http proxy 3.5.12
+3333/tcp open  http        Apache httpd 2.4.18 ((Ubuntu))
+Service Info: Host: VULNUNIVERSITY; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 32.86 seconds
+           Raw packets sent: 1093 (48.092KB) | Rcvd: 1096 (43.880KB)
+]0;joaof@Pentest: ~/TryJao/TryHackMe/Vulnversity[1;34mjoaof@Pentest[00m:[1;32m~/TryJao/TryHackMe/Vulnversity[00m$ 
+]0;joaof@Pentest: ~/TryJao/TryHackMe/Vulnversity[1;34mjoaof@Pentest[00m:[1;32m~/TryJao/TryHackMe/Vulnversity[00m$ sudo nmap -v -sV -Pn 10.10.124.192[C[1@ [1@-[1@p[1@-[1@4[1@0[1@0
+Host discovery disabled (-Pn). All addresses will be marked 'up' and scan times will be slower.
+Starting Nmap 7.91 ( https://nmap.org ) at 2020-11-01 21:22 -03
+NSE: Loaded 45 scripts for scanning.
+Initiating Parallel DNS resolution of 1 host. at 21:22
+Completed Parallel DNS resolution of 1 host. at 21:22, 0.06s elapsed
+Initiating SYN Stealth Scan at 21:22
+Scanning 10.10.124.192 [400 ports]
+Discovered open port 139/tcp on 10.10.124.192
+Discovered open port 22/tcp on 10.10.124.192
+Discovered open port 21/tcp on 10.10.124.192
+Completed SYN Stealth Scan at 21:22, 3.46s elapsed (400 total ports)
+Initiating Service scan at 21:22
+Scanning 3 services on 10.10.124.192
+Completed Service scan at 21:22, 12.01s elapsed (3 services on 1 host)
+NSE: Script scanning 10.10.124.192.
+Initiating NSE at 21:22
+Completed NSE at 21:22, 0.01s elapsed
+Initiating NSE at 21:22
+Completed NSE at 21:22, 0.00s elapsed
+Nmap scan report for 10.10.124.192
+Host is up (0.37s latency).
+Not shown: 397 closed ports
+PORT    STATE SERVICE     VERSION
+21/tcp  open  ftp         vsftpd 3.0.3
+22/tcp  open  ssh         OpenSSH 7.2p2 Ubuntu 4ubuntu2.7 (Ubuntu Linux; protocol 2.0)
+139/tcp open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+Service Info: Host: VULNUNIVERSITY; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 16.31 seconds
+           Raw packets sent: 459 (20.196KB) | Rcvd: 459 (18.372KB)
+]0;joaof@Pentest: ~/TryJao/TryHackMe/Vulnversity[1;34mjoaof@Pentest[00m:[1;32m~/TryJao/TryHackMe/Vulnversity[00m$ 
+]0;joaof@Pentest: ~/TryJao/TryHackMe/Vulnversity[1;34mjoaof@Pentest[00m:[1;32m~/TryJao/TryHackMe/Vulnversity[00m$ 
+]0;joaof@Pentest: ~/TryJao/TryHackMe/Vulnversity[1;34mjoaof@Pentest[00m:[1;32m~/TryJao/TryHackMe/Vulnversity[00m$ 
+]0;joaof@Pentest: ~/TryJao/TryHackMe/Vulnversity[1;34mjoaof@Pentest[00m:[1;32m~/TryJao/TryHackMe/Vulnversity[00m$ sudo nmap -v -sV -p-400 -Pn 10.10.124.192[7P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kn 10.10.124.192
+Starting Nmap 7.91 ( https://nmap.org ) at 2020-11-01 21:23 -03
+Nmap scan report for 10.10.124.192
+Host is up (0.28s latency).
+Not shown: 994 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+22/tcp   open  ssh
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3128/tcp open  squid-http
+3333/tcp open  dec-notes
+
+Nmap done: 1 IP address (1 host up) scanned in 26.64 seconds
+]0;joaof@Pentest: ~/TryJao/TryHackMe/Vulnversity[1;34mjoaof@Pentest[00m:[1;32m~/TryJao/TryHackMe/Vulnversity[00m$ 
+]0;joaof@Pentest: ~/TryJao/TryHackMe/Vulnversity[1;34mjoaof@Pentest[00m:[1;32m~/TryJao/TryHackMe/Vulnversity[00m$ sudo nmap -n 10.10.124.192[Ksudo nmap -n 10.10.124.192[15@v -sV -p-400 -P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[15P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+]0;joaof@Pentest: ~/TryJao/TryHackMe/Vulnversity[1;34mjoaof@Pentest[00m:[1;32m~/TryJao/TryHackMe/Vulnversity[00m$ sudo nmap =n 10.10.124.192
+[sudo] senha para joaof: 
+Starting Nmap 7.91 ( https://nmap.org ) at 2020-11-01 21:43 -03
+Failed to resolve "=n".
+Nmap scan report for 10.10.124.192
+Host is up (0.30s latency).
+Not shown: 994 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+22/tcp   open  ssh
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3128/tcp open  squid-http
+3333/tcp open  dec-notes
+
+Nmap done: 1 IP address (1 host up) scanned in 12.12 seconds
+]0;joaof@Pentest: ~/TryJao/TryHackMe/Vulnversity[1;34mjoaof@Pentest[00m:[1;32m~/TryJao/TryHackMe/Vulnversity[00m$ sudo nmap =n 10.10.124.192[1P[1@-
+Starting Nmap 7.91 ( https://nmap.org ) at 2020-11-01 21:44 -03
+Nmap scan report for 10.10.124.192
+Host is up (0.35s latency).
+Not shown: 994 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+22/tcp   open  ssh
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3128/tcp open  squid-http
+3333/tcp open  dec-notes
+
+Nmap done: 1 IP address (1 host up) scanned in 6.33 seconds
+]0;joaof@Pentest: ~/TryJao/TryHackMe/Vulnversity[1;34mjoaof@Pentest[00m:[1;32m~/TryJao/TryHackMe/Vulnversity[00m$ 
+]0;joaof@Pentest: ~/TryJao/TryHackMe/Vulnversity[1;34mjoaof@Pentest[00m:[1;32m~/TryJao/TryHackMe/Vulnversity[00m$ 
+]0;joaof@Pentest: ~/TryJao/TryHackMe/Vulnversity[1;34mjoaof@Pentest[00m:[1;32m~/TryJao/TryHackMe/Vulnversity[00m$ nmap -O 10.10.124.192
+TCP/IP fingerprinting (for OS scan) requires root privileges.
+QUITTING!
+]0;joaof@Pentest: ~/TryJao/TryHackMe/Vulnversity[1;34mjoaof@Pentest[00m:[1;32m~/TryJao/TryHackMe/Vulnversity[00m$ nmap -O 10.10.124.192[1@s[1@u[1@d[1@o[1@ 
+Starting Nmap 7.91 ( https://nmap.org ) at 2020-11-01 21:46 -03
+Nmap scan report for 10.10.124.192
+Host is up (0.29s latency).
+Not shown: 994 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+22/tcp   open  ssh
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3128/tcp open  squid-http
+3333/tcp open  dec-notes
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.91%E=4%D=11/1%OT=21%CT=1%CU=35033%PV=Y%DS=2%DC=I%G=Y%TM=5F9F56F
+OS:1%P=x86_64-pc-linux-gnu)SEQ(SP=104%GCD=1%ISR=10D%TI=Z%CI=I%II=I%TS=8)SEQ
+OS:(SP=104%GCD=1%ISR=10D%TI=Z%CI=I%TS=8)SEQ(SP=104%GCD=2%ISR=10D%TI=Z%CI=I)
+OS:OPS(O1=M505ST11NW6%O2=M505ST11NW6%O3=M505NNT11NW6%O4=M505ST11NW6%O5=M505
+OS:ST11NW6%O6=M505ST11)WIN(W1=68DF%W2=68DF%W3=68DF%W4=68DF%W5=68DF%W6=68DF)
+OS:ECN(R=Y%DF=Y%T=40%W=6903%O=M505NNSNW6%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%
+OS:F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T
+OS:5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=
+OS:Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF
+OS:=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40
+OS:%CD=S)
+
+Network Distance: 2 hops
+
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 26.18 seconds
+]0;joaof@Pentest: ~/TryJao/TryHackMe/Vulnversity[1;34mjoaof@Pentest[00m:[1;32m~/TryJao/TryHackMe/Vulnversity[00m$ 
+]0;joaof@Pentest: ~/TryJao/TryHackMe/Vulnversity[1;34mjoaof@Pentest[00m:[1;32m~/TryJao/TryHackMe/Vulnversity[00m$ sudo nmap -O 10.10.124.192[5P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5@sudo [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Starting Nmap 7.91 ( https://nmap.org ) at 2020-11-01 21:50 -03
+Nmap scan report for 10.10.124.192
+Host is up (0.31s latency).
+Not shown: 994 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+22/tcp   open  ssh
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3128/tcp open  squid-http
+3333/tcp open  dec-notes
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.91%E=4%D=11/1%OT=21%CT=1%CU=39527%PV=Y%DS=2%DC=I%G=Y%TM=5F9F57F
+OS:7%P=x86_64-pc-linux-gnu)SEQ(SP=106%GCD=1%ISR=108%TI=Z%CI=I%II=I%TS=8)SEQ
+OS:(TI=Z%CI=RD%TS=8)SEQ(TI=Z%CI=I%II=I%TS=8)OPS(O1=M505ST11NW6%O2=M505ST11N
+OS:W6%O3=M505NNT11NW6%O4=M505ST11NW6%O5=M505ST11NW6%O6=M505ST11)WIN(W1=68DF
+OS:%W2=68DF%W3=68DF%W4=68DF%W5=68DF%W6=68DF)ECN(R=Y%DF=Y%T=40%W=6903%O=M505
+OS:NNSNW6%CC=Y%Q=)ECN(R=N)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T1(R=N)T2(
+OS:R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T4(R=N)T5(R=Y%DF=
+OS:Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T5(R=N)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%
+OS:F=R%O=%RD=0%Q=)T6(R=N)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T7(R
+OS:=N)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)U1(R=
+OS:N)IE(R=Y%DFI=N%T=40%CD=S)IE(R=N)
+
+Network Distance: 2 hops
+
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 44.27 seconds
+]0;joaof@Pentest: ~/TryJao/TryHackMe/Vulnversity[1;34mjoaof@Pentest[00m:[1;32m~/TryJao/TryHackMe/Vulnversity[00m$ sudo nmap -O 10.10.124.192
+Starting Nmap 7.91 ( https://nmap.org ) at 2020-11-01 21:51 -03
+Nmap scan report for 10.10.124.192
+Host is up (0.29s latency).
+Not shown: 994 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+22/tcp   open  ssh
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+3128/tcp open  squid-http
+3333/tcp open  dec-notes
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.91%E=4%D=11/1%OT=21%CT=1%CU=31743%PV=Y%DS=2%DC=I%G=Y%TM=5F9F581
+OS:8%P=x86_64-pc-linux-gnu)SEQ(SP=104%GCD=1%ISR=10E%TI=Z%II=I%TS=8)SEQ(SP=1
+OS:04%GCD=1%ISR=10E%TI=Z%CI=I%II=I%TS=8)OPS(O1=M505ST11NW6%O2=M505ST11NW6%O
+OS:3=M505NNT11NW6%O4=M505ST11NW6%O5=M505ST11NW6%O6=M505ST11)WIN(W1=68DF%W2=
+OS:68DF%W3=68DF%W4=68DF%W5=68DF%W6=68DF)ECN(R=Y%DF=Y%T=40%W=6903%O=M505NNSN
+OS:W6%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%D
+OS:F=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O
+OS:=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W
+OS:=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%R
+OS:IPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 2 hops
+
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 24.66 seconds
+]0;joaof@Pentest: ~/TryJao/TryHackMe/Vulnversity[1;34mjoaof@Pentest[00m:[1;32m~/TryJao/TryHackMe/Vulnversity[00m$ sudo nano -A 10.10.124.192
+[?2004h[?1049h[22;0;0t[1;30r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[28;63H(B[0;7m[ Novo arquivo ](B[m[H(B[0;7m  GNU nano 5.3                                                    10.10.124.192                                                             [1;139H(B[m[29d(B[0;7m^G(B[m Ajuda[16G(B[0;7m^O(B[m Gravar[31G(B[0;7m^W(B[m Onde está?  (B[0;7m^K(B[m Recortar    (B[0;7m^T(B[m Executar    (B[0;7m^C(B[m Local[91G(B[0;7mM-U(B[m Desfazer   (B[0;7mM-A(B[m Marcar     (B[0;7mM-](B[m Parênteses[30d(B[0;7m^X(B[m Sair[30;16H(B[0;7m^R(B[m Ler o arq   (B[0;7m^\(B[m Substituir  (B[0;7m^U(B[m Colar[61G(B[0;7m^J(B[m Justificar  (B[0;7m^_(B[m Ir p/ linha (B[0;7mM-E(B[m Refazer    (B[0;7mM-6(B[m Copiar     (B[0;7m^Q(B[m Onde estava[28d[2d[?12l[?25h[?25l[28d[J[30d[?12l[?25h[30;1H[?1049l[23;0;0t[?1l>[?2004l]0;joaof@Pentest: ~/TryJao/TryHackMe/Vulnversity[1;34mjoaof@Pentest[00m:[1;32m~/TryJao/TryHackMe/Vulnversity[00m$ sudo nano -A 10.10.124.192[1P[1P[1P[1P[1@n[1@m[1@a[1@p
+Starting Nmap 7.91 ( https://nmap.org ) at 2020-11-01 21:52 -03
+Nmap scan report for 10.10.124.192
+Host is up (0.30s latency).
+Not shown: 994 closed ports
+PORT     STATE SERVICE     VERSION
+21/tcp   open  ftp         vsftpd 3.0.3
+22/tcp   open  ssh         OpenSSH 7.2p2 Ubuntu 4ubuntu2.7 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 5a:4f:fc:b8:c8:76:1c:b5:85:1c:ac:b2:86:41:1c:5a (RSA)
+|   256 ac:9d:ec:44:61:0c:28:85:00:88:e9:68:e9:d0:cb:3d (ECDSA)
+|_  256 30:50:cb:70:5a:86:57:22:cb:52:d9:36:34:dc:a5:58 (ED25519)
+139/tcp  open  netbios-ssn Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+445/tcp  open  netbios-ssn Samba smbd 4.3.11-Ubuntu (workgroup: WORKGROUP)
+3128/tcp open  http-proxy  Squid http proxy 3.5.12
+|_http-server-header: squid/3.5.12
+|_http-title: ERROR: The requested URL could not be retrieved
+3333/tcp open  dec-notes?
+| fingerprint-strings: 
+|   LPDString: 
+|     HTTP/1.1 400 Bad Request
+|     Date: Mon, 02 Nov 2020 00:52:47 GMT
+|     Server: Apache/2.4.18 (Ubuntu)
+|     Content-Length: 301
+|     Connection: close
+|     Content-Type: text/html; charset=iso-8859-1
+|     <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+|     <html><head>
+|     <title>400 Bad Request</title>
+|     </head><body>
+|     <h1>Bad Request</h1>
+|     <p>Your browser sent a request that this server could not understand.<br />
+|     </p>
+|     <hr>
+|     <address>Apache/2.4.18 (Ubuntu) Server at 127.0.1.1 Port 80</address>
+|_    </body></html>
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3333-TCP:V=7.91%I=7%D=11/1%Time=5F9F5860%P=x86_64-pc-linux-gnu%r(LP
+SF:DString,1E3,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nDate:\x20Mon,\x2002\
+SF:x20Nov\x202020\x2000:52:47\x20GMT\r\nServer:\x20Apache/2\.4\.18\x20\(Ub
+SF:untu\)\r\nContent-Length:\x20301\r\nConnection:\x20close\r\nContent-Typ
+SF:e:\x20text/html;\x20charset=iso-8859-1\r\n\r\n<!DOCTYPE\x20HTML\x20PUBL
+SF:IC\x20\"-//IETF//DTD\x20HTML\x202\.0//EN\">\n<html><head>\n<title>400\x
+SF:20Bad\x20Request</title>\n</head><body>\n<h1>Bad\x20Request</h1>\n<p>Yo
+SF:ur\x20browser\x20sent\x20a\x20request\x20that\x20this\x20server\x20coul
+SF:d\x20not\x20understand\.<br\x20/>\n</p>\n<hr>\n<address>Apache/2\.4\.18
+SF:\x20\(Ubuntu\)\x20Server\x20at\x20127\.0\.1\.1\x20Port\x2080</address>\
+SF:n</body></html>\n");
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.91%E=4%D=11/1%OT=21%CT=1%CU=41665%PV=Y%DS=2%DC=T%G=Y%TM=5F9F588
+OS:E%P=x86_64-pc-linux-gnu)SEQ(SP=104%GCD=1%ISR=108%TI=Z%CI=I%II=I%TS=9)SEQ
+OS:(SP=105%GCD=1%ISR=108%TI=Z%II=I%TS=8)OPS(O1=M505ST11NW6%O2=M505ST11NW6%O
+OS:3=M505NNT11NW6%O4=M505ST11NW6%O5=M505ST11NW6%O6=M505ST11)WIN(W1=68DF%W2=
+OS:68DF%W3=68DF%W4=68DF%W5=68DF%W6=68DF)ECN(R=Y%DF=Y%T=40%W=6903%O=M505NNSN
+OS:W6%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%D
+OS:F=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O
+OS:=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W
+OS:=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%R
+OS:IPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 2 hops
+Service Info: Host: VULNUNIVERSITY; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Host script results:
+|_clock-skew: mean: 1h40m00s, deviation: 2h53m14s, median: 0s
+|_nbstat: NetBIOS name: VULNUNIVERSITY, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.3.11-Ubuntu)
+|   Computer name: vulnuniversity
+|   NetBIOS computer name: VULNUNIVERSITY\x00
+|   Domain name: \x00
+|   FQDN: vulnuniversity
+|_  System time: 2020-11-01T19:53:23-05:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2020-11-02T00:53:23
+|_  start_date: N/A
+
+TRACEROUTE (using port 199/tcp)
+HOP RTT       ADDRESS
+1   329.81 ms 10.9.0.1
+2   330.58 ms 10.10.124.192
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 64.50 seconds
+]0;joaof@Pentest: ~/TryJao/TryHackMe/Vulnversity[1;34mjoaof@Pentest[00m:[1;32m~/TryJao/TryHackMe/Vulnversity[00m$ 
+]0;joaof@Pentest: ~/TryJao/TryHackMe/Vulnversity[1;34mjoaof@Pentest[00m:[1;32m~/TryJao/TryHackMe/Vulnversity[00m$ 
+]0;joaof@Pentest: ~/TryJao/TryHackMe/Vulnversity[1;34mjoaof@Pentest[00m:[1;32m~/TryJao/TryHackMe/Vulnversity[00m$ exit
+exit
+
+Script done on 2020-11-01 21:55:03-03:00 [COMMAND_EXIT_CODE="0"]

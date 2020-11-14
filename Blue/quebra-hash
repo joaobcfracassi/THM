@@ -1,0 +1,30 @@
+Script started on 2020-11-13 18:06:09-03:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="143" LINES="28"]
+[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Blue[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Blue[00m# john hash --wordlist=/usr[K[K[K[K[Ks=/usr[K[K[K[K[K[K[K[Kx[Kst=/usr/share/wordlists/rockyou.txt
+[?2004lWarning: detected hash type "LM", but the string is also recognized as "NT"
+Use the "--format=NT" option to force loading these as that type instead
+Using default input encoding: UTF-8
+Using default target encoding: CP850
+Loaded 1 password hash (LM [DES 256/256 AVX2])
+Warning: poor OpenMP scalability for this hash type, consider --fork=2
+Will run 2 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+                 ([31mAdministrator[0m[0m)
+1g 0:00:00:00 DONE (2020-11-13 18:08) 100.0g/s 819200p/s 819200c/s 819200C/s 123456..TIGGER7
+Warning: passwords printed above might not be all those cracked
+Use the "--show --format=LM" options to display all of the cracked passwords reliably
+Session completed
+[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Blue[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Blue[00m# john hash --wordlist=/usr/share/wordlists/rockyou.txt[C[C[C[C[C --wordlist=/usr/share/wordlists/rockyou.txt- --wordlist=/usr/share/wordlists/rockyou.txt- --wordlist=/usr/share/wordlists/rockyou.txtf --wordlist=/usr/share/wordlists/rockyou.txto --wordlist=/usr/share/wordlists/rockyou.txtr --wordlist=/usr/share/wordlists/rockyou.txtm --wordlist=/usr/share/wordlists/rockyou.txta --wordlist=/usr/share/wordlists/rockyou.txtt --wordlist=/usr/share/wordlists/rockyou.txt= --wordlist=/usr/share/wordlists/rockyou.txtN --wordlist=/usr/share/wordlists/rockyou.txtT --wordlist=/usr/share/wordlists/rockyou.txt
+[?2004lUsing default input encoding: UTF-8
+Loaded 2 password hashes with no different salts (NT [MD4 256/256 AVX2 8x3])
+Warning: no OpenMP support for this hash type, consider --fork=2
+Press 'q' or Ctrl-C to abort, almost any other key for status
+                 ([31mAdministrator[0m[0m)
+alqfna22         (Jon[0m)
+2g 0:00:00:01 DONE (2020-11-13 18:08) 1.834g/s 9358Kp/s 9358Kc/s 9362KC/s alr19882006..alpusidi
+Warning: passwords printed above might not be all those cracked
+Use the "--show --format=NT" options to display all of the cracked passwords reliably
+Session completed
+[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Blue[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Blue[00m# exit
+[?2004lexit
+
+Script done on 2020-11-13 18:10:10-03:00 [COMMAND_EXIT_CODE="0"]

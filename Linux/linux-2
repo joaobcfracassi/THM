@@ -1,0 +1,980 @@
+Script started on 2020-10-24 17:40:15-04:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="166" LINES="39"]
+root@kali:/home/kali/TryJao/TryHackMe/Linux# 
+root@kali:/home/kali/TryJao/TryHackMe/Linux# ssh shiba1@10.10.54.79
+shiba1@10.10.54.79's password: 
+Welcome to Ubuntu 18.04.4 LTS (GNU/Linux 4.15.0-88-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Sat Oct 24 21:41:02 UTC 2020
+
+  System load:  0.09               Processes:           91
+  Usage of /:   24.0% of 19.56GB   Users logged in:     0
+  Memory usage: 15%                IP address for eth0: 10.10.54.79
+  Swap usage:   0%
+
+
+11 packages can be updated.
+0 updates are security updates.
+
+Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+
+
+Last login: Sat Oct 24 21:39:09 2020 from 10.9.185.104
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ su shiba1[K2
+Password: 
+]0;shiba2@nootnoot: /home/shiba1[01;32mshiba2@nootnoot[00m:[01;34m/home/shiba1[00m$ 
+]0;shiba2@nootnoot: /home/shiba1[01;32mshiba2@nootnoot[00m:[01;34m/home/shiba1[00m$ cd
+]0;shiba2@nootnoot: ~[01;32mshiba2@nootnoot[00m:[01;34m~[00m$ ls
+[0m[37;41mshiba2[0m
+]0;shiba2@nootnoot: ~[01;32mshiba2@nootnoot[00m:[01;34m~[00m$ export teste[K12345[K=$USER
+]0;shiba2@nootnoot: ~[01;32mshiba2@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba2@nootnoot: ~[01;32mshiba2@nootnoot[00m:[01;34m~[00m$ ./shiba2
+happynootnoises
+]0;shiba2@nootnoot: ~[01;32mshiba2@nootnoot[00m:[01;34m~[00m$ \[K^C
+]0;shiba2@nootnoot: ~[01;32mshiba2@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba2@nootnoot: ~[01;32mshiba2@nootnoot[00m:[01;34m~[00m$ su shiba3
+Password: 
+]0;shiba3@nootnoot: /home/shiba2[01;32mshiba3@nootnoot[00m:[01;34m/home/shiba2[00m$ cd
+]0;shiba3@nootnoot: ~[01;32mshiba3@nootnoot[00m:[01;34m~[00m$ ls
+[0m[01;34mtest[0m
+]0;shiba3@nootnoot: ~[01;32mshiba3@nootnoot[00m:[01;34m~[00m$ l
+[0m[01;34mtest[0m/
+]0;shiba3@nootnoot: ~[01;32mshiba3@nootnoot[00m:[01;34m~[00m$ cd test/
+]0;shiba3@nootnoot: ~/test[01;32mshiba3@nootnoot[00m:[01;34m~/test[00m$ ls
+1234  test1234
+]0;shiba3@nootnoot: ~/test[01;32mshiba3@nootnoot[00m:[01;34m~/test[00m$ man find
+[?1049h[22;0;0t[?1h=FIND(1)                                                              General Commands Manual                                                              FIND(1)[m
+[m
+[1mNAME[0m[m
+       find - search for files in a directory hierarchy[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mfind[0m [-H] [-L] [-P] [-D debugopts] [-Olevel] [starting-point...] [expression][m
+[m
+[1mDESCRIPTION[0m[m
+       This  manual  page  documents  the  GNU version of [1mfind[0m.  GNU [1mfind[0m searches the directory tree rooted at each given starting-point by evaluating the given[m
+       expression from left to right, according to the rules of precedence (see section OPERATORS), until the outcome is known (the left hand side is  false  for[m
+       [4mand[24m operations, true for [4mor[24m), at which point [1mfind[0m moves on to the next file name.  If no starting-point is specified, `.' is assumed.[m
+[m
+       If  you  are  using  [1mfind[0m  in an environment where security is important (for example if you are using it to search directories that are writable by other[m
+       users), you should read the `Security Considerations' chapter of the findutils documentation, which is called [1mFinding[0m  [1mFiles[0m  and  comes  with  findutils.[m
+       That document also includes a lot more detail and discussion than this manual page, so you may find it a more useful source of information.[m
+[m
+[1mOPTIONS[0m[m
+       The  [1m-H[0m,  [1m-L[0m and [1m-P[0m options control the treatment of symbolic links.  Command-line arguments following these are taken to be names of files or directories[m
+       to be examined, up to the first argument that begins with `-', or the argument `(' or `!'.  That argument and any following arguments are taken to be  the[m
+       expression describing what is to be searched for.  If no paths are given, the current directory is used.  If no expression is given, the expression [1m-print[0m[m
+       is used (but you should probably consider using [1m-print0[0m instead, anyway).[m
+[m
+       This manual page talks about `options' within the expression list.  These options control the behaviour of [1mfind[0m but are specified  immediately  after  the[m
+       last  path  name.   The five `real' options [1m-H[0m, [1m-L[0m, [1m-P[0m, [1m-D[0m and [1m-O[0m must appear before the first path name, if at all.  A double dash [1m--[0m can also be used to[m
+       signal that any remaining arguments are not options (though ensuring that all start points begin with either `./' or `/' is generally  safer  if  you  use[m
+       wildcards in the list of start points).[m
+[m
+       -P     Never follow symbolic links.  This is the default behaviour.  When [1mfind[0m examines or prints information a file, and the file is a symbolic link, the[m
+              information used shall be taken from the properties of the symbolic link itself.[m
+[m
+       -L     Follow symbolic links.  When [1mfind[0m examines or prints information about files, the information used shall be taken from the properties of  the  file[m
+              to  which  the  link  points, not from the link itself (unless it is a broken symbolic link or [1mfind[0m is unable to examine the file to which the link[m
+              points).  Use of this option implies [1m-noleaf[0m.  If you later use the [1m-P[0m option, [1m-noleaf[0m will still be in effect.  If [1m-L[0m is in effect and  [1mfind[0m  dis‐[m
+              covers a symbolic link to a subdirectory during its search, the subdirectory pointed to by the symbolic link will be searched.[m
+[m
+              When  the [1m-L[0m option is in effect, the [1m-type[0m predicate will always match against the type of the file that a symbolic link points to rather than the[m
+              link itself (unless the symbolic link is broken).  Actions that can cause symbolic links to become broken while  [1mfind[0m  is  executing  (for  example[m
+[7m Manual page find(1) line 1 (press h for help or q to quit)[27m[K[K              [1m-delete[0m) can give rise to confusing behaviour.  Using [1m-L[0m causes the [1m-lname[0m and [1m-ilname[0m predicates always to return false.[m
+[7m Manual page find(1) line 2 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 3 (press h for help or q to quit)[27m[K[K       -H     Do not follow symbolic links, except while processing the command line arguments.  When [1mfind[0m examines or prints information about files, the infor‐[m
+[7m Manual page find(1) line 4 (press h for help or q to quit)[27m[K[K              mation used shall be taken from the properties of the symbolic link itself.   The only exception to this behaviour is when a file specified on  the[m
+[7m Manual page find(1) line 5 (press h for help or q to quit)[27m[K[K              command  line is a symbolic link, and the link can be resolved.  For that situation, the information used is taken from whatever the link points to[m
+[7m Manual page find(1) line 6 (press h for help or q to quit)[27m[K[K              (that is, the link is followed).  The information about the link itself is used as a fallback if the file pointed to by the symbolic link cannot be[m
+[7m Manual page find(1) line 7 (press h for help or q to quit)[27m[K[K              examined.   If [1m-H[0m is in effect and one of the paths specified on the command line is a symbolic link to a directory, the contents of that directory[m
+[7m Manual page find(1) line 8 (press h for help or q to quit)[27m[K[K              will be examined (though of course -maxdepth 0 would prevent this).[m
+[7m Manual page find(1) line 9 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 10 (press h for help or q to quit)[27m[K[K       If more than one of [1m-H[0m, [1m-L[0m and [1m-P[0m is specified, each overrides the others; the last one appearing on the command line  takes  effect.   Since  it  is  the[m
+[7m Manual page find(1) line 11 (press h for help or q to quit)[27m[K[K       default, the [1m-P[0m option should be considered to be in effect unless either [1m-H[0m or [1m-L[0m is specified.[m
+[7m Manual page find(1) line 12 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 13 (press h for help or q to quit)[27m[K[K       GNU  [1mfind[0m  frequently  stats  files during the processing of the command line itself, before any searching has begun.  These options also affect how those[m
+[7m Manual page find(1) line 14 (press h for help or q to quit)[27m[K[K       arguments are processed.  Specifically, there are a number of tests that compare files listed on the command line against a file we are currently  consid‐[m
+[7m Manual page find(1) line 15 (press h for help or q to quit)[27m[K[K       ering.   In  each case, the file specified on the command line will have been examined and some of its properties will have been saved.  If the named file[m
+[7m Manual page find(1) line 16 (press h for help or q to quit)[27m[K[K       is in fact a symbolic link, and the [1m-P[0m option is in effect (or if neither [1m-H[0m nor [1m-L[0m were specified), the information used for the comparison will be taken[m
+[7m Manual page find(1) line 17 (press h for help or q to quit)[27m[K[K       from the properties of the symbolic link.  Otherwise, it will be taken from the properties of the file the link points to.  If [1mfind[0m cannot follow the link[m
+[7m Manual page find(1) line 18 (press h for help or q to quit)[27m[K[K       (for example because it has insufficient privileges or the link points to a nonexistent file) the properties of the link itself will be used.[m
+[7m Manual page find(1) line 19 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 20 (press h for help or q to quit)[27m[K[K       When the [1m-H[0m or [1m-L[0m [1moptions[0m [1mare[0m [1min[0m [1meffect,[0m [1many[0m [1msymbolic[0m [1mlinks[0m [1mlisted[0m as the argument of [1m-newer[0m will be dereferenced, and the timestamp will  be  taken  from[m
+[7m Manual page find(1) line 21 (press h for help or q to quit)[27m[K[K       the file to which the symbolic link points.  The same consideration applies to [1m-newerXY[0m, [1m-anewer[0m and [1m-cnewer[0m.[m
+[7m Manual page find(1) line 22 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 23 (press h for help or q to quit)[27m[K[K       The  [1m-follow[0m  option has a similar effect to [1m-L[0m, though it takes effect at the point where it appears (that is, if [1m-L[0m is not used but [1m-follow[0m is, any sym‐[m
+[7m Manual page find(1) line 24 (press h for help or q to quit)[27m[K[K       bolic links appearing after [1m-follow[0m on the command line will be dereferenced, and those before it will not).[m
+[7m Manual page find(1) line 25 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 26 (press h for help or q to quit)[27m[K[K       -D debugopts[m
+[7m Manual page find(1) line 27 (press h for help or q to quit)[27m[K[K              Print diagnostic information; this can be helpful to diagnose problems with why [1mfind[0m is not doing what you want.  The list of debug options  should[m
+[7m Manual page find(1) line 28 (press h for help or q to quit)[27m[K[K              be  comma  separated.   Compatibility  of  the  debug  options is not guaranteed between releases of findutils.  For a complete list of valid debug[m
+[7m Manual page find(1) line 29 (press h for help or q to quit)[27m[K[K              options, see the output of [1mfind[0m [1m-D[0m [1mhelp[0m.  Valid debug options include[m
+[7m Manual page find(1) line 30 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 31 (press h for help or q to quit)[27m[K[K              exec   Show diagnostic information relating to -exec, -execdir, -ok and -okdir[m
+[7m Manual page find(1) line 32 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 33 (press h for help or q to quit)[27m[K[K              help   Explain the debugging options.[m
+[7m Manual page find(1) line 34 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 35 (press h for help or q to quit)[27m[K[K              opt    Prints diagnostic information relating to the optimisation of the expression tree; see the -O option.[m
+[7m Manual page find(1) line 36 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 37 (press h for help or q to quit)[27m[K[K              rates  Prints a summary indicating how often each predicate succeeded or failed.[m
+[7m Manual page find(1) line 38 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 39 (press h for help or q to quit)[27m[K[K              search Navigate the directory tree verbosely.[m
+[7m Manual page find(1) line 40 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 41 (press h for help or q to quit)[27m[K[K              stat   Print messages as files are examined with the [1mstat[0m and [1mlstat[0m system calls.  The [1mfind[0m program tries to minimise such calls.[m
+[7m Manual page find(1) line 42 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 43 (press h for help or q to quit)[27m[K[K              tree   Show the expression tree in its original and optimised form.[m
+[7m Manual page find(1) line 44 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 45 (press h for help or q to quit)[27m[K[K       -Olevel[m
+[7m Manual page find(1) line 46 (press h for help or q to quit)[27m[K[K              Enables query optimisation.   The [1mfind[0m program reorders tests to speed up execution while preserving the overall effect; that is,  predicates  with[m
+[7m Manual page find(1) line 47 (press h for help or q to quit)[27m[K[K              side effects are not reordered relative to each other.  The optimisations performed at each optimisation level are as follows.[m
+[7m Manual page find(1) line 48 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 49 (press h for help or q to quit)[27m[K[K              0      Equivalent to optimisation level 1.[m
+[7m Manual page find(1) line 50 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 51 (press h for help or q to quit)[27m[K[K              1      This  is the default optimisation level and corresponds to the traditional behaviour.  Expressions are reordered so that tests based only on[m
+[7m Manual page find(1) line 52 (press h for help or q to quit)[27m[K[K                     the names of files (for example [1m-name[0m and [1m-regex[0m) are performed first.[m
+[7m Manual page find(1) line 53 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 54 (press h for help or q to quit)[27m[K[K              2      Any [1m-type[0m or [1m-xtype[0m tests are performed after any tests based only on the names of files, but before any tests that require information from[m
+[7m Manual page find(1) line 55 (press h for help or q to quit)[27m[K[K                     the inode.  On many modern versions of Unix, file types are returned by [1mreaddir()[0m and so these predicates are faster to evaluate than predi‐[m
+[7m Manual page find(1) line 56 (press h for help or q to quit)[27m[K[K                     cates which need to stat the file first.  If you use the [1m-fstype[0m [4mFOO[24m predicate and specify a filesystem type [4mFOO[24m which is  not  known  (that[m
+[7m Manual page find(1) line 57 (press h for help or q to quit)[27m[K[K                     is, present in `/etc/mtab') at the time [1mfind[0m starts, that predicate is equivalent to [1m-false[0m.[m
+[7m Manual page find(1) line 58 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 59 (press h for help or q to quit)[27m[K[K              3      At  this optimisation level, the full cost-based query optimiser is enabled.  The order of tests is modified so that cheap (i.e. fast) tests[m
+[7m Manual page find(1) line 60 (press h for help or q to quit)[27m[K[K                     are performed first and more expensive ones are performed later, if necessary.  Within each cost band, predicates are evaluated  earlier  or[m
+[7m Manual page find(1) line 61 (press h for help or q to quit)[27m[K[K                     later according to whether they are likely to succeed or not.  For [1m-o[0m, predicates which are likely to succeed are evaluated earlier, and for[m
+[7m Manual page find(1) line 62 (press h for help or q to quit)[27m[K[K                     [1m-a[0m, predicates which are likely to fail are evaluated earlier.[m
+[7m Manual page find(1) line 63 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 64 (press h for help or q to quit)[27m[K[K              The cost-based optimiser has a fixed idea of how likely any given test is to succeed.  In some cases the probability takes account of the  specific[m
+[7m Manual page find(1) line 65 (press h for help or q to quit)[27m[K[K              nature of the test (for example, [1m-type[0m [1mf[0m is assumed to be more likely to succeed than [1m-type[0m [1mc[0m).  The cost-based optimiser is currently being evalu‐[m
+[7m Manual page find(1) line 66 (press h for help or q to quit)[27m[K[K              ated.   If it does not actually improve the performance of [1mfind[0m, it will be removed again.  Conversely, optimisations that prove  to  be  reliable,[m
+[7m Manual page find(1) line 67 (press h for help or q to quit)[27m[K[K              robust and effective may be enabled at lower optimisation levels over time.  However, the default behaviour (i.e. optimisation level 1) will not be[m
+[7m Manual page find(1) line 68 (press h for help or q to quit)[27m[K[K              changed in the 4.3.x release series.  The findutils test suite runs all the tests on [1mfind[0m at each optimisation level and ensures that the result is[m
+[7m Manual page find(1) line 69 (press h for help or q to quit)[27m[K[K              the same.[m
+[7m Manual page find(1) line 70 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 71 (press h for help or q to quit)[27m[K[K[1mEXPRESSION[0m[m
+[7m Manual page find(1) line 72 (press h for help or q to quit)[27m[K[K       The part of the command line after the list of starting points is the [4mexpression[24m.  This is a kind of query specification describing how we match files and[m
+[7m Manual page find(1) line 73 (press h for help or q to quit)[27m[K[K       what we do with the files that were matched.  An expression is composed of a sequence of things:[m
+[7m Manual page find(1) line 74 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 75 (press h for help or q to quit)[27m[K[K       Tests  Tests return a true or false value, usually on the basis of some property of a file we are considering.  The [1m-empty[0m test for example is  true  only[m
+[7m Manual page find(1) line 76 (press h for help or q to quit)[27m[K[K              when the current file is empty.[m
+[7m Manual page find(1) line 77 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 78 (press h for help or q to quit)[27m[K[K       Actions[m
+[7m Manual page find(1) line 79 (press h for help or q to quit)[27m[K[K              Actions have side effects (such as printing something on the standard output) and return either true or false, usually based on whether or not they[m
+[7m Manual page find(1) line 80 (press h for help or q to quit)[27m[K[K              are successful.  The [1m-print[0m action for example prints the name of the current file on the standard output.[m
+[7m Manual page find(1) line 81 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 82 (press h for help or q to quit)[27m[K[K       Global options[m
+[7m Manual page find(1) line 83 (press h for help or q to quit)[27m[K[K              Global options affect the operation of tests and actions specified on any part of the command line.  Global options always return true.  The [1m-depth[0m[m
+[7m Manual page find(1) line 84 (press h for help or q to quit)[27m[K[K              option for example makes [1mfind[0m traverse the file system in a depth-first order.[m
+[7m Manual page find(1) line 85 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 86 (press h for help or q to quit)[27m[K[K       Positional options[m
+[7m Manual page find(1) line 87 (press h for help or q to quit)[27m[K[K              Positional  options  affect  only tests or actions which follow them.  Positional options always return true.  The [1m-regextype[0m option for example is[m
+[7m Manual page find(1) line 88 (press h for help or q to quit)[27m[K[K              positional, specifying the regular expression dialect for regular expressions occurring later on the command line.[m
+[7m Manual page find(1) line 89 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 90 (press h for help or q to quit)[27m[K[K       Operators[m
+[7m Manual page find(1) line 91 (press h for help or q to quit)[27m[K[K              Operators join together the other items within the expression.  They include for example [1m-o[0m (meaning logical OR)  and  [1m-a[0m  (meaning  logical  AND).[m
+[7m Manual page find(1) line 92 (press h for help or q to quit)[27m[K[K              Where an operator is missing, [1m-a[0m is assumed.[m
+[7m Manual page find(1) line 93 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 94 (press h for help or q to quit)[27m[K[K       If the whole expression contains no actions other than [1m-prune[0m or [1m-print[0m, [1m-print[0m is performed on all files for which the whole expression is true.[m
+[7m Manual page find(1) line 95 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 96 (press h for help or q to quit)[27m[K[K       The [1m-delete[0m action also acts like an option (since it implies [1m-depth[0m).[m
+[7m Manual page find(1) line 97 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 98 (press h for help or q to quit)[27m[K[K   [1mPOSITIONAL[0m [1mOPTIONS[0m[m
+[7m Manual page find(1) line 99 (press h for help or q to quit)[27m[K[K       Positional options always return true.  They affect only tests occurring later on the command line.[m
+[7m Manual page find(1) line 100 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 101 (press h for help or q to quit)[27m[K[K       -daystart[m
+[7m Manual page find(1) line 102 (press h for help or q to quit)[27m[K[K              Measure  times  (for  [1m-amin[0m, [1m-atime[0m, [1m-cmin[0m, [1m-ctime[0m, [1m-mmin[0m, and [1m-mtime[0m) from the beginning of today rather than from 24 hours ago.  This option only[m
+[7m Manual page find(1) line 103 (press h for help or q to quit)[27m[K[K              affects tests which appear later on the command line.[m
+[7m Manual page find(1) line 104 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 105 (press h for help or q to quit)[27m[K[K       -follow[m
+[7m Manual page find(1) line 106 (press h for help or q to quit)[27m[K[K              Deprecated; use the [1m-L[0m option instead.  Dereference symbolic links.  Implies [1m-noleaf[0m.  The [1m-follow[0m option affects only  those  tests  which  appear[m
+[7m Manual page find(1) line 107 (press h for help or q to quit)[27m[K[K              after  it  on  the  command  line.   Unless the [1m-H[0m or [1m-L[0m option has been specified, the position of the [1m-follow[0m option changes the behaviour of the[m
+[7m Manual page find(1) line 108 (press h for help or q to quit)[27m[K[K              [1m-newer[0m predicate; any files listed as the argument of [1m-newer[0m will be dereferenced if they are symbolic links.  The same  consideration  applies  to[m
+[7m Manual page find(1) line 109 (press h for help or q to quit)[27m[K[K              [1m-newerXY[0m, [1m-anewer[0m and [1m-cnewer[0m.  Similarly, the [1m-type[0m predicate will always match against the type of the file that a symbolic link points to rather[m
+[7m Manual page find(1) line 110 (press h for help or q to quit)[27m[K[K              than the link itself.  Using [1m-follow[0m causes the [1m-lname[0m [1mand[0m [1m-ilname[0m predicates always to return false.[m
+[7m Manual page find(1) line 111 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 112 (press h for help or q to quit)[27m[K[K       -regextype [4mtype[24m[m
+[7m Manual page find(1) line 113 (press h for help or q to quit)[27m[K[K              Changes the regular expression syntax understood by [1m-regex[0m and [1m-iregex[0m tests which occur later on the command line.  To see which  regular  expres‐[m
+[7m Manual page find(1) line 114 (press h for help or q to quit)[27m[K[K              sion  types  are  known, use [1m-regextype[0m [1mhelp[0m.  The Texinfo documentation (see [1mSEE[0m [1mALSO[0m) explains the meaning of and differences between the various[m
+[7m Manual page find(1) line 115 (press h for help or q to quit)[27m[K[K              types of regular expression.[m
+[7m Manual page find(1) line 116 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 117 (press h for help or q to quit)[27m[K[K       -warn, -nowarn[m
+[7m Manual page find(1) line 118 (press h for help or q to quit)[27m[K[K              Turn warning messages on or off.  These warnings apply only to the command line usage, not to any conditions that  [1mfind[0m  might  encounter  when  it[m
+[7m Manual page find(1) line 119 (press h for help or q to quit)[27m[K[K              searches  directories.   The  default  behaviour  corresponds  to [1m-warn[0m if standard input is a tty, and to [1m-nowarn[0m otherwise.  If a warning message[m
+[7m Manual page find(1) line 120 (press h for help or q to quit)[27m[K[K              relating to command-line usage is produced, the exit status of [1mfind[0m is not affected.  If the POSIXLY_CORRECT environment variable is set, and [1m-warn[0m[m
+[7m Manual page find(1) line 121 (press h for help or q to quit)[27m[K[K              [1mis[0m [1malso[0m [1mused,[0m [1mit[0m [1mis[0m [1mnot[0m [1mspecified[0m [1mwhich,[0m [1mif[0m [1many,[0m [1mwarnings[0m [1mwill[0m [1mbe[0m [1mactive.[0m[m
+[7m Manual page find(1) line 122 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 123 (press h for help or q to quit)[27m[K[K   [1mGLOBAL[0m [1mOPTIONS[0m[m
+[7m Manual page find(1) line 124 (press h for help or q to quit)[27m[K[K       Global  options  always  return  true.   Global  options take effect even for tests which occur earlier on the command line.  To prevent confusion, global[m
+[7m Manual page find(1) line 125 (press h for help or q to quit)[27m[K[K       options should specified on the command-line after the list of start points, just before the first test, positional option or action.  If  you  specify  a[m
+[7m Manual page find(1) line 126 (press h for help or q to quit)[27m[K[K       global option in some other place, [1mfind[0m will issue a warning message explaining that this can be confusing.[m
+[7m Manual page find(1) line 127 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 128 (press h for help or q to quit)[27m[K[K       The global options occur after the list of start points, and so are not the same kind of option as [1m-L[0m, for example.[m
+[7m Manual page find(1) line 129 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 130 (press h for help or q to quit)[27m[K[K       -d     A synonym for -depth, for compatibility with FreeBSD, NetBSD, MacOS X and OpenBSD.[m
+[7m Manual page find(1) line 131 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 132 (press h for help or q to quit)[27m[K[K       -depth Process each directory's contents before the directory itself.  The -delete action also implies [1m-depth[0m.[m
+[7m Manual page find(1) line 133 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 134 (press h for help or q to quit)[27m[K[K       -help, --help[m
+[7m Manual page find(1) line 135 (press h for help or q to quit)[27m[K[K              Print a summary of the command-line usage of [1mfind[0m and exit.[m
+[7m Manual page find(1) line 136 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 137 (press h for help or q to quit)[27m[K[K       -ignore_readdir_race[m
+[7m Manual page find(1) line 138 (press h for help or q to quit)[27m[K[K              Normally,  [1mfind[0m will emit an error message when it fails to stat a file.  If you give this option and a file is deleted between the time [1mfind[0m reads[m
+[7m Manual page find(1) line 139 (press h for help or q to quit)[27m[K[K              the name of the file from the directory and the time it tries to stat the file, no error message will be issued.    This also applies to  files  or[m
+[7m Manual page find(1) line 140 (press h for help or q to quit)[27m[K[K              directories  whose names are given on the command line.  This option takes effect at the time the command line is read, which means that you cannot[m
+[7m Manual page find(1) line 141 (press h for help or q to quit)[27m[K[K              search one part of the filesystem with this option on and part of it with this option off (if you need to do that, you will need to issue two  [1mfind[0m[m
+[7m Manual page find(1) line 142 (press h for help or q to quit)[27m[K[K              commands instead, one with the option and one without it).[m
+[7m Manual page find(1) line 143 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 144 (press h for help or q to quit)[27m[K[K       -maxdepth [4mlevels[24m[m
+[7m Manual page find(1) line 145 (press h for help or q to quit)[27m[K[K              Descend at most [4mlevels[24m (a non-negative integer) levels of directories below the starting-points.  [1m-maxdepth[0m [1m0[0m[m
+[7m Manual page find(1) line 146 (press h for help or q to quit)[27m[K[K               means only apply the tests and actions to the starting-points themselves.[m
+[7m Manual page find(1) line 147 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 148 (press h for help or q to quit)[27m[K[K       -mindepth [4mlevels[24m[m
+[7m Manual page find(1) line 149 (press h for help or q to quit)[27m[K[K              Do  not  apply  any tests or actions at levels less than [4mlevels[24m (a non-negative integer).  [1m-mindepth[0m [1m1[0m means process all files except the starting-[m
+[7m Manual page find(1) line 150 (press h for help or q to quit)[27m[K[K              points.[m
+[7m Manual page find(1) line 151 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 152 (press h for help or q to quit)[27m[K[K       -mount Don't descend directories on other filesystems.  An alternate name for [1m-xdev[0m, for compatibility with some other versions of [1mfind[0m.[m
+[7m Manual page find(1) line 153 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 154 (press h for help or q to quit)[27m[K[K       -noignore_readdir_race[m
+[7m Manual page find(1) line 155 (press h for help or q to quit)[27m[K[K              Turns off the effect of [1m-ignore_readdir_race[0m.[m
+[7m Manual page find(1) line 156 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 157 (press h for help or q to quit)[27m[K[K       -noleaf[m
+[7m Manual page find(1) line 158 (press h for help or q to quit)[27m[K[K              Do not optimize by assuming that directories contain 2 fewer subdirectories than their hard link count.   This  option  is  needed  when  searching[m
+[7m Manual page find(1) line 159 (press h for help or q to quit)[27m[K[K              filesystems that do not follow the Unix directory-link convention, such as CD-ROM or MS-DOS filesystems or AFS volume mount points.  Each directory[m
+[7m Manual page find(1) line 160 (press h for help or q to quit)[27m[K[K              on a normal Unix filesystem has at least 2 hard links: its name and its `.'  entry.  Additionally, its subdirectories (if any)  each  have  a  `..'[m
+[7m Manual page find(1) line 161 (press h for help or q to quit)[27m[K[K              entry  linked  to that directory.  When [1mfind[0m is examining a directory, after it has statted 2 fewer subdirectories than the directory's link count,[m
+[7m Manual page find(1) line 162 (press h for help or q to quit)[27m[K[K              it knows that the rest of the entries in the directory are non-directories (`leaf' files in the directory tree).  If only the files' names need  to[m
+[7m Manual page find(1) line 163 (press h for help or q to quit)[27m[K[K              be examined, there is no need to stat them; this gives a significant increase in search speed.[m
+[7m Manual page find(1) line 164 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 165 (press h for help or q to quit)[27m[K[K       -version, --version[m
+[7m Manual page find(1) line 166 (press h for help or q to quit)[27m[K[K              Print the [1mfind[0m version number and exit.[m
+[7m Manual page find(1) line 167 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 168 (press h for help or q to quit)[27m[K[K       -xdev  Don't descend directories on other filesystems.[m
+[7m Manual page find(1) line 169 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 170 (press h for help or q to quit)[27m[K[K   [1mTESTS[0m[m
+[7m Manual page find(1) line 171 (press h for help or q to quit)[27m[K[K       Some  tests,  for example [1m-newerXY[0m and [1m-samefile[0m, allow comparison between the file currently being examined and some reference file specified on the com‐[m
+[7m Manual page find(1) line 172 (press h for help or q to quit)[27m[K[K       mand line.  When these tests are used, the interpretation of the reference file is determined by the options [1m-H[0m, [1m-L[0m and [1m-P[0m and any previous  [1m-follow[0m,  but[m
+[7m Manual page find(1) line 173 (press h for help or q to quit)[27m[K[K       the reference file is only examined once, at the time the command line is parsed.  If the reference file cannot be examined (for example, the [1mstat[0m(2) sys‐[m
+[7m Manual page find(1) line 174 (press h for help or q to quit)[27m[K[K       tem call fails for it), an error message is issued, and [1mfind[0m exits with a nonzero status.[m
+[7m Manual page find(1) line 175 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 176 (press h for help or q to quit)[27m[K[K       Numeric arguments can be specified as[m
+[7m Manual page find(1) line 177 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 178 (press h for help or q to quit)[27m[K[K       [4m+n[24m     for greater than [4mn[24m,[m
+[7m Manual page find(1) line 179 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 180 (press h for help or q to quit)[27m[K[K       [4m-n[24m     for less than [4mn[24m,[m
+[7m Manual page find(1) line 181 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 182 (press h for help or q to quit)[27m[K[K       [4mn[24m      for exactly [4mn[24m.[m
+[7m Manual page find(1) line 183 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 184 (press h for help or q to quit)[27m[K[K       -amin [4mn[24m[m
+[7m Manual page find(1) line 185 (press h for help or q to quit)[27m[K[K              File was last accessed [4mn[24m minutes ago.[m
+[7m Manual page find(1) line 186 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 187 (press h for help or q to quit)[27m[K[K       -anewer [4mfile[24m[m
+[7m Manual page find(1) line 188 (press h for help or q to quit)[27m[K[K              File was last accessed more recently than [4mfile[24m was modified.  If [4mfile[24m is a symbolic link and the [1m-H[0m option or the  [1m-L[0m  option  is  in  effect,  the[m
+[7m Manual page find(1) line 189 (press h for help or q to quit)[27m[K[K              access time of the file it points to is always used.[m
+[7m Manual page find(1) line 190 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 191 (press h for help or q to quit)[27m[K[K       -atime [4mn[24m[m
+[7m Manual page find(1) line 192 (press h for help or q to quit)[27m[K[K              File  was  last  accessed  [4mn[24m*24  hours  ago.  When find figures out how many 24-hour periods ago the file was last accessed, any fractional part is[m
+[7m Manual page find(1) line 193 (press h for help or q to quit)[27m[K[K              ignored, so to match [1m-atime[0m [1m+1[0m, a file has to have been accessed at least [4mtwo[24m days ago.[m
+[7m Manual page find(1) line 194 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 195 (press h for help or q to quit)[27m[K[K       -cmin [4mn[24m[m
+[7m Manual page find(1) line 196 (press h for help or q to quit)[27m[K[K              File's status was last changed [4mn[24m minutes ago.[m
+[7m Manual page find(1) line 197 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 198 (press h for help or q to quit)[27m[K[K       -cnewer [4mfile[24m[m
+[7m Manual page find(1) line 199 (press h for help or q to quit)[27m[K[K              File's status was last changed more recently than [4mfile[24m was modified.  If [4mfile[24m is a symbolic link and the [1m-H[0m option or the [1m-L[0m option is  in  effect,[m
+[7m Manual page find(1) line 200 (press h for help or q to quit)[27m[K[K              the status-change time of the file it points to is always used.[m
+[7m Manual page find(1) line 201 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 202 (press h for help or q to quit)[27m[K[K       -ctime [4mn[24m[m
+[7m Manual page find(1) line 203 (press h for help or q to quit)[27m[K[K              File's  status  was  last changed [4mn[24m*24 hours ago.  See the comments for [1m-atime[0m to understand how rounding affects the interpretation of file status[m
+[7m Manual page find(1) line 204 (press h for help or q to quit)[27m[K[K              change times.[m
+[7m Manual page find(1) line 205 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 206 (press h for help or q to quit)[27m[K[K       -empty File is empty and is either a regular file or a directory.[m
+[7m Manual page find(1) line 207 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 208 (press h for help or q to quit)[27m[K[K       -executable[m
+[7m Manual page find(1) line 209 (press h for help or q to quit)[27m[K[K              Matches files which are executable and directories which are searchable (in a file name resolution sense).  This takes into account access  control[m
+[7m Manual page find(1) line 210 (press h for help or q to quit)[27m[K[K              lists  and other permissions artefacts which the [1m-perm[0m test ignores.  This test makes use of the [1maccess[0m(2) system call, and so can be fooled by NFS[m
+[7m Manual page find(1) line 211 (press h for help or q to quit)[27m[K[K              servers which do UID mapping (or root-squashing), since many systems implement [1maccess[0m(2) in the client's kernel and so cannot make use of  the  UID[m
+[7m Manual page find(1) line 212 (press h for help or q to quit)[27m[K[K              mapping  information  held on the server.  Because this test is based only on the result of the [1maccess[0m(2) system call, there is no guarantee that a[m
+[7m Manual page find(1) line 213 (press h for help or q to quit)[27m[K[K              file for which this test succeeds can actually be executed.[m
+[7m Manual page find(1) line 214 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 215 (press h for help or q to quit)[27m[K[K       -false Always false.[m
+[7m Manual page find(1) line 216 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 217 (press h for help or q to quit)[27m[K[K       -fstype [4mtype[24m[m
+[7m Manual page find(1) line 218 (press h for help or q to quit)[27m[K[K              File is on a filesystem of type [4mtype[24m.  The valid filesystem types vary among different versions of Unix; an incomplete  list  of  filesystem  types[m
+[7m Manual page find(1) line 219 (press h for help or q to quit)[27m[K[K              that  are  accepted  on some version of Unix or another is: ufs, 4.2, 4.3, nfs, tmp, mfs, S51K, S52K.  You can use [1m-printf[0m with the %F directive to[m
+[7m Manual page find(1) line 220 (press h for help or q to quit)[27m[K[K              see the types of your filesystems.[m
+[7m Manual page find(1) line 221 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 222 (press h for help or q to quit)[27m[K[K       -gid [4mn[24m File's numeric group ID is [4mn[24m.[m
+[7m Manual page find(1) line 223 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 224 (press h for help or q to quit)[27m[K[K       -group [4mgname[24m[m
+[7m Manual page find(1) line 225 (press h for help or q to quit)[27m[K[K              File belongs to group [4mgname[24m (numeric group ID allowed).[m
+[7m Manual page find(1) line 226 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 227 (press h for help or q to quit)[27m[K[K       -ilname [4mpattern[24m[m
+[7m Manual page find(1) line 228 (press h for help or q to quit)[27m[K[K              Like [1m-lname[0m, but the match is case insensitive.  If the [1m-L[0m option or the [1m-follow[0m option is in effect, this test returns false unless  the  symbolic[m
+[7m Manual page find(1) line 229 (press h for help or q to quit)[27m[K[K              link is broken.[m
+[7m Manual page find(1) line 230 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 231 (press h for help or q to quit)[27m[K[K       -iname [4mpattern[24m[m
+[7m Manual page find(1) line 232 (press h for help or q to quit)[27m[K[K              Like  [1m-name[0m,  but  the  match is case insensitive.  For example, the patterns `fo*' and `F??' match the file names `Foo', `FOO', `foo', `fOo', etc.[m
+[7m Manual page find(1) line 233 (press h for help or q to quit)[27m[K[K              The pattern `*foo*` will also match a file called '.foobar'.[m
+[7m Manual page find(1) line 234 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 235 (press h for help or q to quit)[27m[K[K       -inum [4mn[24m[m
+[7m Manual page find(1) line 236 (press h for help or q to quit)[27m[K[K              File has inode number [4mn[24m.  It is normally easier to use the [1m-samefile[0m test instead.[m
+[7m Manual page find(1) line 237 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 238 (press h for help or q to quit)[27m[K[K       -ipath [4mpattern[24m[m
+[7m Manual page find(1) line 239 (press h for help or q to quit)[27m[K[K              Like [1m-path[0m.  but the match is case insensitive.[m
+[7m Manual page find(1) line 240 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 241 (press h for help or q to quit)[27m[K[K       -iregex [4mpattern[24m[m
+[7m Manual page find(1) line 242 (press h for help or q to quit)[27m[K[K              Like [1m-regex[0m, but the match is case insensitive.[m
+[7m Manual page find(1) line 243 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 244 (press h for help or q to quit)[27m[K[K       -iwholename [4mpattern[24m[m
+[7m Manual page find(1) line 245 (press h for help or q to quit)[27m[K[K              See -ipath.  This alternative is less portable than [1m-ipath[0m.[m
+[7m Manual page find(1) line 246 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 247 (press h for help or q to quit)[27m[K[K       -links [4mn[24m[m
+[7m Manual page find(1) line 248 (press h for help or q to quit)[27m[K[K              File has [4mn[24m hard links.[m
+[7m Manual page find(1) line 249 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 250 (press h for help or q to quit)[27m[K[K       -lname [4mpattern[24m[m
+[7m Manual page find(1) line 251 (press h for help or q to quit)[27m[K[K              File is a symbolic link whose contents match shell pattern [4mpattern[24m.  The metacharacters do not treat `/' or `.' specially.  If the [1m-L[0m option or the[m
+[7m Manual page find(1) line 252 (press h for help or q to quit)[27m[K[K              [1m-follow[0m option is in effect, this test returns false unless the symbolic link is broken.[m
+[7m Manual page find(1) line 253 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 254 (press h for help or q to quit)[27m[K[K       -mmin [4mn[24m[m
+[7m Manual page find(1) line 255 (press h for help or q to quit)[27m[K[K              File's data was last modified [4mn[24m minutes ago.[m
+[7m Manual page find(1) line 256 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 257 (press h for help or q to quit)[27m[K[K       -mtime [4mn[24m[m
+[7m Manual page find(1) line 258 (press h for help or q to quit)[27m[K[K              File's  data was last modified [4mn[24m*24 hours ago.  See the comments for [1m-atime[0m to understand how rounding affects the interpretation of file modifica‐[m
+[7m Manual page find(1) line 259 (press h for help or q to quit)[27m[K[K              tion times.[m
+[7m Manual page find(1) line 260 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 261 (press h for help or q to quit)[27m[K[K       -name [4mpattern[24m[m
+[7m Manual page find(1) line 262 (press h for help or q to quit)[27m[K[K              Base of file name (the path with the leading directories removed) matches shell pattern [4mpattern[24m.  Because the leading directories are removed,  the[m
+[7m Manual page find(1) line 263 (press h for help or q to quit)[27m[K[K              file  names  considered for a match with [1m-name[0m will never include a slash, so `-name a/b' will never match anything (you probably need to use [1m-path[0m[m
+[7m Manual page find(1) line 264 (press h for help or q to quit)[27m[K[K              instead).  A warning is issued if you try to do this, unless the environment variable POSIXLY_CORRECT is set.  The metacharacters  (`*',  `?',  and[m
+[7m Manual page find(1) line 265 (press h for help or q to quit)[27m[K[K              `[]') match a `.' at the start of the base name (this is a change in findutils-4.2.2; see section STANDARDS CONFORMANCE below).  To ignore a direc‐[m
+[7m Manual page find(1) line 266 (press h for help or q to quit)[27m[K[K              tory and the files under it, use [1m-prune[0m; see an example in the description of [1m-path[0m.  Braces are not recognised as being special, despite the  fact[m
+[7m Manual page find(1) line 267 (press h for help or q to quit)[27m[K[K              that  some  shells  including  Bash  imbue braces with a special meaning in shell patterns.  The filename matching is performed with the use of the[m
+[7m Manual page find(1) line 268 (press h for help or q to quit)[27m[K[K              [1mfnmatch[0m(3) library function.   Don't forget to enclose the pattern in quotes in order to protect it from expansion by the shell.[m
+[7m Manual page find(1) line 269 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 270 (press h for help or q to quit)[27m[K[K       -newer [4mfile[24m[m
+[7m Manual page find(1) line 271 (press h for help or q to quit)[27m[K[K              File was modified more recently than [4mfile[24m.  If [4mfile[24m is a symbolic link and the [1m-H[0m option or the [1m-L[0m option is in effect, the  modification  time  of[m
+[7m Manual page find(1) line 272 (press h for help or q to quit)[27m[K[K              the file it points to is always used.[m
+[7m Manual page find(1) line 273 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 274 (press h for help or q to quit)[27m[K[K       -newerXY [4mreference[24m[m
+[7m Manual page find(1) line 275 (press h for help or q to quit)[27m[K[K              Succeeds  if timestamp [4mX[24m of the file being considered is newer than timestamp [4mY[24m of the file [4mreference[24m.   The letters [4mX[24m and [4mY[24m can be any of the fol‐[m
+[7m Manual page find(1) line 276 (press h for help or q to quit)[27m[K[K              lowing letters:[m
+[7m Manual page find(1) line 277 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 278 (press h for help or q to quit)[27m[K[K              a   The access time of the file [4mreference[24m[m
+[7m Manual page find(1) line 279 (press h for help or q to quit)[27m[K[K              B   The birth time of the file [4mreference[24m[m
+[7m Manual page find(1) line 280 (press h for help or q to quit)[27m[K[K              c   The inode status change time of [4mreference[24m[m
+[7m Manual page find(1) line 281 (press h for help or q to quit)[27m[K[K              m   The modification time of the file [4mreference[24m[m
+[7m Manual page find(1) line 282 (press h for help or q to quit)[27m[K[K              t   [4mreference[24m is interpreted directly as a time[m
+[7m Manual page find(1) line 283 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 284 (press h for help or q to quit)[27m[K[K              Some combinations are invalid; for example, it is invalid for [4mX[24m to be [4mt[24m.  Some combinations are not implemented on all systems; for  example  [4mB[24m  is[m
+[7m Manual page find(1) line 285 (press h for help or q to quit)[27m[K[K              not  supported on all systems.  If an invalid or unsupported combination of [4mXY[24m is specified, a fatal error results.  Time specifications are inter‐[m
+[7m Manual page find(1) line 286 (press h for help or q to quit)[27m[K[K              preted as for the argument to the [1m-d[0m option of GNU [1mdate[0m.  If you try to use the birth time of a reference file, and the birth time cannot be deter‐[m
+[7m Manual page find(1) line 287 (press h for help or q to quit)[27m[K[K              mined,  a  fatal  error message results.  If you specify a test which refers to the birth time of files being examined, this test will fail for any[m
+[7m Manual page find(1) line 288 (press h for help or q to quit)[27m[K[K              files where the birth time is unknown.[m
+[7m Manual page find(1) line 289 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 290 (press h for help or q to quit)[27m[K[K       -nogroup[m
+[7m Manual page find(1) line 291 (press h for help or q to quit)[27m[K[K              No group corresponds to file's numeric group ID.[m
+[7m Manual page find(1) line 292 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 293 (press h for help or q to quit)[27m[K[K       -nouser[m
+[7m Manual page find(1) line 294 (press h for help or q to quit)[27m[K[K              No user corresponds to file's numeric user ID.[m
+[7m Manual page find(1) line 295 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 296 (press h for help or q to quit)[27m[K[K       -path [4mpattern[24m[m
+[7m Manual page find(1) line 297 (press h for help or q to quit)[27m[K[K              File name matches shell pattern [4mpattern[24m.  The metacharacters do not treat `/' or `.' specially; so, for example,[m
+[7m Manual page find(1) line 298 (press h for help or q to quit)[27m[K[K                        find . -path "./sr*sc"[m
+[7m Manual page find(1) line 299 (press h for help or q to quit)[27m[K[K              will print an entry for a directory called `./src/misc' (if one exists).  To ignore a whole directory tree, use [1m-prune[0m rather than  checking  every[m
+[7m Manual page find(1) line 300 (press h for help or q to quit)[27m[K[K              file  in  the  tree.  For example, to skip the directory `src/emacs' and all files and directories under it, and print the names of the other files[m
+[7m Manual page find(1) line 301 (press h for help or q to quit)[27m[K[K              found, do something like this:[m
+[7m Manual page find(1) line 302 (press h for help or q to quit)[27m[K[K                        find . -path ./src/emacs -prune -o -print[m
+[7m Manual page find(1) line 303 (press h for help or q to quit)[27m[K[K              Note that the pattern match test applies to the whole file name, starting from one of the start points named on the command line.   It  would  only[m
+[7m Manual page find(1) line 304 (press h for help or q to quit)[27m[K[K              make  sense  to use an absolute path name here if the relevant start point is also an absolute path.  This means that this command will never match[m
+[7m Manual page find(1) line 305 (press h for help or q to quit)[27m[K[K              anything:[m
+[7m Manual page find(1) line 306 (press h for help or q to quit)[27m[K[K                        find bar -path /foo/bar/myfile -print[m
+[7m Manual page find(1) line 307 (press h for help or q to quit)[27m[K[K              Find compares the [1m-path[0m argument with the concatenation of a directory name and the base name of the file it's examining.  Since the  concatenation[m
+[7m Manual page find(1) line 308 (press h for help or q to quit)[27m[K[K              will  never  end  with  a slash, [1m-path[0m arguments ending in a slash will match nothing (except perhaps a start point specified on the command line).[m
+[7m Manual page find(1) line 309 (press h for help or q to quit)[27m[K[K              The predicate [1m-path[0m is also supported by HP-UX [1mfind[0m and is part of the POSIX 2008 standard.[m
+[7m Manual page find(1) line 310 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 311 (press h for help or q to quit)[27m[K[K       -perm [4mmode[24m[m
+[7m Manual page find(1) line 312 (press h for help or q to quit)[27m[K[K              File's permission bits are exactly [4mmode[24m (octal or symbolic).  Since an exact match is required, if you want to use this form  for  symbolic  modes,[m
+[7m Manual page find(1) line 313 (press h for help or q to quit)[27m[K[K              you  may have to specify a rather complex mode string.  For example `-perm g=w' will only match files which have mode 0020 (that is, ones for which[m
+[7m Manual page find(1) line 314 (press h for help or q to quit)[27m[K[K              group write permission is the only permission set).  It is more likely that you will want to use the `/' or `-' forms, for  example  `-perm  -g=w',[m
+[7m Manual page find(1) line 315 (press h for help or q to quit)[27m[K[K              which matches any file with group write permission.  See the [1mEXAMPLES[0m section for some illustrative examples.[m
+[7m Manual page find(1) line 316 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 317 (press h for help or q to quit)[27m[K[K       -perm -[4mmode[24m[m
+[7m Manual page find(1) line 318 (press h for help or q to quit)[27m[K[K              All  of  the  permission  bits [4mmode[24m are set for the file.  Symbolic modes are accepted in this form, and this is usually the way in which you would[m
+[7m Manual page find(1) line 319 (press h for help or q to quit)[27m[K[K              want to use them.  You must specify `u', `g' or `o' if you use a symbolic mode.   See the [1mEXAMPLES[0m section for some illustrative examples.[m
+[7m Manual page find(1) line 320 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 321 (press h for help or q to quit)[27m[K[K       -perm /[4mmode[24m[m
+[7m Manual page find(1) line 322 (press h for help or q to quit)[27m[K[K              Any of the permission bits [4mmode[24m are set for the file.  Symbolic modes are accepted in this form.  You must specify `u', `g' or `o'  if  you  use  a[m
+[7m Manual page find(1) line 323 (press h for help or q to quit)[27m[K[K              symbolic  mode.   See  the [1mEXAMPLES[0m section for some illustrative examples.  If no permission bits in [4mmode[24m are set, this test matches any file (the[m
+[7m Manual page find(1) line 324 (press h for help or q to quit)[27m[K[K              idea here is to be consistent with the behaviour of [1m-perm[0m [1m-000[0m).[m
+[7m Manual page find(1) line 325 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 326 (press h for help or q to quit)[27m[K[K       -perm +[4mmode[24m[m
+[7m Manual page find(1) line 327 (press h for help or q to quit)[27m[K[K              This is no longer supported (and has been deprecated since 2005).  Use [1m-perm[0m [1m/[0m[4mmode[24m instead.[m
+[7m Manual page find(1) line 328 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 329 (press h for help or q to quit)[27m[K[K       -readable[m
+[7m Manual page find(1) line 330 (press h for help or q to quit)[27m[K[K              Matches files which are readable.  This takes into account access control lists and other permissions artefacts which the [1m-perm[0m test ignores.  This[m
+[7m Manual page find(1) line 331 (press h for help or q to quit)[27m[K[K              test  makes  use  of  the  [1maccess[0m(2)  system call, and so can be fooled by NFS servers which do UID mapping (or root-squashing), since many systems[m
+[7m Manual page find(1) line 332 (press h for help or q to quit)[27m[K[K              implement [1maccess[0m(2) in the client's kernel and so cannot make use of the UID mapping information held on the server.[m
+[7m Manual page find(1) line 333 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 334 (press h for help or q to quit)[27m[K[K       -regex [4mpattern[24m[m
+[7m Manual page find(1) line 335 (press h for help or q to quit)[27m[K[K              File name matches regular expression [4mpattern[24m.  This is a match on the whole path, not a search.  For example, to match a file named `./fubar3', you[m
+[7m Manual page find(1) line 336 (press h for help or q to quit)[27m[K[K              can  use  the  regular  expression  `.*bar.' or `.*b.*3', but not `f.*r3'.  The regular expressions understood by [1mfind[0m are by default Emacs Regular[m
+[7m Manual page find(1) line 337 (press h for help or q to quit)[27m[K[K              Expressions, but this can be changed with the [1m-regextype[0m option.[m
+[7m Manual page find(1) line 338 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page find(1) line 339 (press h for help or q to quit)[27m[K[K       -samefile [4mname[24m[m
+[7m Manual page find(1) line 340 (press h for help or q to quit)[27m[K[K [KESCESC[Kqq[K[7m Manual page find(1) line 340 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t]0;shiba3@nootnoot: ~/test[01;32mshiba3@nootnoot[00m:[01;34m~/test[00m$ cd etc
+bash: cd: etc: No such file or directory
+]0;shiba3@nootnoot: ~/test[01;32mshiba3@nootnoot[00m:[01;34m~/test[00m$ 
+]0;shiba3@nootnoot: ~/test[01;32mshiba3@nootnoot[00m:[01;34m~/test[00m$ 
+]0;shiba3@nootnoot: ~/test[01;32mshiba3@nootnoot[00m:[01;34m~/test[00m$ 
+]0;shiba3@nootnoot: ~/test[01;32mshiba3@nootnoot[00m:[01;34m~/test[00m$ cd /etc/shiba3
+bash: cd: /etc/shiba3: No such file or directory
+]0;shiba3@nootnoot: ~/test[01;32mshiba3@nootnoot[00m:[01;34m~/test[00m$ cd etc[K[K[K/etc/
+]0;shiba3@nootnoot: /etc[01;32mshiba3@nootnoot[00m:[01;34m/etc[00m$ ls
+[0m[01;34macpi[0m                    [01;34mcron.monthly[0m          group            ld.so.cache     mime.types           [01;34mpolkit-1[0m                 screenrc     [01;34mthermald[0m
+adduser.conf            crontab               group-           ld.so.conf      mke2fs.conf          [01;34mpollinate[0m                securetty    timezone
+[01;34malternatives[0m            [01;34mcron.weekly[0m           [01;34mgrub.d[0m           [01;34mld.so.conf.d[0m    [01;34mmodprobe.d[0m           popularity-contest.conf  [01;34msecurity[0m     [01;34mtmpfiles.d[0m
+[01;34mapm[0m                     [01;34mcryptsetup-initramfs[0m  gshadow          legal           modules              profile                  [01;34mselinux[0m      ucf.conf
+[01;34mapparmor[0m                crypttab              gshadow-         libaudit.conf   [01;34mmodules-load.d[0m       [01;34mprofile.d[0m                services     [01;34mudev[0m
+[01;34mapparmor.d[0m              [01;34mdbus-1[0m                [01;34mgss[0m              [01;34mlibnl-3[0m         [01;36mmtab[0m                 protocols                shadow       [01;34mufw[0m
+[01;34mapport[0m                  debconf.conf          hdparm.conf      locale.alias    nanorc               [01;34mpython[0m                   shadow-      updatedb.conf
+[01;34mapt[0m                     debian_version        host.conf        locale.gen      [01;34mnetplan[0m              [01;34mpython2.7[0m                shells       [01;34mupdate-manager[0m
+at.deny                 [01;34mdefault[0m               hostname         [01;36mlocaltime[0m       [01;34mnetwork[0m              [01;34mpython3[0m                  [01;34mshiba[0m        [01;34mupdate-motd.d[0m
+bash.bashrc             deluser.conf          hosts            [01;34mlogcheck[0m        [01;34mnetworkd-dispatcher[0m  [01;34mpython3.6[0m                [01;34mskel[0m         [01;34mupdate-notifier[0m
+bash_completion         [01;34mdepmod.d[0m              hosts.allow      login.defs      [01;34mNetworkManager[0m       [01;34mrc0.d[0m                    sos.conf     [01;34mvim[0m
+[01;34mbash_completion.d[0m       [01;34mdhcp[0m                  hosts.deny       logrotate.conf  networks             [01;34mrc1.d[0m                    [01;34mssh[0m          [01;34mvmware-tools[0m
+bindresvport.blacklist  [01;34mdnsmasq.d[0m             [01;34minit.d[0m           [01;34mlogrotate.d[0m     [01;34mnewt[0m                 [01;34mrc2.d[0m                    [01;34mssl[0m          [01;36mvtrgb[0m
+[01;34mbinfmt.d[0m                [01;34mdnsmasq.d-available[0m   [01;34minitramfs-tools[0m  lsb-release     nsswitch.conf        [01;34mrc3.d[0m                    subgid       wgetrc
+[01;34mbyobu[0m                   [01;34mdpkg[0m                  inputrc          ltrace.conf     [01;34mopt[0m                  [01;34mrc4.d[0m                    subgid-      [01;34mX11[0m
+[01;34mca-certificates[0m         environment           [01;34miproute2[0m         [01;34mlvm[0m             [01;36mos-release[0m           [01;34mrc5.d[0m                    subuid       [01;34mxdg[0m
+ca-certificates.conf    ethertypes            [01;34miscsi[0m            machine-id      overlayroot.conf     [01;34mrc6.d[0m                    subuid-      zsh_command_not_found
+[01;34mcalendar[0m                [01;34mfonts[0m                 issue            magic           pam.conf             [01;34mrcS.d[0m                    sudoers
+[01;34mcloud[0m                   fstab                 issue.net        magic.mime      [01;34mpam.d[0m                [01;36mresolv.conf[0m              [01;34msudoers.d[0m
+[01;34mconsole-setup[0m           fstab.orig            [01;34mkernel[0m           mailcap         passwd               [01;32mrmt[0m                      sysctl.conf
+[01;34mcron.d[0m                  fuse.conf             kernel-img.conf  mailcap.order   passwd-              rpc                      [01;34msysctl.d[0m
+[01;34mcron.daily[0m              gai.conf              [01;34mlandscape[0m        manpath.config  [01;34mperl[0m                 rsyslog.conf             [01;34msystemd[0m
+[01;34mcron.hourly[0m             [01;34mgroff[0m                 [01;34mldap[0m             [01;34mmdadm[0m           [01;34mpm[0m                   [01;34mrsyslog.d[0m                [01;34mterminfo[0m
+]0;shiba3@nootnoot: /etc[01;32mshiba3@nootnoot[00m:[01;34m/etc[00m$ cd shiba
+]0;shiba3@nootnoot: /etc/shiba[01;32mshiba3@nootnoot[00m:[01;34m/etc/shiba[00m$ ls
+shiba1  shiba2  shiba3  shiba4
+]0;shiba3@nootnoot: /etc/shiba[01;32mshiba3@nootnoot[00m:[01;34m/etc/shiba[00m$ ls -lh
+total 16K
+-rw-r--r-- 1 root   root    7 Feb 13  2020 shiba1
+-rw-r--r-- 1 root   root    9 Feb 13  2020 shiba2
+-rw-r----- 1    460 shiba3 16 Feb 20  2020 shiba3
+-rw-r--r-- 1 shiba4 shiba4  9 Feb 22  2020 shiba4
+]0;shiba3@nootnoot: /etc/shiba[01;32mshiba3@nootnoot[00m:[01;34m/etc/shiba[00m$ car[Kt shiba4
+test1234
+]0;shiba3@nootnoot: /etc/shiba[01;32mshiba3@nootnoot[00m:[01;34m/etc/shiba[00m$ chmod +x shiba4
+chmod: changing permissions of 'shiba4': Operation not permitted
+]0;shiba3@nootnoot: /etc/shiba[01;32mshiba3@nootnoot[00m:[01;34m/etc/shiba[00m$ .shiba4[K[K[K[K[K[K[Kfile si[Khiba4
+shiba4: ASCII text
+]0;shiba3@nootnoot: /etc/shiba[01;32mshiba3@nootnoot[00m:[01;34m/etc/shiba[00m$ locate shiba4
+]0;shiba3@nootnoot: /etc/shiba[01;32mshiba3@nootnoot[00m:[01;34m/etc/shiba[00m$ updatedb
+updatedb: can not open a temporary file for `/var/lib/mlocate/mlocate.db'
+]0;shiba3@nootnoot: /etc/shiba[01;32mshiba3@nootnoot[00m:[01;34m/etc/shiba[00m$ 
+]0;shiba3@nootnoot: /etc/shiba[01;32mshiba3@nootnoot[00m:[01;34m/etc/shiba[00m$ 
+]0;shiba3@nootnoot: /etc/shiba[01;32mshiba3@nootnoot[00m:[01;34m/etc/shiba[00m$ cd
+]0;shiba3@nootnoot: ~[01;32mshiba3@nootnoot[00m:[01;34m~[00m$ ls
+[0m[01;34mtest[0m
+]0;shiba3@nootnoot: ~[01;32mshiba3@nootnoot[00m:[01;34m~[00m$ cd home[K[K[K[K/home
+]0;shiba3@nootnoot: /home[01;32mshiba3@nootnoot[00m:[01;34m/home[00m$ ls
+[0m[01;34mnoot[0m  [01;34mnootnoot[0m  [01;34mshiba1[0m  [01;34mshiba2[0m  [01;34mshiba3[0m  [01;34mshiba4[0m
+]0;shiba3@nootnoot: /home[01;32mshiba3@nootnoot[00m:[01;34m/home[00m$ cd shiba4
+]0;shiba3@nootnoot: /home/shiba4[01;32mshiba3@nootnoot[00m:[01;34m/home/shiba4[00m$ ls
+]0;shiba3@nootnoot: /home/shiba4[01;32mshiba3@nootnoot[00m:[01;34m/home/shiba4[00m$ l
+]0;shiba3@nootnoot: /home/shiba4[01;32mshiba3@nootnoot[00m:[01;34m/home/shiba4[00m$ sudo[K ahiba [K[K[K[K[K[Kshiba4[K[K[K[K[K[K[K[K sguba[K[K[K[Khiba4
+Password: 
+su: Authentication failure
+]0;shiba3@nootnoot: /home/shiba4[01;32mshiba3@nootnoot[00m:[01;34m/home/shiba4[00m$ su shiba4
+Password: 
+]0;shiba4@nootnoot: ~[01;32mshiba4@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba4@nootnoot: ~[01;32mshiba4@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba4@nootnoot: ~[01;32mshiba4@nootnoot[00m:[01;34m~[00m$ ls
+]0;shiba4@nootnoot: ~[01;32mshiba4@nootnoot[00m:[01;34m~[00m$ man sudo
+[?1049h[22;0;0t[?1h=SUDO(8)                                                            BSD System Manager's Manual                                                            SUDO(8)[m
+[m
+[1mNAME[0m[m
+     [1msudo[0m, [1msudoedit[0m — execute a command as another user[m
+[m
+[1mSYNOPSIS[0m[m
+     [1msudo[0m [1m-h[0m | [1m-K[0m | [1m-k[0m | [1m-V[0m[m
+     [1msudo[0m [1m-v[0m [[1m-AknS[0m] [[1m-a[0m [4mtype[24m] [[1m-g[0m [4mgroup[24m] [[1m-h[0m [4mhost[24m] [[1m-p[0m [4mprompt[24m] [[1m-u[0m [4muser[24m][m
+     [1msudo[0m [1m-l[0m [[1m-AknS[0m] [[1m-a[0m [4mtype[24m] [[1m-g[0m [4mgroup[24m] [[1m-h[0m [4mhost[24m] [[1m-p[0m [4mprompt[24m] [[1m-U[0m [4muser[24m] [[1m-u[0m [4muser[24m] [[4mcommand[24m][m
+     [1msudo[0m [[1m-AbEHnPS[0m] [[1m-a[0m [4mtype[24m] [[1m-C[0m [4mnum[24m] [[1m-c[0m [4mclass[24m] [[1m-g[0m [4mgroup[24m] [[1m-h[0m [4mhost[24m] [[1m-p[0m [4mprompt[24m] [[1m-r[0m [4mrole[24m] [[1m-t[0m [4mtype[24m] [[1m-T[0m [4mtimeout[24m] [[1m-u[0m [4muser[24m] [[4mVAR[24m=[4mvalue[24m] [[1m-i[0m | [1m-s[0m] [[4mcommand[24m][m
+     [1msudoedit[0m [[1m-AknS[0m] [[1m-a[0m [4mtype[24m] [[1m-C[0m [4mnum[24m] [[1m-c[0m [4mclass[24m] [[1m-g[0m [4mgroup[24m] [[1m-h[0m [4mhost[24m] [[1m-p[0m [4mprompt[24m] [[1m-T[0m [4mtimeout[24m] [[1m-u[0m [4muser[24m] [4mfile[24m [4m...[24m[m
+[m
+[1mDESCRIPTION[0m[m
+     [1msudo[0m allows a permitted user to execute a [4mcommand[24m as the superuser or another user, as specified by the security policy.  The invoking user's real ([4mnot[24m[m
+     effective) user ID is used to determine the user name with which to query the security policy.[m
+[m
+     [1msudo[0m supports a plugin architecture for security policies and input/output logging.  Third parties can develop and distribute their own policy and I/O log‐[m
+     ging plugins to work seamlessly with the [1msudo[0m front end.  The default security policy is [4msudoers[24m, which is configured via the file [4m/etc/sudoers[24m, or via[m
+     LDAP.  See the [4mPlugins[24m section for more information.[m
+[m
+     The security policy determines what privileges, if any, a user has to run [1msudo[0m.  The policy may require that users authenticate themselves with a password[m
+     or another authentication mechanism.  If authentication is required, [1msudo[0m will exit if the user's password is not entered within a configurable time limit.[m
+     This limit is policy-specific; the default password prompt timeout for the [4msudoers[24m security policy is unlimited.[m
+[m
+     Security policies may support credential caching to allow the user to run [1msudo[0m again for a period of time without requiring authentication.  The [4msudoers[24m[m
+     policy caches credentials for 15 minutes, unless overridden in sudoers(5).  By running [1msudo[0m with the [1m-v[0m option, a user can update the cached credentials[m
+     without running a [4mcommand[24m.[m
+[m
+     When invoked as [1msudoedit[0m, the [1m-e[0m option (described below), is implied.[m
+[m
+     Security policies may log successful and failed attempts to use [1msudo[0m.  If an I/O plugin is configured, the running command's input and output may be logged[m
+     as well.[m
+[m
+     The options are as follows:[m
+[m
+     [1m-A[0m, [1m--askpass[0m[m
+                 Normally, if [1msudo[0m requires a password, it will read it from the user's terminal.  If the [1m-A[0m ([4maskpass[24m) option is specified, a (possibly graphi‐[m
+                 cal) helper program is executed to read the user's password and output the password to the standard output.  If the SUDO_ASKPASS environment[m
+[7m Manual page sudo(8) line 1 (press h for help or q to quit)[27m[K[K                 variable is set, it specifies the path to the helper program.  Otherwise, if sudo.conf(5) contains a line specifying the askpass program, that[m
+[7m Manual page sudo(8) line 2 (press h for help or q to quit)[27m[K[K                 value will be used.  For example:[m
+[7m Manual page sudo(8) line 3 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 4 (press h for help or q to quit)[27m[K[K                     # Path to askpass helper program[m
+[7m Manual page sudo(8) line 5 (press h for help or q to quit)[27m[K[K                     Path askpass /usr/X11R6/bin/ssh-askpass[m
+[7m Manual page sudo(8) line 6 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 7 (press h for help or q to quit)[27m[K[K                 If no askpass program is available, [1msudo[0m will exit with an error.[m
+[7m Manual page sudo(8) line 8 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 9 (press h for help or q to quit)[27m[K[K     [1m-b[0m, [1m--background[0m[m
+[7m Manual page sudo(8) line 10 (press h for help or q to quit)[27m[K[K                 Run the given command in the background.  Note that it is not possible to use shell job control to manipulate background processes started by[m
+[7m Manual page sudo(8) line 11 (press h for help or q to quit)[27m[K[K                 [1msudo[0m.  Most interactive commands will fail to work properly in background mode.[m
+[7m Manual page sudo(8) line 12 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 13 (press h for help or q to quit)[27m[K[K     [1m-C[0m [4mnum[24m, [1m--close-from[0m=[4mnum[24m[m
+[7m Manual page sudo(8) line 14 (press h for help or q to quit)[27m[K[K                 Close all file descriptors greater than or equal to [4mnum[24m before executing a command.  Values less than three are not permitted.  By default, [1msudo[0m[m
+[7m Manual page sudo(8) line 15 (press h for help or q to quit)[27m[K[K                 will close all open file descriptors other than standard input, standard output and standard error when executing a command.  The security pol‐[m
+[7m Manual page sudo(8) line 16 (press h for help or q to quit)[27m[K[K                 icy may restrict the user's ability to use this option.  The [4msudoers[24m policy only permits use of the [1m-C[0m option when the administrator has enabled[m
+[7m Manual page sudo(8) line 17 (press h for help or q to quit)[27m[K[K                 the [4mclosefrom_override[24m option.[m
+[7m Manual page sudo(8) line 18 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 19 (press h for help or q to quit)[27m[K[K     [1m-E[0m, [1m--preserve-env[0m[m
+[7m Manual page sudo(8) line 20 (press h for help or q to quit)[27m[K[K                 Indicates to the security policy that the user wishes to preserve their existing environment variables.  The security policy may return an error[m
+[7m Manual page sudo(8) line 21 (press h for help or q to quit)[27m[K[K                 if the user does not have permission to preserve the environment.[m
+[7m Manual page sudo(8) line 22 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 23 (press h for help or q to quit)[27m[K[K     [1m--preserve-env=list[0m[m
+[7m Manual page sudo(8) line 24 (press h for help or q to quit)[27m[K[K                 Indicates to the security policy that the user wishes to add the comma-separated list of environment variables to those preserved from the[m
+[7m Manual page sudo(8) line 25 (press h for help or q to quit)[27m[K[K                 user's environment.  The security policy may return an error if the user does not have permission to preserve the environment.[m
+[7m Manual page sudo(8) line 26 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 27 (press h for help or q to quit)[27m[K[K     [1m-e[0m, [1m--edit[0m  Edit one or more files instead of running a command.  In lieu of a path name, the string "sudoedit" is used when consulting the security policy.[m
+[7m Manual page sudo(8) line 28 (press h for help or q to quit)[27m[K[K                 If the user is authorized by the policy, the following steps are taken:[m
+[7m Manual page sudo(8) line 29 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 30 (press h for help or q to quit)[27m[K[K                 1.   Temporary copies are made of the files to be edited with the owner set to the invoking user.[m
+[7m Manual page sudo(8) line 31 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 32 (press h for help or q to quit)[27m[K[K                 2.   The editor specified by the policy is run to edit the temporary files.  The [4msudoers[24m policy uses the SUDO_EDITOR, VISUAL and EDITOR environ‐[m
+[7m Manual page sudo(8) line 33 (press h for help or q to quit)[27m[K[K                      ment variables (in that order).  If none of SUDO_EDITOR, VISUAL or EDITOR are set, the first program listed in the [4meditor[24m sudoers(5) option[m
+[7m Manual page sudo(8) line 34 (press h for help or q to quit)[27m[K[K                      is used.[m
+[7m Manual page sudo(8) line 35 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 36 (press h for help or q to quit)[27m[K[K                 3.   If they have been modified, the temporary files are copied back to their original location and the temporary versions are removed.[m
+[7m Manual page sudo(8) line 37 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 38 (press h for help or q to quit)[27m[K[K                 To help prevent the editing of unauthorized files, the following restrictions are enforced unless explicitly allowed by the security policy:[m
+[7m Manual page sudo(8) line 39 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 40 (press h for help or q to quit)[27m[K[K                 [1m·[0m   Symbolic links may not be edited (version 1.8.15 and higher).[m
+[7m Manual page sudo(8) line 41 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 42 (press h for help or q to quit)[27m[K[K                 [1m·[0m   Symbolic links along the path to be edited are not followed when the parent directory is writable by the invoking user unless that user is[m
+[7m Manual page sudo(8) line 43 (press h for help or q to quit)[27m[K[K                     root (version 1.8.16 and higher).[m
+[7m Manual page sudo(8) line 44 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 45 (press h for help or q to quit)[27m[K[K                 [1m·[0m   Files located in a directory that is writable by the invoking user may not be edited unless that user is root (version 1.8.16 and higher).[m
+[7m Manual page sudo(8) line 46 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 47 (press h for help or q to quit)[27m[K[K                 Users are never allowed to edit device special files.[m
+[7m Manual page sudo(8) line 48 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 49 (press h for help or q to quit)[27m[K[K                 If the specified file does not exist, it will be created.  Note that unlike most commands run by [4msudo[24m, the editor is run with the invoking[m
+[7m Manual page sudo(8) line 50 (press h for help or q to quit)[27m[K[K                 user's environment unmodified.  If, for some reason, [1msudo[0m is unable to update a file with its edited version, the user will receive a warning[m
+[7m Manual page sudo(8) line 51 (press h for help or q to quit)[27m[K[K                 and the edited copy will remain in a temporary file.[m
+[7m Manual page sudo(8) line 52 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 53 (press h for help or q to quit)[27m[K[K     [1m-g[0m [4mgroup[24m, [1m--group[0m=[4mgroup[24m[m
+[7m Manual page sudo(8) line 54 (press h for help or q to quit)[27m[K[K                 Run the command with the primary group set to [4mgroup[24m instead of the primary group specified by the target user's password database entry.  The[m
+[7m Manual page sudo(8) line 55 (press h for help or q to quit)[27m[K[K                 [4mgroup[24m may be either a group name or a numeric group ID (GID) prefixed with the ‘#’ character (e.g.  #0 for GID 0).  When running a command as a[m
+[7m Manual page sudo(8) line 56 (press h for help or q to quit)[27m[K[K                 GID, many shells require that the ‘#’ be escaped with a backslash (‘\’).  If no [1m-u[0m option is specified, the command will be run as the invoking[m
+[7m Manual page sudo(8) line 57 (press h for help or q to quit)[27m[K[K                 user.  In either case, the primary group will be set to [4mgroup[24m.[m
+[7m Manual page sudo(8) line 58 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 59 (press h for help or q to quit)[27m[K[K     [1m-H[0m, [1m--set-home[0m[m
+[7m Manual page sudo(8) line 60 (press h for help or q to quit)[27m[K[K                 Request that the security policy set the HOME environment variable to the home directory specified by the target user's password database entry.[m
+[7m Manual page sudo(8) line 61 (press h for help or q to quit)[27m[K[K                 Depending on the policy, this may be the default behavior.[m
+[7m Manual page sudo(8) line 62 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 63 (press h for help or q to quit)[27m[K[K     [1m-h[0m, [1m--help[0m  Display a short help message to the standard output and exit.[m
+[7m Manual page sudo(8) line 64 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 65 (press h for help or q to quit)[27m[K[K     [1m-h[0m [4mhost[24m, [1m--host[0m=[4mhost[24m[m
+[7m Manual page sudo(8) line 66 (press h for help or q to quit)[27m[K[K                 Run the command on the specified [4mhost[24m if the security policy plugin supports remote commands.  Note that the [4msudoers[24m plugin does not currently[m
+[7m Manual page sudo(8) line 67 (press h for help or q to quit)[27m[K[K                 support running remote commands.  This may also be used in conjunction with the [1m-l[0m option to list a user's privileges for the remote host.[m
+[7m Manual page sudo(8) line 68 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 69 (press h for help or q to quit)[27m[K[K     [1m-i[0m, [1m--login[0m[m
+[7m Manual page sudo(8) line 70 (press h for help or q to quit)[27m[K[K                 Run the shell specified by the target user's password database entry as a login shell.  This means that login-specific resource files such as[m
+[7m Manual page sudo(8) line 71 (press h for help or q to quit)[27m[K[K                 [4m.profile[24m or [4m.login[24m will be read by the shell.  If a command is specified, it is passed to the shell for execution via the shell's [1m-c[0m option.  If[m
+[7m Manual page sudo(8) line 72 (press h for help or q to quit)[27m[K[K                 no command is specified, an interactive shell is executed.  [1msudo[0m attempts to change to that user's home directory before running the shell.  The[m
+[7m Manual page sudo(8) line 73 (press h for help or q to quit)[27m[K[K                 command is run with an environment similar to the one a user would receive at log in.  The [4mCommand[24m [4menvironment[24m section in the sudoers(5) manual[m
+[7m Manual page sudo(8) line 74 (press h for help or q to quit)[27m[K[K                 documents how the [1m-i[0m option affects the environment in which a command is run when the [4msudoers[24m policy is in use.[m
+[7m Manual page sudo(8) line 75 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 76 (press h for help or q to quit)[27m[K[K     [1m-K[0m, [1m--remove-timestamp[0m[m
+[7m Manual page sudo(8) line 77 (press h for help or q to quit)[27m[K[K                 Similar to the [1m-k[0m option, except that it removes the user's cached credentials entirely and may not be used in conjunction with a command or[m
+[7m Manual page sudo(8) line 78 (press h for help or q to quit)[27m[K[K                 other option.  This option does not require a password.  Not all security policies support credential caching.[m
+[7m Manual page sudo(8) line 79 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 80 (press h for help or q to quit)[27m[K[K     [1m-k[0m, [1m--reset-timestamp[0m[m
+[7m Manual page sudo(8) line 81 (press h for help or q to quit)[27m[K[K                 When used without a command, invalidates the user's cached credentials.  In other words, the next time [1msudo[0m is run a password will be required.[m
+[7m Manual page sudo(8) line 82 (press h for help or q to quit)[27m[K[K                 This option does not require a password and was added to allow a user to revoke [1msudo[0m permissions from a [4m.logout[24m file.[m
+[7m Manual page sudo(8) line 83 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 84 (press h for help or q to quit)[27m[K[K                 When used in conjunction with a command or an option that may require a password, this option will cause [1msudo[0m to ignore the user's cached cre‐[m
+[7m Manual page sudo(8) line 85 (press h for help or q to quit)[27m[K[K                 dentials.  As a result, [1msudo[0m will prompt for a password (if one is required by the security policy) and will not update the user's cached cre‐[m
+[7m Manual page sudo(8) line 86 (press h for help or q to quit)[27m[K[K                 dentials.[m
+[7m Manual page sudo(8) line 87 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 88 (press h for help or q to quit)[27m[K[K                 Not all security policies support credential caching.[m
+[7m Manual page sudo(8) line 89 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 90 (press h for help or q to quit)[27m[K[K     [1m-l[0m, [1m--list[0m  If no [4mcommand[24m is specified, list the allowed (and forbidden) commands for the invoking user (or the user specified by the [1m-U[0m option) on the cur‐[m
+[7m Manual page sudo(8) line 91 (press h for help or q to quit)[27m[K[K                 rent host.  A longer list format is used if this option is specified multiple times and the security policy supports a verbose output format.[m
+[7m Manual page sudo(8) line 92 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 93 (press h for help or q to quit)[27m[K[K                 If a [4mcommand[24m is specified and is permitted by the security policy, the fully-qualified path to the command is displayed along with any command[m
+[7m Manual page sudo(8) line 94 (press h for help or q to quit)[27m[K[K                 line arguments.  If [4mcommand[24m is specified but not allowed, [1msudo[0m will exit with a status value of 1.[m
+[7m Manual page sudo(8) line 95 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 96 (press h for help or q to quit)[27m[K[K     [1m-n[0m, [1m--non-interactive[0m[m
+[7m Manual page sudo(8) line 97 (press h for help or q to quit)[27m[K[K                 Avoid prompting the user for input of any kind.  If a password is required for the command to run, [1msudo[0m will display an error message and exit.[m
+[7m Manual page sudo(8) line 98 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 99 (press h for help or q to quit)[27m[K[K     [1m-P[0m, [1m--preserve-groups[0m[m
+[7m Manual page sudo(8) line 100 (press h for help or q to quit)[27m[K[K                 Preserve the invoking user's group vector unaltered.  By default, the [4msudoers[24m policy will initialize the group vector to the list of groups the[m
+[7m Manual page sudo(8) line 101 (press h for help or q to quit)[27m[K[K                 target user is a member of.  The real and effective group IDs, however, are still set to match the target user.[m
+[7m Manual page sudo(8) line 102 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 103 (press h for help or q to quit)[27m[K[K     [1m-p[0m [4mprompt[24m, [1m--prompt[0m=[4mprompt[24m[m
+[7m Manual page sudo(8) line 104 (press h for help or q to quit)[27m[K[K                 Use a custom password prompt with optional escape sequences.  The following percent (‘%’) escape sequences are supported by the [4msudoers[24m policy:[m
+[7m Manual page sudo(8) line 105 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 106 (press h for help or q to quit)[27m[K[K                 %H  expanded to the host name including the domain name (on if the machine's host name is fully qualified or the [4mfqdn[24m option is set in[m
+[7m Manual page sudo(8) line 107 (press h for help or q to quit)[27m[K[K                     sudoers(5))[m
+[7m Manual page sudo(8) line 108 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 109 (press h for help or q to quit)[27m[K[K                 %h  expanded to the local host name without the domain name[m
+[7m Manual page sudo(8) line 110 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 111 (press h for help or q to quit)[27m[K[K                 %p  expanded to the name of the user whose password is being requested (respects the [4mrootpw[24m, [4mtargetpw[24m, and [4mrunaspw[24m flags in sudoers(5))[m
+[7m Manual page sudo(8) line 112 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 113 (press h for help or q to quit)[27m[K[K                 %U  expanded to the login name of the user the command will be run as (defaults to root unless the [1m-u[0m option is also specified)[m
+[7m Manual page sudo(8) line 114 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 115 (press h for help or q to quit)[27m[K[K                 %u  expanded to the invoking user's login name[m
+[7m Manual page sudo(8) line 116 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 117 (press h for help or q to quit)[27m[K[K                 %%  two consecutive ‘%’ characters are collapsed into a single ‘%’ character[m
+[7m Manual page sudo(8) line 118 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 119 (press h for help or q to quit)[27m[K[K                 The custom prompt will override the default prompt specified by either the security policy or the SUDO_PROMPT environment variable.  On systems[m
+[7m Manual page sudo(8) line 120 (press h for help or q to quit)[27m[K[K                 that use PAM, the custom prompt will also override the prompt specified by a PAM module unless the [4mpassprompt_override[24m flag is disabled in[m
+[7m Manual page sudo(8) line 121 (press h for help or q to quit)[27m[K[K                 [4msudoers[24m.[m
+[7m Manual page sudo(8) line 122 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 123 (press h for help or q to quit)[27m[K[K     [1m-r[0m [4mrole[24m, [1m--role[0m=[4mrole[24m[m
+[7m Manual page sudo(8) line 124 (press h for help or q to quit)[27m[K[K                 Run the command with an SELinux security context that includes the specified [4mrole[24m.[m
+[7m Manual page sudo(8) line 125 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 126 (press h for help or q to quit)[27m[K[K     [1m-S[0m, [1m--stdin[0m[m
+[7m Manual page sudo(8) line 127 (press h for help or q to quit)[27m[K[K                 Write the prompt to the standard error and read the password from the standard input instead of using the terminal device.  The password must be[m
+[7m Manual page sudo(8) line 128 (press h for help or q to quit)[27m[K[K                 followed by a newline character.[m
+[7m Manual page sudo(8) line 129 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 130 (press h for help or q to quit)[27m[K[K     [1m-s[0m, [1m--shell[0m[m
+[7m Manual page sudo(8) line 131 (press h for help or q to quit)[27m[K[K                 Run the shell specified by the SHELL environment variable if it is set or the shell specified by the invoking user's password database entry.[m
+[7m Manual page sudo(8) line 132 (press h for help or q to quit)[27m[K[K                 If a command is specified, it is passed to the shell for execution via the shell's [1m-c[0m option.  If no command is specified, an interactive shell[m
+[7m Manual page sudo(8) line 133 (press h for help or q to quit)[27m[K[K                 is executed.[m
+[7m Manual page sudo(8) line 134 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 135 (press h for help or q to quit)[27m[K[K     [1m-t[0m [4mtype[24m, [1m--type[0m=[4mtype[24m[m
+[7m Manual page sudo(8) line 136 (press h for help or q to quit)[27m[K[K                 Run the command with an SELinux security context that includes the specified [4mtype[24m.  If no [4mtype[24m is specified, the default type is derived from[m
+[7m Manual page sudo(8) line 137 (press h for help or q to quit)[27m[K[K                 the role.[m
+[7m Manual page sudo(8) line 138 (press h for help or q to quit)[27m[K[K[m
+[7m Manual page sudo(8) line 139 (press h for help or q to quit)[27m[K[K     [1m-U[0m [4muser[24m, [1m--other-user[0m=[4muser[24m[m
+[7m Manual page sudo(8) line 140 (press h for help or q to quit)[27m[K[K                 Used in conjunction with the [1m-l[0m option to list the privileges for [4muser[24m instead of for the invoking user.  The security policy may restrict list‐[m
+[7m Manual page sudo(8) line 141 (press h for help or q to quit)[27m[K[K                 ing other users' privileges.  The [4msudoers[24m policy only allows root or a user with the ALL privilege on the current host to use this option.[m
+[7m Manual page sudo(8) line 142 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sudo(8) line 143 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-T[0m [4mtimeout[24m, [1m--command-timeout[0m=[4mtimeout[24m[m
+[7m Manual page sudo(8) line 144 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                 Used to set a timeout for the command.  If the timeout expires before the command has exited, the command will be terminated.  The security pol‐[m
+[7m Manual page sudo(8) line 145 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                 icy may restrict the ability to set command timeouts.  The [4msudoers[24m policy requires that user-specified timeouts be explicitly enabled.[m
+[7m Manual page sudo(8) line 146 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sudo(8) line 147 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-u[0m [4muser[24m, [1m--user[0m=[4muser[24m[m
+[7m Manual page sudo(8) line 148 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                 Run the command as a user other than the default target user (usually [4mroot[24m).  The [4muser[24m may be either a user name or a numeric user ID (UID) pre‐[m
+[7m Manual page sudo(8) line 149 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                 fixed with the ‘#’ character (e.g.  #0 for UID 0).  When running commands as a UID, many shells require that the ‘#’ be escaped with a backslash[m
+[7m Manual page sudo(8) line 150 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                 (‘\’).  Some security policies may restrict UIDs to those listed in the password database.  The [4msudoers[24m policy allows UIDs that are not in the[m
+[7m Manual page sudo(8) line 151 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                 password database as long as the [4mtargetpw[24m option is not set.  Other security policies may not support this.[m
+[7m Manual page sudo(8) line 152 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sudo(8) line 153 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-V[0m, [1m--version[0m[m
+[7m Manual page sudo(8) line 154 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                 Print the [1msudo[0m version string as well as the version string of the security policy plugin and any I/O plugins.  If the invoking user is already[m
+[7m Manual page sudo(8) line 155 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                 root the [1m-V[0m option will display the arguments passed to configure when [1msudo[0m was built and plugins may display more verbose information such as[m
+[7m Manual page sudo(8) line 156 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                 default options.[m
+[7m Manual page sudo(8) line 157 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sudo(8) line 158 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-v[0m, [1m--validate[0m[m
+[7m Manual page sudo(8) line 159 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                 Update the user's cached credentials, authenticating the user if necessary.  For the [4msudoers[24m plugin, this extends the [1msudo[0m timeout for another[m
+[7m Manual page sudo(8) line 160 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                 15 minutes by default, but does not run a command.  Not all security policies support cached credentials.[m
+[7m Manual page sudo(8) line 161 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sudo(8) line 162 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m--[0m          The [1m--[0m option indicates that [1msudo[0m should stop processing command line arguments.[m
+[7m Manual page sudo(8) line 163 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sudo(8) line 164 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     Environment variables to be set for the command may also be passed on the command line in the form of [4mVAR[24m=[4mvalue[24m, e.g. LD_LIBRARY_PATH=[4m/usr/local/pkg/lib[24m.[m
+[7m Manual page sudo(8) line 165 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     Variables passed on the command line are subject to restrictions imposed by the security policy plugin.  The [4msudoers[24m policy subjects variables passed on the[m
+[7m Manual page sudo(8) line 166 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     command line to the same restrictions as normal environment variables with one important exception.  If the [4msetenv[24m option is set in [4msudoers[24m, the command to[m
+[7m Manual page sudo(8) line 167 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     be run has the SETENV tag set or the command matched is ALL, the user may set variables that would otherwise be forbidden.  See sudoers(5) for more informa‐[m
+[7m Manual page sudo(8) line 168 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     tion.[m
+[7m Manual page sudo(8) line 169 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sudo(8) line 170 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[1mCOMMAND[0m [1mEXECUTION[0m[m
+[7m Manual page sudo(8) line 171 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     When [1msudo[0m executes a command, the security policy specifies the execution environment for the command.  Typically, the real and effective user and group and[m
+[7m Manual page sudo(8) line 172 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     IDs are set to match those of the target user, as specified in the password database, and the group vector is initialized based on the group database[m
+[7m Manual page sudo(8) line 173 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     (unless the [1m-P[0m option was specified).[m
+[7m Manual page sudo(8) line 174 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sudo(8) line 175 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     The following parameters may be specified by security policy:[m
+[7m Manual page sudo(8) line 176 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sudo(8) line 177 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m·[0m   real and effective user ID[m
+[7m Manual page sudo(8) line 178 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sudo(8) line 179 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m·[0m   real and effective group ID[m
+[7m Manual page sudo(8) line 180 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sudo(8) line 181 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[39;1H[K[7m Manual page sudo(8) line 180 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM                 ing other users' privileges.  The [4msudoers[24m policy only allows root or a user with the ALL privilege on the current host to use this option.[m
+[39;1H[K[7m Manual page sudo(8) line 179 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM                 Used in conjunction with the [1m-l[0m option to list the privileges for [4muser[24m instead of for the invoking user.  The security policy may restrict list‐[m
+[39;1H[K[7m Manual page sudo(8) line 178 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM     [1m-U[0m [4muser[24m, [1m--other-user[0m=[4muser[24m[m
+[39;1H[K[7m Manual page sudo(8) line 177 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[39;1H[K[7m Manual page sudo(8) line 176 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM                 the role.[m
+[39;1H[K[7m Manual page sudo(8) line 175 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM                 Run the command with an SELinux security context that includes the specified [4mtype[24m.  If no [4mtype[24m is specified, the default type is derived from[m
+[39;1H[K[7m Manual page sudo(8) line 174 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM     [1m-t[0m [4mtype[24m, [1m--type[0m=[4mtype[24m[m
+[39;1H[K[7m Manual page sudo(8) line 173 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[39;1H[K[7m Manual page sudo(8) line 172 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     IDs are set to match those of the target user, as specified in the password database, and the group vector is initialized based on the group database[m
+[7m Manual page sudo(8) line 173 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     (unless the [1m-P[0m option was specified).[m
+[7m Manual page sudo(8) line 174 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sudo(8) line 175 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM                 Run the command with an SELinux security context that includes the specified [4mtype[24m.  If no [4mtype[24m is specified, the default type is derived from[m
+[39;1H[K[7m Manual page sudo(8) line 174 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM     [1m-t[0m [4mtype[24m, [1m--type[0m=[4mtype[24m[m
+[39;1H[K[7m Manual page sudo(8) line 173 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[39;1H[K[7m Manual page sudo(8) line 172 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM                 is executed.[m
+[39;1H[K[7m Manual page sudo(8) line 171 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM                 If a command is specified, it is passed to the shell for execution via the shell's [1m-c[0m option.  If no command is specified, an interactive shell[m
+[39;1H[K[7m Manual page sudo(8) line 170 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM                 Run the shell specified by the SHELL environment variable if it is set or the shell specified by the invoking user's password database entry.[m
+[39;1H[K[7m Manual page sudo(8) line 169 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM     [1m-s[0m, [1m--shell[0m[m
+[39;1H[K[7m Manual page sudo(8) line 168 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[39;1H[K[7m Manual page sudo(8) line 167 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM                 followed by a newline character.[m
+[39;1H[K[7m Manual page sudo(8) line 166 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM                 Write the prompt to the standard error and read the password from the standard input instead of using the terminal device.  The password must be[m
+[39;1H[K[7m Manual page sudo(8) line 165 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM     [1m-S[0m, [1m--stdin[0m[m
+[39;1H[K[7m Manual page sudo(8) line 164 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[39;1H[K[7m Manual page sudo(8) line 163 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM                 Run the command with an SELinux security context that includes the specified [4mrole[24m.[m
+[39;1H[K[7m Manual page sudo(8) line 162 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM     [1m-r[0m [4mrole[24m, [1m--role[0m=[4mrole[24m[m
+[39;1H[K[7m Manual page sudo(8) line 161 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[39;1H[K[7m Manual page sudo(8) line 160 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM                 [4msudoers[24m.[m
+[39;1H[K[7m Manual page sudo(8) line 159 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM                 that use PAM, the custom prompt will also override the prompt specified by a PAM module unless the [4mpassprompt_override[24m flag is disabled in[m
+[39;1H[K[7m Manual page sudo(8) line 158 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM                 The custom prompt will override the default prompt specified by either the security policy or the SUDO_PROMPT environment variable.  On systems[m
+[39;1H[K[7m Manual page sudo(8) line 157 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[39;1H[K[7m Manual page sudo(8) line 156 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM                 %%  two consecutive ‘%’ characters are collapsed into a single ‘%’ character[m
+[39;1H[K[7m Manual page sudo(8) line 155 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[39;1H[K[7m Manual page sudo(8) line 154 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM                 %u  expanded to the invoking user's login name[m
+[39;1H[K[7m Manual page sudo(8) line 153 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[39;1H[K[7m Manual page sudo(8) line 152 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM                 %U  expanded to the login name of the user the command will be run as (defaults to root unless the [1m-u[0m option is also specified)[m
+[39;1H[K[7m Manual page sudo(8) line 151 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[39;1H[K[7m Manual page sudo(8) line 150 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM                 %p  expanded to the name of the user whose password is being requested (respects the [4mrootpw[24m, [4mtargetpw[24m, and [4mrunaspw[24m flags in sudoers(5))[m
+[39;1H[K[7m Manual page sudo(8) line 149 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[39;1H[K[7m Manual page sudo(8) line 148 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM                 %h  expanded to the local host name without the domain name[m
+[39;1H[K[7m Manual page sudo(8) line 147 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[39;1H[K[7m Manual page sudo(8) line 146 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM                     sudoers(5))[m
+[39;1H[K[7m Manual page sudo(8) line 145 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K                 icy may restrict the ability to set command timeouts.  The [4msudoers[24m policy requires that user-specified timeouts be explicitly enabled.[m
+[7m Manual page sudo(8) line 146 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page sudo(8) line 147 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K     [1m-u[0m [4muser[24m, [1m--user[0m=[4muser[24m[m
+[7m Manual page sudo(8) line 148 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM                 %h  expanded to the local host name without the domain name[m
+[39;1H[K[7m Manual page sudo(8) line 147 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[39;1H[K[7m Manual page sudo(8) line 146 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM                     sudoers(5))[m
+[39;1H[K[7m Manual page sudo(8) line 145 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM                 %H  expanded to the host name including the domain name (on if the machine's host name is fully qualified or the [4mfqdn[24m option is set in[m
+[39;1H[K[7m Manual page sudo(8) line 144 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[39;1H[K[7m Manual page sudo(8) line 143 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM                 Use a custom password prompt with optional escape sequences.  The following percent (‘%’) escape sequences are supported by the [4msudoers[24m policy:[m
+[39;1H[K[7m Manual page sudo(8) line 142 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM     [1m-p[0m [4mprompt[24m, [1m--prompt[0m=[4mprompt[24m[m
+[39;1H[K[7m Manual page sudo(8) line 141 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[39;1H[K[7m Manual page sudo(8) line 140 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM                 target user is a member of.  The real and effective group IDs, however, are still set to match the target user.[m
+[39;1H[K[7m Manual page sudo(8) line 139 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM                 Preserve the invoking user's group vector unaltered.  By default, the [4msudoers[24m policy will initialize the group vector to the list of groups the[m
+[39;1H[K[7m Manual page sudo(8) line 138 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM     [1m-P[0m, [1m--preserve-groups[0m[m
+[39;1H[K[7m Manual page sudo(8) line 137 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[39;1H[K[7m Manual page sudo(8) line 136 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM                 Avoid prompting the user for input of any kind.  If a password is required for the command to run, [1msudo[0m will display an error message and exit.[m
+[39;1H[K[7m Manual page sudo(8) line 135 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM     [1m-n[0m, [1m--non-interactive[0m[m
+[39;1H[K[7m Manual page sudo(8) line 134 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[39;1H[K[7m Manual page sudo(8) line 133 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM                 line arguments.  If [4mcommand[24m is specified but not allowed, [1msudo[0m will exit with a status value of 1.[m
+[39;1H[K[7m Manual page sudo(8) line 132 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM                 If a [4mcommand[24m is specified and is permitted by the security policy, the fully-qualified path to the command is displayed along with any command[m
+[39;1H[K[7m Manual page sudo(8) line 131 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[39;1H[K[7m Manual page sudo(8) line 130 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM                 rent host.  A longer list format is used if this option is specified multiple times and the security policy supports a verbose output format.[m
+[39;1H[K[7m Manual page sudo(8) line 129 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM     [1m-l[0m, [1m--list[0m  If no [4mcommand[24m is specified, list the allowed (and forbidden) commands for the invoking user (or the user specified by the [1m-U[0m option) on the cur‐[m
+[39;1H[K[7m Manual page sudo(8) line 128 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[39;1H[K[7m Manual page sudo(8) line 127 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM                 Not all security policies support credential caching.[m
+[39;1H[K[7m Manual page sudo(8) line 126 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[39;1H[K[7m Manual page sudo(8) line 125 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM                 dentials.[m
+[39;1H[K[7m Manual page sudo(8) line 124 (press h for help or q to quit)[27m[K[K [KESCESC[KESCESC[K[7m Manual page sudo(8) line 124 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[23;0;0t]0;shiba4@nootnoot: ~[01;32mshiba4@nootnoot[00m:[01;34m~[00m$ id
+uid=1004(shiba4) gid=1004(shiba4) groups=1004(shiba4)
+]0;shiba4@nootnoot: ~[01;32mshiba4@nootnoot[00m:[01;34m~[00m$ etc[K[K[K
+]0;shiba4@nootnoot: ~[01;32mshiba4@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba4@nootnoot: ~[01;32mshiba4@nootnoot[00m:[01;34m~[00m$ /etc/passwd
+bash: /etc/passwd: Permission denied
+]0;shiba4@nootnoot: ~[01;32mshiba4@nootnoot[00m:[01;34m~[00m$ cd /root
+bash: cd: /root: Permission denied
+]0;shiba4@nootnoot: ~[01;32mshiba4@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba4@nootnoot: ~[01;32mshiba4@nootnoot[00m:[01;34m~[00m$ id
+uid=1004(shiba4) gid=1004(shiba4) groups=1004(shiba4)
+]0;shiba4@nootnoot: ~[01;32mshiba4@nootnoot[00m:[01;34m~[00m$ sudo -l
+[sudo] password for shiba4: 
+Sorry, user shiba4 may not run sudo on nootnoot.
+]0;shiba4@nootnoot: ~[01;32mshiba4@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba4@nootnoot: ~[01;32mshiba4@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba4@nootnoot: ~[01;32mshiba4@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba4@nootnoot: ~[01;32mshiba4@nootnoot[00m:[01;34m~[00m$ sudo
+usage: sudo -h | -K | -k | -V
+usage: sudo -v [-AknS] [-g group] [-h host] [-p prompt] [-u user]
+usage: sudo -l [-AknS] [-g group] [-h host] [-p prompt] [-U user] [-u user] [command]
+usage: sudo [-AbEHknPS] [-r role] [-t type] [-C num] [-g group] [-h host] [-p prompt] [-T timeout] [-u user] [VAR=value] [-i|-s] [<command>]
+usage: sudo -e [-AknS] [-r role] [-t type] [-C num] [-g group] [-h host] [-p prompt] [-T timeout] [-u user] file ...
+]0;shiba4@nootnoot: ~[01;32mshiba4@nootnoot[00m:[01;34m~[00m$ sudo cd root[K[K[K[K//[Kroot
+[sudo] password for shiba4: 
+shiba4 is not in the sudoers file.  This incident will be reported.
+]0;shiba4@nootnoot: ~[01;32mshiba4@nootnoot[00m:[01;34m~[00m$ top
+[?1h=[?25l[H[2J(B[mtop - 22:21:44 up 45 min,  1 user,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+Tasks:(B[m[39;49m[1m  92 (B[m[39;49mtotal,(B[m[39;49m[1m   1 (B[m[39;49mrunning,(B[m[39;49m[1m  54 (B[m[39;49msleeping,(B[m[39;49m[1m   0 (B[m[39;49mstopped,(B[m[39;49m[1m   0 (B[m[39;49mzombie(B[m[39;49m(B[m[39;49m[K
+%Cpu(s):(B[m[39;49m[1m  0.4 (B[m[39;49mus,(B[m[39;49m[1m  0.2 (B[m[39;49msy,(B[m[39;49m[1m  0.1 (B[m[39;49mni,(B[m[39;49m[1m 96.9 (B[m[39;49mid,(B[m[39;49m[1m  1.5 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.9 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+KiB Mem :(B[m[39;49m[1m  1006820 (B[m[39;49mtotal,(B[m[39;49m[1m   409952 (B[m[39;49mfree,(B[m[39;49m[1m   108736 (B[m[39;49mused,(B[m[39;49m[1m   488132 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+KiB Swap:(B[m[39;49m[1m        0 (B[m[39;49mtotal,(B[m[39;49m[1m        0 (B[m[39;49mfree,(B[m[39;49m[1m        0 (B[m[39;49mused.(B[m[39;49m[1m   754140 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+[7m  PID USER      PR  NI    VIRT    RES    SHR S %CPU %MEM     TIME+ COMMAND                                                                                            (B[m[39;49m[K
+(B[m    1 root      20   0  159744   9088   6836 S  0.0  0.9   0:02.96 systemd                                                                                            (B[m[39;49m[K
+(B[m    2 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kthreadd                                                                                           (B[m[39;49m[K
+(B[m    4 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 kworker/0:0H                                                                                       (B[m[39;49m[K
+(B[m    6 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 mm_percpu_wq                                                                                       (B[m[39;49m[K
+(B[m    7 root      20   0       0      0      0 S  0.0  0.0   0:00.04 ksoftirqd/0                                                                                        (B[m[39;49m[K
+(B[m    8 root      20   0       0      0      0 I  0.0  0.0   0:00.14 rcu_sched                                                                                          (B[m[39;49m[K
+(B[m    9 root      20   0       0      0      0 I  0.0  0.0   0:00.00 rcu_bh                                                                                             (B[m[39;49m[K
+(B[m   10 root      rt   0       0      0      0 S  0.0  0.0   0:00.00 migration/0                                                                                        (B[m[39;49m[K
+(B[m   11 root      rt   0       0      0      0 S  0.0  0.0   0:00.00 watchdog/0                                                                                         (B[m[39;49m[K
+(B[m   12 root      20   0       0      0      0 S  0.0  0.0   0:00.00 cpuhp/0                                                                                            (B[m[39;49m[K
+(B[m   13 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kdevtmpfs                                                                                          (B[m[39;49m[K
+(B[m   14 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 netns                                                                                              (B[m[39;49m[K
+(B[m   15 root      20   0       0      0      0 S  0.0  0.0   0:00.00 rcu_tasks_kthre                                                                                    (B[m[39;49m[K
+(B[m   16 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kauditd                                                                                            (B[m[39;49m[K
+(B[m   17 root      20   0       0      0      0 S  0.0  0.0   0:00.00 xenbus                                                                                             (B[m[39;49m[K
+(B[m   18 root      20   0       0      0      0 S  0.0  0.0   0:00.02 xenwatch                                                                                           (B[m[39;49m[K
+(B[m   19 root      20   0       0      0      0 I  0.0  0.0   0:00.17 kworker/0:1                                                                                        (B[m[39;49m[K
+(B[m   20 root      20   0       0      0      0 S  0.0  0.0   0:00.00 khungtaskd                                                                                         (B[m[39;49m[K
+(B[m   21 root      20   0       0      0      0 S  0.0  0.0   0:00.00 oom_reaper                                                                                         (B[m[39;49m[K
+(B[m   22 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 writeback                                                                                          (B[m[39;49m[K
+(B[m   23 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kcompactd0                                                                                         (B[m[39;49m[K
+(B[m   24 root      25   5       0      0      0 S  0.0  0.0   0:00.00 ksmd                                                                                               (B[m[39;49m[K
+(B[m   25 root      39  19       0      0      0 S  0.0  0.0   0:00.00 khugepaged                                                                                         (B[m[39;49m[K
+(B[m   26 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 crypto                                                                                             (B[m[39;49m[K
+(B[m   27 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 kintegrityd                                                                                        (B[m[39;49m[K
+(B[m   28 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 kblockd                                                                                            (B[m[39;49m[K
+(B[m   29 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 ata_sff                                                                                            (B[m[39;49m[K
+(B[m   30 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 md                                                                                                 (B[m[39;49m[K
+(B[m   31 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 edac-poller                                                                                        (B[m[39;49m[K
+(B[m   32 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 devfreq_wq                                                                                         (B[m[39;49m[K
+(B[m   33 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 watchdogd                                                                                          (B[m[39;49m[K
+(B[m   36 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kswapd0                                                                                            (B[m[39;49m[K[H(B[mtop - 22:21:47 up 45 min,  1 user,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+Tasks:(B[m[39;49m[1m  92 (B[m[39;49mtotal,(B[m[39;49m[1m   1 (B[m[39;49mrunning,(B[m[39;49m[1m  54 (B[m[39;49msleeping,(B[m[39;49m[1m   0 (B[m[39;49mstopped,(B[m[39;49m[1m   0 (B[m[39;49mzombie(B[m[39;49m(B[m[39;49m[K
+%Cpu(s):(B[m[39;49m[1m  0.0 (B[m[39;49mus,(B[m[39;49m[1m  0.3 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 99.7 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+KiB Mem :(B[m[39;49m[1m  1006820 (B[m[39;49mtotal,(B[m[39;49m[1m   409828 (B[m[39;49mfree,(B[m[39;49m[1m   108860 (B[m[39;49mused,(B[m[39;49m[1m   488132 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+KiB Swap:(B[m[39;49m[1m        0 (B[m[39;49mtotal,(B[m[39;49m[1m        0 (B[m[39;49mfree,(B[m[39;49m[1m        0 (B[m[39;49mused.(B[m[39;49m[1m   754016 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[H(B[mtop - 22:21:50 up 45 min,  1 user,  load average: 0.00, 0.00, 0.00(B[m[39;49m(B[m[39;49m[K
+
+%Cpu(s):(B[m[39;49m[1m  0.0 (B[m[39;49mus,(B[m[39;49m[1m  0.0 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m100.0 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+KiB Mem :(B[m[39;49m[1m  1006820 (B[m[39;49mtotal,(B[m[39;49m[1m   409828 (B[m[39;49mfree,(B[m[39;49m[1m   108852 (B[m[39;49mused,(B[m[39;49m[1m   488140 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+
+[K
+
+(B[m[1m 1711 shiba4    20   0   42784   3984   3376 R  0.3  0.4   0:00.01 top                                                                                                (B[m[39;49m[K
+(B[m    1 root      20   0  159744   9088   6836 S  0.0  0.9   0:02.96 systemd                                                                                            (B[m[39;49m[K
+(B[m    2 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kthreadd                                                                                           (B[m[39;49m[K
+(B[m    4 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 kworker/0:0H                                                                                       (B[m[39;49m[K
+(B[m    6 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 mm_percpu_wq                                                                                       (B[m[39;49m[K
+(B[m    7 root      20   0       0      0      0 S  0.0  0.0   0:00.04 ksoftirqd/0                                                                                        (B[m[39;49m[K
+(B[m    8 root      20   0       0      0      0 I  0.0  0.0   0:00.14 rcu_sched                                                                                          (B[m[39;49m[K
+(B[m    9 root      20   0       0      0      0 I  0.0  0.0   0:00.00 rcu_bh                                                                                             (B[m[39;49m[K
+(B[m   10 root      rt   0       0      0      0 S  0.0  0.0   0:00.00 migration/0                                                                                        (B[m[39;49m[K
+(B[m   11 root      rt   0       0      0      0 S  0.0  0.0   0:00.00 watchdog/0                                                                                         (B[m[39;49m[K
+(B[m   12 root      20   0       0      0      0 S  0.0  0.0   0:00.00 cpuhp/0                                                                                            (B[m[39;49m[K
+(B[m   13 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kdevtmpfs                                                                                          (B[m[39;49m[K
+(B[m   14 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 netns                                                                                              (B[m[39;49m[K
+(B[m   15 root      20   0       0      0      0 S  0.0  0.0   0:00.00 rcu_tasks_kthre                                                                                    (B[m[39;49m[K
+(B[m   16 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kauditd                                                                                            (B[m[39;49m[K
+(B[m   17 root      20   0       0      0      0 S  0.0  0.0   0:00.00 xenbus                                                                                             (B[m[39;49m[K
+(B[m   18 root      20   0       0      0      0 S  0.0  0.0   0:00.02 xenwatch                                                                                           (B[m[39;49m[K
+(B[m   19 root      20   0       0      0      0 I  0.0  0.0   0:00.17 kworker/0:1                                                                                        (B[m[39;49m[K
+(B[m   20 root      20   0       0      0      0 S  0.0  0.0   0:00.00 khungtaskd                                                                                         (B[m[39;49m[K
+(B[m   21 root      20   0       0      0      0 S  0.0  0.0   0:00.00 oom_reaper                                                                                         (B[m[39;49m[K
+(B[m   22 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 writeback                                                                                          (B[m[39;49m[K
+(B[m   23 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kcompactd0                                                                                         (B[m[39;49m[K
+(B[m   24 root      25   5       0      0      0 S  0.0  0.0   0:00.00 ksmd                                                                                               (B[m[39;49m[K
+(B[m   25 root      39  19       0      0      0 S  0.0  0.0   0:00.00 khugepaged                                                                                         (B[m[39;49m[K
+(B[m   26 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 crypto                                                                                             (B[m[39;49m[K
+(B[m   27 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 kintegrityd                                                                                        (B[m[39;49m[K
+(B[m   28 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 kblockd                                                                                            (B[m[39;49m[K
+(B[m   29 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 ata_sff                                                                                            (B[m[39;49m[K
+(B[m   30 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 md                                                                                                 (B[m[39;49m[K
+(B[m   31 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 edac-poller                                                                                        (B[m[39;49m[K
+(B[m   32 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 devfreq_wq                                                                                         (B[m[39;49m[K
+(B[m   33 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 watchdogd                                                                                          (B[m[39;49m[K[?1l>[40;1H
+[?12l[?25h[K]0;shiba4@nootnoot: ~[01;32mshiba4@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba4@nootnoot: ~[01;32mshiba4@nootnoot[00m:[01;34m~[00m$ cd ..[K[K[K[K[Kexit
+exit
+]0;shiba3@nootnoot: /home/shiba4[01;32mshiba3@nootnoot[00m:[01;34m/home/shiba4[00m$ 
+]0;shiba3@nootnoot: /home/shiba4[01;32mshiba3@nootnoot[00m:[01;34m/home/shiba4[00m$ 
+]0;shiba3@nootnoot: /home/shiba4[01;32mshiba3@nootnoot[00m:[01;34m/home/shiba4[00m$ sudo
+usage: sudo -h | -K | -k | -V
+usage: sudo -v [-AknS] [-g group] [-h host] [-p prompt] [-u user]
+usage: sudo -l [-AknS] [-g group] [-h host] [-p prompt] [-U user] [-u user] [command]
+usage: sudo [-AbEHknPS] [-r role] [-t type] [-C num] [-g group] [-h host] [-p prompt] [-T timeout] [-u user] [VAR=value] [-i|-s] [<command>]
+usage: sudo -e [-AknS] [-r role] [-t type] [-C num] [-g group] [-h host] [-p prompt] [-T timeout] [-u user] file ...
+]0;shiba3@nootnoot: /home/shiba4[01;32mshiba3@nootnoot[00m:[01;34m/home/shiba4[00m$ sudo -l
+[sudo] password for shiba3: 
+Sorry, user shiba3 may not run sudo on nootnoot.
+]0;shiba3@nootnoot: /home/shiba4[01;32mshiba3@nootnoot[00m:[01;34m/home/shiba4[00m$ sudo -[Kcd root[K[K[K[K[K /root/
+[sudo] password for shiba3: 
+shiba3 is not in the sudoers file.  This incident will be reported.
+]0;shiba3@nootnoot: /home/shiba4[01;32mshiba3@nootnoot[00m:[01;34m/home/shiba4[00m$ 
+]0;shiba3@nootnoot: /home/shiba4[01;32mshiba3@nootnoot[00m:[01;34m/home/shiba4[00m$ 
+]0;shiba3@nootnoot: /home/shiba4[01;32mshiba3@nootnoot[00m:[01;34m/home/shiba4[00m$ cd [K[K[Kcd[K[Kexit
+exit
+]0;shiba2@nootnoot: ~[01;32mshiba2@nootnoot[00m:[01;34m~[00m$ sudo -l
+[sudo] password for shiba2: 
+Sorry, user shiba2 may not run sudo on nootnoot.
+]0;shiba2@nootnoot: ~[01;32mshiba2@nootnoot[00m:[01;34m~[00m$ sudo cd [K[K[K[K[K[K[K[Kexit
+exit
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ sudo -l
+[sudo] password for shiba1: 
+Sorry, user shiba1 may not run sudo on nootnoot.
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ cd root[K[K[K[K/root
+-bash: cd: /root: Permission denied
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ cd 
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ cd /
+]0;shiba1@nootnoot: /[01;32mshiba1@nootnoot[00m:[01;34m/[00m$ ls
+[0m[01;34mbin[0m   [01;34mcdrom[0m  [01;34metc[0m   [01;36minitrd.img[0m      [01;34mlib[0m    [01;34mlost+found[0m  [01;34mmnt[0m  [01;34mproc[0m  [01;34mrun[0m   [01;34msnap[0m  swap.img  [30;42mtmp[0m  [01;34mvar[0m      [01;36mvmlinuz.old[0m
+[01;34mboot[0m  [01;34mdev[0m    [01;34mhome[0m  [01;36minitrd.img.old[0m  [01;34mlib64[0m  [01;34mmedia[0m       [01;34mopt[0m  [01;34mroot[0m  [01;34msbin[0m  [01;34msrv[0m   [01;34msys[0m       [01;34musr[0m  [01;36mvmlinuz[0m
+]0;shiba1@nootnoot: /[01;32mshiba1@nootnoot[00m:[01;34m/[00m$ 
+]0;shiba1@nootnoot: /[01;32mshiba1@nootnoot[00m:[01;34m/[00m$ cd mn[K/mnt
+-bash: cd: m/mnt: No such file or directory
+]0;shiba1@nootnoot: /[01;32mshiba1@nootnoot[00m:[01;34m/[00m$ cd /mnt
+]0;shiba1@nootnoot: /mnt[01;32mshiba1@nootnoot[00m:[01;34m/mnt[00m$ ls
+]0;shiba1@nootnoot: /mnt[01;32mshiba1@nootnoot[00m:[01;34m/mnt[00m$ cd [K[K[Kcd /root
+-bash: cd: /root: Permission denied
+]0;shiba1@nootnoot: /mnt[01;32mshiba1@nootnoot[00m:[01;34m/mnt[00m$ fin[K[K[Kcd ..
+]0;shiba1@nootnoot: /[01;32mshiba1@nootnoot[00m:[01;34m/[00m$ cle[K[K[Kcd
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ clear
+[3J[H[2J]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ exit
+logout
+Connection to 10.10.54.79 closed.
+root@kali:/home/kali/TryJao/TryHackMe/Linux# exit
+exit
+
+Script done on 2020-10-24 18:26:47-04:00 [COMMAND_EXIT_CODE="0"]

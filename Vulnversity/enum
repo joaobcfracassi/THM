@@ -1,0 +1,38 @@
+Script started on 2020-11-01 21:11:06-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="140" LINES="30"]
+]0;joaof@Pentest: ~/TryJao/TryHackMe/Vulnversity[1;34mjoaof@Pentest[00m:[1;32m~/TryJao/TryHackMe/Vulnversity[00m$ exitnmap -v -sV -Pn 10.10.124.192 -oG services[1@s[1@u[1@d[1@o[1@ 
+[sudo] senha para joaof: 
+Sinto muito, tente novamente.
+[sudo] senha para joaof: 
+Host discovery disabled (-Pn). All addresses will be marked 'up' and scan times will be slower.
+Starting Nmap 7.91 ( https://nmap.org ) at 2020-11-01 21:11 -03
+NSE: Loaded 45 scripts for scanning.
+Initiating Parallel DNS resolution of 1 host. at 21:11
+Completed Parallel DNS resolution of 1 host. at 21:11, 0.15s elapsed
+Initiating SYN Stealth Scan at 21:11
+Scanning 10.10.124.192 [1000 ports]
+Completed SYN Stealth Scan at 21:11, 13.72s elapsed (1000 total ports)
+Initiating Service scan at 21:11
+NSE: Script scanning 10.10.124.192.
+Initiating NSE at 21:11
+Completed NSE at 21:11, 0.00s elapsed
+Initiating NSE at 21:11
+Completed NSE at 21:11, 0.00s elapsed
+Nmap scan report for 10.10.124.192
+Host is up (0.085s latency).
+Not shown: 994 filtered ports
+PORT     STATE  SERVICE        VERSION
+25/tcp   closed smtp
+135/tcp  closed msrpc
+139/tcp  closed netbios-ssn
+445/tcp  closed microsoft-ds
+593/tcp  closed http-rpc-epmap
+4444/tcp closed krb524
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 15.05 seconds
+           Raw packets sent: 2002 (88.088KB) | Rcvd: 14 (560B)
+]0;joaof@Pentest: ~/TryJao/TryHackMe/Vulnversity[1;34mjoaof@Pentest[00m:[1;32m~/TryJao/TryHackMe/Vulnversity[00m$ exit
+exit
+
+Script done on 2020-11-01 21:11:56-03:00 [COMMAND_EXIT_CODE="0"]

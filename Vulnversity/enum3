@@ -1,0 +1,56 @@
+Script started on 2020-11-02 20:48:55-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="166" LINES="39"]
+]0;joaof@Pentest: ~/TryJao/TryHackMe/Vulnversity[1;34mjoaof@Pentest[00m:[1;32m~/TryJao/TryHackMe/Vulnversity[00m$ sudo apt install goo[Kbs[Kuster
+[sudo] senha para joaof: 
+Lendo listas de pacotes... 0%Lendo listas de pacotes... 100%Lendo listas de pacotes... Pronto
+Construindo árvore de dependências... 0%Construindo árvore de dependências... 0%Construindo árvore de dependências... 50%Construindo árvore de dependências... 50%Construindo árvore de dependências       
+Lendo informação de estado... 0%  Lendo informação de estado... 0%Lendo informação de estado... Pronto
+gobuster is already the newest version (3.0.1-0kali1).
+0 pacotes atualizados, 0 pacotes novos instalados, 0 a serem removidos e 64 não atualizados.
+]0;joaof@Pentest: ~/TryJao/TryHackMe/Vulnversity[1;34mjoaof@Pentest[00m:[1;32m~/TryJao/TryHackMe/Vulnversity[00m$ 
+]0;joaof@Pentest: ~/TryJao/TryHackMe/Vulnversity[1;34mjoaof@Pentest[00m:[1;32m~/TryJao/TryHackMe/Vulnversity[00m$ 
+]0;joaof@Pentest: ~/TryJao/TryHackMe/Vulnversity[1;34mjoaof@Pentest[00m:[1;32m~/TryJao/TryHackMe/Vulnversity[00m$ sudo gobuster dir -u http:[1P:p:[C//10.10.212.178/ -w /[K/usr/share/wordlists/dirb/common.txt 
+===============================================================
+Gobuster v3.0.1
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@_FireFart_)
+===============================================================
+[+] Url:            http://10.10.212.178/
+[+] Threads:        10
+[+] Wordlist:       /usr/share/wordlists/dirb/common.txt
+[+] Status codes:   200,204,301,302,307,401,403
+[+] User Agent:     gobuster/3.0.1
+[+] Timeout:        10s
+===============================================================
+2020/11/02 20:51:51 Starting gobuster
+===============================================================
+Error: error on running goubster: unable to connect to http://10.10.212.178/: Get http://10.10.212.178/: dial tcp 10.10.212.178:80: connect: connection refused
+]0;joaof@Pentest: ~/TryJao/TryHackMe/Vulnversity[1;34mjoaof@Pentest[00m:[1;32m~/TryJao/TryHackMe/Vulnversity[00m$ sudo gobuster dir -u http://10.10.212.178/ -w /usr/share/wordlists/dirb/common.txt [1@:[1@3[1@3[1@3[1@3
+===============================================================
+Gobuster v3.0.1
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@_FireFart_)
+===============================================================
+[+] Url:            http://10.10.212.178:3333/
+[+] Threads:        10
+[+] Wordlist:       /usr/share/wordlists/dirb/common.txt
+[+] Status codes:   200,204,301,302,307,401,403
+[+] User Agent:     gobuster/3.0.1
+[+] Timeout:        10s
+===============================================================
+2020/11/02 20:52:09 Starting gobuster
+===============================================================
+Progress: 11 / 4615 (0.24%)[2K/.hta (Status: 403)
+[2K/.htpasswd (Status: 403)
+Progress: 32 / 4615 (0.69%)[2K/.htaccess (Status: 403)
+Progress: 66 / 4615 (1.43%)Progress: 86 / 4615 (1.86%)Progress: 96 / 4615 (2.08%)Progress: 116 / 4615 (2.51%)Progress: 126 / 4615 (2.73%)Progress: 129 / 4615 (2.80%)Progress: 139 / 4615 (3.01%)Progress: 176 / 4615 (3.81%)Progress: 209 / 4615 (4.53%)Progress: 239 / 4615 (5.18%)Progress: 269 / 4615 (5.83%)Progress: 289 / 4615 (6.26%)Progress: 319 / 4615 (6.91%)Progress: 348 / 4615 (7.54%)Progress: 368 / 4615 (7.97%)Progress: 410 / 4615 (8.88%)Progress: 438 / 4615 (9.49%)Progress: 468 / 4615 (10.14%)Progress: 498 / 4615 (10.79%)Progress: 528 / 4615 (11.44%)Progress: 568 / 4615 (12.31%)Progress: 608 / 4615 (13.17%)Progress: 633 / 4615 (13.72%)Progress: 668 / 4615 (14.47%)Progress: 708 / 4615 (15.34%)Progress: 750 / 4615 (16.25%)Progress: 789 / 4615 (17.10%)Progress: 829 / 4615 (17.96%)Progress: 866 / 4615 (18.76%)Progress: 902 / 4615 (19.54%)Progress: 939 / 4615 (20.35%)Progress: 969 / 4615 (21.00%)Progress: 999 / 4615 (21.65%)Progress: 1037 / 4615 (22.47%)Progress: 1057 / 4615 (22.90%)Progress: 1087 / 4615 (23.55%)[2K/css (Status: 301)
+Progress: 1127 / 4615 (24.42%)Progress: 1157 / 4615 (25.07%)Progress: 1197 / 4615 (25.94%)Progress: 1237 / 4615 (26.80%)Progress: 1277 / 4615 (27.67%)Progress: 1302 / 4615 (28.21%)Progress: 1332 / 4615 (28.86%)Progress: 1362 / 4615 (29.51%)Progress: 1402 / 4615 (30.38%)Progress: 1432 / 4615 (31.03%)Progress: 1471 / 4615 (31.87%)Progress: 1484 / 4615 (32.16%)Progress: 1521 / 4615 (32.96%)Progress: 1561 / 4615 (33.82%)Progress: 1601 / 4615 (34.69%)Progress: 1634 / 4615 (35.41%)[2K/fonts (Status: 301)
+Progress: 1674 / 4615 (36.27%)Progress: 1714 / 4615 (37.14%)Progress: 1754 / 4615 (38.01%)Progress: 1789 / 4615 (38.76%)Progress: 1829 / 4615 (39.63%)Progress: 1866 / 4615 (40.43%)Progress: 1906 / 4615 (41.30%)Progress: 1945 / 4615 (42.15%)Progress: 1986 / 4615 (43.03%)[2K/images (Status: 301)
+Progress: 2025 / 4615 (43.88%)[2K/index.html (Status: 200)
+Progress: 2064 / 4615 (44.72%)[2K/internal (Status: 301)
+Progress: 2104 / 4615 (45.59%)Progress: 2144 / 4615 (46.46%)Progress: 2184 / 4615 (47.32%)[2K/js (Status: 301)
+Progress: 2224 / 4615 (48.19%)Progress: 2264 / 4615 (49.06%)Progress: 2294 / 4615 (49.71%)Progress: 2334 / 4615 (50.57%)Progress: 2364 / 4615 (51.22%)Progress: 2394 / 4615 (51.87%)Progress: 2424 / 4615 (52.52%)Progress: 2452 / 4615 (53.13%)Progress: 2477 / 4615 (53.67%)Progress: 2507 / 4615 (54.32%)Progress: 2537 / 4615 (54.97%)Progress: 2577 / 4615 (55.84%)Progress: 2617 / 4615 (56.71%)Progress: 2657 / 4615 (57.57%)Progress: 2694 / 4615 (58.37%)Progress: 2734 / 4615 (59.24%)Progress: 2774 / 4615 (60.11%)Progress: 2808 / 4615 (60.85%)Progress: 2847 / 4615 (61.69%)Progress: 2885 / 4615 (62.51%)Progress: 2925 / 4615 (63.38%)Progress: 2966 / 4615 (64.27%)Progress: 3005 / 4615 (65.11%)Progress: 3040 / 4615 (65.87%)Progress: 3077 / 4615 (66.67%)Progress: 3117 / 4615 (67.54%)Progress: 3152 / 4615 (68.30%)Progress: 3192 / 4615 (69.17%)Progress: 3230 / 4615 (69.99%)Progress: 3267 / 4615 (70.79%)Progress: 3297 / 4615 (71.44%)Progress: 3327 / 4615 (72.09%)Progress: 3367 / 4615 (72.96%)Progress: 3407 / 4615 (73.82%)Progress: 3447 / 4615 (74.69%)Progress: 3485 / 4615 (75.51%)Progress: 3517 / 4615 (76.21%)Progress: 3557 / 4615 (77.07%)Progress: 3597 / 4615 (77.94%)[2K/server-status (Status: 403)
+Progress: 3637 / 4615 (78.81%)Progress: 3677 / 4615 (79.67%)Progress: 3717 / 4615 (80.54%)Progress: 3757 / 4615 (81.41%)Progress: 3792 / 4615 (82.17%)Progress: 3829 / 4615 (82.97%)Progress: 3868 / 4615 (83.81%)Progress: 3908 / 4615 (84.68%)Progress: 3947 / 4615 (85.53%)Progress: 3987 / 4615 (86.39%)Progress: 4027 / 4615 (87.26%)Progress: 4064 / 4615 (88.06%)Progress: 4104 / 4615 (88.93%)Progress: 4144 / 4615 (89.79%)Progress: 4184 / 4615 (90.66%)Progress: 4226 / 4615 (91.57%)Progress: 4262 / 4615 (92.35%)Progress: 4302 / 4615 (93.22%)Progress: 4342 / 4615 (94.08%)Progress: 4384 / 4615 (94.99%)Progress: 4427 / 4615 (95.93%)Progress: 4467 / 4615 (96.79%)Progress: 4508 / 4615 (97.68%)Progress: 4549 / 4615 (98.57%)Progress: 4592 / 4615 (99.50%)[2K===============================================================
+2020/11/02 20:54:22 Finished
+===============================================================
+]0;joaof@Pentest: ~/TryJao/TryHackMe/Vulnversity[1;34mjoaof@Pentest[00m:[1;32m~/TryJao/TryHackMe/Vulnversity[00m$ e[Knano [K[K[K[K[Kexit
+exit
+
+Script done on 2020-11-02 20:57:49-03:00 [COMMAND_EXIT_CODE="0"]

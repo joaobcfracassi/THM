@@ -1,0 +1,533 @@
+Script started on 2020-10-24 21:59:28-04:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="166" LINES="33"]
+]0;kali@kali: ~/TryJao/TryHackMe/Linux[1;34mkali@kali[00m:[1;32m~/TryJao/TryHackMe/Linux[00m$ [K]0;kali@kali: ~/TryJao/TryHackMe/Linux[1;34mkali@kali[00m:[1;32m~/TryJao/TryHackMe/Linux[00m$ ssh shiba1@10.10.2.244
+shiba1@10.10.2.244's password: 
+Welcome to Ubuntu 18.04.4 LTS (GNU/Linux 4.15.0-88-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+  System information as of Sun Oct 25 02:00:04 UTC 2020
+
+  System load:  0.0                Processes:           87
+  Usage of /:   24.0% of 19.56GB   Users logged in:     0
+  Memory usage: 37%                IP address for eth0: 10.10.2.244
+  Swap usage:   0%
+
+
+11 packages can be updated.
+0 updates are security updates.
+
+Failed to connect to https://changelogs.ubuntu.com/meta-release-lts. Check your Internet connection or proxy settings
+
+
+Last login: Sun Oct 25 01:41:35 2020 from 10.9.185.104
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ find[K[K[K[Kfind / -user <username> -type f 2>>/dev/null
+-bash: username: No such file or directory
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ find / -user <username> -type f 2>>/dev/null[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@s[1@h[1@i[1@b[1@a[1@1
+/var/lib/lxcfs/cgroup/name=systemd/user.slice/user-1001.slice/user@1001.service/cgroup.procs
+/var/lib/lxcfs/cgroup/name=systemd/user.slice/user-1001.slice/user@1001.service/tasks
+/var/lib/lxcfs/cgroup/name=systemd/user.slice/user-1001.slice/user@1001.service/cgroup.clone_children
+/var/lib/lxcfs/cgroup/name=systemd/user.slice/user-1001.slice/user@1001.service/init.scope/cgroup.procs
+/var/lib/lxcfs/cgroup/name=systemd/user.slice/user-1001.slice/user@1001.service/init.scope/tasks
+/var/lib/lxcfs/cgroup/name=systemd/user.slice/user-1001.slice/user@1001.service/init.scope/notify_on_release
+/var/lib/lxcfs/cgroup/name=systemd/user.slice/user-1001.slice/user@1001.service/init.scope/cgroup.clone_children
+/home/shiba1/.profile
+/home/shiba1/.bashrc
+/home/shiba1/.bash_history
+/home/shiba1/.cache/motd.legal-displayed
+/home/shiba1/.bash_logout
+/proc/1695/task/1695/fdinfo/0
+/proc/1695/task/1695/fdinfo/1
+/proc/1695/task/1695/fdinfo/2
+/proc/1695/task/1695/fdinfo/3
+/proc/1695/task/1695/fdinfo/4
+/proc/1695/task/1695/fdinfo/5
+/proc/1695/task/1695/fdinfo/6
+/proc/1695/task/1695/fdinfo/7
+/proc/1695/task/1695/fdinfo/8
+/proc/1695/task/1695/fdinfo/9
+/proc/1695/task/1695/fdinfo/10
+/proc/1695/task/1695/fdinfo/11
+/proc/1695/task/1695/fdinfo/12
+/proc/1695/task/1695/fdinfo/13
+/proc/1695/task/1695/fdinfo/14
+/proc/1695/task/1695/fdinfo/15
+/proc/1695/task/1695/fdinfo/16
+/proc/1695/task/1695/fdinfo/17
+/proc/1695/task/1695/fdinfo/22
+/proc/1695/task/1695/fdinfo/23
+/proc/1695/task/1695/fdinfo/24
+/proc/1695/task/1695/fdinfo/25
+/proc/1695/task/1695/fdinfo/26
+/proc/1695/task/1695/fdinfo/27
+/proc/1695/task/1695/environ
+/proc/1695/task/1695/auxv
+/proc/1695/task/1695/status
+/proc/1695/task/1695/personality
+/proc/1695/task/1695/limits
+/proc/1695/task/1695/sched
+/proc/1695/task/1695/comm
+/proc/1695/task/1695/syscall
+/proc/1695/task/1695/cmdline
+/proc/1695/task/1695/stat
+/proc/1695/task/1695/statm
+/proc/1695/task/1695/maps
+/proc/1695/task/1695/children
+/proc/1695/task/1695/numa_maps
+/proc/1695/task/1695/mem
+/proc/1695/task/1695/mounts
+/proc/1695/task/1695/mountinfo
+/proc/1695/task/1695/clear_refs
+/proc/1695/task/1695/smaps
+/proc/1695/task/1695/smaps_rollup
+/proc/1695/task/1695/pagemap
+/proc/1695/task/1695/attr/current
+/proc/1695/task/1695/attr/prev
+/proc/1695/task/1695/attr/exec
+/proc/1695/task/1695/attr/fscreate
+/proc/1695/task/1695/attr/keycreate
+/proc/1695/task/1695/attr/sockcreate
+/proc/1695/task/1695/attr/display_lsm
+/proc/1695/task/1695/attr/selinux/current
+/proc/1695/task/1695/attr/selinux/prev
+/proc/1695/task/1695/attr/selinux/exec
+/proc/1695/task/1695/attr/selinux/fscreate
+/proc/1695/task/1695/attr/selinux/keycreate
+/proc/1695/task/1695/attr/selinux/sockcreate
+/proc/1695/task/1695/attr/smack/current
+/proc/1695/task/1695/attr/apparmor/current
+/proc/1695/task/1695/attr/apparmor/prev
+/proc/1695/task/1695/attr/apparmor/exec
+/proc/1695/task/1695/wchan
+/proc/1695/task/1695/stack
+/proc/1695/task/1695/schedstat
+/proc/1695/task/1695/cpuset
+/proc/1695/task/1695/cgroup
+/proc/1695/task/1695/oom_score
+/proc/1695/task/1695/oom_adj
+/proc/1695/task/1695/oom_score_adj
+/proc/1695/task/1695/loginuid
+/proc/1695/task/1695/sessionid
+/proc/1695/task/1695/io
+/proc/1695/task/1695/uid_map
+/proc/1695/task/1695/gid_map
+/proc/1695/task/1695/projid_map
+/proc/1695/task/1695/setgroups
+/proc/1695/task/1695/patch_state
+/proc/1695/fdinfo/0
+/proc/1695/fdinfo/1
+/proc/1695/fdinfo/2
+/proc/1695/fdinfo/3
+/proc/1695/fdinfo/4
+/proc/1695/fdinfo/5
+/proc/1695/fdinfo/6
+/proc/1695/fdinfo/7
+/proc/1695/fdinfo/8
+/proc/1695/fdinfo/9
+/proc/1695/fdinfo/10
+/proc/1695/fdinfo/11
+/proc/1695/fdinfo/12
+/proc/1695/fdinfo/13
+/proc/1695/fdinfo/14
+/proc/1695/fdinfo/15
+/proc/1695/fdinfo/16
+/proc/1695/fdinfo/17
+/proc/1695/fdinfo/22
+/proc/1695/fdinfo/23
+/proc/1695/fdinfo/24
+/proc/1695/fdinfo/25
+/proc/1695/fdinfo/26
+/proc/1695/fdinfo/27
+/proc/1695/environ
+/proc/1695/auxv
+/proc/1695/status
+/proc/1695/personality
+/proc/1695/limits
+/proc/1695/sched
+/proc/1695/autogroup
+/proc/1695/comm
+/proc/1695/syscall
+/proc/1695/cmdline
+/proc/1695/stat
+/proc/1695/statm
+/proc/1695/maps
+/proc/1695/numa_maps
+/proc/1695/mem
+/proc/1695/mounts
+/proc/1695/mountinfo
+/proc/1695/mountstats
+/proc/1695/clear_refs
+/proc/1695/smaps
+/proc/1695/smaps_rollup
+/proc/1695/pagemap
+/proc/1695/attr/current
+/proc/1695/attr/prev
+/proc/1695/attr/exec
+/proc/1695/attr/fscreate
+/proc/1695/attr/keycreate
+/proc/1695/attr/sockcreate
+/proc/1695/attr/display_lsm
+/proc/1695/attr/selinux/current
+/proc/1695/attr/selinux/prev
+/proc/1695/attr/selinux/exec
+/proc/1695/attr/selinux/fscreate
+/proc/1695/attr/selinux/keycreate
+/proc/1695/attr/selinux/sockcreate
+/proc/1695/attr/smack/current
+/proc/1695/attr/apparmor/current
+/proc/1695/attr/apparmor/prev
+/proc/1695/attr/apparmor/exec
+/proc/1695/wchan
+/proc/1695/stack
+/proc/1695/schedstat
+/proc/1695/cpuset
+/proc/1695/cgroup
+/proc/1695/oom_score
+/proc/1695/oom_adj
+/proc/1695/oom_score_adj
+/proc/1695/loginuid
+/proc/1695/sessionid
+/proc/1695/coredump_filter
+/proc/1695/io
+/proc/1695/uid_map
+/proc/1695/gid_map
+/proc/1695/projid_map
+/proc/1695/setgroups
+/proc/1695/timers
+/proc/1695/timerslack_ns
+/proc/1695/patch_state
+/proc/1773/task/1773/fdinfo/0
+/proc/1773/task/1773/fdinfo/1
+/proc/1773/task/1773/fdinfo/2
+/proc/1773/task/1773/fdinfo/255
+/proc/1773/task/1773/environ
+/proc/1773/task/1773/auxv
+/proc/1773/task/1773/status
+/proc/1773/task/1773/personality
+/proc/1773/task/1773/limits
+/proc/1773/task/1773/sched
+/proc/1773/task/1773/comm
+/proc/1773/task/1773/syscall
+/proc/1773/task/1773/cmdline
+/proc/1773/task/1773/stat
+/proc/1773/task/1773/statm
+/proc/1773/task/1773/maps
+/proc/1773/task/1773/children
+/proc/1773/task/1773/numa_maps
+/proc/1773/task/1773/mem
+/proc/1773/task/1773/mounts
+/proc/1773/task/1773/mountinfo
+/proc/1773/task/1773/clear_refs
+/proc/1773/task/1773/smaps
+/proc/1773/task/1773/smaps_rollup
+/proc/1773/task/1773/pagemap
+/proc/1773/task/1773/attr/current
+/proc/1773/task/1773/attr/prev
+/proc/1773/task/1773/attr/exec
+/proc/1773/task/1773/attr/fscreate
+/proc/1773/task/1773/attr/keycreate
+/proc/1773/task/1773/attr/sockcreate
+/proc/1773/task/1773/attr/display_lsm
+/proc/1773/task/1773/attr/selinux/current
+/proc/1773/task/1773/attr/selinux/prev
+/proc/1773/task/1773/attr/selinux/exec
+/proc/1773/task/1773/attr/selinux/fscreate
+/proc/1773/task/1773/attr/selinux/keycreate
+/proc/1773/task/1773/attr/selinux/sockcreate
+/proc/1773/task/1773/attr/smack/current
+/proc/1773/task/1773/attr/apparmor/current
+/proc/1773/task/1773/attr/apparmor/prev
+/proc/1773/task/1773/attr/apparmor/exec
+/proc/1773/task/1773/wchan
+/proc/1773/task/1773/stack
+/proc/1773/task/1773/schedstat
+/proc/1773/task/1773/cpuset
+/proc/1773/task/1773/cgroup
+/proc/1773/task/1773/oom_score
+/proc/1773/task/1773/oom_adj
+/proc/1773/task/1773/oom_score_adj
+/proc/1773/task/1773/loginuid
+/proc/1773/task/1773/sessionid
+/proc/1773/task/1773/io
+/proc/1773/task/1773/uid_map
+/proc/1773/task/1773/gid_map
+/proc/1773/task/1773/projid_map
+/proc/1773/task/1773/setgroups
+/proc/1773/task/1773/patch_state
+/proc/1773/fdinfo/0
+/proc/1773/fdinfo/1
+/proc/1773/fdinfo/2
+/proc/1773/fdinfo/255
+/proc/1773/environ
+/proc/1773/auxv
+/proc/1773/status
+/proc/1773/personality
+/proc/1773/limits
+/proc/1773/sched
+/proc/1773/autogroup
+/proc/1773/comm
+/proc/1773/syscall
+/proc/1773/cmdline
+/proc/1773/stat
+/proc/1773/statm
+/proc/1773/maps
+/proc/1773/numa_maps
+/proc/1773/mem
+/proc/1773/mounts
+/proc/1773/mountinfo
+/proc/1773/mountstats
+/proc/1773/clear_refs
+/proc/1773/smaps
+/proc/1773/smaps_rollup
+/proc/1773/pagemap
+/proc/1773/attr/current
+/proc/1773/attr/prev
+/proc/1773/attr/exec
+/proc/1773/attr/fscreate
+/proc/1773/attr/keycreate
+/proc/1773/attr/sockcreate
+/proc/1773/attr/display_lsm
+/proc/1773/attr/selinux/current
+/proc/1773/attr/selinux/prev
+/proc/1773/attr/selinux/exec
+/proc/1773/attr/selinux/fscreate
+/proc/1773/attr/selinux/keycreate
+/proc/1773/attr/selinux/sockcreate
+/proc/1773/attr/smack/current
+/proc/1773/attr/apparmor/current
+/proc/1773/attr/apparmor/prev
+/proc/1773/attr/apparmor/exec
+/proc/1773/wchan
+/proc/1773/stack
+/proc/1773/schedstat
+/proc/1773/cpuset
+/proc/1773/cgroup
+/proc/1773/oom_score
+/proc/1773/oom_adj
+/proc/1773/oom_score_adj
+/proc/1773/loginuid
+/proc/1773/sessionid
+/proc/1773/coredump_filter
+/proc/1773/io
+/proc/1773/uid_map
+/proc/1773/gid_map
+/proc/1773/projid_map
+/proc/1773/setgroups
+/proc/1773/timers
+/proc/1773/timerslack_ns
+/proc/1773/patch_state
+/proc/1790/task/1790/fdinfo/0
+/proc/1790/task/1790/fdinfo/1
+/proc/1790/task/1790/fdinfo/2
+/proc/1790/task/1790/fdinfo/3
+/proc/1790/task/1790/fdinfo/4
+/proc/1790/task/1790/fdinfo/5
+/proc/1790/task/1790/fdinfo/7
+/proc/1790/task/1790/fdinfo/8
+/proc/1790/task/1790/fdinfo/9
+/proc/1790/task/1790/fdinfo/10
+/proc/1790/task/1790/environ
+/proc/1790/task/1790/auxv
+/proc/1790/task/1790/status
+/proc/1790/task/1790/personality
+/proc/1790/task/1790/limits
+/proc/1790/task/1790/sched
+/proc/1790/task/1790/comm
+/proc/1790/task/1790/syscall
+/proc/1790/task/1790/cmdline
+/proc/1790/task/1790/stat
+/proc/1790/task/1790/statm
+/proc/1790/task/1790/maps
+/proc/1790/task/1790/children
+/proc/1790/task/1790/numa_maps
+/proc/1790/task/1790/mem
+/proc/1790/task/1790/mounts
+/proc/1790/task/1790/mountinfo
+/proc/1790/task/1790/clear_refs
+/proc/1790/task/1790/smaps
+/proc/1790/task/1790/smaps_rollup
+/proc/1790/task/1790/pagemap
+/proc/1790/task/1790/attr/current
+/proc/1790/task/1790/attr/prev
+/proc/1790/task/1790/attr/exec
+/proc/1790/task/1790/attr/fscreate
+/proc/1790/task/1790/attr/keycreate
+/proc/1790/task/1790/attr/sockcreate
+/proc/1790/task/1790/attr/display_lsm
+/proc/1790/task/1790/attr/selinux/current
+/proc/1790/task/1790/attr/selinux/prev
+/proc/1790/task/1790/attr/selinux/exec
+/proc/1790/task/1790/attr/selinux/fscreate
+/proc/1790/task/1790/attr/selinux/keycreate
+/proc/1790/task/1790/attr/selinux/sockcreate
+/proc/1790/task/1790/attr/smack/current
+/proc/1790/task/1790/attr/apparmor/current
+/proc/1790/task/1790/attr/apparmor/prev
+/proc/1790/task/1790/attr/apparmor/exec
+/proc/1790/task/1790/wchan
+/proc/1790/task/1790/stack
+/proc/1790/task/1790/schedstat
+/proc/1790/task/1790/cpuset
+/proc/1790/task/1790/cgroup
+/proc/1790/task/1790/oom_score
+/proc/1790/task/1790/oom_adj
+/proc/1790/task/1790/oom_score_adj
+/proc/1790/task/1790/loginuid
+/proc/1790/task/1790/sessionid
+/proc/1790/task/1790/io
+/proc/1790/task/1790/uid_map
+/proc/1790/task/1790/gid_map
+/proc/1790/task/1790/projid_map
+/proc/1790/task/1790/setgroups
+/proc/1790/task/1790/patch_state
+/proc/1790/fdinfo/0
+/proc/1790/fdinfo/1
+/proc/1790/fdinfo/2
+/proc/1790/fdinfo/3
+/proc/1790/fdinfo/4
+/proc/1790/fdinfo/6
+/proc/1790/fdinfo/7
+/proc/1790/environ
+/proc/1790/auxv
+/proc/1790/status
+/proc/1790/personality
+/proc/1790/limits
+/proc/1790/sched
+/proc/1790/autogroup
+/proc/1790/comm
+/proc/1790/syscall
+/proc/1790/cmdline
+/proc/1790/stat
+/proc/1790/statm
+/proc/1790/maps
+/proc/1790/numa_maps
+/proc/1790/mem
+/proc/1790/mounts
+/proc/1790/mountinfo
+/proc/1790/mountstats
+/proc/1790/clear_refs
+/proc/1790/smaps
+/proc/1790/smaps_rollup
+/proc/1790/pagemap
+/proc/1790/attr/current
+/proc/1790/attr/prev
+/proc/1790/attr/exec
+/proc/1790/attr/fscreate
+/proc/1790/attr/keycreate
+/proc/1790/attr/sockcreate
+/proc/1790/attr/display_lsm
+/proc/1790/attr/selinux/current
+/proc/1790/attr/selinux/prev
+/proc/1790/attr/selinux/exec
+/proc/1790/attr/selinux/fscreate
+/proc/1790/attr/selinux/keycreate
+/proc/1790/attr/selinux/sockcreate
+/proc/1790/attr/smack/current
+/proc/1790/attr/apparmor/current
+/proc/1790/attr/apparmor/prev
+/proc/1790/attr/apparmor/exec
+/proc/1790/wchan
+/proc/1790/stack
+/proc/1790/schedstat
+/proc/1790/cpuset
+/proc/1790/cgroup
+/proc/1790/oom_score
+/proc/1790/oom_adj
+/proc/1790/oom_score_adj
+/proc/1790/loginuid
+/proc/1790/sessionid
+/proc/1790/coredump_filter
+/proc/1790/io
+/proc/1790/uid_map
+/proc/1790/gid_map
+/proc/1790/projid_map
+/proc/1790/setgroups
+/proc/1790/timers
+/proc/1790/timerslack_ns
+/proc/1790/patch_state
+/sys/fs/cgroup/systemd/user.slice/user-1001.slice/user@1001.service/cgroup.procs
+/sys/fs/cgroup/systemd/user.slice/user-1001.slice/user@1001.service/tasks
+/sys/fs/cgroup/systemd/user.slice/user-1001.slice/user@1001.service/init.scope/cgroup.procs
+/sys/fs/cgroup/systemd/user.slice/user-1001.slice/user@1001.service/init.scope/tasks
+/sys/fs/cgroup/systemd/user.slice/user-1001.slice/user@1001.service/init.scope/notify_on_release
+/sys/fs/cgroup/systemd/user.slice/user-1001.slice/user@1001.service/init.scope/cgroup.clone_children
+/sys/fs/cgroup/systemd/user.slice/user-1001.slice/user@1001.service/cgroup.clone_children
+/sys/fs/cgroup/unified/user.slice/user-1001.slice/user@1001.service/cgroup.procs
+/sys/fs/cgroup/unified/user.slice/user-1001.slice/user@1001.service/cgroup.threads
+/sys/fs/cgroup/unified/user.slice/user-1001.slice/user@1001.service/init.scope/cgroup.events
+/sys/fs/cgroup/unified/user.slice/user-1001.slice/user@1001.service/init.scope/cgroup.procs
+/sys/fs/cgroup/unified/user.slice/user-1001.slice/user@1001.service/init.scope/cgroup.max.descendants
+/sys/fs/cgroup/unified/user.slice/user-1001.slice/user@1001.service/init.scope/cpu.stat
+/sys/fs/cgroup/unified/user.slice/user-1001.slice/user@1001.service/init.scope/cgroup.type
+/sys/fs/cgroup/unified/user.slice/user-1001.slice/user@1001.service/init.scope/cgroup.stat
+/sys/fs/cgroup/unified/user.slice/user-1001.slice/user@1001.service/init.scope/cgroup.threads
+/sys/fs/cgroup/unified/user.slice/user-1001.slice/user@1001.service/init.scope/cgroup.controllers
+/sys/fs/cgroup/unified/user.slice/user-1001.slice/user@1001.service/init.scope/cgroup.subtree_control
+/sys/fs/cgroup/unified/user.slice/user-1001.slice/user@1001.service/init.scope/cgroup.max.depth
+/sys/fs/cgroup/unified/user.slice/user-1001.slice/user@1001.service/cgroup.subtree_control
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ find / -user shiba1 -type f 2>>/dev/null[1P[1@2
+/var/log/test1234
+/home/shiba1/shiba1
+/home/shiba2/.profile
+/home/shiba2/.bashrc
+/home/shiba2/.bash_history
+/home/shiba2/.bash_logout
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ cat vatlog[K[K[K[K[K[K/vatr[K[Kr/log/test1234
+cat: /var/log/test1234: Permission denied
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ ls -l var[K[K[K/vat[Kr/log/test1234
+-r--r----- 1 shiba2 shiba2 19 Feb 22  2020 /var/log/test1234
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ 
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ \[Ksud[K shiba1[K2
+Password: 
+]0;shiba2@nootnoot: /home/shiba1[01;32mshiba2@nootnoot[00m:[01;34m/home/shiba1[00m$ 
+]0;shiba2@nootnoot: /home/shiba1[01;32mshiba2@nootnoot[00m:[01;34m/home/shiba1[00m$ cat /var/log/test1234
+nootnoot:notsofast
+]0;shiba2@nootnoot: /home/shiba1[01;32mshiba2@nootnoot[00m:[01;34m/home/shiba1[00m$ ^C
+]0;shiba2@nootnoot: /home/shiba1[01;32mshiba2@nootnoot[00m:[01;34m/home/shiba1[00m$ 
+]0;shiba2@nootnoot: /home/shiba1[01;32mshiba2@nootnoot[00m:[01;34m/home/shiba1[00m$ 
+]0;shiba2@nootnoot: /home/shiba1[01;32mshiba2@nootnoot[00m:[01;34m/home/shiba1[00m$ sudo[K[K notsofast
+No passwd entry for user 'notsofast'
+]0;shiba2@nootnoot: /home/shiba1[01;32mshiba2@nootnoot[00m:[01;34m/home/shiba1[00m$ su nootnoot
+Password: 
+]0;nootnoot@nootnoot: /home/shiba1[01;32mnootnoot@nootnoot[00m:[01;34m/home/shiba1[00m$ 
+]0;nootnoot@nootnoot: /home/shiba1[01;32mnootnoot@nootnoot[00m:[01;34m/home/shiba1[00m$ 
+]0;nootnoot@nootnoot: /home/shiba1[01;32mnootnoot@nootnoot[00m:[01;34m/home/shiba1[00m$ sudo -l
+[sudo] password for nootnoot: 
+Matching Defaults entries for nootnoot on nootnoot:
+    env_reset, mail_badpass, secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User nootnoot may run the following commands on nootnoot:
+    (ALL : ALL) ALL
+]0;nootnoot@nootnoot: /home/shiba1[01;32mnootnoot@nootnoot[00m:[01;34m/home/shiba1[00m$ 
+]0;nootnoot@nootnoot: /home/shiba1[01;32mnootnoot@nootnoot[00m:[01;34m/home/shiba1[00m$ cd root[K[K[K[K/root
+bash: cd: /root: Permission denied
+]0;nootnoot@nootnoot: /home/shiba1[01;32mnootnoot@nootnoot[00m:[01;34m/home/shiba1[00m$ ls /root
+ls: cannot open directory '/root': Permission denied
+]0;nootnoot@nootnoot: /home/shiba1[01;32mnootnoot@nootnoot[00m:[01;34m/home/shiba1[00m$ cat /root/root.txt
+cat: /root/root.txt: Permission denied
+]0;nootnoot@nootnoot: /home/shiba1[01;32mnootnoot@nootnoot[00m:[01;34m/home/shiba1[00m$ 
+]0;nootnoot@nootnoot: /home/shiba1[01;32mnootnoot@nootnoot[00m:[01;34m/home/shiba1[00m$ sudo su
+]0;root@nootnoot: /home/shiba1root@nootnoot:/home/shiba1# 
+]0;root@nootnoot: /home/shiba1root@nootnoot:/home/shiba1# cd root[K[K[K[K/root
+]0;root@nootnoot: ~root@nootnoot:~# ls[K[Kls
+root.txt
+]0;root@nootnoot: ~root@nootnoot:~# cat root.txt
+ad91979868d06e19d8e8a9c28be56e0c
+]0;root@nootnoot: ~root@nootnoot:~# exit
+exit
+]0;nootnoot@nootnoot: /home/shiba1[01;32mnootnoot@nootnoot[00m:[01;34m/home/shiba1[00m$ exit
+exit
+]0;shiba2@nootnoot: /home/shiba1[01;32mshiba2@nootnoot[00m:[01;34m/home/shiba1[00m$ exit
+exit
+]0;shiba1@nootnoot: ~[01;32mshiba1@nootnoot[00m:[01;34m~[00m$ exit
+logout
+Connection to 10.10.2.244 closed.
+]0;kali@kali: ~/TryJao/TryHackMe/Linux[1;34mkali@kali[00m:[1;32m~/TryJao/TryHackMe/Linux[00m$ exit
+exit
+
+Script done on 2020-10-24 22:16:30-04:00 [COMMAND_EXIT_CODE="0"]

