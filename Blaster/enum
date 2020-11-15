@@ -1,0 +1,43 @@
+Script started on 2020-11-14 14:45:05-03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="168" LINES="36"]
+[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Blaster[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Blaster[00m# nmap -v -sV -Pn [7m10.10.217.2[27m10.10.217.2
+[?2004lHost discovery disabled (-Pn). All addresses will be marked 'up' and scan times will be slower.
+Starting Nmap 7.91 ( https://nmap.org ) at 2020-11-14 14:45 -03
+NSE: Loaded 45 scripts for scanning.
+Initiating Parallel DNS resolution of 1 host. at 14:45
+Completed Parallel DNS resolution of 1 host. at 14:45, 0.02s elapsed
+Initiating SYN Stealth Scan at 14:45
+Scanning 10.10.217.2 [1000 ports]
+SYN Stealth Scan Timing: About 15.50% done; ETC: 14:48 (0:02:49 remaining)
+SYN Stealth Scan Timing: About 30.00% done; ETC: 14:48 (0:02:22 remaining)
+SYN Stealth Scan Timing: About 45.00% done; ETC: 14:48 (0:01:51 remaining)
+Discovered open port 139/tcp on 10.10.217.2
+Discovered open port 135/tcp on 10.10.217.2
+Discovered open port 3389/tcp on 10.10.217.2
+Increasing send delay for 10.10.217.2 from 0 to 5 due to 215 out of 715 dropped probes since last increase.
+Increasing send delay for 10.10.217.2 from 5 to 10 due to max_successful_tryno increase to 4
+Completed SYN Stealth Scan at 14:47, 130.60s elapsed (1000 total ports)
+Initiating Service scan at 14:47
+Scanning 3 services on 10.10.217.2
+Completed Service scan at 14:47, 9.01s elapsed (3 services on 1 host)
+NSE: Script scanning 10.10.217.2.
+Initiating NSE at 14:47
+Completed NSE at 14:47, 0.01s elapsed
+Initiating NSE at 14:47
+Completed NSE at 14:47, 0.00s elapsed
+Nmap scan report for 10.10.217.2
+Host is up (0.30s latency).
+Not shown: 997 closed ports
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 140.28 seconds
+           Raw packets sent: 3026 (133.144KB) | Rcvd: 1131 (45.252KB)
+[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Blaster[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Blaster[00m# exit
+[?2004lexit
+
+Script done on 2020-11-14 14:48:10-03:00 [COMMAND_EXIT_CODE="0"]

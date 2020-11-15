@@ -19,3 +19,4 @@ As Rooms resolvidas até o momento são:
 11. Vulnversity
 12. Blue 
 13. Ice
+14. Blaster
