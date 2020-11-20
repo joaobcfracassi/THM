@@ -20,3 +20,4 @@ As Rooms resolvidas até o momento são:
 12. Blue 
 13. Ice
 14. Blaster
+15. Simple-CTF

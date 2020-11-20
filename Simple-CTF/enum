@@ -1,0 +1,112 @@
+Script started on 2020-11-16 12:44:28-03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="168" LINES="36"]
+[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[00m# nmap =[K-v -sV -sC -Pn [7m10.10.187.106[27m10.10.187.106
+[?2004lHost discovery disabled (-Pn). All addresses will be marked 'up' and scan times will be slower.
+Starting Nmap 7.91 ( https://nmap.org ) at 2020-11-16 12:44 -03
+NSE: Loaded 153 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 12:44
+Completed NSE at 12:44, 0.00s elapsed
+Initiating NSE at 12:44
+Completed NSE at 12:44, 0.00s elapsed
+Initiating NSE at 12:44
+Completed NSE at 12:44, 0.00s elapsed
+Initiating Parallel DNS resolution of 1 host. at 12:44
+Completed Parallel DNS resolution of 1 host. at 12:44, 0.01s elapsed
+Initiating SYN Stealth Scan at 12:44
+Scanning 10.10.187.106 [1000 ports]
+Completed SYN Stealth Scan at 12:45, 20.87s elapsed (1000 total ports)
+Initiating Service scan at 12:45
+NSE: Script scanning 10.10.187.106.
+Initiating NSE at 12:45
+Completed NSE at 12:45, 0.00s elapsed
+Initiating NSE at 12:45
+Completed NSE at 12:45, 0.00s elapsed
+Initiating NSE at 12:45
+Completed NSE at 12:45, 0.00s elapsed
+Nmap scan report for 10.10.187.106
+Host is up (0.30s latency).
+Not shown: 997 filtered ports
+PORT     STATE  SERVICE      VERSION
+21/tcp   closed ftp
+80/tcp   closed http
+2222/tcp closed EtherNetIP-1
+
+NSE: Script Post-scanning.
+Initiating NSE at 12:45
+Completed NSE at 12:45, 0.00s elapsed
+Initiating NSE at 12:45
+Completed NSE at 12:45, 0.00s elapsed
+Initiating NSE at 12:45
+Completed NSE at 12:45, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 22.01 seconds
+           Raw packets sent: 2007 (88.308KB) | Rcvd: 13 (520B)
+[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[00m# 
+[?2004l[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[00m# nmap -v -sV -sC -Pn 10.10.187.106[1P[1@S
+[?2004lHost discovery disabled (-Pn). All addresses will be marked 'up' and scan times will be slower.
+Starting Nmap 7.91 ( https://nmap.org ) at 2020-11-16 12:45 -03
+NSE: Loaded 123 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 12:45
+Completed NSE at 12:45, 0.00s elapsed
+Initiating NSE at 12:45
+Completed NSE at 12:45, 0.00s elapsed
+Initiating Parallel DNS resolution of 1 host. at 12:45
+Completed Parallel DNS resolution of 1 host. at 12:45, 0.02s elapsed
+Initiating SYN Stealth Scan at 12:45
+Scanning 10.10.187.106 [1000 ports]
+Discovered open port 80/tcp on 10.10.187.106
+Discovered open port 21/tcp on 10.10.187.106
+Discovered open port 2222/tcp on 10.10.187.106
+Completed SYN Stealth Scan at 12:46, 19.74s elapsed (1000 total ports)
+NSE: Script scanning 10.10.187.106.
+Initiating NSE at 12:46
+NSE: [ftp-bounce] PORT response: 500 Illegal PORT command.
+Completed NSE at 12:46, 31.53s elapsed
+Initiating NSE at 12:46
+Completed NSE at 12:46, 0.00s elapsed
+Nmap scan report for 10.10.187.106
+Host is up (0.27s latency).
+Not shown: 997 filtered ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_Can't get directory listing: TIMEOUT
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to ::ffff:10.9.185.104
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 3
+|      vsFTPd 3.0.3 - secure, fast, stable
+|_End of status
+80/tcp   open  http
+| http-methods: 
+|_  Supported Methods: POST OPTIONS GET HEAD
+| http-robots.txt: 2 disallowed entries 
+|_/ /openemr-5_0_1_3 
+|_http-title: Apache2 Ubuntu Default Page: It works
+2222/tcp open  EtherNetIP-1
+| ssh-hostkey: 
+|   2048 29:42:69:14:9e:ca:d9:17:98:8c:27:72:3a:cd:a9:23 (RSA)
+|   256 9b:d1:65:07:51:08:00:61:98:de:95:ed:3a:e3:81:1c (ECDSA)
+|_  256 12:65:1b:61:cf:4d:e5:75:fe:f4:e8:d4:6e:10:2a:f6 (ED25519)
+
+NSE: Script Post-scanning.
+Initiating NSE at 12:46
+Completed NSE at 12:46, 0.00s elapsed
+Initiating NSE at 12:46
+Completed NSE at 12:46, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 51.83 seconds
+           Raw packets sent: 2006 (88.264KB) | Rcvd: 12 (528B)
+[?2004h]0;root@Pentest: /home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[1;31mroot@Pentest[00m:[1;34m/home/joaof/e4Sec/CTFs/TryHackMe/Simple-CTF[00m# exit
+[?2004lexit
+
+Script done on 2020-11-16 12:47:27-03:00 [COMMAND_EXIT_CODE="0"]
