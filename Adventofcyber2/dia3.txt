@@ -1,0 +1,9 @@
+Burp suite 
+
+Attack:
+Cluster Bomb
+
+Wordlist:
+root  |  root
+admin |  admin
+user  |  12345

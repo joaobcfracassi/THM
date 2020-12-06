@@ -1,0 +1,13 @@
+wfuzz -c -z file,big.txt http://shibes.xyz/api.php?breed=FUZZ
+
+gobuster dir -u http://10.10.106.136/ -w wordlist -x .php
+
+http://10.10.106.136/api/site-log.php
+
+
+wfuzz -c -z file,wordlist -u http://10.10.106.136/api/site-log.php?date=FUZZ
+000000026:   200        0 L      1 W        13 Ch       "20201125" 
+
+http://10.10.106.136/api/site-log.php?date=20201125
+
+THM{D4t3_AP1}
