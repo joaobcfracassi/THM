@@ -65,3 +65,164 @@ Network Distance: 2 hops
 Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 ```
 
+### Um binário escondido dentro da imagem.
+```
+exiftool 1.jpg 
+ExifTool Version Number         : 12.16
+File Name                       : 1.jpg
+Directory                       : .
+File Size                       : 664 KiB
+File Modification Date/Time     : 2021:07:01 21:55:18-04:00
+File Access Date/Time           : 2021:07:10 10:48:07-04:00
+File Inode Change Date/Time     : 2021:07:02 22:03:16-04:00
+File Permissions                : rw-r--r--
+File Type                       : JPEG
+File Type Extension             : jpg
+MIME Type                       : image/jpeg
+JFIF Version                    : 1.01
+Exif Byte Order                 : Little-endian (Intel, II)
+Make                            : Panasonic
+Camera Model Name               : DMC-TZ2
+Orientation                     : Horizontal (normal)
+X Resolution                    : 72
+Y Resolution                    : 72
+Resolution Unit                 : inches
+Software                        : GIMP 2.10.14
+Modify Date                     : 2020:11:04 21:45:21
+Y Cb Cr Positioning             : Co-sited
+Exposure Time                   : 1/25
+F Number                        : 3.6
+Exposure Program                : Program AE
+ISO                             : 100
+Exif Version                    : 0221
+Date/Time Original              : 2010:04:23 14:08:46
+Create Date                     : 2010:04:23 14:08:46
+Components Configuration        : Y, Cb, Cr, -
+Compressed Bits Per Pixel       : 4
+Exposure Compensation           : -1
+Max Aperture Value              : 3.3
+Metering Mode                   : Multi-segment
+Light Source                    : Unknown
+Flash                           : Off, Did not fire
+Focal Length                    : 5.5 mm
+Video Frame Rate                : n/a
+Battery Level                   : Medium
+Highlight Warning               : No
+Dark Focus Environment          : No
+AF Assist Lamp                  : Enabled but Not Used
+AF Area Mode                    : 1-area (high speed)
+Audio                           : No
+Baby Age                        : (not set)
+Burst Mode                      : Off
+Color Effect                    : Off
+Color Mode                      : Natural
+Contrast Mode                   : Normal
+Conversion Lens                 : Off
+Data Dump                       : (Binary data 6152 bytes, use -b option to extract)
+Panasonic Exif Version          : 0220
+Firmware Version                : 0.1.0.4
+Flash Bias                      : 0
+Focus Mode                      : Auto
+Image Stabilization             : On, Mode 2
+Internal Serial Number          : (F66) 2007:02:26 no. 0117
+Macro Mode                      : Off
+Maker Note Version              : 0101
+Noise Reduction                 : Standard
+Optical Zoom Mode               : Standard
+Program ISO                     : 100
+Image Quality                   : High
+Rotation                        : Horizontal (normal)
+Scene Mode                      : Off
+Self Timer                      : Off
+Sequence Number                 : 0
+Shooting Mode                   : Normal
+Text Stamp                      : Off
+Time Since Power On             : 00:00:37.34
+Travel Day                      : n/a
+WB Blue Level                   : 1958
+WB Green Level                  : 1054
+WB Red Level                    : 2280
+White Balance                   : Auto
+White Balance Bias              : 0
+World Time Location             : Home
+Flashpix Version                : 0100
+Color Space                     : sRGB
+Exif Image Width                : 2735
+Exif Image Height               : 1910
+Sensing Method                  : One-chip color area
+File Source                     : Digital Camera
+Scene Type                      : Directly photographed
+Custom Rendered                 : Normal
+Exposure Mode                   : Auto
+Digital Zoom Ratio              : 0
+Focal Length In 35mm Format     : 34 mm
+Scene Capture Type              : Standard
+Gain Control                    : None
+Contrast                        : Normal
+Saturation                      : Low
+Sharpness                       : Soft
+Compression                     : JPEG (old-style)
+Photometric Interpretation      : YCbCr
+Samples Per Pixel               : 3
+Thumbnail Offset                : 7612
+Thumbnail Length                : 12449
+Profile CMM Type                : Little CMS
+Profile Version                 : 4.3.0
+Profile Class                   : Display Device Profile
+Color Space Data                : RGB
+Profile Connection Space        : XYZ
+Profile Date Time               : 2020:11:04 20:43:19
+Profile File Signature          : acsp
+Primary Platform                : Microsoft Corporation
+CMM Flags                       : Not Embedded, Independent
+Device Manufacturer             : 
+Device Model                    : 
+Device Attributes               : Reflective, Glossy, Positive, Color
+Rendering Intent                : Perceptual
+Connection Space Illuminant     : 0.9642 1 0.82491
+Profile Creator                 : Little CMS
+Profile ID                      : 0
+Profile Description             : GIMP built-in sRGB
+Profile Copyright               : Public Domain
+Media White Point               : 0.9642 1 0.82491
+Chromatic Adaptation            : 1.04788 0.02292 -0.05022 0.02959 0.99048 -0.01707 -0.00925 0.01508 0.75168
+Red Matrix Column               : 0.43604 0.22249 0.01392
+Blue Matrix Column              : 0.14305 0.06061 0.71393
+Green Matrix Column             : 0.38512 0.7169 0.09706
+Red Tone Reproduction Curve     : (Binary data 32 bytes, use -b option to extract)
+Green Tone Reproduction Curve   : (Binary data 32 bytes, use -b option to extract)
+Blue Tone Reproduction Curve    : (Binary data 32 bytes, use -b option to extract)
+Chromaticity Channels           : 3
+Chromaticity Colorant           : Unknown (0)
+Chromaticity Channel 1          : 0.64 0.33002
+Chromaticity Channel 2          : 0.3 0.60001
+Chromaticity Channel 3          : 0.15001 0.06
+Device Mfg Desc                 : GIMP
+Device Model Desc               : sRGB
+Image Width                     : 2735
+Image Height                    : 1910
+Encoding Process                : Progressive DCT, Huffman coding
+Bits Per Sample                 : 8
+Color Components                : 3
+Y Cb Cr Sub Sampling            : YCbCr4:4:4 (1 1)
+Aperture                        : 3.6
+Blue Balance                    : 1.857685
+Image Size                      : 2735x1910
+Megapixels                      : 5.2
+Red Balance                     : 2.163188
+Scale Factor To 35 mm Equivalent: 6.2
+Shutter Speed                   : 1/25
+Thumbnail Image                 : (Binary data 12449 bytes, use -b option to extract)
+Circle Of Confusion             : 0.005 mm
+Field Of View                   : 55.8 deg
+Focal Length                    : 5.5 mm (35 mm equivalent: 34.0 mm)
+Hyperfocal Distance             : 1.73 m
+Light Value                     : 8.3
+```
+### Gobuster
+```
+http://10.10.79.18/inferno              (Status: 401) [Size: 458]
+```
+
+### 
+

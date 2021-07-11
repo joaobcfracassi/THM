@@ -1,0 +1,133 @@
+# Nmap 7.91 scan initiated Sat Jul 10 11:19:17 2021 as: nmap -v -sV -A -p- -oN nmap2.txt 10.10.27.72
+adjust_timeouts2: packet supposedly had rtt of -404938 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -404938 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -401532 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -401532 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -401819 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -401819 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -901564 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -901564 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -765618 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -765618 microseconds.  Ignoring time.
+Nmap scan report for 10.10.27.72
+Host is up (0.22s latency).
+Not shown: 65445 closed ports
+PORT      STATE SERVICE           VERSION
+21/tcp    open  ftp?
+22/tcp    open  ssh               OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 d7:ec:1a:7f:62:74:da:29:64:b3:ce:1e:e2:68:04:f7 (RSA)
+|   256 de:4f:ee:fa:86:2e:fb:bd:4c:dc:f9:67:73:02:84:34 (ECDSA)
+|_  256 e2:6d:8d:e1:a8:d0:bd:97:cb:9a:bc:03:c3:f8:d8:85 (ED25519)
+23/tcp    open  telnet?
+25/tcp    open  smtp?
+|_smtp-commands: Couldn't establish connection on port 25
+80/tcp    open  http              Apache httpd 2.4.29 ((Ubuntu))
+| http-methods: 
+|_  Supported Methods: HEAD GET POST OPTIONS
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: Dante's Inferno
+88/tcp    open  kerberos-sec?
+106/tcp   open  pop3pw?
+110/tcp   open  pop3?
+194/tcp   open  irc?
+|_irc-info: Unable to open connection
+389/tcp   open  ldap?
+443/tcp   open  https?
+464/tcp   open  kpasswd5?
+636/tcp   open  ldapssl?
+750/tcp   open  kerberos?
+775/tcp   open  entomb?
+777/tcp   open  multiling-http?
+779/tcp   open  unknown
+783/tcp   open  spamassassin?
+808/tcp   open  ccproxy-http?
+873/tcp   open  rsync?
+1001/tcp  open  webpush?
+1178/tcp  open  skkserv?
+1210/tcp  open  eoss?
+1236/tcp  open  bvcontrol?
+1300/tcp  open  h323hostcallsc?
+1313/tcp  open  bmc_patroldb?
+1314/tcp  open  pdps?
+1529/tcp  open  support?
+2000/tcp  open  cisco-sccp?
+2003/tcp  open  finger?
+|_finger: ERROR: Script execution failed (use -d to debug)
+2121/tcp  open  ccproxy-ftp?
+2150/tcp  open  dynamic3d?
+2600/tcp  open  zebrasrv?
+2601/tcp  open  zebra?
+2602/tcp  open  ripd?
+2603/tcp  open  ripngd?
+2604/tcp  open  ospfd?
+2605/tcp  open  bgpd?
+2606/tcp  open  netmon?
+2607/tcp  open  connection?
+2608/tcp  open  wag-service?
+2988/tcp  open  hippad?
+2989/tcp  open  zarkov?
+4224/tcp  open  xtell?
+4557/tcp  open  fax?
+4559/tcp  open  hylafax?
+4600/tcp  open  piranha1?
+4949/tcp  open  munin?
+5051/tcp  open  ida-agent?
+5052/tcp  open  ita-manager?
+5151/tcp  open  esri_sde?
+5354/tcp  open  mdnsresponder?
+5355/tcp  open  llmnr?
+5432/tcp  open  postgresql?
+5555/tcp  open  freeciv?
+5666/tcp  open  nrpe?
+5667/tcp  open  unknown
+5674/tcp  open  hyperscsi-port?
+5675/tcp  open  v5ua?
+5680/tcp  open  canna?
+6346/tcp  open  gnutella?
+6514/tcp  open  syslog-tls?
+6566/tcp  open  sane-port?
+6667/tcp  open  irc?
+|_irc-info: Unable to open connection
+8021/tcp  open  ftp-proxy?
+8081/tcp  open  blackice-icecap?
+8088/tcp  open  radan-http?
+8990/tcp  open  http-wmap?
+9098/tcp  open  unknown
+9359/tcp  open  unknown
+9418/tcp  open  git?
+9673/tcp  open  unknown
+10000/tcp open  snet-sensor-mgmt?
+10081/tcp open  famdc?
+10082/tcp open  amandaidx?
+10083/tcp open  amidxtape?
+11201/tcp open  smsqp?
+15345/tcp open  xpilot?
+17001/tcp open  unknown
+17002/tcp open  unknown
+17003/tcp open  unknown
+17004/tcp open  unknown
+20011/tcp open  unknown
+20012/tcp open  ss-idi-disc?
+24554/tcp open  binkp?
+27374/tcp open  subseven?
+30865/tcp open  unknown
+57000/tcp open  unknown
+60177/tcp open  unknown
+60179/tcp open  unknown
+Aggressive OS guesses: Linux 3.1 (95%), Linux 3.2 (95%), AXIS 210A or 211 Network Camera (Linux 2.6.17) (94%), ASUS RT-N56U WAP (Linux 3.4) (93%), Linux 3.16 (93%), Adtran 424RG FTTH gateway (92%), Linux 2.6.32 (92%), Linux 2.6.39 - 3.2 (92%), Linux 3.1 - 3.2 (92%), Linux 3.2 - 4.9 (92%)
+No exact OS matches for host (test conditions non-ideal).
+Uptime guess: 18.808 days (since Mon Jun 21 16:49:55 2021)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=263 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 199/tcp)
+HOP RTT       ADDRESS
+1   250.11 ms 10.9.0.1
+2   250.19 ms 10.10.27.72
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jul 10 12:13:12 2021 -- 1 IP address (1 host up) scanned in 3235.12 seconds
